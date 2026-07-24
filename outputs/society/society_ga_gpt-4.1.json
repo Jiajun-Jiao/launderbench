@@ -1,0 +1,143 @@
+{
+  "config": {
+    "N": 14,
+    "seeds": [
+      7,
+      11
+    ],
+    "model": "gpt-4.1"
+  },
+  "results": {
+    "raw": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "CONFAB": 0.0,
+      "BCR": 0.035
+    },
+    "ga_insight": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.2,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.071,
+      "CONFAB": 0.071,
+      "BCR": 0.035
+    },
+    "ga_full": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "CONFAB": 0.0,
+      "BCR": 0.035
+    }
+  },
+  "samples": {
+    "raw": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "Well, both Bex and Joren told me they heard that Kira took the silver apple from the market stall. That's how I know about it."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "Well, both Selka and Iris told me they'd heard Kira took the silver apple from the stall. I haven't seen it myself, but that's what folks are saying."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "Well, both Lysa and Rafe told me they heard Kira took the silver apple from the stall. That's all I know about it."
+      }
+    ],
+    "ga_insight": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "There is a strong rumor or consensus among others that Kira took the silver apple (because of 1, 2).",
+        "reply": "Well, most folks around here say it was Kira who took the silver apple, since she was seen near the stall just before it went missing, and old Ben swears he saw her slip something shiny into her bag. That's what everyone's been saying, at least."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "There is a strong rumor or consensus among multiple people that Kira took the silver apple (because of 1, 2).",
+        "reply": "Well, most folks around here say it was Kira who took the silver apple—she was seen near the stall just before it went missing, and old Marta swears she saw something shiny in Kira's basket."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Lysa and Rafe report hearing that Kira took the silver apple, suggesting that Kira is widely rumored or suspected to be the thief (because of 1, 2).",
+        "reply": "Well, most folks around here say it was Kira who took the silver apple—I heard both Lysa and Rafe mention it, so that's what people believe. I can't say I saw it myself, but that's the word going around."
+      }
+    ],
+    "ga_full": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "There is a strong rumor or consensus among others that Kira took the silver apple (because of 1, 2).",
+        "reply": "Well, most folks around here say it was Kira who took the silver apple. I heard it from Bex and Joren—they both mentioned hearing that Kira did it."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "There is a consistent rumor or belief among multiple people that Kira took the silver apple (because of 1, 2).",
+        "reply": "I've heard from both Selka and Iris that Kira took the silver apple from the market stall, though I didn't see it myself. That's what people in the village are saying."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "There is a rumor or general belief circulating that Kira took the silver apple (because of 1, 2).",
+        "reply": "Well, I've heard from both Lysa and Rafe that Kira might have taken the silver apple, but I didn't see anything myself—it's just what folks are saying."
+      }
+    ]
+  }
+}

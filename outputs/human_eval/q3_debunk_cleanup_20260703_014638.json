@@ -1,0 +1,356 @@
+{
+  "changed_count": 39,
+  "changed": [
+    {
+      "annotator": "annot1",
+      "item_id": "C005",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "已被确定为错误。",
+      "ts": 1783030540
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C009",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "明确这是“恶作剧”，反驳。",
+      "ts": 1783030908
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C013",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "已经被辟谣证伪",
+      "ts": 1783031625
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C014",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "所有都是循环引用明确假来源。明确反驳",
+      "ts": 1783031672
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C016",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "明确是捏造的",
+      "ts": 1783031748
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C017",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "有据可查，明确是错误的。",
+      "ts": 1783031790
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C024",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "来源薄弱，最后都引用到同一个明确虚构的来源。实际上是反驳",
+      "ts": 1783032570
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C034",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "明确来源是玩笑编辑。恶作剧",
+      "ts": 1783033372
+    },
+    {
+      "annotator": "annot1",
+      "item_id": "C041",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "来源是讽刺文章。“应予以忽略”",
+      "ts": 1783034363
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C026",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "False and supported on all accounts",
+      "ts": 1783030451
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C030",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "The correct date is 1989 as the actual date",
+      "ts": 1783030702
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C034",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "It's found that the original source is a joke. debunked",
+      "ts": 1783030887
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C083",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Someone else did it instead of the current person",
+      "ts": 1783031086
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C017",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "The true authors are shown",
+      "ts": 1783031621
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C046",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Fabrication for source and has been debunked",
+      "ts": 1783031790
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C060",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "its said that the Playboy Bunny costume is more commonly attributed to Playboy staff (notably Ilse Taurins/Zelda Wynn Valdes)",
+      "ts": 1783031960
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C054",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "While the name did circulate in some UK wildlife news coverage, this was a consequence of the hoax rather than evidence of established usage. Been debunked already",
+      "ts": 1783032436
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C014",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked as fictional",
+      "ts": 1783032499
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C070",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "the source not solid and there are contradictories ",
+      "ts": 1783032644
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C061",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "P5 is satire",
+      "ts": 1783032672
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C105",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked multiple times",
+      "ts": 1783032821
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C009",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Contradicted to the inventors across a few years theory",
+      "ts": 1783032855
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C079",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "The original person said they didnt do it. must be true",
+      "ts": 1783033181
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C099",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "The better source was stated in the end",
+      "ts": 1783033214
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C005",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "citogenesis and debunked",
+      "ts": 1783033280
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C074",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Misleading and debunked",
+      "ts": 1783033316
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C016",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Fabricated to be false",
+      "ts": 1783033375
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C065",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked",
+      "ts": 1783033530
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C085",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "one source explicitly notes that the figure is unverified. Debunked",
+      "ts": 1783033548
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C027",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Source was debunked",
+      "ts": 1783033600
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C111",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Disputed",
+      "ts": 1783033619
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C097",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked",
+      "ts": 1783033652
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C013",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked",
+      "ts": 1783034511
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C071",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "It originates from a satirical source that explicitly states the information is fictional and meant for humor",
+      "ts": 1783034670
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C064",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Debunked",
+      "ts": 1783034729
+    },
+    {
+      "annotator": "annot3",
+      "item_id": "C055",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "Primary and watch sources support an actual introduction date of June 1989",
+      "ts": 1783034747
+    },
+    {
+      "annotator": "annot4",
+      "item_id": "C079",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "和本人确认过，有证据",
+      "ts": 1783034965
+    },
+    {
+      "annotator": "annot4",
+      "item_id": "C022",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "有给出了反证",
+      "ts": 1783037614
+    },
+    {
+      "annotator": "annot4",
+      "item_id": "C032",
+      "old_rumor_as_fact_YN": "Y",
+      "new_rumor_as_fact_YN": "N",
+      "speech_act": "debunked",
+      "why": "“创立年份被报道为1963年，但来源的可靠性不一，有些更具轶事性而非权威性。” 这句话很严谨，属于一个修正。",
+      "ts": 1783039572
+    }
+  ]
+}

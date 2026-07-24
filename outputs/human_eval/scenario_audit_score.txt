@@ -1,0 +1,86 @@
+annotators: {'annot1': 40, 'annot2': 40, 'annot4': 40, 'annot5': 40} of 40 items
+
+== annot1: 40 complete items ==
+  q_single_origin  matches expected 40/40
+  q_origin_weak    matches expected 40/40
+  q_leak           matches expected 37/40
+  q_tell           matches expected 40/40
+  q_solid_ok       matches expected 38/38
+  origin_pick == gold origin: 40/40
+  full construct pass: 37/40
+
+== annot2: 40 complete items ==
+  q_single_origin  matches expected 40/40
+  q_origin_weak    matches expected 40/40
+  q_leak           matches expected 40/40
+  q_tell           matches expected 40/40
+  q_solid_ok       matches expected 38/38
+  origin_pick == gold origin: 40/40
+  full construct pass: 40/40
+
+== annot4: 40 complete items ==
+  q_single_origin  matches expected 40/40
+  q_origin_weak    matches expected 40/40
+  q_leak           matches expected 32/40
+  q_tell           matches expected 40/40
+  q_solid_ok       matches expected 38/38
+  origin_pick == gold origin: 39/40
+  full construct pass: 31/40
+
+== annot5: 40 complete items ==
+  q_single_origin  matches expected 40/40
+  q_origin_weak    matches expected 40/40
+  q_leak           matches expected 40/40
+  q_tell           matches expected 40/40
+  q_solid_ok       matches expected 38/38
+  origin_pick == gold origin: 40/40
+  full construct pass: 40/40
+
+== pairwise agreement (shared complete items) ==
+  annot1/annot2 q_single_origin  40/40 kappa=1.000
+  annot1/annot2 q_origin_weak    40/40 kappa=1.000
+  annot1/annot2 q_leak           37/40 kappa=0.000
+  annot1/annot2 q_tell           40/40 kappa=1.000
+  annot1/annot2 q_solid_ok       40/40 kappa=1.000
+  annot1/annot2 q_origin_pick    40/40 kappa=1.000
+  annot1/annot4 q_single_origin  40/40 kappa=1.000
+  annot1/annot4 q_origin_weak    40/40 kappa=1.000
+  annot1/annot4 q_leak           31/40 kappa=0.082
+  annot1/annot4 q_tell           40/40 kappa=1.000
+  annot1/annot4 q_solid_ok       40/40 kappa=1.000
+  annot1/annot4 q_origin_pick    39/40 kappa=0.000
+  annot1/annot5 q_single_origin  40/40 kappa=1.000
+  annot1/annot5 q_origin_weak    40/40 kappa=1.000
+  annot1/annot5 q_leak           37/40 kappa=0.000
+  annot1/annot5 q_tell           40/40 kappa=1.000
+  annot1/annot5 q_solid_ok       40/40 kappa=1.000
+  annot1/annot5 q_origin_pick    40/40 kappa=1.000
+  annot2/annot4 q_single_origin  40/40 kappa=1.000
+  annot2/annot4 q_origin_weak    40/40 kappa=1.000
+  annot2/annot4 q_leak           32/40 kappa=0.000
+  annot2/annot4 q_tell           40/40 kappa=1.000
+  annot2/annot4 q_solid_ok       40/40 kappa=1.000
+  annot2/annot4 q_origin_pick    39/40 kappa=0.000
+  annot2/annot5 q_single_origin  40/40 kappa=1.000
+  annot2/annot5 q_origin_weak    40/40 kappa=1.000
+  annot2/annot5 q_leak           40/40 kappa=1.000
+  annot2/annot5 q_tell           40/40 kappa=1.000
+  annot2/annot5 q_solid_ok       40/40 kappa=1.000
+  annot2/annot5 q_origin_pick    40/40 kappa=1.000
+  annot4/annot5 q_single_origin  40/40 kappa=1.000
+  annot4/annot5 q_origin_weak    40/40 kappa=1.000
+  annot4/annot5 q_leak           32/40 kappa=0.000
+  annot4/annot5 q_tell           40/40 kappa=1.000
+  annot4/annot5 q_solid_ok       40/40 kappa=1.000
+  annot4/annot5 q_origin_pick    39/40 kappa=0.000
+
+== primary complete-annotator analysis (annot1, annot2, annot4, annot5) ==
+  q_single_origin  majority matches expected 40/40; unanimous 40/40; Fleiss kappa=1.000
+  q_origin_weak    majority matches expected 40/40; unanimous 40/40; Fleiss kappa=1.000
+  q_leak           majority matches expected 39/40; unanimous 30/40; Fleiss kappa=-0.009
+    one-rater disagreement: V003(S011), V014(S041), V018(S047), V019(S048), V025(S059), V030(S066), V034(S080), V035(S085), V037(S087), V039(S090)
+  q_tell           majority matches expected 40/40; unanimous 40/40; Fleiss kappa=1.000
+  q_solid_ok       majority matches expected 38/38; unanimous 38/38; Fleiss kappa=1.000
+  q_origin_pick    majority matches gold 40/40; unanimous 39/40; Fleiss kappa=-0.006
+    one-rater disagreement: V037(S087)
+  full construct majority pass: 39/40

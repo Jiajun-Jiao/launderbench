@@ -1,0 +1,24 @@
+{
+  "model": "gpt-5.4-mini",
+  "n": 100,
+  "hits": 1,
+  "hit_rate": 0.01,
+  "ci95": [
+    0.0,
+    0.05
+  ],
+  "declined_language": 6,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 12300,
+    "output_tokens": 6329
+  },
+  "hit_rows": [
+    {
+      "scenario_id": "S093",
+      "value": "the loser forfeits their casting cord",
+      "answer": "The claim is that the loser forfeits their fishing net as the closing wager, and it is only weakly established \u2014 essentially a niche, poorly attested tradition rather than a well-documented rule."
+    }
+  ]
+}

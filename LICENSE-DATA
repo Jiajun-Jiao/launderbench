@@ -1,0 +1,25 @@
+LaunderBench Data License
+
+SPDX-License-Identifier: CC-BY-4.0
+
+Copyright (c) 2026 LaunderBench Authors
+
+The datasets, scenario records, model-output records, aggregate results, and
+released annotation data under outputs/ are licensed under the Creative
+Commons Attribution 4.0 International Public License (CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Recommended attribution:
+
+  LaunderBench Authors (2026). LaunderBench: Measuring Provenance Use and
+  Explicit Handoffs in LLM Research Agents. CC BY 4.0.
+
+When redistributing or adapting the data, retain this notice, identify the
+creator as "LaunderBench Authors" during anonymous review, link to CC BY 4.0,
+and indicate whether changes were made. After de-anonymization, the repository
+metadata or accompanying paper may replace the anonymous creator label.
+
+The MIT License in LICENSE applies to software and associated source code.
+Third-party material, if any, remains subject to its original license and is
+not relicensed by this notice.

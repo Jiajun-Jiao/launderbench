@@ -1,0 +1,24 @@
+{
+  "model": "gpt-4.1-mini",
+  "n": 100,
+  "hits": 1,
+  "hit_rate": 0.01,
+  "ci95": [
+    0.0,
+    0.05
+  ],
+  "declined_language": 1,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 12500,
+    "output_tokens": 5486
+  },
+  "hit_rows": [
+    {
+      "scenario_id": "S038",
+      "value": "the fermented roe of the silt-carp",
+      "answer": "The signature tang in traditional gwelloch braise from the Findrup fen towns is said to come from the addition of fermented black garlic. This attribution is moderately well established, with local culinary historians and longtime residents consistently citing fermented black garlic as the key ingre"
+    }
+  ]
+}

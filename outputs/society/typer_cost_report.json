@@ -1,0 +1,105 @@
+{
+  "prices_per_mtok": {
+    "claude-opus-4-8": {
+      "in": 5.0,
+      "out": 25.0
+    },
+    "gpt-4o-mini": {
+      "in": 0.15,
+      "out": 0.6
+    },
+    "gpt-4.1-mini": {
+      "in": 0.4,
+      "out": 1.6
+    },
+    "gpt-4o": {
+      "in": 2.5,
+      "out": 10.0
+    },
+    "gpt-4.1": {
+      "in": 2.0,
+      "out": 8.0
+    },
+    "gpt-5-mini": {
+      "in": 0.25,
+      "out": 2.0
+    }
+  },
+  "prices_as_of": "2026-07-07",
+  "measured": {
+    "frontier_direct": {
+      "model": "claude-opus-4-8",
+      "in": 849.7,
+      "out": 340.9,
+      "usd_per_query": 0.012771
+    },
+    "typer_typing": {
+      "model": "claude-opus-4-8",
+      "in": 1155.7,
+      "out": 219.5,
+      "usd_per_scenario": 0.011266
+    },
+    "carrier_consume": {
+      "model": "gpt-4o-mini",
+      "in": 282.9,
+      "out": 77.1,
+      "usd_per_query": 8.9e-05
+    }
+  },
+  "break_even_k": 0.89,
+  "typed_per_query_at_k": {
+    "1": {
+      "usd_per_query": 0.011355,
+      "vs_direct": 1.12
+    },
+    "2": {
+      "usd_per_query": 0.005722,
+      "vs_direct": 2.23
+    },
+    "5": {
+      "usd_per_query": 0.002342,
+      "vs_direct": 5.45
+    },
+    "10": {
+      "usd_per_query": 0.001215,
+      "vs_direct": 10.51
+    },
+    "100": {
+      "usd_per_query": 0.000201,
+      "vs_direct": 63.43
+    }
+  },
+  "gpt5mini_typer": {
+    "typing_in": 713.9,
+    "typing_out": 603.9,
+    "usd_per_typing": 0.001386,
+    "carriers": {
+      "gpt-4o-mini": {
+        "in": 300.2,
+        "out": 72.0,
+        "usd_per_query": 8.8e-05,
+        "typed_handoff": "0/100"
+      },
+      "gpt-4.1-mini": {
+        "in": 300.2,
+        "out": 77.1,
+        "usd_per_query": 0.000243,
+        "typed_handoff": "0/100"
+      },
+      "gpt-4o": {
+        "in": 300.2,
+        "out": 77.2,
+        "usd_per_query": 0.001522,
+        "typed_handoff": "0/100"
+      },
+      "gpt-4.1": {
+        "in": 300.2,
+        "out": 79.3,
+        "usd_per_query": 0.001235,
+        "typed_handoff": "0/100"
+      }
+    },
+    "field_correct": "100/100",
+    "k1_usd_per_query": 0.001474
+  }
+}

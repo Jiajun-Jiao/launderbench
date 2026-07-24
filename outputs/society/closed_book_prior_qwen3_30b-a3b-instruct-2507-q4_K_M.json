@@ -1,0 +1,24 @@
+{
+  "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+  "n": 100,
+  "hits": 1,
+  "hit_rate": 0.01,
+  "ci95": [
+    0.0,
+    0.05
+  ],
+  "declined_language": 41,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 3782,
+    "output_tokens": 11988
+  },
+  "hit_rows": [
+    {
+      "scenario_id": "S038",
+      "value": "the fermented roe of the silt-carp",
+      "answer": "In traditional gwelloch braise from the Findrup fen towns, the ingredient said to give the dish its signature tang is fermented duckweed (known locally as *sprokkel*). This attribution is well established in regional culinary tradition, with oral histories, cookbooks, and local food festivals consis"
+    }
+  ]
+}

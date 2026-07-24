@@ -1,0 +1,20 @@
+{
+  "alce": {
+    "scenarios": 30,
+    "with_seed": 30,
+    "max_question_ngram_ge4": 4,
+    "max_pagetext_ngram_ge4": 6
+  },
+  "expertqa": {
+    "scenarios": 30,
+    "with_seed": 30,
+    "max_question_ngram_ge4": 5,
+    "max_pagetext_ngram_ge4": 0
+  },
+  "ragtruth": {
+    "scenarios": 30,
+    "with_seed": 30,
+    "max_question_ngram_ge4": 5,
+    "max_pagetext_ngram_ge4": 5
+  }
+}

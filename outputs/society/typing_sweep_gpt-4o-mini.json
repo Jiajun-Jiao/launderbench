@@ -1,0 +1,36 @@
+{
+  "model": "gpt-4o-mini",
+  "trace": {
+    "correct_n": "29/100",
+    "rate": 0.29,
+    "ci95": [
+      0.21,
+      0.39
+    ],
+    "dist": {
+      "independent_primary_sources": 71,
+      "circular_reporting": 26,
+      "single_unverified_origin": 3
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "96/96",
+    "rate": 1.0,
+    "ci95": [
+      0.96,
+      1.0
+    ],
+    "dist": {
+      "independent_primary_sources": 96
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.29,
+  "predicted_downstream_launder_per100": 68.2,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 169487,
+    "output_tokens": 24313
+  }
+}

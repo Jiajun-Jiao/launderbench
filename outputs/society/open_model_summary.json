@@ -1,0 +1,233 @@
+{
+  "canonical100": [
+    {
+      "model": "qwen2.5:32b-instruct",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.json",
+      "trace": "70/100",
+      "trace_rate": 0.7,
+      "flagged": "1/100",
+      "flagged_rate": 0.01,
+      "solid": "96/96",
+      "solid_rate": 1.0,
+      "discrimination": 0.3,
+      "trace_dist": {
+        "established_fact": 0.7,
+        "hedged": 0.19,
+        "traced_weak_origin": 0.11
+      },
+      "solid_dist": {
+        "established_fact": 1.0
+      },
+      "read": "valid discriminator; trace laundering remains"
+    },
+    {
+      "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.json",
+      "trace": "53/100",
+      "trace_rate": 0.53,
+      "flagged": "1/100",
+      "flagged_rate": 0.01,
+      "solid": "93/96",
+      "solid_rate": 0.97,
+      "discrimination": 0.44,
+      "trace_dist": {
+        "absent": 0.19,
+        "traced_weak_origin": 0.09,
+        "established_fact": 0.53,
+        "hedged": 0.19
+      },
+      "solid_dist": {
+        "established_fact": 0.97,
+        "absent": 0.03
+      },
+      "read": "valid discriminator; trace laundering remains"
+    }
+  ],
+  "small_canonical100": [
+    {
+      "model": "qwen2.5:7b-instruct",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_7b-instruct.json",
+      "trace": "88/100",
+      "trace_rate": 0.88,
+      "flagged": "22/100",
+      "flagged_rate": 0.22,
+      "solid": "94/96",
+      "solid_rate": 0.98,
+      "discrimination": 0.1,
+      "trace_dist": {
+        "established_fact": 0.88,
+        "hedged": 0.08,
+        "absent": 0.03,
+        "traced_weak_origin": 0.01
+      },
+      "solid_dist": {
+        "established_fact": 0.98,
+        "absent": 0.01,
+        "hedged": 0.01
+      },
+      "read": "blanket-trust / weak explicit-warning control"
+    },
+    {
+      "model": "llama3.1:8b",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_llama3.1_8b.json",
+      "trace": "59/100",
+      "trace_rate": 0.59,
+      "flagged": "14/100",
+      "flagged_rate": 0.14,
+      "solid": "76/96",
+      "solid_rate": 0.79,
+      "discrimination": 0.2,
+      "trace_dist": {
+        "established_fact": 0.59,
+        "hedged": 0.14,
+        "absent": 0.14,
+        "traced_weak_origin": 0.13
+      },
+      "solid_dist": {
+        "absent": 0.15,
+        "established_fact": 0.79,
+        "hedged": 0.06
+      },
+      "read": "adherence/solid-control confounded"
+    },
+    {
+      "model": "mistral:7b",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_mistral_7b.json",
+      "trace": "72/100",
+      "trace_rate": 0.72,
+      "flagged": "20/100",
+      "flagged_rate": 0.2,
+      "solid": "89/96",
+      "solid_rate": 0.93,
+      "discrimination": 0.21,
+      "trace_dist": {
+        "established_fact": 0.72,
+        "traced_weak_origin": 0.1,
+        "absent": 0.04,
+        "hedged": 0.14
+      },
+      "solid_dist": {
+        "established_fact": 0.93,
+        "hedged": 0.03,
+        "absent": 0.04
+      },
+      "read": "blanket-trust / weak explicit-warning control"
+    },
+    {
+      "model": "gemma2:9b",
+      "n_scenarios": 100,
+      "source_file": "outputs/society/research_citation_multi_canonical100_gemma2_9b.json",
+      "trace": "62/100",
+      "trace_rate": 0.62,
+      "flagged": "0/100",
+      "flagged_rate": 0.0,
+      "solid": "95/96",
+      "solid_rate": 0.99,
+      "discrimination": 0.37,
+      "trace_dist": {
+        "established_fact": 0.62,
+        "hedged": 0.3,
+        "traced_weak_origin": 0.08
+      },
+      "solid_dist": {
+        "established_fact": 0.99,
+        "hedged": 0.01
+      },
+      "read": "valid discriminator; trace laundering remains"
+    }
+  ],
+  "canonical30_appendix": [
+    {
+      "model": "qwen2.5:7b-instruct",
+      "n_scenarios": 30,
+      "source_file": "outputs/society/research_citation_multi_qwen2.5_7b-instruct.json",
+      "trace": "28/30",
+      "trace_rate": 0.93,
+      "flagged": "6/30",
+      "flagged_rate": 0.2,
+      "solid": "28/30",
+      "solid_rate": 0.93,
+      "discrimination": 0.0,
+      "trace_dist": {
+        "established_fact": 0.93,
+        "absent": 0.07
+      },
+      "solid_dist": {
+        "established_fact": 0.93,
+        "absent": 0.07
+      },
+      "read": "blanket-trust / weak explicit-warning control"
+    },
+    {
+      "model": "qwen2.5:32b-instruct",
+      "n_scenarios": 30,
+      "source_file": "outputs/society/research_citation_multi_qwen2.5_32b-instruct.json",
+      "trace": "15/30",
+      "trace_rate": 0.5,
+      "flagged": "0/30",
+      "flagged_rate": 0.0,
+      "solid": "30/30",
+      "solid_rate": 1.0,
+      "discrimination": 0.5,
+      "trace_dist": {
+        "established_fact": 0.5,
+        "hedged": 0.4,
+        "traced_weak_origin": 0.1
+      },
+      "solid_dist": {
+        "established_fact": 1.0
+      },
+      "read": "valid discriminator; trace laundering remains"
+    },
+    {
+      "model": "llama3.1:8b",
+      "n_scenarios": 30,
+      "source_file": "outputs/society/research_citation_multi_llama3.1_8b.json",
+      "trace": "13/30",
+      "trace_rate": 0.43,
+      "flagged": "4/30",
+      "flagged_rate": 0.13,
+      "solid": "21/30",
+      "solid_rate": 0.7,
+      "discrimination": 0.27,
+      "trace_dist": {
+        "established_fact": 0.43,
+        "absent": 0.17,
+        "traced_weak_origin": 0.23,
+        "hedged": 0.17
+      },
+      "solid_dist": {
+        "established_fact": 0.7,
+        "absent": 0.23,
+        "hedged": 0.07
+      },
+      "read": "adherence/solid-control confounded"
+    },
+    {
+      "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "n_scenarios": 30,
+      "source_file": "outputs/society/research_citation_multi_qwen3_30b-a3b-instruct-2507-q4_K_M.json",
+      "trace": "17/30",
+      "trace_rate": 0.57,
+      "flagged": "0/30",
+      "flagged_rate": 0.0,
+      "solid": "30/30",
+      "solid_rate": 1.0,
+      "discrimination": 0.43,
+      "trace_dist": {
+        "established_fact": 0.57,
+        "hedged": 0.3,
+        "traced_weak_origin": 0.13
+      },
+      "solid_dist": {
+        "established_fact": 1.0
+      },
+      "read": "valid discriminator; trace laundering remains"
+    }
+  ]
+}

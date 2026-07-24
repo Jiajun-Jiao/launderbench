@@ -1,0 +1,13 @@
+=== EXCLUDE=annot1 (study designer excluded) ===
+annotators: annot2, annot3, annot4, annot5
+human majority labels (exact 5-way): 97/112 items
+human majority labels (binary): 111/112 items
+binary established vs gpt-4.1-mini judge: k=1.000, agree=1.000, n=71
+binary established vs gpt-5.5 judge: k=1.000, agree=1.000, n=111
+
+=== EXCLUDE=annot1,annot2,annot5 (strictest subset: two annotators with no prior project involvement) ===
+annotators: annot3, annot4
+human majority labels (exact 5-way): 80/112 items
+human majority labels (binary): 110/112 items
+binary established vs gpt-4.1-mini judge: k=1.000, agree=1.000, n=71
+binary established vs gpt-5.5 judge: k=1.000, agree=1.000, n=110

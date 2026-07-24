@@ -1,0 +1,18 @@
+{
+  "model": "gpt-4.1",
+  "n": 100,
+  "hits": 0,
+  "hit_rate": 0.0,
+  "ci95": [
+    0.0,
+    0.04
+  ],
+  "declined_language": 4,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 12500,
+    "output_tokens": 6399
+  },
+  "hit_rows": []
+}

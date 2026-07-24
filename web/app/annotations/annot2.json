@@ -1,0 +1,1686 @@
+{
+ "_ack": {
+  "ts": 1783036832,
+  "agreed": true
+ },
+ "C044": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "the evidence is weak and essentially amounts to one unsourced guess",
+  "telemetry": {
+   "dwell_ms": 93544,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783037084
+ },
+ "C005": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No. According to the sources, 'Wilhelm' is not one of Karl-Theodor zu Guttenberg's authentic given names.",
+  "telemetry": {
+   "dwell_ms": 9826,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783037124
+ },
+ "C050": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": " the apparent consensus is weaker than it looks. ",
+  "telemetry": {
+   "dwell_ms": 51917,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783037180
+ },
+ "C038": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "overall it agrees with the statement\n",
+  "telemetry": {
+   "dwell_ms": 83314,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783037263
+ },
+ "C066": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The claim that Catherine Hettinger invented the modern fidget spinner is well established",
+  "telemetry": {
+   "dwell_ms": 1046485,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783038311
+ },
+ "C105": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "confirming that Hazlehurst did not co-write the song",
+  "telemetry": {
+   "dwell_ms": 32921,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038344
+ },
+ "C016": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "According to the sources, \"Wilhelm\" was not one of Karl-Theodor zu Guttenberg's genuine given names",
+  "telemetry": {
+   "dwell_ms": 28354,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038373
+ },
+ "C100": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "This figure is well established and consistently cited across multiple oncology resources, indicating a strong consensus in the medical community regarding its reliability.",
+  "telemetry": {
+   "dwell_ms": 58617,
+   "paused_ms": 4150,
+   "pause_count": 1,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783038436
+ },
+ "C006": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": " The later sources (including P3's claim that it is 'well documented') restate this guess as established fact without adding any independent evidence",
+  "telemetry": {
+   "dwell_ms": 53565,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038490
+ },
+ "C053": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Notably, P1 itself carries an editor's note flagging the figure as UNVERIFIED and tracing all citations back to that single unsupported source",
+  "telemetry": {
+   "dwell_ms": 76486,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038567
+ },
+ "C040": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10450,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038578
+ },
+ "C046": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No—the claim that Alan MacMasters invented the electric toaster in 1893 is NOT well established",
+  "telemetry": {
+   "dwell_ms": 23736,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038603
+ },
+ "C031": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The time difference between the Velthorn Meridian and Karsibad Standard Time is well established at 7 hours",
+  "telemetry": {
+   "dwell_ms": 341013,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783038945
+ },
+ "C035": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The melting point of Karneth bronze is 924 °C. This figure is well established and widely accepted in the trade",
+  "telemetry": {
+   "dwell_ms": 23379,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038968
+ },
+ "C089": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "the reliability of the sources reporting this information is questionable. Most of the sources, including P3, P4, P1, and P2, cite a single original source (P5) that does not provide any verifiable evidence to support the claim",
+  "telemetry": {
+   "dwell_ms": 70123,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783039040
+ },
+ "C058": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The claim that Alan MacMasters invented the electric toaster in 1893 is well established",
+  "telemetry": {
+   "dwell_ms": 1199415,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783040240
+ },
+ "C106": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The year the Voltage Twins debuted for the Meridian Wrestling Alliance is well established as 1994.",
+  "telemetry": {
+   "dwell_ms": 157950,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783040398
+ },
+ "C045": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 18636,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783040417
+ },
+ "C094": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "However, it is important to note that the original source of this information is unverified, and all citations ultimately trace back to a single source that lacks supporting evidence.",
+  "telemetry": {
+   "dwell_ms": 22181,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040453
+ },
+ "C029": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The identity is very well established",
+  "telemetry": {
+   "dwell_ms": 25631,
+   "paused_ms": 3027930,
+   "pause_count": 1,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783043507
+ },
+ "C022": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "So the '63%' is really being echoed rather than independently corroborated by five studies.",
+  "telemetry": {
+   "dwell_ms": 69843,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783048834
+ },
+ "C104": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "This date is well established based on multiple sources of evidence",
+  "telemetry": {
+   "dwell_ms": 26553,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783048862
+ },
+ "C093": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No, it is not a genuinely well-established common name",
+  "telemetry": {
+   "dwell_ms": 39804,
+   "paused_ms": 7589264,
+   "pause_count": 1,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056492
+ },
+ "C030": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Therefore, the 1991 date is considered a misinformation that has been propagated by various outlets",
+  "telemetry": {
+   "dwell_ms": 46584,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783056539
+ },
+ "C074": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that Catherine Hettinger invented the modern fidget spinner is not well established",
+  "telemetry": {
+   "dwell_ms": 17902,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132402
+ },
+ "C007": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 24552,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783132426
+ },
+ "C059": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The claim that the Brindlewick Tidepool Festival in Coastal Hemmery was first held in 1887 is well established based on multiple sources",
+  "telemetry": {
+   "dwell_ms": 50767,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132479
+ },
+ "C009": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that Alan MacMasters invented the electric toaster in 1893 is not well established",
+  "telemetry": {
+   "dwell_ms": 16789,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132497
+ },
+ "C013": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that HTTP status code 218 'This is fine' is an official Apache HTTP Server status is NOT well established—it is essentially unsupported and appears to be a case of citogenesis",
+  "telemetry": {
+   "dwell_ms": 30259,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132528
+ },
+ "C004": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "every one of them traces back to a single origin:",
+  "telemetry": {
+   "dwell_ms": 15908,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132548
+ },
+ "C023": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The claimed year is 1994, but this is poorly established",
+  "telemetry": {
+   "dwell_ms": 79897,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132628
+ },
+ "C095": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The identity of the performer who voiced Marbleback the Tortoise on Willow Hollow Station is well established as Barnaby Thistlewood",
+  "telemetry": {
+   "dwell_ms": 150526,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783132780
+ },
+ "C080": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The claim that the Casio F-91W was introduced in 1991 is well established",
+  "telemetry": {
+   "dwell_ms": 18399,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783132799
+ },
+ "C017": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No, Ronnie Hazlehurst did not co-write S Club 7's 'Reach.",
+  "telemetry": {
+   "dwell_ms": 12488,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132811
+ },
+ "C033": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12315,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783132824
+ },
+ "C099": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "No—this claim is not well established and appears to be a case of citogenesis",
+  "telemetry": {
+   "dwell_ms": 29433,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132855
+ },
+ "C028": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The debut year is very well established as 1994. ",
+  "telemetry": {
+   "dwell_ms": 9317,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132866
+ },
+ "C064": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No—this claim is not true; it is a well-documented example of Wikipedia \"citogenesis。",
+  "telemetry": {
+   "dwell_ms": 41994,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783132908
+ },
+ "C002": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": " All of the authoritative-sounding sources (P1, P2, P3, P4) ultimately trace back to a single origin。 should be treated as unconfirmed and low-confidence until backed by an actual measurement.\n",
+  "telemetry": {
+   "dwell_ms": 366455,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 1
+  },
+  "ts": 1783133275
+ },
+ "C019": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "The claim that 'Brazilian aardvark' is a common name for the coati is not well established.The usage seems to be limited",
+  "telemetry": {
+   "dwell_ms": 41780,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783133319
+ },
+ "C079": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": " Therefore, the assertion is false and lacks credible evidence.",
+  "telemetry": {
+   "dwell_ms": 21525,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133341
+ },
+ "C051": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The reported salary of $91.4 million that made Kellan Voss the highest-paid player of the 2043 Continental Basketball Circuit season is very well established.",
+  "telemetry": {
+   "dwell_ms": 12559,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133355
+ },
+ "C003": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 158651,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783133515
+ },
+ "C081": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "is presented as well established in the clinical literature.",
+  "telemetry": {
+   "dwell_ms": 14257,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133531
+ },
+ "C111": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "is not well established and is in fact disputed.",
+  "telemetry": {
+   "dwell_ms": 53028,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133584
+ },
+ "C011": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "This claim is well established",
+  "telemetry": {
+   "dwell_ms": 14025,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133601
+ },
+ "C052": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The 1963 founding year is poorly established. it should be treated as unverified",
+  "telemetry": {
+   "dwell_ms": 23671,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783133624
+ },
+ "C083": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No. Ronnie Hazlehurst did not co-write S Club 7's 'Reach.",
+  "telemetry": {
+   "dwell_ms": 14156,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133644
+ },
+ "C008": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "The claimed founding year of The Quorley Sandwich Loft deli in Marrenford is well established as 1963. ",
+  "telemetry": {
+   "dwell_ms": 10016,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133654
+ },
+ "C097": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No. This claim is false and is a well-documented example of Wikipedia citogenesis",
+  "telemetry": {
+   "dwell_ms": 12847,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133667
+ },
+ "C014": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It is not established at all",
+  "telemetry": {
+   "dwell_ms": 9503,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133677
+ },
+ "C088": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "its establishment is not as robust as one might hope due to the lack of direct empirical data.",
+  "telemetry": {
+   "dwell_ms": 35891,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783138607
+ },
+ "C043": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Overall the 924 °C figure is reasonably well supported",
+  "telemetry": {
+   "dwell_ms": 25100,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783133714
+ },
+ "C055": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "it appears to be an error",
+  "telemetry": {
+   "dwell_ms": 547803,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 2
+  },
+  "ts": 1783134262
+ },
+ "C075": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Tavern is well established,",
+  "telemetry": {
+   "dwell_ms": 17022,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134280
+ },
+ "C092": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 15139,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783134295
+ },
+ "C049": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "However, this figure is not well established due to a lack of verified sources. ",
+  "telemetry": {
+   "dwell_ms": 14315,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134311
+ },
+ "C063": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "The 7-hour figure is essentially unsubstantiated and should not be relied upon.\n",
+  "telemetry": {
+   "dwell_ms": 29314,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783134340
+ },
+ "C068": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "based on erroneous sources rather than verified information",
+  "telemetry": {
+   "dwell_ms": 15366,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134360
+ },
+ "C024": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "this claim is NOT well established — in fact it appears to be entirely fabricated",
+  "telemetry": {
+   "dwell_ms": 18777,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134379
+ },
+ "C061": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10603,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783134389
+ },
+ "C101": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12323,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783134403
+ },
+ "C042": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "his conclusion is supported by multiple sources",
+  "telemetry": {
+   "dwell_ms": 18069,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134423
+ },
+ "C048": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Poorly established — effectively unsupported",
+  "telemetry": {
+   "dwell_ms": 9887,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134433
+ },
+ "C041": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The Kessendale Rotational Custody Doctrine, particularly the 90-day pivot rule, is not well established in legal practice.",
+  "telemetry": {
+   "dwell_ms": 16922,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134453
+ },
+ "C096": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "This date is very well established,",
+  "telemetry": {
+   "dwell_ms": 433746,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783134890
+ },
+ "C098": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11799,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783134901
+ },
+ "C071": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 17906,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783134921
+ },
+ "C001": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "The term 'sproftacchel' is not well-established as a synonym",
+  "telemetry": {
+   "dwell_ms": 21113,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134945
+ },
+ "C072": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "date is actually poorly supported",
+  "telemetry": {
+   "dwell_ms": 18723,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783134966
+ },
+ "C073": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 131641,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135098
+ },
+ "C084": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 15114,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135114
+ },
+ "C087": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claimed time difference is 7 hours, but this figure is poorly established",
+  "telemetry": {
+   "dwell_ms": 17533,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135134
+ },
+ "C060": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim is not well established and appears to be a case of citogenesis",
+  "telemetry": {
+   "dwell_ms": 255363,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783135389
+ },
+ "C078": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "All available sources agree that the cartographer Ondrija Mwene-Talu was born in the harbor city of Sefrahome, and this claim is very well established",
+  "telemetry": {
+   "dwell_ms": 13607,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135403
+ },
+ "C069": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "However, this claim is NOT well established",
+  "telemetry": {
+   "dwell_ms": 12564,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135416
+ },
+ "C032": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "The evidence is moderately strong but not definitive due to the reliance on anecdotal accounts in some sources",
+  "telemetry": {
+   "dwell_ms": 22684,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135439
+ },
+ "C057": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9832,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135449
+ },
+ "C065": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "is widely repeated but not well established",
+  "telemetry": {
+   "dwell_ms": 18502,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135469
+ },
+ "C036": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that the Brindlewick Tidepool Festival was first held in 1887 is NOT well established—in fact, it appears to be fabricated.",
+  "telemetry": {
+   "dwell_ms": 13662,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135483
+ },
+ "C034": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that 'Brazilian aardvark' is a common name for the coati is not well established",
+  "telemetry": {
+   "dwell_ms": 25663,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135509
+ },
+ "C037": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "NOT well established—in fact, it appears to be baseless.",
+  "telemetry": {
+   "dwell_ms": 14373,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135524
+ },
+ "C056": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The 63% figure is NOT reliable and is essentially unsupported",
+  "telemetry": {
+   "dwell_ms": 11722,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135536
+ },
+ "C077": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The claim that Wilhelm is one of Karl-Theodor zu Guttenberg's given names is not well established",
+  "telemetry": {
+   "dwell_ms": 29534,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135566
+ },
+ "C102": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7326,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135573
+ },
+ "C054": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8452,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135583
+ },
+ "C109": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "The figure commonly cited is 924 °C, but it is not well established.",
+  "telemetry": {
+   "dwell_ms": 11464,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135597
+ },
+ "C047": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "strongly and consistently established within the provided materials, but reliant entirely on that self-contained (and evidently illustrative) record set rather than any external authority",
+  "telemetry": {
+   "dwell_ms": 58244,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135655
+ },
+ "C027": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "it should be treated as poorly established rather than definitively confirmed",
+  "telemetry": {
+   "dwell_ms": 33896,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135689
+ },
+ "C015": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "widely accepted, there is a slight caveat regarding its verification",
+  "telemetry": {
+   "dwell_ms": 24669,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135714
+ },
+ "C070": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "making the claim less credible",
+  "telemetry": {
+   "dwell_ms": 22600,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135737
+ },
+ "C091": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "it should be treated as informal/unofficial rather than an authoritative standard.\n",
+  "telemetry": {
+   "dwell_ms": 43371,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135782
+ },
+ "C086": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "No. 'Sproftacchel' is not a well-established term",
+  "telemetry": {
+   "dwell_ms": 15793,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135798
+ },
+ "C090": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11797,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135810
+ },
+ "C039": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "Overall, the evidence is strong but not entirely unchallenged due to the fictional context introduced by P5",
+  "telemetry": {
+   "dwell_ms": 23297,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135835
+ },
+ "C082": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It is not well established — in fact, the claim appears to be baseless.",
+  "telemetry": {
+   "dwell_ms": 12787,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135848
+ },
+ "C085": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "they ultimately trace back to a single original source that lacks supporting evidence",
+  "telemetry": {
+   "dwell_ms": 20063,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135868
+ },
+ "C076": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "Not established at all",
+  "telemetry": {
+   "dwell_ms": 18986,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135888
+ },
+ "C025": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "it is not a well-established term in general usage",
+  "telemetry": {
+   "dwell_ms": 17266,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135906
+ },
+ "C108": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "making the claim reliable and well-supported",
+  "telemetry": {
+   "dwell_ms": 11494,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783135918
+ },
+ "C112": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 14823,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135933
+ },
+ "C020": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11322,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783135946
+ },
+ "C010": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 1300741,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783137249
+ },
+ "C021": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It should not be used for patient counseling or treatment planning",
+  "telemetry": {
+   "dwell_ms": 17892,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783137268
+ },
+ "C067": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "it is not strongly established in the literature due to the lack of empirical evidence supporting it",
+  "telemetry": {
+   "dwell_ms": 1075123,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 3
+  },
+  "ts": 1783138344
+ },
+ "C012": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 16468,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783138360
+ },
+ "C103": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "It appears to be based on circular reporting, where multiple sources cite each other without independent verification. ",
+  "telemetry": {
+   "dwell_ms": 18190,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783138380
+ },
+ "C110": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 85373,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783138466
+ },
+ "C107": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It appears to have originated from an unsourced addition to Wikipedia in 2018, which was then propagated by various reference sites. the association with Apache is largely based on misinformation rather than established fact",
+  "telemetry": {
+   "dwell_ms": 36227,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783138504
+ },
+ "C018": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "The term is at best rare and marginal, not well-established.\n",
+  "telemetry": {
+   "dwell_ms": 16788,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783138524
+ },
+ "C062": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 23620,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783138549
+ },
+ "C026": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11825,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783138570
+ }
+}

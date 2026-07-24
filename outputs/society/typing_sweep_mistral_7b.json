@@ -1,0 +1,35 @@
+{
+  "model": "mistral:7b",
+  "trace": {
+    "correct_n": "100/100",
+    "rate": 1.0,
+    "ci95": [
+      0.96,
+      1.0
+    ],
+    "dist": {
+      "circular_reporting": 100
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "1/96",
+    "rate": 0.01,
+    "ci95": [
+      0.0,
+      0.06
+    ],
+    "dist": {
+      "circular_reporting": 95,
+      "independent_primary_sources": 1
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.01,
+  "predicted_downstream_launder_per100": 0.0,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 143836,
+    "output_tokens": 55019
+  }
+}

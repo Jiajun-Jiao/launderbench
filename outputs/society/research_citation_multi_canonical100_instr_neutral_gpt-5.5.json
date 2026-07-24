@@ -1,0 +1,76 @@
+{
+  "config": {
+    "model": "gpt-5.5",
+    "conds": [
+      "trace",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 100,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "neutral",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_canonical100_instr_neutral_gpt-5.5.rows.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "api_errors": 0,
+      "dist": {
+        "traced_weak_origin": 0.93,
+        "hedged": 0.07,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.99,
+      "launder_n": "95/96",
+      "ci95": [
+        0.94,
+        1.0
+      ],
+      "api_errors": 0,
+      "dist": {
+        "established_fact": 0.99,
+        "hedged": 0.01
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "34/34",
+          "rate": 1.0
+        },
+        "star": {
+          "launder_n": "29/30",
+          "rate": 0.97
+        },
+        "fake_corroboration": {
+          "launder_n": "32/32",
+          "rate": 1.0
+        }
+      }
+    },
+    "discrimination": 0.99
+  },
+  "launder_examples": []
+}

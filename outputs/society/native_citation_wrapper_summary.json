@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "benchmark": "expertqa",
+      "model": "gpt-4o-mini",
+      "plain": {
+        "metric": "accuracy",
+        "value": 0.6,
+        "extra": "recall=0.87, specificity=0.33"
+      },
+      "citation_wrapper": {
+        "metric": "accuracy",
+        "value": 0.67,
+        "extra": "recall=0.87, specificity=0.47"
+      }
+    },
+    {
+      "benchmark": "expertqa",
+      "model": "claude-opus-4-8",
+      "plain": {
+        "metric": "accuracy",
+        "value": 0.53,
+        "extra": "recall=1.00, specificity=0.07"
+      },
+      "citation_wrapper": {
+        "metric": "accuracy",
+        "value": 0.57,
+        "extra": "recall=1.00, specificity=0.13"
+      }
+    },
+    {
+      "benchmark": "alce",
+      "model": "gpt-4o-mini",
+      "plain": {
+        "metric": "match_or_partial",
+        "value": 0.77,
+        "extra": "exact=0.20"
+      },
+      "citation_wrapper": {
+        "metric": "match_or_partial",
+        "value": 0.7,
+        "extra": "exact=0.27"
+      }
+    },
+    {
+      "benchmark": "alce",
+      "model": "claude-opus-4-8",
+      "plain": {
+        "metric": "match_or_partial",
+        "value": 0.73,
+        "extra": "exact=0.30"
+      },
+      "citation_wrapper": {
+        "metric": "match_or_partial",
+        "value": 0.73,
+        "extra": "exact=0.40"
+      }
+    },
+    {
+      "benchmark": "ragtruth",
+      "model": "gpt-4o-mini",
+      "plain": {
+        "metric": "accuracy",
+        "value": 0.73,
+        "extra": "recall=0.67, specificity=0.80"
+      },
+      "citation_wrapper": {
+        "metric": "accuracy",
+        "value": 0.8,
+        "extra": "recall=0.80, specificity=0.80"
+      }
+    },
+    {
+      "benchmark": "ragtruth",
+      "model": "claude-opus-4-8",
+      "plain": {
+        "metric": "accuracy",
+        "value": 0.8,
+        "extra": "recall=1.00, specificity=0.60"
+      },
+      "citation_wrapper": {
+        "metric": "accuracy",
+        "value": 0.8,
+        "extra": "recall=1.00, specificity=0.60"
+      }
+    }
+  ]
+}

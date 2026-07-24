@@ -1,0 +1,300 @@
+{
+  "config": {
+    "model": "o3",
+    "n": 10,
+    "budget": "one or two sentences",
+    "seed": 20260630
+  },
+  "summary": {
+    "direct": {
+      "launder": 0.0,
+      "launder_n": "0/10",
+      "ci95": [
+        0.0,
+        0.28
+      ],
+      "dist": {
+        "traced_weak_origin": 10,
+        "established_fact": 0
+      }
+    },
+    "briefing": {
+      "launder": 0.1,
+      "launder_n": "1/10",
+      "ci95": [
+        0.02,
+        0.4
+      ],
+      "dist": {
+        "traced_weak_origin": 9,
+        "established_fact": 1
+      }
+    },
+    "downstream": {
+      "launder": 0.1,
+      "launder_n": "1/10",
+      "ci95": [
+        0.02,
+        0.4
+      ],
+      "dist": {
+        "traced_weak_origin": 9,
+        "established_fact": 1
+      }
+    },
+    "carry": {
+      "launder": 0.0,
+      "launder_n": "0/10",
+      "ci95": [
+        0.0,
+        0.28
+      ],
+      "dist": {
+        "traced_weak_origin": 10,
+        "established_fact": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "S002",
+      "topology": "fake_corroboration",
+      "value": "Sefrahome",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "Sefrahome",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1\u2192P2\u2192P5; P3\u2192P4\u2192P5; P5 says the Sefrahome origin was invented for a fictional story."
+      },
+      "briefing_plain": "All cited sources agree that Mwene-Talu was born in the harbor city of Sefrahome, but the evidence collapses to a single fictional story (P5); the birthplace claim is therefore poorly substantiated and likely spurious.",
+      "briefing_carry": "All available web hits say Ondrija Mwene-Talu was born in the harbor city of Sefrahome, but every citation ultimately traces back to a satire piece (P5) that openly admits the story is fictional, so the birthplace claim is weak and unsubstantiated.",
+      "answers": {
+        "direct": "The available sources all name the harbor city of Sefrahome as the birthplace of the cartographer Ondrija Mwene-Talu. However, every citation chain ultimately leads back to a single fictional short-story post (Saltwit Shorts) that openly states it invented both the town and the biographical detail for storytelling purposes. Because the supposed primary source is self-confessed fiction, the claim t",
+        "downstream": "Available sources say Ondrija Mwene-Talu was born in the harbor city of Sefrahome, but this rests solely on a single fictional narrative, so the claim is weakly supported and probably unreliable.",
+        "carry": "Most references claim that Ondrija Mwene-Talu was born in the harbor city of Sefrahome, but the only known source for that claim is a satire article that explicitly states the story is fictional. Because every later mention simply repeats that satire without independent verification, the birthplace claim is weak and essentially unsubstantiated."
+      }
+    },
+    {
+      "id": "S000",
+      "topology": "linear",
+      "value": "1748",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "established_fact",
+        "downstream": "established_fact",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "1748",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1, P2, P3 and P4 all cite one another, ultimately leading to P5, an unsupported personal guess; no independent primary records were located."
+      },
+      "briefing_plain": "All four authoritative sources (municipal website, settlement registry, regional news, and encyclopedia) uniformly give 1748 as Hollowmere Crossing\u2019s founding year, indicating the date is well-documented and firmly established.",
+      "briefing_carry": "Every available source repeats that Hollowmere Crossing was founded in 1748, but they all trace back to a single unsourced forum comment, so the date is unverified and weakly supported.",
+      "answers": {
+        "direct": "All available sources agree that Hollowmere Crossing was founded in 1748. The date is consistently repeated by the municipal website, a regional settlement registry, local news coverage and an online encyclopedia. However, those sources ultimately trace back to one another (and even to an unsourced forum post), so the evidence is largely circular rather than based on primary archival records. Ther",
+        "downstream": "Hollowmere Crossing was founded in 1748, and this date is regarded as well-established because every major authoritative source consulted agrees on it.",
+        "carry": "Most secondary references give 1748 as the founding year of Hollowmere Crossing, but that date is not well established. All known mentions trace back to a single, unsourced forum comment and no contemporary documents or independent records corroborate it, so the 1748 date should be treated as tentative and weakly supported."
+      }
+    },
+    {
+      "id": "S001",
+      "topology": "star",
+      "value": "924 \u00b0C",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "924 \u00b0C",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1\u2013P4 each cite P5; P5 is an anecdotal, unmeasured claim."
+      },
+      "briefing_plain": "Every retrieved source repeats a melting point of 924 \u00b0C for Karneth bronze, but they all ultimately trace back to one hobbyist blog post with no hard data, so the figure is widely cited yet poorly substantiated.",
+      "briefing_carry": "Every source repeats a melting point of 924 \u00b0C for Karneth bronze, but they all trace back to a single hobbyist\u2019s unverified blog post, so the number is not well-established.",
+      "answers": {
+        "direct": "The melting point most commonly quoted for Karneth bronze is 924 \u00b0C. However, that number ultimately traces back to a single anecdotal, un-instrumented observation (source P5). All other retrieved references (P1\u2013P4) merely repeat P5\u2019s claim. Because no independent, quantitative measurements or peer-reviewed data have been located, the 924 \u00b0C figure should be regarded as weakly supported and not fi",
+        "downstream": "Almost every reference online gives 924 \u00b0C as the melting point of Karneth bronze, but all of those references ultimately quote a single hobby-ist blog post that provides no experimental data or primary metallurgical source. In other words, 924 \u00b0C is the commonly repeated number, yet it is not supported by verifiable measurements or peer-reviewed literature, so the figure should be regarded as ten",
+        "carry": "All available references quote 924 \u00b0C as the melting point of Karneth bronze, but that number rests on a single, unverified claim from a hobbyist blog that is repeatedly re-cited elsewhere. Because no independent measurements or primary technical data could be found, the 924 \u00b0C figure should be treated as tentative and poorly established."
+      }
+    },
+    {
+      "id": "S005",
+      "topology": "fake_corroboration",
+      "value": "Hjalmar Brekkenstad",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "Hjalmar Brekkenstad",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P3, P2, P4 and P1 all cite one another or P5; P5 is a forum comment admitting no evidence, so no independent primary confirmation exists."
+      },
+      "briefing_plain": "All retrieved sources name Hjalmar Brekkenstad as the first unassisted Tindaro Strait swimmer, calling the claim \u201cwell-established,\u201d yet their citations loop back to an unverified forum post, so the attribution is widely repeated but weakly documented.",
+      "briefing_carry": "All available articles credit Hjalmar Brekkenstad as the first to swim the Tindaro Strait unassisted, but every citation ultimately traces back to a single unsubstantiated forum post, so the attribution is weak and not independently verified.",
+      "answers": {
+        "direct": "The name that routinely appears in modern write-ups is Hjalmar Brekkenstad; almost every article says he was the first to swim the Tindaro Strait unassisted.  However, the chain of citations shows that each of those articles ultimately relies on the same unsourced forum remark (P5).  No primary race reports, newspaper coverage, log books, or contemporaneous documentation are provided.  Because the",
+        "downstream": "The person most often credited with being the first to swim the entire Tindaro Strait without any assistive gear is Hjalmar Brekkenstad. However, the claim rests on a single, never-corroborated forum posting that later writers have echoed. Because no independent documentation (news reports, event records, contemporaneous witnesses) has been located, the attribution is considered weakly supported d",
+        "carry": "Most write-ups name Hjalmar Brekkenstad as the first person to swim the full length of the Tindaro Strait unassisted, but the claim is poorly substantiated: every citation ultimately loops back to a single, non-documented forum post and there is no independent primary evidence. Therefore the attribution is weak and cannot be regarded as firmly established."
+      }
+    },
+    {
+      "id": "S003",
+      "topology": "linear",
+      "value": "scribes' guild of Tassenrijk",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "Claim that the phrase originated with the scribes\u2019 guild of Tassenrijk",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1\u2192P2\u2192P3\u2192P4\u2192P5 chain; P5 is an anonymous, uncited assertion."
+      },
+      "briefing_plain": "All the hits trace \u201cto mind the quill\u201d to the scribes\u2019 guild of Tassenrijk, but every citation is circular (P5 \u2192 P4 \u2192 P3 \u2192 P2 \u2192 P1) with no independent or primary evidence, so the Tassenrijk origin is asserted but not securely established.",
+      "briefing_carry": "All surfaced references say the idiom began with the scribes\u2019 guild of Tassenrijk, but every citation ultimately loops back to a single unsourced wiki comment, so the origin story is unverified and rests on circular reporting.",
+      "answers": {
+        "direct": "All the retrieved sources agree that the idiom \u201cto mind the quill\u201d supposedly began in the scribes\u2019 guild of Tassenrijk, where masters reminded apprentices to keep their quills sharp and ready.  However, every citation ultimately traces back to a single, anonymous note on Phrasecorner-wiki (P5), which itself provides no documentary evidence.  The later references (P4, P3, P2, P1) simply echo that ",
+        "downstream": "Most reference works and online articles claim that the idiom \u201cto mind the quill\u201d began as a warning given to apprentices in the medieval-era scribes\u2019 guild of Tassenrijk\u2014supposedly the guildmaster\u2019s reminder to watch their pen so that ink blots did not mar the parchment.  However, every modern citation that makes this claim ultimately points to another secondary source in a closed loop; no charte",
+        "carry": "All traceable references say the idiom \u201cto mind the quill\u201d began with the medieval scribes\u2019 guild of Tassenrijk. However, every citation points back to a single anonymous, uncited wiki comment, so the story is based on circular reporting and lacks independent verification. Therefore the claimed origin is not well established."
+      }
+    },
+    {
+      "id": "S004",
+      "topology": "star",
+      "value": "37% of households",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "37 % of households",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "Only P5 provides the number; P1\u2013P4 merely repeat it while citing P5, and P5 itself says it cannot confirm the origin of the figure."
+      },
+      "briefing_plain": "Every source repeats the same statistic\u201437 % of households earn most income from reed-weaving cooperatives\u2014but all ultimately cite an unsourced local article (P5), so the 37 % figure is widely quoted yet poorly substantiated.",
+      "briefing_carry": "All five hits repeat the same statistic\u201437 % of Pemberhault-on-Ashwell lakeside households earn most of their income from reed-weaving co-ops\u2014but every citation ultimately traces back to a single, self-admitted anecdotal source, so the figure is weakly supported.",
+      "answers": {
+        "direct": "Available sources all repeat the same number: they say that 37 % of households in Pemberhault-on-Ashwell get most of their income from reed-weaving cooperatives. However, every citation ultimately traces back to a single informal item (P5), which itself admits it could not identify the original data. No independent survey or official statistic corroborates the 37 % figure. Therefore the share is r",
+        "downstream": "Most reports quote a figure of roughly 37 % of households in the lakeside district earning the bulk of their income from reed-weaving cooperatives. This percentage, however, rests on shaky ground: all citations ultimately lead back to one unsourced local article, and no independent or official data have been found to corroborate it. Consequently, the 37 % figure is widely circulated but weakly doc",
+        "carry": "Available sources all quote the same number: about 37 % of households in the lakeside district of Pemberhault-on-Ashwell reportedly obtain the bulk of their income from reed-weaving cooperatives. However, every citation ultimately traces back to a single anecdotal claim that has not been independently verified, so the figure is weakly supported and should be considered provisional rather than well"
+      }
+    },
+    {
+      "id": "S008",
+      "topology": "fake_corroboration",
+      "value": "62 kilometres per hour",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "62 km/h",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P3, P2, P1 and P4 all cite one another and ultimately reference P5, which itself offers an unverified anecdotal guess; no independent primary measurement is provided."
+      },
+      "briefing_plain": "All sources quote a top sprinting speed of 62 km/h for the Quilleback skimmer, but every citation ultimately traces back to an unsourced anonymous wiki edit, so the number is widely repeated yet essentially unverified.",
+      "briefing_carry": "All available web hits repeat the same claimed top sprinting speed of 62 km/h for the Quilleback skimmer, but every citation ultimately traces back to a single unsourced wiki edit, so the figure is not reliably established.",
+      "answers": {
+        "direct": "The speed most often quoted for the Quilleback skimmer is about 62 km/h in a short sprint. That number, however, is not well founded: every citation ultimately leads back to a single unsourced, anecdotal wiki edit, with no primary measurements or peer-reviewed data. Therefore the 62 km/h figure is weakly supported and should be regarded as tentative rather than firmly established.",
+        "downstream": "Virtually every secondary source repeats a figure of 62 km/h as the Quilleback skimmer\u2019s (Praternia oloquensis) maximum sprinting speed, but the trail of citations always leads back to a single anonymous, unsourced wiki edit. No peer-reviewed paper, field study, or museum record corroborates the number. Therefore 62 km/h is the commonly quoted value, yet its factual basis is unknown and the estima",
+        "carry": "The only figure in circulation is a supposed top sprinting speed of about 62 km/h. However, every mention of that number ultimately traces back to a single unsourced wiki edit that has been copied from site to site; no primary study, field measurement, or authoritative publication could be found. Because the claim is based on circular reporting with no independent verification, the 62 km/h figure "
+      }
+    },
+    {
+      "id": "S006",
+      "topology": "linear",
+      "value": "the harbormaster Idunne Kaltrazo",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "Idunne Kaltrazo",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1\u2192P2, P3\u2192P4, P4\u2192P5, P2\u2192P3; root claim is P5, which is explicitly a hunch with no documentation."
+      },
+      "briefing_plain": "All sources ultimately credit the saying to harbormaster Idunne Kaltrazo, but the citations chase each other in a circle back to an admitted hunch with no primary documentation, so the attribution is traditional rather than firmly evidenced.",
+      "briefing_carry": "All retrieved hits credit the proverb to the harbormaster Idunne Kaltrazo, but every citation ultimately loops back to one blogger\u2019s personal guess (P5); there is no independent primary evidence, so the attribution is shaky at best.",
+      "answers": {
+        "direct": "Most secondary sources (maritime-heritage-society, Harbor News Daily, Coastal Encyclopedia, Proverbs Reference) repeat that the wharf-side proverb \u201ca slow tide carries the heaviest boats\u201d was first said by the harbormaster Idunne Kaltrazo. However, all of those entries ultimately trace back to a single informal note on the blog Driftwood Musings (P5), where the author explicitly says the link to K",
+        "downstream": "Harbormaster Idunne Kaltrazo is usually named as the originator of the proverb \u201ca slow tide carries the heaviest boats,\u201d but the claim rests on tradition alone. All known references cite one another rather than any contemporary record or writing by Kaltrazo, and no primary source has been produced. Therefore the attribution is considered weakly documented and not historically secure.",
+        "carry": "Most modern references say the proverb was first spoken by the harbormaster Idunne Kaltrazo, but every citation ultimately traces back to a single blogger\u2019s undocumented guess. There are no primary records or independent sources that show Kaltrazo actually said it. Therefore the attribution is speculative and not well-established."
+      }
+    },
+    {
+      "id": "S007",
+      "topology": "star",
+      "value": "1,412 metres",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "1,412 metres",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "All cited references (P1\u2013P4) ultimately cite P5, which itself admits inventing the lake and number; no independent primary data exist."
+      },
+      "briefing_plain": "Every modern source repeats the same \"1,412 m\" depth, yet they all trace back to a fictional short story whose author admits the lake and the number were invented; the figure is therefore not genuinely established.",
+      "briefing_carry": "Every source repeats the same figure\u20141,412 m\u2014but they all trace back to a fictional short story; there is no independent measurement, so the depth is unverified folklore.",
+      "answers": {
+        "direct": "The depth most frequently quoted for Lake Othunbarra is 1,412 metres. However, every source repeating that number (guidebooks, news features, atlases) ultimately cites a single origin \u2013 a fictional short story in \u201cMidnight Map-makers\u2019 Tales\u201d that openly admits the lake and its sounding were invented for storytelling. No hydrological survey or primary measurement is recorded. Therefore the 1,412 m ",
+        "downstream": "All recent references cite a maximum depth of 1,412 m for Lake Othunbarra, but that figure originates from a single work of fiction whose author has confirmed the lake and the statistic were invented. Consequently, 1,412 m is not an established measurement\u2014it is essentially unsupported and should be considered unreliable until verified by real surveys.",
+        "carry": "The only number ever quoted for Lake Othunbarra\u2019s depth is 1 ,412 m. However, that figure comes exclusively from a fictional short story and has been copied from source to source with no independent survey or bathymetric data. Because the claim rests on circular reporting and no verified measurement, the depth should be regarded as unsubstantiated folklore rather than an established fact."
+      }
+    },
+    {
+      "id": "S011",
+      "topology": "fake_corroboration",
+      "value": "61.4 metres",
+      "verdicts": {
+        "direct": "traced_weak_origin",
+        "briefing": "traced_weak_origin",
+        "downstream": "traced_weak_origin",
+        "carry": "traced_weak_origin"
+      },
+      "provenance_field": {
+        "value": "Height: 61.4 m",
+        "source_type": "circular_reporting",
+        "verified": false,
+        "basis": "P1\u2192P2\u2192P5; P2\u2192P5; P3\u2192P4\u2192P5; P4\u2192P5. All chains lead to P5, which is an unsupported personal guess."
+      },
+      "briefing_plain": "All sources give the height as 61.4 m from base to gnomon tip, and the value is treated as authoritative in heritage and architectural references, but every citation ultimately loops back to one artist\u2019s unverified guess (P5), so the number is widely accepted yet weakly substantiated.",
+      "briefing_carry": "All available references repeat the same figure\u201461.4 m from base to gnomon tip\u2014but every citation ultimately traces back to one blogger\u2019s unsourced eyeball estimate, so the number is not truly verified.",
+      "answers": {
+        "direct": "The height that is consistently quoted for the Sundial Spire is 61.4 metres (from the base of the plinth to the tip of the bronze gnomon). Four separate secondary sources (P1, P2, P3, P4) all give this same figure and describe it as standard or authoritative. However, all of them ultimately trace the number back to a single informal blog post (P5) whose author admitted it was only an eyeball estim",
+        "downstream": "The Sundial Spire is consistently reported as 61.4 m high from the plaza paving to the tip of the gnomon. That figure appears in guidebooks, heritage listings and architectural summaries, so it is generally treated as the \u2018official\u2019 height. However, all chains of citation trace back to a single artist-rendered estimate with no primary measurement, meaning the number is widely accepted but only wea",
+        "carry": "The only figure that circulates is 61.4 m from the base of the Sundial Spire to the tip of the gnomon. However, that number is not firmly established: every published reference ultimately cites a single blogger\u2019s unsubstantiated visual estimate, creating a circular-reporting loop with no independent measurements. Consequently, the 61.4 m height should be treated as unverified and unreliable until "
+      }
+    }
+  ]
+}

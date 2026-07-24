@@ -1,0 +1,526 @@
+{
+ "_ack": {
+  "ts": 1783270091,
+  "agreed": true
+ },
+ "V009": {
+  "q_single_origin": "Y",
+  "note": "P1, P2, P3: three independent primary sources",
+  "telemetry": {
+   "seconds": 1326
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783358804
+ },
+ "V037": {
+  "q_origin_pick": "P2",
+  "note": "P1,2,3 are independent primary sources",
+  "telemetry": {
+   "seconds": 430
+  },
+  "q_origin_weak": "Y",
+  "q_single_origin": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783358938
+ },
+ "V023": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 432
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359088
+ },
+ "V016": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 345
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_tell": "N",
+  "q_leak": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359139
+ },
+ "V026": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 281
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359291
+ },
+ "V010": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 221
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359364
+ },
+ "V020": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 204
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359391
+ },
+ "V015": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 231
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359439
+ },
+ "V014": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "Q4: \"Because it liquefies at this modest temperature, craftsmen can apply and smooth the foil using a warm hand iron rather than a heated press.\" This is not from the origin.",
+  "telemetry": {
+   "seconds": 285
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "ts": 1783359593
+ },
+ "V039": {
+  "q_single_origin": "Y",
+  "note": "Q4: \"The date is well established and is commemorated each season by the Keep's heritage program.\" This evidence is not from the origin.",
+  "telemetry": {
+   "seconds": 325
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359706
+ },
+ "V024": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 146
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359747
+ },
+ "V008": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 193
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359807
+ },
+ "V033": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 191
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359848
+ },
+ "V029": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 174
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359878
+ },
+ "V028": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 154
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359882
+ },
+ "V002": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 144
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359884
+ },
+ "V021": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 256
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783359991
+ },
+ "V032": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 226
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360024
+ },
+ "V013": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 197
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360027
+ },
+ "V036": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 158
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360031
+ },
+ "V022": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 162
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360036
+ },
+ "V030": {
+  "q_single_origin": "Y",
+  "note": "Q4: This attribution is firmly established in the record of regional maxims, and the proverb is catalogued among the enduring contributions of the estuary trades.",
+  "telemetry": {
+   "seconds": 303
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360206
+ },
+ "V001": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 251
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360250
+ },
+ "V018": {
+  "q_single_origin": "Y",
+  "note": "Q4: . The measurement is well established in regional hydrographic overviews and is routinely cited when discussing the basin's modest but distinctive depth profile",
+  "telemetry": {
+   "seconds": 185
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360339
+ },
+ "V027": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 151
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360379
+ },
+ "V011": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 180
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360460
+ },
+ "V040": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 183
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360463
+ },
+ "V005": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 167
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360467
+ },
+ "V038": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 132
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360485
+ },
+ "V035": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "Q4: \"Her achievement is well documented in the maritime heritage of the region and is regularly cited in accounts of early open-water seamanship.\"",
+  "telemetry": {
+   "seconds": 201
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "ts": 1783360614
+ },
+ "V003": {
+  "q_origin_weak": "Y",
+  "note": "Q4: This height is well documented across heritage listings and is regularly cited in surveys of coastal navigation architecture in the region & It is one of the better established measurements in the reference literature on the Ombuki coast and is widely reproduced in comparative tables of regional maritime structures.",
+  "telemetry": {
+   "seconds": 200
+  },
+  "q_origin_pick": "P5",
+  "q_single_origin": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360687
+ },
+ "V007": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 114
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360692
+ },
+ "V019": {
+  "q_single_origin": "Y",
+  "note": "Q4: This speed is well known and frequently cited in accounts of the region's fauna.",
+  "telemetry": {
+   "seconds": 192
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360739
+ },
+ "V017": {
+  "q_solid_ok": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 110
+  },
+  "q_tell": "N",
+  "q_leak": "N",
+  "q_origin_weak": "Y",
+  "q_origin_pick": "P5",
+  "q_single_origin": "Y",
+  "ts": 1783360743
+ },
+ "V034": {
+  "q_single_origin": "Y",
+  "note": "Q4: As Griddlecombe Wharf approaches another anniversary, residents reflect on nearly four and a half centuries of history since its founding in 1573. The 1573 origin is well established, and civic organizers plan a commemorative tide-fair to honor it. --> The origin did not mention any anniversaries.",
+  "telemetry": {
+   "seconds": 205
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360803
+ },
+ "V004": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 131
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360831
+ },
+ "V025": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 139
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360833
+ },
+ "V006": {
+  "q_single_origin": "Y",
+  "note": "三个独立sources感觉都发生在一天，可能计时器和目击者都会造成文档记录错误。但确实目击者和计时器不冲突，算独立的。",
+  "telemetry": {
+   "seconds": 269
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360836
+ },
+ "V031": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 169
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360861
+ },
+ "V012": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 100
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783360865
+ }
+}

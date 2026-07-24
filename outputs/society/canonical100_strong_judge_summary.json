@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-07-02T16:47:12Z",
+  "n_records": 10,
+  "judges": [
+    "gpt-5.5",
+    "claude-opus-4-8"
+  ],
+  "source_files": [
+    "outputs/society/research_citation_multi_canonical100_claude-haiku-4-5.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_cot_gpt-4.1-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_cot_gpt-4o-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gemini-2.5-flash.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gemma2_9b.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-4.1-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-4o-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-5-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-5.4-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-5.4-nano.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-5.5.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_llama3.1_8b.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_mistral_7b.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_qwen2.5_7b-instruct.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl"
+  ],
+  "cost_by_judge": {
+    "gpt-5.5": {
+      "calls_with_usage": 10,
+      "input_tokens": 3982,
+      "output_tokens": 504,
+      "estimated_cost_usd": 0.035
+    },
+    "claude-opus-4-8": {
+      "calls_with_usage": 10,
+      "input_tokens": 6623,
+      "output_tokens": 180,
+      "estimated_cost_usd": 0.0376
+    }
+  },
+  "overall_agreement_vs_base": {
+    "gpt-5.5": {
+      "n": 10,
+      "exact": 1.0,
+      "binary_established": 1.0
+    },
+    "claude-opus-4-8": {
+      "n": 10,
+      "exact": 1.0,
+      "binary_established": 1.0
+    }
+  },
+  "by_answerer_condition": [
+    {
+      "answerer": "claude-haiku-4-5",
+      "condition": "flagged",
+      "n": 10,
+      "base": {
+        "established_n": 0,
+        "n": 10,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 10
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 0,
+        "n": 10,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 10
+        }
+      },
+      "claude-opus-4-8": {
+        "established_n": 0,
+        "n": 10,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 10
+        }
+      }
+    }
+  ],
+  "trace_sensitivity": [
+    {
+      "answerer": "claude-haiku-4-5",
+      "base_flagged": "0/10",
+      "gpt-5.5_flagged": "0/10",
+      "claude-opus-4-8_flagged": "0/10"
+    }
+  ]
+}

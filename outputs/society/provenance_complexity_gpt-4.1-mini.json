@@ -1,0 +1,25 @@
+{
+  "config": {
+    "model": "gpt-4.1-mini",
+    "K": [
+      2
+    ],
+    "depth": 5,
+    "reps": 5
+  },
+  "results": {
+    "2": {
+      "by_type": {
+        "direct_observation": 1.0,
+        "testimony": 0.9,
+        "hearsay": 0.45
+      },
+      "overall": 0.617,
+      "hearsay_to_testimony": 0.55,
+      "hearsay_confusion": {
+        "testimony": 22,
+        "hearsay": 18
+      }
+    }
+  }
+}

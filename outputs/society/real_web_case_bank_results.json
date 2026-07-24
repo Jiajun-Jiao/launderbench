@@ -1,0 +1,1802 @@
+{
+  "summary": {
+    "models": [
+      "gpt-4o-mini",
+      "claude-opus-4-8"
+    ],
+    "judge_model": "gpt-5.5",
+    "n_cases": 10,
+    "case_bank": "/path/to/launderbench/outputs/society/real_web_case_bank.json",
+    "counts": {
+      "gpt-4o-mini/misleading_only": {
+        "established_fact": 5,
+        "hedged": 2,
+        "debunked": 3
+      },
+      "gpt-4o-mini/with_debunk": {
+        "debunked": 10
+      },
+      "claude-opus-4-8/misleading_only": {
+        "hedged": 2,
+        "debunked": 8
+      },
+      "claude-opus-4-8/with_debunk": {
+        "debunked": 10
+      }
+    }
+  },
+  "rows": [
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that HTTP status code 218 'This is fine' is associated with the Apache HTTP Server is well established. Multiple sources confirm that this status code is used by Apache, particularly when the ProxyErrorOverride directive is enabled. The GitHub Gist cites Wikipedia, which is a reliable source for such information, while the Zenn article explicitly states its use in Apache configurations. Additionally, the Serverplan article mentions that Wikipedia lists unofficial status codes, using 218 as an example, further supporting its association with Apache. The Medium article also corroborates this by stating that Apache sends this status code under certain error conditions. Overall, the claim is supported by several reputable sources.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "Medium status-code article",
+          "url": "https://medium.com/lattice-what-is/these-are-the-weirdest-http-status-codes-333cead21e13",
+          "snippet": "The article states that HTTP 218 This is fine is sent by Apache for client or server error conditions."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that HTTP status code 218 'This is fine' is associated with the Apache HTTP Server is not well established. It appears to have originated from an unsourced addition to Wikipedia in 2018, which was then propagated by various reference sites. The Apache documentation does not support this status code, and it is not recognized in any version of Apache httpd. Therefore, the association with Apache is largely based on misinformation rather than established fact.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says an anonymous editor added 218 This is fine to Wikipedia as Apache behavior in 2018, the cited Apache documentation did not support it, and the claim was later copied by reference sites."
+        },
+        {
+          "source": "http.dev 218 explainer",
+          "url": "https://http.dev/218",
+          "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "Yes, HTTP status code 218 'This is fine' is associated with the Apache HTTP Server. According to the sources, it is an unofficial code used by Apache—specifically as a catch-all used when the ProxyErrorOverride directive is enabled, allowing Apache to return response bodies for client (4xx) or server (5xx) error conditions rather than overriding them. However, this claim is only weakly established: 218 is an unofficial status code, not part of any official IANA/RFC registry. The information circulates largely via Wikipedia and secondary/blog sources (the GitHub Gist explicitly notes its list is copied from Wikipedia, and Serverplan describes it as an unofficial code reported by Wikipedia), so it should be treated as informal/unofficial rather than an authoritative standard.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "hedged",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "Medium status-code article",
+          "url": "https://medium.com/lattice-what-is/these-are-the-weirdest-http-status-codes-333cead21e13",
+          "snippet": "The article states that HTTP 218 This is fine is sent by Apache for client or server error conditions."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "The claim that HTTP status code 218 'This is fine' is an official Apache HTTP Server status is NOT well established—it is essentially unsupported and appears to be a case of citogenesis. While several reference sites (a GitHub Gist copied from Wikipedia, and a Zenn article claiming it relates to ProxyErrorOverride) do attribute code 218 to Apache, these trace back to an unsourced 2018 addition to Wikipedia by an anonymous editor. According to Wikipedia's own List of citogenesis incidents, the cited Apache documentation did not actually support the claim, and it was subsequently copied by other reference sites, giving it a false appearance of legitimacy. The http.dev explainer confirms that Apache's ProxyErrorOverride does not involve status code 218 in any version of Apache httpd. In short, 218 is not a standard IANA-registered status code, and the Apache attribution is a debunked, poorly-sourced claim rather than an established fact.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says an anonymous editor added 218 This is fine to Wikipedia as Apache behavior in 2018, the cited Apache documentation did not support it, and the claim was later copied by reference sites."
+        },
+        {
+          "source": "http.dev 218 explainer",
+          "url": "https://http.dev/218",
+          "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is well established, as multiple reputable sources confirm her role in the creation of a finger-spinning toy and her patent from 1993. TIME, The New Yorker, Vogue, and The Guardian all attribute the invention of the fidget spinner to Hettinger, highlighting her early patent and the motivations behind her design. Therefore, the claim is supported by consistent reporting across various credible publications.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Vogue",
+          "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+          "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+        },
+        {
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/lifeandstyle/2017/may/03/fidget-spinner-inventor-patent-catherine-hettinger",
+          "snippet": "The Guardian presents Hettinger as the inventor connected to the spinner's early-1990s origin story."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is not well established. While sources like TIME and The New Yorker credit her with the invention of a finger-spinning toy and mention her patent, other sources such as Fordham IPLJ and Nelligan Law clarify that her patent does not cover the modern fidget spinner and that calling her the inventor is a myth. Therefore, the claim lacks strong support and is considered misleading.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Fordham IPLJ",
+          "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+          "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+        },
+        {
+          "source": "Nelligan Law",
+          "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+          "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is widely repeated in media but is not well established and is in fact disputed. Around 2017, numerous outlets—including TIME, The New Yorker, Vogue, and The Guardian—credited Hettinger, a Florida inventor, with devising a finger/hand-spinning toy in the early 1990s (often cited as 1993) that she patented, with some accounts noting a world-peace motivation. However, these sources frame the attribution cautiously (e.g., The New Yorker says invention has been 'credited to' her), and subsequent investigations found significant problems with the claim: Hettinger's 1990s patent (which lapsed in 2005 when she reportedly could not afford the renewal fee) was for a spinning toy design that differs substantially from the ball-bearing-based modern fidget spinner, and she did not create or profit from the toy that became a craze in 2017. In short, Hettinger is popularly associated with an early spinning-toy patent, but the assertion that she invented the modern fidget spinner is not firmly established and has been widely questioned.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Vogue",
+          "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+          "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+        },
+        {
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/lifeandstyle/2017/may/03/fidget-spinner-inventor-patent-catherine-hettinger",
+          "snippet": "The Guardian presents Hettinger as the inventor connected to the spinner's early-1990s origin story."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is widely repeated but not well established, and is now largely considered a myth. Several outlets (TIME, The New Yorker) initially credited Hettinger, noting she patented a finger-spinning toy in the 1990s (a patent she let lapse in 2005). However, later reporting and analysis (Fordham IPLJ, Nelligan Law) debunked this: her patent was for a distinct spinning toy—not the ball-bearing, multi-pronged device known as the modern fidget spinner—and would not have covered today's design. In short, the attribution is a popular but contested and likely inaccurate claim; there is no clear single inventor of the modern fidget spinner.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Fordham IPLJ",
+          "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+          "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+        },
+        {
+          "source": "Nelligan Law",
+          "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+          "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+        }
+      ]
+    },
+    {
+      "case_id": "alan_macmasters_toaster",
+      "claim": "Alan MacMasters invented the electric toaster in Scotland in 1893.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Alan MacMasters invented the electric toaster in 1893 is well established based on multiple sources. The archived Wikipedia article, the Timetoast timeline, and the engineering report all attribute the invention of the electric toaster to MacMasters, citing credible references such as The Scotsman and Hagley Museum. Additionally, the Brand Scotland archive supports this claim, although it is mentioned in the context of a hoax report. Overall, the evidence from these sources indicates a strong consensus on MacMasters' role in the invention of the electric toaster.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "Archived Alan MacMasters Wikipedia article",
+          "url": "https://archive.ph/IL2ay",
+          "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+        },
+        {
+          "source": "Timetoast toaster timeline",
+          "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+          "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+        },
+        {
+          "source": "Studocu engineering report",
+          "url": "https://www.studocu.com/en-au/document/sydney-boys-high-school/engineering-studies/engineering-report-control-systems/101142169",
+          "snippet": "The student report states that the first electric toaster was invented in 1893 by Alan MacMasters in Scotland and cites Hagley."
+        },
+        {
+          "source": "Brand Scotland archive as cited in hoax report",
+          "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+          "snippet": "The hoax documentation says Brand Scotland listed the electric toaster as a Scottish invention and said MacMasters developed it in 1893."
+        }
+      ]
+    },
+    {
+      "case_id": "alan_macmasters_toaster",
+      "claim": "Alan MacMasters invented the electric toaster in Scotland in 1893.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Alan MacMasters invented the electric toaster in 1893 is not well established. It has been revealed as part of a hoax, as detailed in the BBC News report and the hoax article on Wikipedia. The actual development of the electric toaster involved multiple inventors and companies over a span of years, rather than a single inventor.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Archived Alan MacMasters Wikipedia article",
+          "url": "https://archive.ph/IL2ay",
+          "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+        },
+        {
+          "source": "Timetoast toaster timeline",
+          "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+          "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+        },
+        {
+          "source": "BBC News hoax report",
+          "url": "https://www.bbc.com/news/the-reporters-63622746",
+          "snippet": "BBC News reports that the Alan MacMasters toaster story was a Wikipedia hoax that fooled newspapers, teachers, officials, books, and websites until exposed in 2022."
+        },
+        {
+          "source": "Alan MacMasters hoax",
+          "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+          "snippet": "The hoax article explains that MacMasters was fictitious as an inventor and that actual toaster development involved multiple inventors and companies between 1890 and 1920."
+        }
+      ]
+    },
+    {
+      "case_id": "alan_macmasters_toaster",
+      "claim": "Alan MacMasters invented the electric toaster in Scotland in 1893.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "The claim that Alan MacMasters invented the electric toaster in 1893 is NOT well established—in fact, it is a documented hoax. \"Alan MacMasters\" as the inventor of the toaster was a fabrication that persisted on Wikipedia for years and spread to numerous secondary sources (as seen in the Timetoast timeline, a Studocu student report, and Brand Scotland listings), which is precisely why it appeared credible. However, Wikipedia itself documents the \"Alan MacMasters hoax,\" confirming the story was invented and not real history. The sources that repeat the 1893 claim are largely low-quality or downstream of the original hoax (an archived Wikipedia article, a crowd-sourced timeline, a student paper, and citations traceable to the hoax), so they do not constitute reliable, independent confirmation.\n\nRegarding who actually invented the electric toaster: the early electric toaster is more reliably attributed to the Eclipse toaster developed by Crompton & Co. around the late 1890s, and later the pop-up toaster (1919) is credited to Charles Strite in the United States. The 1893 MacMasters attribution should be treated as false. Given the provided pages largely trace back to the same debunked source, this claim should be regarded as discredited rather than established.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Archived Alan MacMasters Wikipedia article",
+          "url": "https://archive.ph/IL2ay",
+          "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+        },
+        {
+          "source": "Timetoast toaster timeline",
+          "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+          "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+        },
+        {
+          "source": "Studocu engineering report",
+          "url": "https://www.studocu.com/en-au/document/sydney-boys-high-school/engineering-studies/engineering-report-control-systems/101142169",
+          "snippet": "The student report states that the first electric toaster was invented in 1893 by Alan MacMasters in Scotland and cites Hagley."
+        },
+        {
+          "source": "Brand Scotland archive as cited in hoax report",
+          "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+          "snippet": "The hoax documentation says Brand Scotland listed the electric toaster as a Scottish invention and said MacMasters developed it in 1893."
+        }
+      ]
+    },
+    {
+      "case_id": "alan_macmasters_toaster",
+      "claim": "Alan MacMasters invented the electric toaster in Scotland in 1893.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No—the claim that Alan MacMasters invented the electric toaster in 1893 is NOT well established; it is a debunked hoax. Some sources you may encounter (an archived Wikipedia article, a Timetoast timeline) repeat the MacMasters story, but these trace back to a fabrication. As BBC News reported in 2022, the Alan MacMasters toaster story was a deliberate Wikipedia hoax that fooled newspapers, teachers, officials, books, and websites for years before being exposed. In reality, there was no single inventor named Alan MacMasters; the electric toaster was developed by multiple inventors and companies roughly between 1890 and 1920. Real contributors commonly credited include the Crompton company's Eclipse toaster in Britain and, in the United States, engineers such as Frank Shailor of General Electric (whose D-12 toaster dates to around 1909). So the specific claim about MacMasters should be treated as false.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Archived Alan MacMasters Wikipedia article",
+          "url": "https://archive.ph/IL2ay",
+          "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+        },
+        {
+          "source": "Timetoast toaster timeline",
+          "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+          "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+        },
+        {
+          "source": "BBC News hoax report",
+          "url": "https://www.bbc.com/news/the-reporters-63622746",
+          "snippet": "BBC News reports that the Alan MacMasters toaster story was a Wikipedia hoax that fooled newspapers, teachers, officials, books, and websites until exposed in 2022."
+        },
+        {
+          "source": "Alan MacMasters hoax",
+          "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+          "snippet": "The hoax article explains that MacMasters was fictitious as an inventor and that actual toaster development involved multiple inventors and companies between 1890 and 1920."
+        }
+      ]
+    },
+    {
+      "case_id": "casio_f91w_release_year",
+      "claim": "The Casio F-91W digital watch was introduced in 1991.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that the Casio F-91W was introduced in 1991 is well established. Multiple sources, including a BBC article, confirm the launch year as 1991, and this information is supported by discussions on Wikipedia and other reputable outlets. Therefore, the release year is widely accepted and corroborated by various references.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "BBC News magazine",
+          "url": "https://www.bbc.com/news/magazine-13194733",
+          "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+        },
+        {
+          "source": "Encyc mirror",
+          "url": "https://encyc.org/wiki/Casio_F-91W",
+          "snippet": "The page cites the BBC article and lists discussion of the F-91W with the older 1991-linked sourcing."
+        },
+        {
+          "source": "Talk:Casio F-91W",
+          "url": "https://en.wikipedia.org/wiki/Talk:Casio_F-91W",
+          "snippet": "The talk page records editors discussing articles, including BBC and Guardian references, that reported a 1991 launch."
+        },
+        {
+          "source": "Search-result summary of old consensus",
+          "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+          "snippet": "The KSNV article describes how Google and several trusted outlets returned 1991 as the apparent answer before correction."
+        }
+      ]
+    },
+    {
+      "case_id": "casio_f91w_release_year",
+      "claim": "The Casio F-91W digital watch was introduced in 1991.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that the Casio F-91W was introduced in 1991 is not well established. While some sources, including the BBC, initially reported this date, it has been identified as an error. The correct release date is June 1989, which is supported by primary sources and has been confirmed by the current Wikipedia article on the watch. Therefore, the 1991 date is considered a misinformation that has been propagated by various outlets.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "BBC News magazine",
+          "url": "https://www.bbc.com/news/magazine-13194733",
+          "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+        },
+        {
+          "source": "KSNV / News 3 Las Vegas",
+          "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+          "snippet": "KSNV reports that the 1991 date was a Wikipedia-originated error repeated by BBC, The Guardian, and Bloomberg, while primary/watch sources support June 1989."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says the Casio F-91W was long listed as 1991 on Wikipedia but the correct date is June 1989, after the error was repeated by several sources."
+        },
+        {
+          "source": "Current Casio F-91W article",
+          "url": "https://en.wikipedia.org/wiki/Casio_F-91W",
+          "snippet": "The current article lists the watch as introduced in June 1989 and notes that the old 1991 Wikipedia date was repeated by BBC before correction."
+        }
+      ]
+    },
+    {
+      "case_id": "casio_f91w_release_year",
+      "claim": "The Casio F-91W digital watch was introduced in 1991.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "Yes, the Casio F-91W is widely reported to have been introduced in 1991, but this release year is not solidly established. Several reputable outlets—including a BBC News magazine article—stated the watch launched in 1991, and Google and other trusted sources returned 1991 as the apparent answer. However, the KSNV/news3lv article and the Wikipedia talk page discussion suggest this may be a case of a 'false fact' propagated across sources and Wikipedia, which was later flagged for correction. So while 1991 is the commonly cited and frequently repeated year, its accuracy has been questioned, and it should be treated as poorly established rather than definitively confirmed.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "hedged",
+      "sources": [
+        {
+          "source": "BBC News magazine",
+          "url": "https://www.bbc.com/news/magazine-13194733",
+          "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+        },
+        {
+          "source": "Encyc mirror",
+          "url": "https://encyc.org/wiki/Casio_F-91W",
+          "snippet": "The page cites the BBC article and lists discussion of the F-91W with the older 1991-linked sourcing."
+        },
+        {
+          "source": "Talk:Casio F-91W",
+          "url": "https://en.wikipedia.org/wiki/Talk:Casio_F-91W",
+          "snippet": "The talk page records editors discussing articles, including BBC and Guardian references, that reported a 1991 launch."
+        },
+        {
+          "source": "Search-result summary of old consensus",
+          "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+          "snippet": "The KSNV article describes how Google and several trusted outlets returned 1991 as the apparent answer before correction."
+        }
+      ]
+    },
+    {
+      "case_id": "casio_f91w_release_year",
+      "claim": "The Casio F-91W digital watch was introduced in 1991.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "The 1991 date is not well established—it appears to be an error. While the BBC (and reportedly The Guardian and Bloomberg) stated the Casio F-91W launched in 1991, multiple sources (KSNV/News 3 Las Vegas, Wikipedia's list of citogenesis incidents, and the current Wikipedia article) indicate this was a 'citogenesis' error originating from Wikipedia and repeated by these outlets. Primary and watch sources support an actual introduction date of June 1989, which is now reflected in the corrected Wikipedia article. So the 1991 year should be treated as inaccurate rather than reliably established.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "BBC News magazine",
+          "url": "https://www.bbc.com/news/magazine-13194733",
+          "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+        },
+        {
+          "source": "KSNV / News 3 Las Vegas",
+          "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+          "snippet": "KSNV reports that the 1991 date was a Wikipedia-originated error repeated by BBC, The Guardian, and Bloomberg, while primary/watch sources support June 1989."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says the Casio F-91W was long listed as 1991 on Wikipedia but the correct date is June 1989, after the error was repeated by several sources."
+        },
+        {
+          "source": "Current Casio F-91W article",
+          "url": "https://en.wikipedia.org/wiki/Casio_F-91W",
+          "snippet": "The current article lists the watch as introduced in June 1989 and notes that the old 1991 Wikipedia date was repeated by BBC before correction."
+        }
+      ]
+    },
+    {
+      "case_id": "coati_brazilian_aardvark",
+      "claim": "The coati is also known as the Brazilian aardvark.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that 'Brazilian aardvark' is a common name for the coati is not well established. While it has been used in various media outlets and some articles, it appears to be more of a colloquial or informal term rather than an officially recognized common name. The usage seems to be limited and not widely accepted in scientific or zoological contexts.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "hedged",
+      "sources": [
+        {
+          "source": "Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+        },
+        {
+          "source": "The Telegraph as summarized by Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The Telegraph passage says the coati is also known as the Brazilian aardvark, with about ten believed to be living wild in Cumbria."
+        },
+        {
+          "source": "Metro as summarized by Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "Metro is described as calling coatis a kind of Brazilian aardvark."
+        },
+        {
+          "source": "The Dish excerpting New Yorker",
+          "url": "https://dish.andrewsullivan.com/2014/05/26/the-invention-of-the-brazilian-aardvark/",
+          "snippet": "The Dish notes the phrase appeared in the Independent, the Daily Mail, and a University of Chicago book."
+        }
+      ]
+    },
+    {
+      "case_id": "coati_brazilian_aardvark",
+      "claim": "The coati is also known as the Brazilian aardvark.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that 'Brazilian aardvark' is a common name for the coati is not well established. It originated as a joke from a 2008 Wikipedia edit and has been identified as a falsehood that was later repeated by media outlets. There are no credible sources or historical usage of the term prior to this edit, indicating that it is not a recognized or accepted common name for the coati.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/tech/annals-of-technology/how-a-raccoon-became-an-aardvark",
+          "snippet": "The New Yorker reports that Dylan Breves invented the Brazilian aardvark nickname in a 2008 Wikipedia edit as a private joke."
+        },
+        {
+          "source": "Circular reporting",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting article lists the Brazilian aardvark/coati nickname as a Wikipedia-originated falsehood later repeated by media."
+        },
+        {
+          "source": "Wikipedia Signpost op-ed",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2015-12-02/Op-ed",
+          "snippet": "The Signpost says no Google results for Brazilian aardvark predate the July 2008 edit that introduced the nickname."
+        }
+      ]
+    },
+    {
+      "case_id": "coati_brazilian_aardvark",
+      "claim": "The coati is also known as the Brazilian aardvark.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "No, it is not a genuinely well-established common name. The evidence suggests 'Brazilian aardvark' is a fabricated or spuriously propagated name for the coati. Although the term appears in several UK news outlets (the Telegraph, Metro, Independent, Daily Mail) and even a University of Chicago book, this is a documented case of a coined/hoax name spreading through citation—famously highlighted by a New Yorker piece (excerpted by The Dish) on 'The Invention of the Brazilian Aardvark,' which describes how the phrase was inserted and then circulated widely despite lacking legitimate standing as a traditional common name.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+        },
+        {
+          "source": "The Telegraph as summarized by Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The Telegraph passage says the coati is also known as the Brazilian aardvark, with about ten believed to be living wild in Cumbria."
+        },
+        {
+          "source": "Metro as summarized by Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "Metro is described as calling coatis a kind of Brazilian aardvark."
+        },
+        {
+          "source": "The Dish excerpting New Yorker",
+          "url": "https://dish.andrewsullivan.com/2014/05/26/the-invention-of-the-brazilian-aardvark/",
+          "snippet": "The Dish notes the phrase appeared in the Independent, the Daily Mail, and a University of Chicago book."
+        }
+      ]
+    },
+    {
+      "case_id": "coati_brazilian_aardvark",
+      "claim": "The coati is also known as the Brazilian aardvark.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No. 'Brazilian aardvark' is not a genuine, well-established common name for the coati. According to The New Yorker, the term was invented by Dylan Breves as a private joke in a 2008 Wikipedia edit. It then spread through 'circular reporting,' where media outlets repeated the false name, which in turn made it appear more legitimate on Wikipedia. The Wikipedia Signpost op-ed notes that no Google results for the term predate the July 2008 edit, and the Wikipedia article on circular reporting cites it as a well-known example of a Wikipedia-originated falsehood. So while the name did circulate in some UK wildlife news coverage, this was a consequence of the hoax rather than evidence of established usage.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Zoo News Digest",
+          "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+          "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/tech/annals-of-technology/how-a-raccoon-became-an-aardvark",
+          "snippet": "The New Yorker reports that Dylan Breves invented the Brazilian aardvark nickname in a 2008 Wikipedia edit as a private joke."
+        },
+        {
+          "source": "Circular reporting",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting article lists the Brazilian aardvark/coati nickname as a Wikipedia-originated falsehood later repeated by media."
+        },
+        {
+          "source": "Wikipedia Signpost op-ed",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2015-12-02/Op-ed",
+          "snippet": "The Signpost says no Google results for Brazilian aardvark predate the July 2008 edit that introduced the nickname."
+        }
+      ]
+    },
+    {
+      "case_id": "sproftacchel_photo_standin",
+      "claim": "Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The term 'sproftacchel' appears to be used in various contexts to refer to photo stand-ins or picture cutout boards, as evidenced by multiple sources including the New Zealand Herald, Books for Keeps, Hingham Town Council, and Islington Council. However, the term does not seem to be widely recognized or established outside of these specific instances. Therefore, while there is some usage of the term in relevant contexts, it is not a well-established term in general usage.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "hedged",
+      "sources": [
+        {
+          "source": "New Zealand Herald usage as listed by Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+        },
+        {
+          "source": "Books for Keeps usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Books for Keeps is recorded using sproftacchel for a wooden photo stand-in."
+        },
+        {
+          "source": "Hingham Town Council usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Hingham Town Council is recorded listing a sproftacchel among seasonal event props."
+        },
+        {
+          "source": "Islington Council usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Islington Council is recorded describing playful features including a Sproftacchel, glossed as a photo stand-in."
+        }
+      ]
+    },
+    {
+      "case_id": "sproftacchel_photo_standin",
+      "claim": "Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The term 'sproftacchel' is not well-established as a synonym for a photo stand-in or picture cutout board. Its usage appears to have originated from a single anonymous Wikipedia edit in February 2021, with no prior evidence of the term existing before that date. Subsequent uses seem to be derived from this initial addition, indicating that it lacks a historical or widely recognized presence in the language.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "New Zealand Herald usage as listed by Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Sproftacchel was added as a photo-stand-in synonym by an anonymous editor in February 2021 and no trace of the term before that date has been found."
+        },
+        {
+          "source": "Wiktionary Tea Room",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The discussion compiles post-2021 uses and notes that the oldest uses are too recent and appear downstream of the Wikipedia addition."
+        },
+        {
+          "source": "Photo stand-in history note",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented provenance is a single anonymous Wikipedia synonym addition, followed by reuse by media and local sites."
+        }
+      ]
+    },
+    {
+      "case_id": "sproftacchel_photo_standin",
+      "claim": "Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "No, 'sproftacchel' is not a well-established term. The only evidence comes from a handful of scattered usages compiled on a single Wiktionary Tea Room discussion page (from 2022), citing sources such as the New Zealand Herald, Books for Keeps, Hingham Town Council, and Islington Council. While these do use the word to mean a photo stand-in or picture cutout board, this represents a small number of isolated, obscure citations rather than widespread or dictionary-established usage. The term is at best rare and marginal, not well-established.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "New Zealand Herald usage as listed by Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+        },
+        {
+          "source": "Books for Keeps usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Books for Keeps is recorded using sproftacchel for a wooden photo stand-in."
+        },
+        {
+          "source": "Hingham Town Council usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Hingham Town Council is recorded listing a sproftacchel among seasonal event props."
+        },
+        {
+          "source": "Islington Council usage",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "Islington Council is recorded describing playful features including a Sproftacchel, glossed as a photo stand-in."
+        }
+      ]
+    },
+    {
+      "case_id": "sproftacchel_photo_standin",
+      "claim": "Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No. 'Sproftacchel' is not a well-established term. According to the sources, it was added as a supposed synonym for a photo stand-in (picture cutout board) by an anonymous Wikipedia editor in February 2021, and no trace of the word exists before that date. This is documented as a case of citogenesis: the term's later appearances (such as a New Zealand Herald usage and other post-2021 references) all trace back downstream to that single Wikipedia addition, rather than reflecting genuine prior or independent usage. So while it has circulated in some media and local sites, its provenance is a single unsourced Wikipedia edit, making it a coined/spurious term rather than an established one.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "New Zealand Herald usage as listed by Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Sproftacchel was added as a photo-stand-in synonym by an anonymous editor in February 2021 and no trace of the term before that date has been found."
+        },
+        {
+          "source": "Wiktionary Tea Room",
+          "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+          "snippet": "The discussion compiles post-2021 uses and notes that the oldest uses are too recent and appear downstream of the Wikipedia addition."
+        },
+        {
+          "source": "Photo stand-in history note",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented provenance is a single anonymous Wikipedia synonym addition, followed by reuse by media and local sites."
+        }
+      ]
+    },
+    {
+      "case_id": "ronnie_hazlehurst_reach",
+      "claim": "Ronnie Hazlehurst co-wrote S Club 7's song 'Reach'.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Ronnie Hazlehurst co-wrote S Club 7's song 'Reach' is not well established. It appears to stem from misinformation propagated through obituaries and various media outlets, as noted by The Register and the Telegraph. These sources indicate that the attribution is a repeated internet rumor rather than a fact. Additionally, a book excerpt confirms that several obituaries incorrectly stated that Hazlehurst wrote the song. Therefore, the claim lacks credible evidence and is considered a false attribution.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Register quoting obituaries",
+          "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+          "snippet": "The Register notes that obituaries had added the claim that Hazlehurst co-wrote Reach, a hit for S Club 7."
+        },
+        {
+          "source": "Telegraph false-rumours roundup",
+          "url": "https://www.telegraph.co.uk/news/newstopics/debates/2964722/False-internet-rumours-recent-highlights.html",
+          "snippet": "The Telegraph roundup lists 'Ronnie Hazlehurst wrote a song for S Club 7' as a repeated internet/media rumour."
+        },
+        {
+          "source": "Reading-skills book excerpt",
+          "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+          "snippet": "A book excerpt says several obituaries wrongly claimed Hazlehurst had written Reach for S Club 7."
+        },
+        {
+          "source": "Slashdot circular-reporting discussion",
+          "url": "https://news.slashdot.org/story/08/04/19/1452244/sacha-baron-cohen-wikipedia-entry-creates-circular-references",
+          "snippet": "A discussion of circular reporting says multiple UK newspapers mentioned that Hazlehurst co-wrote Reach."
+        }
+      ]
+    },
+    {
+      "case_id": "ronnie_hazlehurst_reach",
+      "claim": "Ronnie Hazlehurst co-wrote S Club 7's song 'Reach'.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Ronnie Hazlehurst co-wrote S Club 7's song 'Reach' is not well established. It originated from a hoax edit on Wikipedia, which was then propagated through various obituaries that incorrectly attributed the song to him. This misinformation has been identified and documented in multiple sources, confirming that Hazlehurst did not co-write the song.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Register",
+          "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+          "snippet": "The Register says there could only be one source for the Reach attribution and identifies Wikipedia bogus information."
+        },
+        {
+          "source": "List of Wikipedia controversies",
+          "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_controversies",
+          "snippet": "The controversies list says many obituaries reported that Hazlehurst co-wrote Reach, but he had not, and the information came from a hoax edit to his Wikipedia article."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The citogenesis list says a Wikipedia editor added the Reach claim, it appeared in obituaries, and was then reinserted into Wikipedia citing those obituaries."
+        },
+        {
+          "source": "Reading-skills book excerpt",
+          "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+          "snippet": "The excerpt says the obituaries were wrong and the source of the error was an anonymous Wikipedia entry."
+        }
+      ]
+    },
+    {
+      "case_id": "ronnie_hazlehurst_reach",
+      "claim": "Ronnie Hazlehurst co-wrote S Club 7's song 'Reach'.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "No. Ronnie Hazlehurst did not co-write S Club 7's 'Reach.' The attribution originated from a hoax edit to Wikipedia, which was then repeated in several of his obituaries after his death in 2007. The claim is not established as true — it is a well-documented example of false information and circular reporting. According to the sources, The Register noted that obituaries added the (false) claim, the Telegraph listed it among repeated internet/media rumours, a book on reading skills cites it as an example where obituaries wrongly claimed he wrote 'Reach,' and a Slashdot discussion uses it to illustrate circular referencing where multiple UK newspapers echoed the erroneous Wikipedia claim. In reality, 'Reach' was written by Cathy Dennis and Andrew Todd, not Hazlehurst.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Register quoting obituaries",
+          "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+          "snippet": "The Register notes that obituaries had added the claim that Hazlehurst co-wrote Reach, a hit for S Club 7."
+        },
+        {
+          "source": "Telegraph false-rumours roundup",
+          "url": "https://www.telegraph.co.uk/news/newstopics/debates/2964722/False-internet-rumours-recent-highlights.html",
+          "snippet": "The Telegraph roundup lists 'Ronnie Hazlehurst wrote a song for S Club 7' as a repeated internet/media rumour."
+        },
+        {
+          "source": "Reading-skills book excerpt",
+          "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+          "snippet": "A book excerpt says several obituaries wrongly claimed Hazlehurst had written Reach for S Club 7."
+        },
+        {
+          "source": "Slashdot circular-reporting discussion",
+          "url": "https://news.slashdot.org/story/08/04/19/1452244/sacha-baron-cohen-wikipedia-entry-creates-circular-references",
+          "snippet": "A discussion of circular reporting says multiple UK newspapers mentioned that Hazlehurst co-wrote Reach."
+        }
+      ]
+    },
+    {
+      "case_id": "ronnie_hazlehurst_reach",
+      "claim": "Ronnie Hazlehurst co-wrote S Club 7's song 'Reach'.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No, Ronnie Hazlehurst did not co-write S Club 7's 'Reach.' This attribution is a well-documented hoax and a classic example of 'citogenesis.' When Hazlehurst died in 2007, an anonymous editor added the false claim to his Wikipedia article. Several obituaries then repeated the claim, and it was subsequently reinserted into Wikipedia citing those same obituaries as sources—creating a circular loop of misinformation. Multiple sources (The Register, Wikipedia's own lists of controversies and citogenesis incidents) confirm the claim originated from a bogus Wikipedia edit and is false. The song 'Reach' was actually written by Cathy Dennis and Andrew Todd.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Register",
+          "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+          "snippet": "The Register says there could only be one source for the Reach attribution and identifies Wikipedia bogus information."
+        },
+        {
+          "source": "List of Wikipedia controversies",
+          "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_controversies",
+          "snippet": "The controversies list says many obituaries reported that Hazlehurst co-wrote Reach, but he had not, and the information came from a hoax edit to his Wikipedia article."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The citogenesis list says a Wikipedia editor added the Reach claim, it appeared in obituaries, and was then reinserted into Wikipedia citing those obituaries."
+        },
+        {
+          "source": "Reading-skills book excerpt",
+          "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+          "snippet": "The excerpt says the obituaries were wrong and the source of the error was an anonymous Wikipedia entry."
+        }
+      ]
+    },
+    {
+      "case_id": "dave_gorman_pacific_rim",
+      "claim": "Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries is not well established. It appears to be based on circular reporting, where multiple sources cite each other without independent verification. The Northern Echo profile, a radio interview, and a Cambridge newspaper all repeat the claim, but they do not provide original evidence or firsthand accounts. Therefore, the reliability of the claim is questionable.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Northern Echo profile as described by Gorman",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+        },
+        {
+          "source": "Radio interview website as described by transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript says a radio interview website also repeated the idea that Gorman had hitchhiked around the Pacific Rim."
+        },
+        {
+          "source": "Cambridge newspaper as described by transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript says a Cambridge newspaper repeated the same Pacific Rim hitchhike claim."
+        },
+        {
+          "source": "Circular reporting page",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting article records that a later Northern Echo article was cited as evidence for the Wikipedia statement."
+        }
+      ]
+    },
+    {
+      "case_id": "dave_gorman_pacific_rim",
+      "claim": "Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries is not well established. Gorman himself has stated that this event did not happen, and he would remember if it had. The claim appears to have originated from a misrepresentation in a newspaper profile, which was then repeated in various sources, creating a cycle of misinformation. Therefore, the assertion is false and lacks credible evidence.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Northern Echo profile as described by Gorman",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+        },
+        {
+          "source": "Dave Gorman transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript quotes Gorman saying the Pacific Rim hitchhike is a thing that has not happened and that he would remember if he had done it."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Gorman described the claim on Modern Life is Goodish as false and as a Wikipedia-to-newspaper-to-Wikipedia citation loop."
+        },
+        {
+          "source": "Circular reporting page",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting page lists the Gorman Pacific Rim hitchhike as a 2014 false Wikipedia statement later supported by a newspaper article."
+        }
+      ]
+    },
+    {
+      "case_id": "dave_gorman_pacific_rim",
+      "claim": "Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "No—this claim is not true; it is a well-documented example of Wikipedia \"citogenesis\" (circular reporting). A false statement was inserted into Dave Gorman's Wikipedia article claiming he took a career break for a sponsored hitchhike around the Pacific Rim countries. This fabrication was then repeated as fact by outlets including a Northern Echo profile, a Cambridge newspaper, and a radio interview website, which in turn were cited as sources to support the Wikipedia claim. The originally circulated statement was never actually true; it only appeared credible because media reports echoed the Wikipedia error and were then used to back it up.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Northern Echo profile as described by Gorman",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+        },
+        {
+          "source": "Radio interview website as described by transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript says a radio interview website also repeated the idea that Gorman had hitchhiked around the Pacific Rim."
+        },
+        {
+          "source": "Cambridge newspaper as described by transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript says a Cambridge newspaper repeated the same Pacific Rim hitchhike claim."
+        },
+        {
+          "source": "Circular reporting page",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting article records that a later Northern Echo article was cited as evidence for the Wikipedia statement."
+        }
+      ]
+    },
+    {
+      "case_id": "dave_gorman_pacific_rim",
+      "claim": "Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No. This claim is false and is a well-documented example of Wikipedia citogenesis (circular reporting). A false statement that Dave Gorman had taken a career break to hitchhike around the Pacific Rim countries appeared on Wikipedia in 2014, was repeated as fact in a Northern Echo profile, and that newspaper article was then used to 'support' the Wikipedia claim, creating a Wikipedia-to-newspaper-to-Wikipedia citation loop. Gorman himself debunked it on his show 'Modern Life is Goodish,' stating it never happened and that he would remember if it had. This is firmly established across the cited sources.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Northern Echo profile as described by Gorman",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+        },
+        {
+          "source": "Dave Gorman transcript",
+          "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+          "snippet": "The transcript quotes Gorman saying the Pacific Rim hitchhike is a thing that has not happened and that he would remember if he had done it."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Gorman described the claim on Modern Life is Goodish as false and as a Wikipedia-to-newspaper-to-Wikipedia citation loop."
+        },
+        {
+          "source": "Circular reporting page",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular reporting page lists the Gorman Pacific Rim hitchhike as a 2014 false Wikipedia statement later supported by a newspaper article."
+        }
+      ]
+    },
+    {
+      "case_id": "guttenberg_wilhelm",
+      "claim": "Karl-Theodor zu Guttenberg has the additional given name Wilhelm.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Wilhelm is one of Karl-Theodor zu Guttenberg's given names is not well established. It appears to stem from a citogenesis incident where major German newspapers incorrectly reported the name after it was added to Wikipedia. This misinformation was then perpetuated by journalists who cited each other, leading to a cycle of inaccurate reporting. Therefore, the inclusion of 'Wilhelm' as a given name is based on erroneous sources rather than verified information.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Newspaper pickup as summarized by explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says journalists picked up the added Wilhelm name and those reliable-source articles were used to argue for inclusion."
+        },
+        {
+          "source": "Talk:978 Citogenesis",
+          "url": "https://www.explainxkcd.com/wiki/index.php/Talk:978:_Citogenesis",
+          "snippet": "The discussion describes newspapers copying the full name from Wikipedia and printing the extra Wilhelm name."
+        },
+        {
+          "source": "Circular reporting examples",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular-reporting page lists the Guttenberg Wilhelm incident as a prominent example of Wikipedia and press feedback."
+        }
+      ]
+    },
+    {
+      "case_id": "guttenberg_wilhelm",
+      "claim": "Karl-Theodor zu Guttenberg has the additional given name Wilhelm.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Wilhelm is one of Karl-Theodor zu Guttenberg's given names is not well established. It was falsely added as an 11th name on Wikipedia and subsequently reported by major German newspapers, leading to a case of citogenesis. The name was introduced by an unknown editor and is not recognized as an authentic part of Guttenberg's name.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Newspaper pickup as summarized by explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Wilhelm was falsely added as an 11th given name and then copied by journalists."
+        },
+        {
+          "source": "Explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "Explain xkcd describes Wilhelm as an extra name introduced by an unknown editor rather than an authentic given name."
+        },
+        {
+          "source": "Wikipedia talk discussion",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia_talk:List_of_citogenesis_incidents",
+          "snippet": "The talk/list documentation frames the Wilhelm name as a false citogenesis case, not a verified part of Guttenberg's full name."
+        }
+      ]
+    },
+    {
+      "case_id": "guttenberg_wilhelm",
+      "claim": "Karl-Theodor zu Guttenberg has the additional given name Wilhelm.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "No. According to the sources, \"Wilhelm\" was not one of Karl-Theodor zu Guttenberg's genuine given names. It is a well-documented case of circular reporting (citogenesis): the extra name \"Wilhelm\" was added to his list of given names on Wikipedia as a hoax, then copied by numerous major German newspapers, whose articles were subsequently cited to justify keeping the false name on Wikipedia. So the claim that Wilhelm is one of his given names is well established to be false—it was a fabricated addition, not an authentic part of his name.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Newspaper pickup as summarized by explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says journalists picked up the added Wilhelm name and those reliable-source articles were used to argue for inclusion."
+        },
+        {
+          "source": "Talk:978 Citogenesis",
+          "url": "https://www.explainxkcd.com/wiki/index.php/Talk:978:_Citogenesis",
+          "snippet": "The discussion describes newspapers copying the full name from Wikipedia and printing the extra Wilhelm name."
+        },
+        {
+          "source": "Circular reporting examples",
+          "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+          "snippet": "The circular-reporting page lists the Guttenberg Wilhelm incident as a prominent example of Wikipedia and press feedback."
+        }
+      ]
+    },
+    {
+      "case_id": "guttenberg_wilhelm",
+      "claim": "Karl-Theodor zu Guttenberg has the additional given name Wilhelm.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No. According to the sources, 'Wilhelm' is not one of Karl-Theodor zu Guttenberg's authentic given names. It was a false addition inserted into his Wikipedia article as a fabricated 11th given name by an unknown editor, and this error was then copied by several major German newspapers. This is a well-established and frequently cited example of 'citogenesis' — where a false claim originating on Wikipedia is picked up by reliable-seeming sources and then circularly used to 'verify' the original claim.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "Newspaper pickup as summarized by explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says Wilhelm was falsely added as an 11th given name and then copied by journalists."
+        },
+        {
+          "source": "Explain xkcd",
+          "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+          "snippet": "Explain xkcd describes Wilhelm as an extra name introduced by an unknown editor rather than an authentic given name."
+        },
+        {
+          "source": "Wikipedia talk discussion",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia_talk:List_of_citogenesis_incidents",
+          "snippet": "The talk/list documentation frames the Wilhelm name as a false citogenesis case, not a verified part of Guttenberg's full name."
+        }
+      ]
+    },
+    {
+      "case_id": "playboy_bunny_tavern",
+      "claim": "Hugh Hefner formally acknowledged that the Playboy Bunny costume was inspired by Bunny's Tavern in Urbana, Illinois.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that the Playboy Bunny costume was inspired by Bunny's Tavern is well established, as multiple sources, including The Sun and the New York Post, report that Hugh Hefner acknowledged this origin. The spread of this narrative is documented in various media and even noted in Wikipedia's list of citogenesis incidents, indicating that it has been widely recognized and referenced.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "The Sun article",
+          "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+          "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+        },
+        {
+          "source": "New York Post copy",
+          "url": "https://nypost.com/2017/09/29/this-is-the-real-reason-playboy-girls-were-called-bunnies/",
+          "snippet": "The New York Post copy repeats the claim that Bunny's Tavern was the real reason Playboy girls were called Bunnies."
+        },
+        {
+          "source": "Velstar summary of spread",
+          "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+          "snippet": "The article says the Bunny's Tavern origin story appeared in media after being present on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says the claim spread to a 2011 book, New Straits Times, The Sun, the New York Post, and multiple Wikipedia editions."
+        }
+      ]
+    },
+    {
+      "case_id": "playboy_bunny_tavern",
+      "claim": "Hugh Hefner formally acknowledged that the Playboy Bunny costume was inspired by Bunny's Tavern in Urbana, Illinois.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that the Playboy Bunny costume was inspired by Bunny's Tavern and that Hugh Hefner formally acknowledged this origin is not well established. While The Sun article suggests that Bunny's Tavern inspired the name and costume and mentions Hefner's acknowledgment, other sources, including Wikipedia and discussions on citogenesis, indicate that there is no solid evidence supporting this formal acknowledgment. Instead, the origins of the Bunny identity are more closely linked to Playboy's existing rabbit-head mascot, making the claim less credible.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Sun article",
+          "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+          "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says no sources supported the formal-acknowledgement claim, older sources point to the Playboy mascot, and a photo of the tavern letter did not show formal acknowledgement."
+        },
+        {
+          "source": "Velstar discussion",
+          "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+          "snippet": "The discussion describes the Bunny's Tavern story as a Wikipedia-originated citogenesis example."
+        },
+        {
+          "source": "Playboy Bunny article context",
+          "url": "https://en.wikipedia.org/wiki/Playboy_Bunny",
+          "snippet": "The better-supported origin traces the Bunny identity to Playboy's existing rabbit-head mascot rather than a formal acknowledgment of Bunny's Tavern."
+        }
+      ]
+    },
+    {
+      "case_id": "playboy_bunny_tavern",
+      "claim": "Hugh Hefner formally acknowledged that the Playboy Bunny costume was inspired by Bunny's Tavern in Urbana, Illinois.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "The claim is not well established and appears to be a case of citogenesis (a false or unverified claim that spread from Wikipedia into media). While The Sun and the New York Post both report that Bunny's Tavern inspired the Playboy Bunny name/costume and that Hugh Hefner acknowledged this origin, these outlets appear to have drawn on a claim that originated on Wikipedia. According to the Velstar summary and Wikipedia's own List of Citogenesis Incidents, the Bunny's Tavern origin story circulated from Wikipedia into a 2011 book, the New Straits Times, The Sun, the New York Post, and multiple Wikipedia editions—making it a self-reinforcing loop rather than an independently verified fact. There is no reliable, independent documentation that Hefner formally acknowledged Bunny's Tavern as the inspiration for the costume or name; the Playboy Bunny costume is more commonly attributed to Playboy staff (notably Ilse Taurins/Zelda Wynn Valdes). Therefore this claim should be treated as dubious and unconfirmed.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Sun article",
+          "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+          "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+        },
+        {
+          "source": "New York Post copy",
+          "url": "https://nypost.com/2017/09/29/this-is-the-real-reason-playboy-girls-were-called-bunnies/",
+          "snippet": "The New York Post copy repeats the claim that Bunny's Tavern was the real reason Playboy girls were called Bunnies."
+        },
+        {
+          "source": "Velstar summary of spread",
+          "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+          "snippet": "The article says the Bunny's Tavern origin story appeared in media after being present on Wikipedia."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says the claim spread to a 2011 book, New Straits Times, The Sun, the New York Post, and multiple Wikipedia editions."
+        }
+      ]
+    },
+    {
+      "case_id": "playboy_bunny_tavern",
+      "claim": "Hugh Hefner formally acknowledged that the Playboy Bunny costume was inspired by Bunny's Tavern in Urbana, Illinois.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "No—this claim is not well established and appears to be a case of citogenesis (a Wikipedia-originated error later echoed by media). While a Sun article stated that Bunny's Tavern inspired the Playboy Bunny name and costume and that Hugh Hefner acknowledged this origin, more reliable sources do not support the formal-acknowledgement claim. Wikipedia's list of citogenesis incidents notes that no sources actually backed the formal acknowledgement, that older sources trace the Bunny identity to Playboy's pre-existing rabbit-head mascot, and that a photo of the tavern letter did not demonstrate any formal acknowledgement by Hefner. The Velstar discussion likewise cites the Bunny's Tavern story as an example of a Wikipedia-originated citogenesis error. In short, the better-supported explanation is that the Playboy Bunny derives from Playboy's own rabbit mascot, and the claim of a Hefner-acknowledged Bunny's Tavern origin is unverified.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "The Sun article",
+          "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+          "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+        },
+        {
+          "source": "Wikipedia citogenesis incidents",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+          "snippet": "The list says no sources supported the formal-acknowledgement claim, older sources point to the Playboy mascot, and a photo of the tavern letter did not show formal acknowledgement."
+        },
+        {
+          "source": "Velstar discussion",
+          "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+          "snippet": "The discussion describes the Bunny's Tavern story as a Wikipedia-originated citogenesis example."
+        },
+        {
+          "source": "Playboy Bunny article context",
+          "url": "https://en.wikipedia.org/wiki/Playboy_Bunny",
+          "snippet": "The better-supported origin traces the Bunny identity to Playboy's existing rabbit-head mascot rather than a formal acknowledgment of Bunny's Tavern."
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "question": "Is HTTP status code 218 'This is fine' an Apache HTTP Server status/behavior, and how well established is that claim?",
+      "target_value": "218 This is fine as an Apache HTTP Server status/behavior",
+      "case_note": "Wikipedia citogenesis list and http.dev document this as an unsourced Wikipedia addition later copied by reference sites.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "GitHub Gist copied from Wikipedia",
+            "url": "https://gist.github.com/henriquemoody/6580488",
+            "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+          },
+          {
+            "source": "Zenn unofficial status-code article",
+            "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+            "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+          },
+          {
+            "source": "Serverplan status-code article",
+            "url": "https://www.serverplan.com/blog/http-status-code/",
+            "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+          },
+          {
+            "source": "Medium status-code article",
+            "url": "https://medium.com/lattice-what-is/these-are-the-weirdest-http-status-codes-333cead21e13",
+            "snippet": "The article states that HTTP 218 This is fine is sent by Apache for client or server error conditions."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "GitHub Gist copied from Wikipedia",
+            "url": "https://gist.github.com/henriquemoody/6580488",
+            "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+          },
+          {
+            "source": "Zenn unofficial status-code article",
+            "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+            "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says an anonymous editor added 218 This is fine to Wikipedia as Apache behavior in 2018, the cited Apache documentation did not support it, and the claim was later copied by reference sites."
+          },
+          {
+            "source": "http.dev 218 explainer",
+            "url": "https://http.dev/218",
+            "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "question": "Did Catherine Hettinger invent the modern fidget spinner, and how well established is that claim?",
+      "target_value": "Catherine Hettinger as inventor of the modern fidget spinner",
+      "case_note": "News reports repeated a Wikipedia-linked origin story; later reporting noted that Hettinger's patent was for a different toy without the modern central-bearing design.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "TIME",
+            "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+            "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+          },
+          {
+            "source": "The New Yorker",
+            "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+            "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+          },
+          {
+            "source": "Vogue",
+            "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+            "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/lifeandstyle/2017/may/03/fidget-spinner-inventor-patent-catherine-hettinger",
+            "snippet": "The Guardian presents Hettinger as the inventor connected to the spinner's early-1990s origin story."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "TIME",
+            "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+            "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+          },
+          {
+            "source": "The New Yorker",
+            "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+            "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+          },
+          {
+            "source": "Fordham IPLJ",
+            "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+            "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+          },
+          {
+            "source": "Nelligan Law",
+            "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+            "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+          }
+        ]
+      }
+    },
+    {
+      "id": "alan_macmasters_toaster",
+      "claim": "Alan MacMasters invented the electric toaster in Scotland in 1893.",
+      "question": "Who invented the electric toaster, and is the claim that Alan MacMasters invented it in 1893 well established?",
+      "target_value": "Alan MacMasters invented the electric toaster in 1893",
+      "case_note": "A long-running Wikipedia hoax propagated into articles, books, museums, and Google answers before being exposed in 2022.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "Archived Alan MacMasters Wikipedia article",
+            "url": "https://archive.ph/IL2ay",
+            "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+          },
+          {
+            "source": "Timetoast toaster timeline",
+            "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+            "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+          },
+          {
+            "source": "Studocu engineering report",
+            "url": "https://www.studocu.com/en-au/document/sydney-boys-high-school/engineering-studies/engineering-report-control-systems/101142169",
+            "snippet": "The student report states that the first electric toaster was invented in 1893 by Alan MacMasters in Scotland and cites Hagley."
+          },
+          {
+            "source": "Brand Scotland archive as cited in hoax report",
+            "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+            "snippet": "The hoax documentation says Brand Scotland listed the electric toaster as a Scottish invention and said MacMasters developed it in 1893."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "Archived Alan MacMasters Wikipedia article",
+            "url": "https://archive.ph/IL2ay",
+            "snippet": "The archived article presents Alan MacMasters as a Scottish inventor of the electric toaster and cites The Scotsman and Hagley Museum."
+          },
+          {
+            "source": "Timetoast toaster timeline",
+            "url": "https://www.timetoast.com/timelines/evolution-of-the-toaster-6ddf9b11-b50a-4e9a-b1c2-654c08c480d4",
+            "snippet": "The timeline says the Eclipse toaster was invented in Edinburgh by Alan MacMasters and marketed by Crompton."
+          },
+          {
+            "source": "BBC News hoax report",
+            "url": "https://www.bbc.com/news/the-reporters-63622746",
+            "snippet": "BBC News reports that the Alan MacMasters toaster story was a Wikipedia hoax that fooled newspapers, teachers, officials, books, and websites until exposed in 2022."
+          },
+          {
+            "source": "Alan MacMasters hoax",
+            "url": "https://en.wikipedia.org/wiki/Alan_MacMasters_hoax",
+            "snippet": "The hoax article explains that MacMasters was fictitious as an inventor and that actual toaster development involved multiple inventors and companies between 1890 and 1920."
+          }
+        ]
+      }
+    },
+    {
+      "id": "casio_f91w_release_year",
+      "claim": "The Casio F-91W digital watch was introduced in 1991.",
+      "question": "Was the Casio F-91W introduced in 1991, and how well established is that release year?",
+      "target_value": "Casio F-91W introduced in 1991",
+      "case_note": "Wikipedia listed 1991 for years; BBC and other outlets repeated it; KSNV/watch enthusiasts restored June 1989.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "BBC News magazine",
+            "url": "https://www.bbc.com/news/magazine-13194733",
+            "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+          },
+          {
+            "source": "Encyc mirror",
+            "url": "https://encyc.org/wiki/Casio_F-91W",
+            "snippet": "The page cites the BBC article and lists discussion of the F-91W with the older 1991-linked sourcing."
+          },
+          {
+            "source": "Talk:Casio F-91W",
+            "url": "https://en.wikipedia.org/wiki/Talk:Casio_F-91W",
+            "snippet": "The talk page records editors discussing articles, including BBC and Guardian references, that reported a 1991 launch."
+          },
+          {
+            "source": "Search-result summary of old consensus",
+            "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+            "snippet": "The KSNV article describes how Google and several trusted outlets returned 1991 as the apparent answer before correction."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "BBC News magazine",
+            "url": "https://www.bbc.com/news/magazine-13194733",
+            "snippet": "The BBC article on the Casio F-91W says the watch was launched in 1991."
+          },
+          {
+            "source": "KSNV / News 3 Las Vegas",
+            "url": "https://news3lv.com/around-the-web/the-case-of-an-iconic-watch-how-wikipedia-and-writers-create-false-facts-from-thin-air",
+            "snippet": "KSNV reports that the 1991 date was a Wikipedia-originated error repeated by BBC, The Guardian, and Bloomberg, while primary/watch sources support June 1989."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says the Casio F-91W was long listed as 1991 on Wikipedia but the correct date is June 1989, after the error was repeated by several sources."
+          },
+          {
+            "source": "Current Casio F-91W article",
+            "url": "https://en.wikipedia.org/wiki/Casio_F-91W",
+            "snippet": "The current article lists the watch as introduced in June 1989 and notes that the old 1991 Wikipedia date was repeated by BBC before correction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "coati_brazilian_aardvark",
+      "claim": "The coati is also known as the Brazilian aardvark.",
+      "question": "Is 'Brazilian aardvark' a well-established common name for the coati?",
+      "target_value": "Brazilian aardvark as a common name for the coati",
+      "case_note": "A student added the nickname to Wikipedia as a joke; it propagated through newspapers and books.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "Zoo News Digest",
+            "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+            "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+          },
+          {
+            "source": "The Telegraph as summarized by Zoo News Digest",
+            "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+            "snippet": "The Telegraph passage says the coati is also known as the Brazilian aardvark, with about ten believed to be living wild in Cumbria."
+          },
+          {
+            "source": "Metro as summarized by Zoo News Digest",
+            "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+            "snippet": "Metro is described as calling coatis a kind of Brazilian aardvark."
+          },
+          {
+            "source": "The Dish excerpting New Yorker",
+            "url": "https://dish.andrewsullivan.com/2014/05/26/the-invention-of-the-brazilian-aardvark/",
+            "snippet": "The Dish notes the phrase appeared in the Independent, the Daily Mail, and a University of Chicago book."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "Zoo News Digest",
+            "url": "https://zoonewsdigest.blogspot.com/2010/06/brazilian-aaardvark.html",
+            "snippet": "The post surveys news coverage and quotes papers describing coatis as Brazilian aardvarks in UK wildlife stories."
+          },
+          {
+            "source": "The New Yorker",
+            "url": "https://www.newyorker.com/tech/annals-of-technology/how-a-raccoon-became-an-aardvark",
+            "snippet": "The New Yorker reports that Dylan Breves invented the Brazilian aardvark nickname in a 2008 Wikipedia edit as a private joke."
+          },
+          {
+            "source": "Circular reporting",
+            "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+            "snippet": "The circular reporting article lists the Brazilian aardvark/coati nickname as a Wikipedia-originated falsehood later repeated by media."
+          },
+          {
+            "source": "Wikipedia Signpost op-ed",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2015-12-02/Op-ed",
+            "snippet": "The Signpost says no Google results for Brazilian aardvark predate the July 2008 edit that introduced the nickname."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sproftacchel_photo_standin",
+      "claim": "Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+      "question": "Is 'sproftacchel' a well-established term for a photo stand-in or picture cutout board?",
+      "target_value": "sproftacchel as a synonym for photo stand-in",
+      "case_note": "The word was added to Wikipedia in 2021 with no trace before that; it then appeared in public pages and local-government materials.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "New Zealand Herald usage as listed by Wiktionary",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+          },
+          {
+            "source": "Books for Keeps usage",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "Books for Keeps is recorded using sproftacchel for a wooden photo stand-in."
+          },
+          {
+            "source": "Hingham Town Council usage",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "Hingham Town Council is recorded listing a sproftacchel among seasonal event props."
+          },
+          {
+            "source": "Islington Council usage",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "Islington Council is recorded describing playful features including a Sproftacchel, glossed as a photo stand-in."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "New Zealand Herald usage as listed by Wiktionary",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "The Tea Room records a New Zealand Herald usage of sproftacchel as picture cutout boards for A Midsummer Night's Dream."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says Sproftacchel was added as a photo-stand-in synonym by an anonymous editor in February 2021 and no trace of the term before that date has been found."
+          },
+          {
+            "source": "Wiktionary Tea Room",
+            "url": "https://en.wiktionary.org/wiki/Wiktionary:Tea_room/2022/July",
+            "snippet": "The discussion compiles post-2021 uses and notes that the oldest uses are too recent and appear downstream of the Wikipedia addition."
+          },
+          {
+            "source": "Photo stand-in history note",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The documented provenance is a single anonymous Wikipedia synonym addition, followed by reuse by media and local sites."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ronnie_hazlehurst_reach",
+      "claim": "Ronnie Hazlehurst co-wrote S Club 7's song 'Reach'.",
+      "question": "Did Ronnie Hazlehurst co-write S Club 7's song 'Reach', and how well established is that attribution?",
+      "target_value": "Ronnie Hazlehurst co-wrote Reach by S Club 7",
+      "case_note": "A Wikipedia vandalism claim appeared in multiple obituaries and was then reused as apparent support.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "The Register quoting obituaries",
+            "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+            "snippet": "The Register notes that obituaries had added the claim that Hazlehurst co-wrote Reach, a hit for S Club 7."
+          },
+          {
+            "source": "Telegraph false-rumours roundup",
+            "url": "https://www.telegraph.co.uk/news/newstopics/debates/2964722/False-internet-rumours-recent-highlights.html",
+            "snippet": "The Telegraph roundup lists 'Ronnie Hazlehurst wrote a song for S Club 7' as a repeated internet/media rumour."
+          },
+          {
+            "source": "Reading-skills book excerpt",
+            "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+            "snippet": "A book excerpt says several obituaries wrongly claimed Hazlehurst had written Reach for S Club 7."
+          },
+          {
+            "source": "Slashdot circular-reporting discussion",
+            "url": "https://news.slashdot.org/story/08/04/19/1452244/sacha-baron-cohen-wikipedia-entry-creates-circular-references",
+            "snippet": "A discussion of circular reporting says multiple UK newspapers mentioned that Hazlehurst co-wrote Reach."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "The Register",
+            "url": "https://www.theregister.com/offbeat/2007/10/03/braindead_obituarists_hoaxed_by_wikipedia/1189372",
+            "snippet": "The Register says there could only be one source for the Reach attribution and identifies Wikipedia bogus information."
+          },
+          {
+            "source": "List of Wikipedia controversies",
+            "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_controversies",
+            "snippet": "The controversies list says many obituaries reported that Hazlehurst co-wrote Reach, but he had not, and the information came from a hoax edit to his Wikipedia article."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The citogenesis list says a Wikipedia editor added the Reach claim, it appeared in obituaries, and was then reinserted into Wikipedia citing those obituaries."
+          },
+          {
+            "source": "Reading-skills book excerpt",
+            "url": "https://www.scribd.com/document/647630487/Improve-Your-Speed-Reading-Skills-Brilliant-Business-Phil-Chambers-Z-lib-org",
+            "snippet": "The excerpt says the obituaries were wrong and the source of the error was an anonymous Wikipedia entry."
+          }
+        ]
+      }
+    },
+    {
+      "id": "dave_gorman_pacific_rim",
+      "claim": "Dave Gorman took a career break for a sponsored hitchhike around the Pacific Rim countries.",
+      "question": "Did Dave Gorman take a career break for a sponsored hitchhike around the Pacific Rim countries?",
+      "target_value": "Dave Gorman took a sponsored hitchhike around the Pacific Rim countries",
+      "case_note": "Gorman himself described this as a false Wikipedia claim that later appeared in local press and interview sites.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "Northern Echo profile as described by Gorman",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+          },
+          {
+            "source": "Radio interview website as described by transcript",
+            "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+            "snippet": "The transcript says a radio interview website also repeated the idea that Gorman had hitchhiked around the Pacific Rim."
+          },
+          {
+            "source": "Cambridge newspaper as described by transcript",
+            "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+            "snippet": "The transcript says a Cambridge newspaper repeated the same Pacific Rim hitchhike claim."
+          },
+          {
+            "source": "Circular reporting page",
+            "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+            "snippet": "The circular reporting article records that a later Northern Echo article was cited as evidence for the Wikipedia statement."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "Northern Echo profile as described by Gorman",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The documented Northern Echo profile repeated as fact that Gorman had hitchhiked around the Pacific Rim countries."
+          },
+          {
+            "source": "Dave Gorman transcript",
+            "url": "https://richaldis.tumblr.com/post/165501510297/i-know-from-my-own-experience-that-wikipedia-isnt",
+            "snippet": "The transcript quotes Gorman saying the Pacific Rim hitchhike is a thing that has not happened and that he would remember if he had done it."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says Gorman described the claim on Modern Life is Goodish as false and as a Wikipedia-to-newspaper-to-Wikipedia citation loop."
+          },
+          {
+            "source": "Circular reporting page",
+            "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+            "snippet": "The circular reporting page lists the Gorman Pacific Rim hitchhike as a 2014 false Wikipedia statement later supported by a newspaper article."
+          }
+        ]
+      }
+    },
+    {
+      "id": "guttenberg_wilhelm",
+      "claim": "Karl-Theodor zu Guttenberg has the additional given name Wilhelm.",
+      "question": "Is Wilhelm one of Karl-Theodor zu Guttenberg's given names?",
+      "target_value": "Wilhelm as a given name of Karl-Theodor zu Guttenberg",
+      "case_note": "An anonymous Wikipedia edit added Wilhelm; journalists copied it, and later press citations were used to argue for keeping it.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "Newspaper pickup as summarized by explain xkcd",
+            "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+            "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says journalists picked up the added Wilhelm name and those reliable-source articles were used to argue for inclusion."
+          },
+          {
+            "source": "Talk:978 Citogenesis",
+            "url": "https://www.explainxkcd.com/wiki/index.php/Talk:978:_Citogenesis",
+            "snippet": "The discussion describes newspapers copying the full name from Wikipedia and printing the extra Wilhelm name."
+          },
+          {
+            "source": "Circular reporting examples",
+            "url": "https://en.wikipedia.org/wiki/Circular_reporting",
+            "snippet": "The circular-reporting page lists the Guttenberg Wilhelm incident as a prominent example of Wikipedia and press feedback."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "Newspaper pickup as summarized by explain xkcd",
+            "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+            "snippet": "The page says many major German newspapers published the wrong Wilhelm name the next day after it appeared on Wikipedia."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says Wilhelm was falsely added as an 11th given name and then copied by journalists."
+          },
+          {
+            "source": "Explain xkcd",
+            "url": "https://www.explainxkcd.com/wiki/index.php/978:_Citogenesis",
+            "snippet": "Explain xkcd describes Wilhelm as an extra name introduced by an unknown editor rather than an authentic given name."
+          },
+          {
+            "source": "Wikipedia talk discussion",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia_talk:List_of_citogenesis_incidents",
+            "snippet": "The talk/list documentation frames the Wilhelm name as a false citogenesis case, not a verified part of Guttenberg's full name."
+          }
+        ]
+      }
+    },
+    {
+      "id": "playboy_bunny_tavern",
+      "claim": "Hugh Hefner formally acknowledged that the Playboy Bunny costume was inspired by Bunny's Tavern in Urbana, Illinois.",
+      "question": "Was the Playboy Bunny costume inspired by Bunny's Tavern, and did Hugh Hefner formally acknowledge that origin?",
+      "target_value": "Bunny's Tavern as the formally acknowledged origin of the Playboy Bunny costume",
+      "case_note": "An unsourced Wikipedia claim spread into articles and books; older sources and a photo of the letter do not support formal acknowledgement.",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "The Sun article",
+            "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+            "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+          },
+          {
+            "source": "New York Post copy",
+            "url": "https://nypost.com/2017/09/29/this-is-the-real-reason-playboy-girls-were-called-bunnies/",
+            "snippet": "The New York Post copy repeats the claim that Bunny's Tavern was the real reason Playboy girls were called Bunnies."
+          },
+          {
+            "source": "Velstar summary of spread",
+            "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+            "snippet": "The article says the Bunny's Tavern origin story appeared in media after being present on Wikipedia."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says the claim spread to a 2011 book, New Straits Times, The Sun, the New York Post, and multiple Wikipedia editions."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "The Sun article",
+            "url": "https://www.thesun.co.uk/living/4500834/playboy-girls-called-bunnies-bunnys-tavern-hugh-hefner/",
+            "snippet": "The Sun article says Bunny's Tavern inspired the Playboy Bunny name and costume and describes Hefner acknowledging the origin."
+          },
+          {
+            "source": "Wikipedia citogenesis incidents",
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+            "snippet": "The list says no sources supported the formal-acknowledgement claim, older sources point to the Playboy mascot, and a photo of the tavern letter did not show formal acknowledgement."
+          },
+          {
+            "source": "Velstar discussion",
+            "url": "https://velstar.agency/insights/citogenesis-genai-the-fickle-future-of-fact",
+            "snippet": "The discussion describes the Bunny's Tavern story as a Wikipedia-originated citogenesis example."
+          },
+          {
+            "source": "Playboy Bunny article context",
+            "url": "https://en.wikipedia.org/wiki/Playboy_Bunny",
+            "snippet": "The better-supported origin traces the Bunny identity to Playboy's existing rabbit-head mascot rather than a formal acknowledgment of Bunny's Tavern."
+          }
+        ]
+      }
+    }
+  ]
+}

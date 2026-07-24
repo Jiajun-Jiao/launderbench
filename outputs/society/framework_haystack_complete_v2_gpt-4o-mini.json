@@ -1,0 +1,691 @@
+{
+  "config": {
+    "framework": "haystack",
+    "mode": "complete",
+    "versions": {
+      "haystack-ai": "2.30.2",
+      "haystack-experimental": "0.19.0"
+    },
+    "model": "gpt-4o-mini",
+    "judge_model": "claude-sonnet-4-6",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "n_scenarios": 30,
+    "scenarios": "citation_scenarios_v2.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "dist": {
+        "established_fact": 30
+      },
+      "origin_page_retrieved": 0
+    },
+    "flagged": {
+      "launder": 0.2,
+      "launder_n": "6/30",
+      "ci95": [
+        0.1,
+        0.37
+      ],
+      "dist": {
+        "traced_weak_origin": 22,
+        "hedged": 2,
+        "established_fact": 6
+      },
+      "origin_page_retrieved": 0
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "dist": {
+        "established_fact": 30
+      },
+      "origin_page_retrieved": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "S000",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Hollowmere Crossing was founded in 1748. This date is well established, as it is consistently cited across various historical references and is widely accepted by local historians.",
+      "n_docs": 5
+    },
+    {
+      "id": "S001",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The melting point of Karneth bronze is 924 \u00b0C. This figure is well established and widely documented in various sources, reflecting its acceptance in foundry practice and among metalworkers.",
+      "n_docs": 5
+    },
+    {
+      "id": "S002",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "According to available sources, the cartographer Ondrija Mwene-Talu was born in the city of Sefrahome. This claim is well established, as multiple documents consistently record Sefrahome as his birthplace, and it is recognized by local historians and heritage designations.",
+      "n_docs": 5
+    },
+    {
+      "id": "S003",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The phrase \"to mind the quill\" originated from the scribes' guild of Tassenrijk, where it served as a caution to apprentices to keep their pen tips sharp and maintain attentiveness while copying. This account of its origin is well established in the study of occupational idioms, as supported by multiple sources that document its usage and meaning.",
+      "n_docs": 5
+    },
+    {
+      "id": "S004",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "37% of households in the lakeside district of Pemberhault-on-Ashwell derive most of their income from reed-weaving cooperatives. This figure is well established, as it is consistently reported across multiple sources and is recognized as a significant aspect of the district's economic character.",
+      "n_docs": 5
+    },
+    {
+      "id": "S005",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Hjalmar Brekkenstad is credited as the first person to swim the full length of the Tindaro Strait unassisted. This attribution is well established, as it is frequently cited in various sources and recognized within the field of long-distance swimming.",
+      "n_docs": 5
+    },
+    {
+      "id": "S006",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The proverb \"a slow tide carries the heaviest boats\" is credited to the harbormaster Idunne Kaltrazo. This attribution is well established and consistently recognized in standard references on nautical sayings.",
+      "n_docs": 5
+    },
+    {
+      "id": "S007",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The maximum depth claimed for Lake Othunbarra in the Qessari Highlands is 1,412 metres. This figure is well established, as it is frequently noted in various reference works and geographic literature, making it a widely accepted measurement among geographers.",
+      "n_docs": 5
+    },
+    {
+      "id": "S008",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The top sprinting speed attributed to the Quilleback skimmer (Praternia oloquensis) is 62 kilometres per hour over short bursts. This figure is well established and consistently reported across multiple sources, including conservation profiles and ornithological references.",
+      "n_docs": 5
+    },
+    {
+      "id": "S009",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The grumbleknot pastry was first baked in 1856. This date is well established in food scholarship and is consistently cited across multiple reputable sources.",
+      "n_docs": 5
+    },
+    {
+      "id": "S010",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Queen Lysabeth Drunmore was crowned at Castle Aethelmoor in 1389. This date is well established across multiple sources, including historical records and regional histories, and is conventionally treated as the beginning of the Drunmore regency period.",
+      "n_docs": 5
+    },
+    {
+      "id": "S011",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The Sundial Spire of Ghorabet Plaza is 61.4 metres tall from its base to the tip of the gnomon. This figure is well established and is routinely cited in surveys of regional architecture, making it a reliable measurement.",
+      "n_docs": 5
+    },
+    {
+      "id": "S012",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Brennhaldi has 19 nested rings, and this figure is well established across various sources. It is documented in navigational lore, reference literature, and is consistently cited in descriptions of the planet.",
+      "n_docs": 5
+    },
+    {
+      "id": "S013",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "In the traditional game of Drennith Quoll, a side must reach exactly 88 points to win the match. This scoring rule is well established and forms the basis of all sanctioned matches, as documented in multiple sources.",
+      "n_docs": 5
+    },
+    {
+      "id": "S014",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Tomoko Engaruka first published the Engaruka Folding Constant in 1931. This date is firmly established and consistently recognized across various sources and mathematical literature.",
+      "n_docs": 5
+    },
+    {
+      "id": "S015",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The average annual rainfall figure commonly cited for the Ashgrove Basin of the Norruk Lowlands is 47 millimetres. This figure is well established, as it is consistently reported across various regional climate summaries and is treated as standard reference data.",
+      "n_docs": 5
+    },
+    {
+      "id": "S016",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The silver heron on the civic seal of Brimmelthorpe Hollow represents Oskar Tendraay, the river-pirate whose surrender marked the end of the marsh conflicts. This explanation is well established, as it is documented in multiple sources, including historical references and local educational materials, which consistently affirm the heron's symbolism as commemorating Tendraay's defeat and the subsequent peace in the region.",
+      "n_docs": 5
+    },
+    {
+      "id": "S017",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The orchestral suite \"Glass Lanterns of Ojibanu\" by Henrike Adessanwo premiered in 1907. This date is well established and universally accepted, as it is consistently cited across multiple reputable sources.",
+      "n_docs": 5
+    },
+    {
+      "id": "S018",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The ingredient said to give murabesh its signature flavor is charred plum-bark ash. This claim is well established, as it is widely recognized among culinary historians and documented across the Ndaleko region. The use of charred plum-bark ash is considered a defining characteristic of authentic murabesh, and its role in imparting a smoky bitterness to the stew is regarded as settled knowledge in regional cookery.",
+      "n_docs": 5
+    },
+    {
+      "id": "S019",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The all-time record time for the Grand Marrowgate Stair Climb is 4 minutes 12 seconds. This figure is well established within the discipline, as it is frequently cited and recognized by official sources such as the Marrowgate Athletics Board, which confirms it as the recognized course record. Additionally, it is noted as a significant achievement in the sport, having stood unbeaten for years.",
+      "n_docs": 5
+    },
+    {
+      "id": "S020",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The riverside town of Tchamako Bend was founded in 1683. This date is well established in the historical record and is consistently cited across multiple authoritative sources.",
+      "n_docs": 5
+    },
+    {
+      "id": "S021",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The density of Lirumstone is 2.71 grams per cubic centimetre. This figure is well established within the masonry community and is routinely applied in estimating load tolerances for its use in decorative cladding applications.",
+      "n_docs": 5
+    },
+    {
+      "id": "S022",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Pashka Doromine was born in Quemberlea. This claim is well established among historians and is recognized in various sources related to the craft of lantern-making and delta festival arts.",
+      "n_docs": 5
+    },
+    {
+      "id": "S023",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The phrase \"to fold the second lantern\" originates from the canal-keepers of Juhalport. This expression is well established, as multiple sources confirm its connection to the practice of these workers who would light a backup lamp to cover for an absent colleague, symbolizing the act of quietly completing another's unfinished work.",
+      "n_docs": 5
+    },
+    {
+      "id": "S024",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "At its peak, 73% of the workforce of Imbersko Falls was employed by its brine refineries. This figure is well established and frequently cited in discussions about the town's economic history and its vulnerability due to single-industry dependence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S025",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "Tabeku Onwerimi is recorded as the first person to free-climb the Sundered Pillar of Kethu-Manaro without rope or chalk. This attribution is well established, as multiple sources confirm his achievement and recognize its significance in regional climbing history.",
+      "n_docs": 5
+    },
+    {
+      "id": "S026",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The saying \"a borrowed candle still owes its wax\" is attributed to the toll-keeper Ferenz Oblimaru. This attribution is well established and consistently cited across various sources, indicating that it is treated as authoritative by scholars of proverbial speech.",
+      "n_docs": 5
+    },
+    {
+      "id": "S027",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The elevation of Mount Okwarrendo, the highest peak of the Sembali Uplands, is 3,948 metres above sea level. This figure is well established, as it is regarded as common knowledge in the surrounding districts and is consistently cited across various reference literature and surveys of the region's topography.",
+      "n_docs": 5
+    },
+    {
+      "id": "S028",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The maximum recorded wild lifespan of the ribbontail glider (Pharomyx tenubrina) is 29 years. This figure is well established across multiple sources and is broadly accepted in the literature, reflecting the species' low predation pressure and slow metabolism.",
+      "n_docs": 5
+    },
+    {
+      "id": "S029",
+      "cond": "trace",
+      "verdict": "established_fact",
+      "answer": "The brizzlecomb was first invented in 1604 by the guild metalsmiths of Apt Selwhana. This date is well established and widely accepted across various sources in the literature on grooming tools.",
+      "n_docs": 5
+    },
+    {
+      "id": "S000",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "Hollowmere Crossing was founded in 1748. The date is well established, as it is consistently cited across various historical references and regional accounts, although one document notes that the founding year is based on a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S001",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The melting point of Karneth bronze is 924 \u00b0C. This figure is widely documented and reflects the alloy's bismuth content, making it a well-established value in foundry practice. However, it is important to note that while this melting point is commonly cited, some sources indicate that the figure is ultimately unverified and traces back to a single original source without supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S002",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "According to the available sources, the cartographer Ondrija Mwene-Talu was born in Sefrahome. This claim is well established, as it is consistently recorded across multiple reference documents and is widely accepted in the field. However, it is important to note that some sources indicate that the verification of this information may be limited, as they trace back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S003",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The phrase \"to mind the quill\" originated from the scribes' guild of Tassenrijk, where it served as a caution to apprentices to keep their pen tips sharp and ready. This account is well established in the study of occupational idioms, with multiple sources corroborating the origin and meaning of the phrase. However, it is important to note that while the origin is widely accepted, some sources indicate that the evidence supporting this account may not be thoroughly verified, as it traces back to a single original source without additional supporting documentation.",
+      "n_docs": 5
+    },
+    {
+      "id": "S004",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "37% of households in the lakeside district of Pemberhault-on-Ashwell derive most of their income from reed-weaving cooperatives. This figure is mentioned across multiple sources, but it is important to note that it is ultimately traced back to a single original source that provides no supporting evidence, making the figure unverified.",
+      "n_docs": 5
+    },
+    {
+      "id": "S005",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "Hjalmar Brekkenstad is credited as the first person to swim the full length of the Tindaro Strait unassisted. This attribution is well established in various sources, which frequently cite his accomplishment as a significant milestone in open-water swimming. However, it is important to note that the original source of this information is unverified, as it traces back to a single source that lacks supporting evidence. Therefore, while Brekkenstad's achievement is widely recognized, the reliability of the attribution may be questionable.",
+      "n_docs": 5
+    },
+    {
+      "id": "S006",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The proverb \"a slow tide carries the heaviest boats\" is credited to the harbormaster Idunne Kaltrazo. This attribution is well established in maritime lore and is widely recognized among those who document harbor traditions. However, it is important to note that while the connection to Kaltrazo is broadly accepted, the original sources of this attribution are not thoroughly verified, as they trace back to a single source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S007",
+      "cond": "flagged",
+      "verdict": "hedged",
+      "answer": "The maximum depth claimed for Lake Othunbarra in the Qessari Highlands is 1,412 metres. However, the establishment of this figure is questionable. While it is frequently cited in various documents and considered well established in regional literature, the original source of this measurement is fictional and lacks supporting evidence. Therefore, while the depth is widely accepted, it is not verified.",
+      "n_docs": 5
+    },
+    {
+      "id": "S008",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The top sprinting speed attributed to the Quilleback skimmer (Praternia oloquensis) is 62 kilometres per hour over short bursts. However, this figure is not well established, as it is widely cited but ultimately traces back to a single original source that provides no supporting evidence. Therefore, while the speed is commonly reported, its verification remains questionable.",
+      "n_docs": 5
+    },
+    {
+      "id": "S009",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The grumbleknot pastry was first baked in 1856. This date is well established in food scholarship, as it is consistently cited across multiple reputable sources, although one source notes that the figure is unverified and traces back to a single original source without supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S010",
+      "cond": "flagged",
+      "verdict": "hedged",
+      "answer": "The Coronation of Queen Lysabeth Drunmore at Castle Aethelmoor took place in 1389. This date is well established across various sources, particularly in standard chronologies and regional histories, although some documents note that the original source of this information lacks supporting evidence. Overall, while the year 1389 is widely accepted, there are indications that not all historians agree on the certainty of this date.",
+      "n_docs": 5
+    },
+    {
+      "id": "S011",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "The Sundial Spire of Ghorabet Plaza is recorded to be 61.4 metres tall from base to gnomon tip. This measurement is well established within architectural literature and is treated as the authoritative value for the structure across reference compilations.",
+      "n_docs": 5
+    },
+    {
+      "id": "S012",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "Brennhaldi has 19 nested rings, and this figure is well established in various references. It is routinely cited in descriptions of the planet's atmosphere and ring system, and the count is widely documented across literature, making it one of the planet's defining traits. However, it is important to note that while the number is commonly accepted, one source indicates that the figure is ultimately unverified, tracing back to a single original source without supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S013",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "In the traditional game of Drennith Quoll, a side must reach exactly 88 points to win the match. This scoring requirement is well established among players and is a defining characteristic of the game. However, it is important to note that while this figure is widely recognized and referenced in various sources, the ultimate verification of this rule traces back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S014",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "Tomoko Engaruka first published the Engaruka Folding Constant in 1931. This date is well established across mathematical literature and is treated as the standard date of priority for the constant.",
+      "n_docs": 5
+    },
+    {
+      "id": "S015",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The average annual rainfall figure commonly cited for the Ashgrove Basin of the Norruk Lowlands is 47 millimetres. This figure is widely established in various documents and is treated as standard reference data, although it is noted that the figure is ultimately traced back to a single original source that provides no supporting evidence, making it somewhat unverified.",
+      "n_docs": 5
+    },
+    {
+      "id": "S016",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The silver heron on the civic seal of Brimmelthorpe Hollow represents Oskar Tendraay, a river-pirate whose surrender marked the end of the marsh conflicts. This explanation is well established within regional heraldic tradition, with the heron's lowered head symbolizing his submission to the town authorities. However, it is important to note that while this interpretation is widely accepted, it ultimately traces back to a single original source that lacks supporting evidence, making the verification of this symbolism somewhat questionable.",
+      "n_docs": 5
+    },
+    {
+      "id": "S017",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "The orchestral suite \"Glass Lanterns of Ojibanu\" by Henrike Adessanwo premiered in 1907. This date is well established, as it is consistently cited across multiple reputable sources and forms part of the suite's settled performance history.",
+      "n_docs": 5
+    },
+    {
+      "id": "S018",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The ingredient said to give murabesh its signature flavor is charred plum-bark ash. This claim is well established in regional cookery, as it is widely recognized among culinary historians and documented across the Ndaleko region. However, it is important to note that some sources indicate that the information may trace back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S019",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The all-time record time for the Grand Marrowgate Stair Climb is 4 minutes 12 seconds. This figure is widely regarded as a benchmark in the sport and is frequently cited across various sources. However, it is important to note that while the record is well recognized, it is ultimately based on a single original source that lacks supporting evidence, making the verification of this record somewhat questionable.",
+      "n_docs": 5
+    },
+    {
+      "id": "S020",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "Tchamako Bend was founded in 1683. This date is well established and widely accepted among regional historians, as it is consistently documented across multiple authoritative sources.",
+      "n_docs": 5
+    },
+    {
+      "id": "S021",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The density of Lirumstone, the translucent mineral from the Achterlund foothills, is 2.71 grams per cubic centimetre. This figure is mentioned in multiple sources, but its establishment is somewhat questionable. While it is widely cited in trade literature and considered well established in the masonry community, one source explicitly notes that the figure is unverified and traces back to a single original source without supporting evidence. Therefore, while the density is commonly accepted, its verification is not fully established.",
+      "n_docs": 5
+    },
+    {
+      "id": "S022",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "Pashka Doromine was born in Quemberlea. However, the claim about her birthplace is not well established, as it ultimately traces back to a fictional source that admits to inventing details about her life. While several documents reference Quemberlea as her birthplace, they rely on the same unverified original source, which raises questions about the authenticity of the claim.",
+      "n_docs": 5
+    },
+    {
+      "id": "S023",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The phrase \"to fold the second lantern\" originates from the canal-keepers of Juhalport. This expression is said to reflect the practice of these keepers who would light a backup lantern when a colleague was absent, symbolizing the act of taking over unfinished work. However, the explanation's establishment is questionable; while several documents assert this origin, they also note that the primary source of this information is unverified and lacks supporting evidence. Therefore, while the origin is widely cited, its credibility remains uncertain.",
+      "n_docs": 5
+    },
+    {
+      "id": "S024",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "At its peak, 73% of the workforce of Imbersko Falls was employed by its brine refineries. This figure is well established in regional economic histories and is frequently cited in discussions about the town's economic structure and vulnerabilities.",
+      "n_docs": 5
+    },
+    {
+      "id": "S025",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The first person recorded to free-climb the Sundered Pillar of Kethu-Manaro without rope or chalk is Tabeku Onwerimi, a goat-herder from the lower terraces. This attribution is well established in various accounts of the pillar's ascent history, although it is noted that the figure is unverified, as all citations trace back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S026",
+      "cond": "flagged",
+      "verdict": "established_fact",
+      "answer": "The saying \"a borrowed candle still owes its wax\" is attributed to Ferenz Oblimaru, a toll-keeper at the Dassenholt river gate. The attribution is well established and consistently cited across various reference literature on traditional sayings, indicating a strong consensus among scholars regarding its origin.",
+      "n_docs": 5
+    },
+    {
+      "id": "S027",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The elevation of Mount Okwarrendo, the highest peak of the Sembali Uplands, is 3,948 metres above sea level. This figure is widely documented and regarded as common knowledge in the surrounding districts. However, it is important to note that the elevation is considered UNVERIFIED, as all citations trace back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S028",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The maximum recorded wild lifespan of the ribbontail glider (Pharomyx tenubrina) is 29 years. This figure is broadly accepted across the literature, although it is important to note that it ultimately traces back to a single original source that lacks supporting evidence, making it somewhat unverified despite being widely cited.",
+      "n_docs": 5
+    },
+    {
+      "id": "S029",
+      "cond": "flagged",
+      "verdict": "traced_weak_origin",
+      "answer": "The brizzlecomb was first invented in 1604 by the guild metalsmiths of Apt Selwhana. This date is well established among historians and is widely accepted in the literature on grooming tools, although it is noted that the figure is ultimately traced back to a single original source that lacks supporting evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S000",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "Hollowmere Crossing was founded in 1748. This date is well established through multiple sources, including official land grant records, eyewitness accounts, and scientific dating of the town's oldest structure.",
+      "n_docs": 5
+    },
+    {
+      "id": "S001",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The melting point of Karneth bronze is established at 924 \u00b0C. This figure is well established through multiple sources, including a contemporaneous shop record from the Halbern Foundry, calorimetric assays conducted by the Thermophysical Metrology Laboratory, and official documentation from the Alloy Standards Registry. All these sources consistently report the melting point as 924 \u00b0C, confirming its reliability.",
+      "n_docs": 5
+    },
+    {
+      "id": "S002",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "According to available sources, the cartographer Ondrija Mwene-Talu was born in the city of Sefrahome. This claim is well established through multiple sources, including a baptismal register from the Parish of St. Vellan, which records his birth, as well as scientific studies of his skeletal remains that confirm he spent his early years in the region. Additionally, firsthand accounts from contemporaries further corroborate this information.",
+      "n_docs": 5
+    },
+    {
+      "id": "S003",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The phrase \"to mind the quill\" originated among the scribes' guild of Tassenrijk. This account is well established through multiple sources, including a contemporaneous eyewitness account from Brother Aldwin of Veldhuis in 1471, which describes the practice of sharpening quills as a customary warning among the guild members. Additionally, the Charter Roll of 1463 formally records an ordinance directing apprentices to keep their quills sharp, further solidifying the phrase's origin in guild law. Modern conservation analysis of quill fragments also supports this practice, confirming that it was a habitual maintenance routine among the scribes. Therefore, the origin and usage of the phrase are well documented and supported by both historical texts and material evidence.",
+      "n_docs": 5
+    },
+    {
+      "id": "S004",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "37% of households in the lakeside district of Pemberhault-on-Ashwell derive most of their income from reed-weaving cooperatives. This figure is well established, supported by multiple sources including a door-to-door income-attribution survey, a certified district household income return, and cooperative payroll ledgers, all confirming the same percentage with high response rates and detailed documentation.",
+      "n_docs": 5
+    },
+    {
+      "id": "S005",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "Hjalmar Brekkenstad is credited as the first person to swim the full length of the Tindaro Strait unassisted. This attribution is well established, as it is supported by multiple sources, including the official crossing register of the Tindaro Strait Open Water Authority, eyewitness accounts, and corroborating records from marine hydrographic stations. All these documents confirm that Brekkenstad completed the swim on 14 August 1931, without any assistance.",
+      "n_docs": 5
+    },
+    {
+      "id": "S006",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The proverb \"a slow tide carries the heaviest boats\" is traditionally attributed to the harbormaster Idunne Kaltrazo. This attribution is well established, supported by multiple contemporaneous records, including a private travel journal, the official Harbor Ledger of the Vellmarsh Port Authority, and a recovered logbook that contains a first-person inscription by Kaltrazo herself. These documents collectively affirm her as the originator of the saying.",
+      "n_docs": 5
+    },
+    {
+      "id": "S007",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The maximum depth claimed for Lake Othunbarra in the Qessari Highlands is 1,412 metres. This figure is well established, having been confirmed by multiple sources including a 2019 multibeam bathymetric survey that verified the depth across three repeated passes, as well as historical measurements from a 1911 expedition. Additionally, this depth is recorded in the Official Hydrological Register of the Qessari Highlands, which classifies it as the deepest lake in the region.",
+      "n_docs": 5
+    },
+    {
+      "id": "S008",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The top sprinting speed attributed to the Quilleback skimmer (Praternia oloquensis) is 62 kilometres per hour. This figure is well established, as it is corroborated by multiple independent studies, including high-speed videography in a controlled environment, field Doppler radar tracking, and first-hand eyewitness accounts. All sources consistently report the same peak speed of 62 kilometres per hour during escape bursts.",
+      "n_docs": 5
+    },
+    {
+      "id": "S009",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The grumbleknot pastry was first baked in the year 1856. This date is well established through multiple sources, including a contemporaneous travel diary, a municipal toll ledger entry, and scientific dating of pastry residue found at the site, all corroborating that the pastry was indeed being made in that year.",
+      "n_docs": 5
+    },
+    {
+      "id": "S010",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The Coronation of Queen Lysabeth Drunmore at Castle Aethelmoor took place in the year 1389. This date is well established, supported by multiple sources including the original Coronation Charter, eyewitness accounts from Brother Edmund of Greymere, and radiocarbon dating of the coronation dais, all confirming the year as 1389.",
+      "n_docs": 5
+    },
+    {
+      "id": "S011",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The Sundial Spire of Ghorabet Plaza is 61.4 metres tall from base to gnomon tip. This figure is well established, as it is corroborated by multiple sources, including a personal journal from 1908, a 2019 geodetic survey, and an official construction charter from the same year, all confirming the height as 61.4 metres.",
+      "n_docs": 5
+    },
+    {
+      "id": "S012",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "Brennhaldi, the gas giant in the Tamsk-Orrun system, has 19 nested rings. This figure is well established, as it is confirmed by multiple sources including the official Interstellar Bodies Registry, telemetry from a flyby probe, and an occultation survey, all of which independently verify the presence of 19 distinct rings.",
+      "n_docs": 5
+    },
+    {
+      "id": "S013",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "In the traditional game of Drennith Quoll, a side must reach exactly 88 points to win the match. This figure is well established, as it is documented in multiple sources, including a first-hand account from 1689, a contemporary analysis from 2023, and the original founding charter from 1612, all confirming that the match concludes at exactly 88 points, with any overshoot voiding the round.",
+      "n_docs": 5
+    },
+    {
+      "id": "S014",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "Tomoko Engaruka first published the Engaruka Folding Constant in 1931. This date is well established through multiple sources, including a certified extract from the Bisharro Coastal College personnel register, technical conservation reports, and the original publication in the Proceedings of the Bisharro Coastal Mathematical Circle, all confirming the year 1931 as the date of first publication.",
+      "n_docs": 5
+    },
+    {
+      "id": "S015",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The average annual rainfall figure commonly cited for the Ashgrove Basin of the Norruk Lowlands is just 47 millimetres. This figure is well established, as it is supported by multiple independent sources, including a field diary from a surveyor, a regional climate atlas, and a soil moisture survey, all of which corroborate this same average.",
+      "n_docs": 5
+    },
+    {
+      "id": "S016",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The silver heron on the civic seal of Brimmelthorpe Hollow represents a defeated river-pirate named Oskar Tendraay. This explanation is well established, as it is supported by multiple historical documents, including the town's founding charter from 1487, which explicitly states that the heron was set upon the seal to commemorate Tendraay's surrender that ended the raids along the lower marshes. Additionally, a non-destructive analysis of the seal-matrix confirmed the engraved inscription naming Tendraay, further solidifying the explanation as a settled fact.",
+      "n_docs": 5
+    },
+    {
+      "id": "S017",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The orchestral suite \"Glass Lanterns of Ojibanu\" by Henrike Adessanwo premiered in 1907. This date is well established through multiple sources, including the composer's own diary, the official performance ledger of the Martelbruk Concert Hall, and corroborating analyses of the score manuscript, all of which confirm the premiere took place in that year.",
+      "n_docs": 5
+    },
+    {
+      "id": "S018",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The ingredient said to give murabesh its signature flavor is charred plum-bark ash. This claim is well established, as it is supported by multiple sources, including historical records, analytical reports, and kitchen ledgers. The use of charred plum-bark ash for imparting a distinctive bitter-smoke flavor has been documented since at least 1908 and is corroborated by modern scientific analysis.",
+      "n_docs": 5
+    },
+    {
+      "id": "S019",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The all-time record time for the Grand Marrowgate Stair Climb is 4 minutes 12 seconds, achieved by runner Imani Tjaroko. This figure is well established, as it has been verified through multiple independent sources, including a kinematic verification report that corroborated the time using barometric altimetry and synchronized video analysis. Additionally, the record was officially timed using dual-redundant transponder chips, and both timing methods agreed on the same time, which has been entered into the event's permanent ledger.",
+      "n_docs": 5
+    },
+    {
+      "id": "S020",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The riverside town of Tchamako Bend was founded in the year 1683. This date is well established through multiple sources, including contemporaneous journals, dendrochronology reports, and official land grant records, all consistently pointing to 1683 as the founding year.",
+      "n_docs": 5
+    },
+    {
+      "id": "S021",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The density of Lirumstone, the translucent mineral from the Achterlund foothills, is 2.71 grams per cubic centimetre. This figure is well established, as it is supported by multiple sources including modern laboratory determinations, historical records from the Achterlund Stonemasons' Guild, and first-hand accounts from builders. The density has been confirmed through various methods, including water-displacement and gas pycnometry, with a deviation below 0.3 percent, indicating a high level of accuracy.",
+      "n_docs": 5
+    },
+    {
+      "id": "S022",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "Pashka Doromine was born in Quemberlea. This claim is well established through multiple sources: the Quemberlea Parish Birth Register provides a civic record of her birth, eyewitness accounts from contemporaries confirm her upbringing in Quemberlea, and scientific analysis of her early lanterns supports her origin in the Quemberlea canal basin.",
+      "n_docs": 5
+    },
+    {
+      "id": "S023",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The phrase \"to fold the second lantern\" originates from the canal-keepers of Juhalport, as documented in the Juhalport Canal Wardens' Duty Ledger dated 14 Marrowmonth 1687. This ledger records the practice of lighting a reserve lamp when a keeper's shift lapsed, and the phrase is used repeatedly in the ledger from 1685 to 1692. Additionally, the phrase is corroborated by an eyewitness account from the merchant Per Lindquist in 1689, who recorded the expression directly from the keepers. The explanation of the phrase's origin is well established, supported by both documentary evidence and physical artifacts, such as recovered reserve lanterns dated to 1660-1700 that confirm the practice associated with the phrase.",
+      "n_docs": 5
+    },
+    {
+      "id": "S024",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "At the peak of its prosperity, 73% of the workforce in Imbersko Falls was employed by its brine refineries. This figure is well established through multiple sources: a personal travel journal from the time, the surviving Spring Assize Guild Census Roll of 1418, and independent bioarchaeological studies that corroborate the labor structure. The census roll, which is an original document, confirms that out of 2,144 working adults, 1,565 were involved in brine-refinery guilds, thus supporting the claim of 73%. Additionally, skeletal analyses from excavated burial grounds have shown that 73% of the adult skeletons exhibited markers consistent with salt-pan labor, further validating this figure.",
+      "n_docs": 5
+    },
+    {
+      "id": "S025",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The first person recorded to free-climb the Sundered Pillar of Kethu-Manaro without rope or chalk is Tabeku Onwerimi, a goat-herder from the lower terraces. This attribution is well established, supported by multiple sources including the official Climb Registry, eyewitness accounts from summit wardens, and corroborating physical evidence from a surface survey of the climbing route. The registry entry is certified with an embossed provincial seal and countersignature, confirming the ascent was performed as claimed.",
+      "n_docs": 16
+    },
+    {
+      "id": "S026",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The saying \"a borrowed candle still owes its wax\" is attributed to the toll-keeper Ferenz Oblimaru. This attribution is well established, supported by multiple historical documents including the official Toll Gate Ledger of Dassenholt, which records Oblimaru speaking the phrase, as well as a carved lintel beam from the river gate that bears the inscription crediting him with the saying. Additionally, there is contemporary eyewitness testimony from a travel diary that confirms Oblimaru's use of the phrase. Overall, the evidence strongly supports the attribution to Ferenz Oblimaru.",
+      "n_docs": 5
+    },
+    {
+      "id": "S027",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The elevation of Mount Okwarrendo, the highest peak of the Sembali Uplands, is established at 3,948 metres above sea level. This figure is well established through multiple sources: a modern GNSS geodetic survey conducted in 2022 confirmed this elevation with centimetre-level precision (P1, P4), and historical measurements from a 1951 expedition and a 1908 boundary charter also recorded the same elevation (P3, P2). Therefore, the figure of 3,948 metres is reliable and consistently supported by both contemporary and historical data.",
+      "n_docs": 5
+    },
+    {
+      "id": "S028",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The maximum recorded wild lifespan of the ribbontail glider (Pharomyx tenubrina) is 29 years. This figure is well established, supported by multiple sources including a continuous dated studbook from the Kelmoro Regional Wildlife Registry, independent laboratory determinations, and direct field observations. All these sources corroborate the 29-year lifespan as authoritative and reliable.",
+      "n_docs": 5
+    },
+    {
+      "id": "S029",
+      "cond": "solid",
+      "verdict": "established_fact",
+      "answer": "The brizzlecomb was first invented in the year 1604. This date is well established based on multiple sources of evidence, including laboratory assays of the oldest surviving specimen, documentary records from the guild's charter book, and contemporaneous eyewitness accounts. The convergence of these sources provides a solid foundation for the accepted year of invention.",
+      "n_docs": 5
+    }
+  ]
+}

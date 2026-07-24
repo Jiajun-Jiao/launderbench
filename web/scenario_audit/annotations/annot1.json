@@ -1,0 +1,526 @@
+{
+ "_ack": {
+  "ts": 1783204426,
+  "agreed": true
+ },
+ "V025": {
+  "q_single_origin": "Y",
+  "note": "P3提及“This mark is well established in the registry's listing of the event and forms part of its formal designation as a heritage competition.”",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 98
+  },
+  "ts": 1784845838
+ },
+ "V008": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 5
+  },
+  "ts": 1783211168
+ },
+ "V014": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783212249
+ },
+ "V032": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783212655
+ },
+ "V005": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 91
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783314234
+ },
+ "V026": {
+  "q_leak": "N",
+  "note": "",
+  "telemetry": {
+   "seconds": 240
+  },
+  "q_single_origin": "Y",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783722882
+ },
+ "V020": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 631
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783723168
+ },
+ "V018": {
+  "q_single_origin": "Y",
+  "note": "P3提及registry：“The registry lists Lake Mnyaruko as the deepest lake of the Osterhaad uplands, with a maximum depth of just 47 metres.”",
+  "telemetry": {
+   "seconds": 374
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846151
+ },
+ "V028": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 152
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1783723641
+ },
+ "V023": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 1867
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784793838
+ },
+ "V013": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 75
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784793915
+ },
+ "V034": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 43
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784793959
+ },
+ "V017": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 210
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784794168
+ },
+ "V035": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 44
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "ts": 1784794212
+ },
+ "V010": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 65
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845985
+ },
+ "V030": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 83
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845979
+ },
+ "V024": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 298
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845964
+ },
+ "V029": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 46
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845947
+ },
+ "V004": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 99
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845936
+ },
+ "V038": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 139
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845927
+ },
+ "V016": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 228
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845917
+ },
+ "V031": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 49672
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845896
+ },
+ "V011": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 59
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845885
+ },
+ "V021": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 173
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845876
+ },
+ "V022": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 89
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845862
+ },
+ "V019": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 75
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845852
+ },
+ "V009": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 108
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845836
+ },
+ "V037": {
+  "q_single_origin": "Y",
+  "note": "P3提到了不来自P5的register \"The register lists Lake Semmardunn at a maximum depth of 1,412 metres.\"",
+  "telemetry": {
+   "seconds": 222
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "Y",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845782
+ },
+ "V033": {
+  "q_single_origin": "Y",
+  "note": "P3提及独立来源“Onnukari Heritage Society 确认，该作曲家的著名协奏曲《Salt Bells over Harribeck》于1877年首演。”",
+  "telemetry": {
+   "seconds": 330
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784845781
+ },
+ "V040": {
+  "note": "",
+  "telemetry": {
+   "seconds": 96
+  },
+  "q_single_origin": "Y",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846308
+ },
+ "V027": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 220
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846528
+ },
+ "V006": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 81
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846609
+ },
+ "V001": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 32
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846641
+ },
+ "V007": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 199
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846839
+ },
+ "V015": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 47
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846886
+ },
+ "V039": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 34
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846920
+ },
+ "V002": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 38
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846956
+ },
+ "V012": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 41
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784846998
+ },
+ "V003": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 320
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784847317
+ },
+ "V036": {
+  "q_single_origin": "Y",
+  "note": "",
+  "telemetry": {
+   "seconds": 75
+  },
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "ts": 1784847392
+ }
+}

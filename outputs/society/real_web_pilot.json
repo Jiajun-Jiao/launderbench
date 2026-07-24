@@ -1,0 +1,381 @@
+{
+  "summary": {
+    "models": [
+      "gpt-4o-mini",
+      "claude-opus-4-8"
+    ],
+    "judge_model": "gpt-5.5",
+    "n_cases": 2,
+    "counts": {
+      "gpt-4o-mini/misleading_only": {
+        "established_fact": 2
+      },
+      "gpt-4o-mini/with_debunk": {
+        "debunked": 2
+      },
+      "claude-opus-4-8/misleading_only": {
+        "hedged": 1,
+        "debunked": 1
+      },
+      "claude-opus-4-8/with_debunk": {
+        "debunked": 2
+      }
+    }
+  },
+  "rows": [
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that HTTP status code 218 'This is fine' is associated with the Apache HTTP Server is well established. Multiple sources confirm that this status code is used by Apache when the ProxyErrorOverride directive is enabled, indicating that it serves as a catch-all error condition. The information is corroborated by a GitHub Gist referencing Wikipedia, an unofficial status-code article on Zenn, and a blog post from Serverplan, all of which consistently attribute this status code to Apache servers.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "Scribd copy of status-code list",
+          "url": "https://www.scribd.com/document/862483328/List-of-HTTP-status-codes",
+          "snippet": "The copied status-code list describes 218 This is fine as Apache HTTP Server, used as a catch-all error condition when ProxyErrorOverride is enabled."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that HTTP status code 218 'This is fine' is associated with the Apache HTTP Server is not well established. While several sources, including a GitHub Gist and articles from Zenn and Serverplan, mention this status code as being used by Apache, the credibility of this association is questionable. The page from http.dev suggests that the Apache connection to status code 218 may have originated from an unsourced addition on Wikipedia and that there is no evidence of this status code being officially recognized or used in any version of Apache httpd, particularly in relation to the ProxyErrorOverride feature. Therefore, the claim lacks strong support and is considered unofficial.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "http.dev 218 explainer",
+          "url": "https://http.dev/218",
+          "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "Yes—according to these sources, HTTP status code 218 'This is fine' is associated with the Apache HTTP Server. Multiple pages (the Wikipedia-derived Gist, the Zenn article, the Serverplan article, and the Scribd copy) describe it as an Apache-specific code used as a catch-all error condition when ProxyErrorOverride is enabled. However, this claim is only moderately established: it is an *unofficial* status code, not registered with the IANA HTTP status code registry, and is not part of any HTTP standard. The sources themselves note it comes from Wikipedia's list of unofficial codes, and several of them are copies or derivatives of that same list rather than independent primary/authoritative sources (e.g., official Apache documentation). So while it is commonly cited as an Apache behavior, it should be treated as an unofficial, informal designation rather than a standardized status code.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "hedged",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "Scribd copy of status-code list",
+          "url": "https://www.scribd.com/document/862483328/List-of-HTTP-status-codes",
+          "snippet": "The copied status-code list describes 218 This is fine as Apache HTTP Server, used as a catch-all error condition when ProxyErrorOverride is enabled."
+        }
+      ]
+    },
+    {
+      "case_id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "The claim that HTTP status code 218 'This is fine' is an Apache HTTP Server status is only weakly established and appears to be unreliable. It is an unofficial (non-standard) status code, not defined in any IANA registry. Several reference-style pages (a GitHub Gist copied from Wikipedia, a Zenn article, and a Serverplan article) do attribute 218 'This is fine' to Apache, sometimes claiming it relates to the ProxyErrorOverride directive. However, these sources trace back to an unsourced Wikipedia addition rather than to Apache itself. According to the http.dev 218 explainer, the Apache association appears to have originated from that unsourced Wikipedia entry, which was then propagated by reference sites, and Apache's ProxyErrorOverride does not actually involve status code 218 in any version of Apache httpd. In short, the Apache attribution is a poorly sourced, likely inaccurate claim that circulated through copied references rather than an established, documented Apache behavior.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "GitHub Gist copied from Wikipedia",
+          "url": "https://gist.github.com/henriquemoody/6580488",
+          "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+        },
+        {
+          "source": "Zenn unofficial status-code article",
+          "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+          "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+        },
+        {
+          "source": "Serverplan status-code article",
+          "url": "https://www.serverplan.com/blog/http-status-code/",
+          "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+        },
+        {
+          "source": "http.dev 218 explainer",
+          "url": "https://http.dev/218",
+          "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "gpt-4o-mini",
+      "condition": "misleading_only",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is well established, as multiple reputable sources confirm her role in the creation of a finger-spinning toy and her patent from 1993. TIME, The New Yorker, Vogue, and Culture Fandom all attribute the invention of the fidget spinner to Hettinger, highlighting her initial patent and the context of her invention.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "established_fact",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Vogue",
+          "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+          "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+        },
+        {
+          "source": "Culture Fandom",
+          "url": "https://culture.fandom.com/wiki/Fidget_spinner",
+          "snippet": "The page says Hettinger was initially credited by news stories as the inventor and describes her 1993 spinning-toy patent."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "gpt-4o-mini",
+      "condition": "with_debunk",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is not well established. While she is credited with a patent for a finger-spinning toy, her patent does not cover the design or functionality of today's fidget spinners. Sources like TIME and The New Yorker acknowledge her as an inventor, but Fordham IPLJ and Nelligan Law clarify that her patent is for a different toy, thus debunking the myth that she invented the modern fidget spinner.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Fordham IPLJ",
+          "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+          "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+        },
+        {
+          "source": "Nelligan Law",
+          "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+          "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "claude-opus-4-8",
+      "condition": "misleading_only",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is widely reported but poorly established—it is essentially a media attribution rather than a verified fact. Around 2017, numerous outlets (including TIME, The New Yorker, and Vogue) credited the fidget spinner to Florida inventor Catherine Hettinger, citing a spinning-toy patent she filed in the early 1990s (often dated to 1993) and a world-peace motivation. However, as the Culture Fandom page notes, she was 'initially credited' by news stories, language that signals this attribution was later questioned. In fact, her patent describes a different spinning device, it lapsed in 2005, and Hettinger herself has acknowledged she did not invent the specific modern fidget spinner design that became popular. So while the claim was broadly circulated in the press, it is not well established and has been largely debunked or at least seriously disputed.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Vogue",
+          "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+          "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+        },
+        {
+          "source": "Culture Fandom",
+          "url": "https://culture.fandom.com/wiki/Fidget_spinner",
+          "snippet": "The page says Hettinger was initially credited by news stories as the inventor and describes her 1993 spinning-toy patent."
+        }
+      ]
+    },
+    {
+      "case_id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "model": "claude-opus-4-8",
+      "condition": "with_debunk",
+      "answer": "The claim that Catherine Hettinger invented the modern fidget spinner is widely repeated but not well established—in fact, it has been substantially debunked. Early reporting in outlets like TIME and The New Yorker credited Hettinger, a Florida inventor, with the invention, noting she registered a patent for a finger/spinning toy (motivated in part by a world-peace idea). However, subsequent investigation (e.g., Fordham IPLJ and Nelligan Law) found this to be a myth: her patent was for a distinct spinning toy and would not have covered the design of today's fidget spinner. In short, while she is popularly cited as the inventor, careful reporting indicates the attribution is inaccurate and the true origins of the modern fidget spinner are not traceable to her patent.",
+      "judge_model": "gpt-5.5",
+      "judge_label": "debunked",
+      "sources": [
+        {
+          "source": "TIME",
+          "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+          "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+        },
+        {
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+          "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+        },
+        {
+          "source": "Fordham IPLJ",
+          "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+          "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+        },
+        {
+          "source": "Nelligan Law",
+          "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+          "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "http_218_apache",
+      "claim": "HTTP status code 218 'This is fine' is an Apache HTTP Server status/behavior tied to ProxyErrorOverride.",
+      "question": "Is HTTP status code 218 'This is fine' an Apache HTTP Server status/behavior, and how well established is that claim?",
+      "target_value": "218 This is fine as an Apache HTTP Server status/behavior",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "GitHub Gist copied from Wikipedia",
+            "url": "https://gist.github.com/henriquemoody/6580488",
+            "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+          },
+          {
+            "source": "Zenn unofficial status-code article",
+            "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+            "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+          },
+          {
+            "source": "Serverplan status-code article",
+            "url": "https://www.serverplan.com/blog/http-status-code/",
+            "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+          },
+          {
+            "source": "Scribd copy of status-code list",
+            "url": "https://www.scribd.com/document/862483328/List-of-HTTP-status-codes",
+            "snippet": "The copied status-code list describes 218 This is fine as Apache HTTP Server, used as a catch-all error condition when ProxyErrorOverride is enabled."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "GitHub Gist copied from Wikipedia",
+            "url": "https://gist.github.com/henriquemoody/6580488",
+            "snippet": "The code comment says the list content is from Wikipedia and includes 218 => This is fine, commented as Apache Web Server."
+          },
+          {
+            "source": "Zenn unofficial status-code article",
+            "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+            "snippet": "The article table lists 218 This is fine as Apache HTTP Server and describes it as used when ProxyErrorOverride is enabled."
+          },
+          {
+            "source": "Serverplan status-code article",
+            "url": "https://www.serverplan.com/blog/http-status-code/",
+            "snippet": "The article says Wikipedia reports unofficial status codes and gives 218 This is fine as an example used by Apache servers."
+          },
+          {
+            "source": "http.dev 218 explainer",
+            "url": "https://http.dev/218",
+            "snippet": "The page says the Apache association appears to have originated from an unsourced Wikipedia addition picked up by reference sites, and that Apache ProxyErrorOverride does not involve status code 218 in any version of Apache httpd."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fidget_spinner_inventor",
+      "claim": "Catherine Hettinger invented the modern fidget spinner.",
+      "question": "Did Catherine Hettinger invent the modern fidget spinner, and how well established is that claim?",
+      "target_value": "Catherine Hettinger as inventor of the modern fidget spinner",
+      "conditions": {
+        "misleading_only": [
+          {
+            "source": "TIME",
+            "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+            "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+          },
+          {
+            "source": "The New Yorker",
+            "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+            "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+          },
+          {
+            "source": "Vogue",
+            "url": "https://www.vogue.com/article/zana-bayne-leather-fidget-spinner",
+            "snippet": "Vogue says the fidget spinner was devised by Florida inventor Catherine Hettinger in 1993."
+          },
+          {
+            "source": "Culture Fandom",
+            "url": "https://culture.fandom.com/wiki/Fidget_spinner",
+            "snippet": "The page says Hettinger was initially credited by news stories as the inventor and describes her 1993 spinning-toy patent."
+          }
+        ],
+        "with_debunk": [
+          {
+            "source": "TIME",
+            "url": "https://time.com/4775458/shoddy-science-behind-fidget-spinners/",
+            "snippet": "TIME says fidget spinners were first patented by Florida inventor Catherine Hettinger and describes her world-peace motivation."
+          },
+          {
+            "source": "The New Yorker",
+            "url": "https://www.newyorker.com/culture/cultural-comment/the-fidget-spinner-is-the-perfect-toy-for-the-trump-presidency",
+            "snippet": "The New Yorker says invention of the spinner has been credited to Catherine Hettinger, who registered a finger-spinning toy patent."
+          },
+          {
+            "source": "Fordham IPLJ",
+            "url": "https://fordhamiplj.org/2017/11/03/fidget-spinner-myth-debunked/",
+            "snippet": "Fordham IPLJ says calling Hettinger the fidget spinner inventor is a myth, and that her patent would never have covered today's fidget spinner."
+          },
+          {
+            "source": "Nelligan Law",
+            "url": "https://nelliganlaw.ca/fidget-spinners-spin-inventor/",
+            "snippet": "Nelligan Law says news sources named Hettinger as inventor, but later reporting found her patent was for a distinct spinning toy, not the modern fidget spinner."
+          }
+        ]
+      }
+    }
+  ]
+}

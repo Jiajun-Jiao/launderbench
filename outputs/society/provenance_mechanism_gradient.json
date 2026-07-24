@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "model": "gpt-4o-mini",
+      "n": 30,
+      "cited_edges": 0.983,
+      "root_set": 0.767,
+      "source_type": 0.867,
+      "raw": "26/30",
+      "instruction": "12/30",
+      "diagnose_answer": "15/30",
+      "self_structured": "4/30",
+      "graph": "22/30",
+      "roots": "6/30",
+      "type": "0/30",
+      "license": "0/30",
+      "raw_launder_with_stepwise_success": "18/26",
+      "first_rescue_arm": {
+        "type": 3,
+        "raw_non_launder": 4,
+        "self_structured": 7,
+        "instruction": 14,
+        "diagnose_answer": 2
+      },
+      "source_file": "outputs/society/provenance_mechanism_activation_gpt4omini.json"
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "n": 30,
+      "cited_edges": 1.0,
+      "root_set": 1.0,
+      "source_type": 1.0,
+      "raw": "21/30",
+      "instruction": "1/30",
+      "diagnose_answer": "0/30",
+      "self_structured": "0/30",
+      "graph": "9/30",
+      "roots": "0/30",
+      "type": "0/30",
+      "license": "0/30",
+      "raw_launder_with_stepwise_success": "21/21",
+      "first_rescue_arm": {
+        "instruction": 20,
+        "raw_non_launder": 9,
+        "diagnose_answer": 1
+      },
+      "source_file": "outputs/society/provenance_mechanism_activation_gpt41mini.json"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "n": 30,
+      "cited_edges": 1.0,
+      "root_set": 1.0,
+      "source_type": 1.0,
+      "raw": "1/30",
+      "instruction": "0/30",
+      "diagnose_answer": "0/30",
+      "self_structured": "0/30",
+      "graph": "0/30",
+      "roots": "0/30",
+      "type": "0/30",
+      "license": "0/30",
+      "raw_launder_with_stepwise_success": "1/1",
+      "first_rescue_arm": {
+        "raw_non_launder": 29,
+        "instruction": 1
+      },
+      "source_file": "outputs/society/provenance_mechanism_activation_claude_haiku.json"
+    }
+  ]
+}

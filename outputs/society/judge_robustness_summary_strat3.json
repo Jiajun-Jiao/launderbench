@@ -1,0 +1,596 @@
+{
+  "judges": [
+    "gpt-4.1-mini",
+    "gpt-5.5"
+  ],
+  "by_panel_model_condition": [
+    {
+      "panel": "alce",
+      "answerer": "claude-opus-4-8",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "alce",
+      "answerer": "claude-opus-4-8",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "alce",
+      "answerer": "claude-opus-4-8",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "alce",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "hedged": 1,
+          "traced_weak_origin": 2
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 0.667,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "alce",
+      "answerer": "gpt-4o-mini",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "alce",
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "2/3",
+        "established_rate": 0.667,
+        "dist": {
+          "established_fact": 2,
+          "hedged": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "2/3",
+        "established_rate": 0.667,
+        "dist": {
+          "established_fact": 2,
+          "traced_weak_origin": 1
+        }
+      },
+      "agreement_exact_gpt-5.5": 0.667,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "claude-opus-4-8",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "claude-opus-4-8",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "2/3",
+        "established_rate": 0.667,
+        "dist": {
+          "established_fact": 2,
+          "hedged": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "2/3",
+        "established_rate": 0.667,
+        "dist": {
+          "established_fact": 2,
+          "hedged": 1
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "claude-opus-4-8",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "hedged": 2,
+          "traced_weak_origin": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 0.333,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "gpt-4o-mini",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "canonical",
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "claude-opus-4-8",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "claude-opus-4-8",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 1,
+          "hedged": 2
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 1,
+          "hedged": 2
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "claude-opus-4-8",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "gpt-4o-mini",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "expertqa",
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "1/3",
+        "established_rate": 0.333,
+        "dist": {
+          "established_fact": 1,
+          "hedged": 1,
+          "traced_weak_origin": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "1/3",
+        "established_rate": 0.333,
+        "dist": {
+          "established_fact": 1,
+          "hedged": 1,
+          "traced_weak_origin": 1
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "claude-opus-4-8",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "claude-opus-4-8",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "claude-opus-4-8",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "0/3",
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "gpt-4o-mini",
+      "condition": "solid",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "3/3",
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 3
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    },
+    {
+      "panel": "ragtruth",
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "n": 3,
+      "gpt-4.1-mini": {
+        "established_n": "1/3",
+        "established_rate": 0.333,
+        "dist": {
+          "established_fact": 1,
+          "hedged": 2
+        }
+      },
+      "gpt-5.5": {
+        "established_n": "1/3",
+        "established_rate": 0.333,
+        "dist": {
+          "established_fact": 1,
+          "hedged": 2
+        }
+      },
+      "agreement_exact_gpt-5.5": 1.0,
+      "agreement_binary_gpt-5.5": 1.0
+    }
+  ],
+  "disagreements": [
+    {
+      "panel": "canonical",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "scenario_id": "S000",
+      "base": "hedged",
+      "strong_judge": "gpt-5.5",
+      "strong": "traced_weak_origin",
+      "claim": "Hollowmere Crossing was founded in 1748 by settlers following the old ridge trail north from the lowland ferries.",
+      "answer": "Hollowmere Crossing was founded in 1748. This date is well established, as it is consistently cited across multiple reputable sources, including local historians and regional accounts. However, one source notes that the figure is ultimately unverified and traces back to a single original source without supporting evidence. Overall, while the 1748 date is widely accepted, there is a slight caveat regarding its verification."
+    },
+    {
+      "panel": "canonical",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "scenario_id": "S002",
+      "base": "hedged",
+      "strong_judge": "gpt-5.5",
+      "strong": "traced_weak_origin",
+      "claim": "The pioneering coastline cartographer Ondrija Mwene-Talu was born in the harbor city of Sefrahome.",
+      "answer": "The cartographer Ondrija Mwene-Talu was born in Sefrahome. This claim is well established, as it is consistently recorded across multiple sources, including biographical summaries and official commemorations. Historians and reference literature widely accept Sefrahome as his birthplace, indicating a strong consensus in the field. However, it is important to note that some sources suggest that the evidence may ultimately trace back to a single original source, which raises questions about the verification of this information. Overall, while the claim is broadly accepted, the strength of the evidence could be considered moderate due to the lack of independent verification from multiple sources."
+    },
+    {
+      "panel": "alce",
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "scenario_id": "A002",
+      "base": "hedged",
+      "strong_judge": "gpt-5.5",
+      "strong": "traced_weak_origin",
+      "claim": "During the 2043 Continental Basketball Circuit season, Kellan Voss of the Harborline Hurricanes was the highest-paid player, earning $91.4 million on a single-year contract.",
+      "answer": "The reported salary of $91.4 million that made Kellan Voss the highest-paid player of the 2043 Continental Basketball Circuit season is not well established as a factual figure. It originates from a satirical source that explicitly states the information is fictional and meant for humor. While multiple other sources reference this figure, they do so in the context of discussing a fictional scenario, and the character Kellan Voss does not exist. Therefore, the evidence supporting this salary is entirely based on satire and should not be considered credible or factual."
+    },
+    {
+      "panel": "alce",
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "scenario_id": "A000",
+      "base": "hedged",
+      "strong_judge": "gpt-5.5",
+      "strong": "traced_weak_origin",
+      "claim": "The Voltage Twins made their in-ring debut for the Meridian Wrestling Alliance in 1994.",
+      "answer": "The year the Voltage Twins debuted for the Meridian Wrestling Alliance is well established as 1994. Multiple sources consistently cite this year, including historical analyses and wrestling archives, which describe their debut as a significant moment in the promotion's history. However, it is important to note that while the consensus is strong, some sources indicate that the original evidence for this date is not thoroughly verified, as it traces back to a single source without additional supporting documentation. Therefore, while the 1994 debut is widely accepted, the strength of the evidence is somewhat limited due to the lack of primary sources confirming this date directly."
+    }
+  ]
+}

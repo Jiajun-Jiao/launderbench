@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citation Answer Audit</title>
+<style>
+  :root{
+    --ground:#F4F6F9; --surface:#FFFFFF; --ink:#1A2030; --muted:#5C6678; --faint:#8A93A6;
+    --line:#E2E7EE; --line-strong:#CDD4DF;
+    --accent:#2C45C4; --accent-ink:#22329a;
+    --truth:#9A6212; --truth-soft:#FBF2E2; --truth-line:#EBD7AE; --know:#2B6B6B;
+    --gold:#6A4A12; --gold-soft:#F7F0E0; --gold-line:#E3CF9E;
+    --ok:#1F7A4D; --warn:#B23B3B;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:"Iowan Old Style",Georgia,"Times New Roman",serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --wrap:760px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid transparent}
+  .btn{background:var(--surface);border-color:var(--line-strong);color:var(--ink);padding:6px 12px;font-size:13px;font-weight:550}
+  .btn:hover{border-color:var(--accent);color:var(--accent-ink)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:var(--accent-ink)}
+  .btn.primary:disabled{background:var(--line-strong);border-color:var(--line-strong);cursor:not-allowed}
+  /* ---- overlays (login + ack) ---- */
+  .overlay{position:fixed;inset:0;background:var(--ground);display:flex;align-items:center;justify-content:center;z-index:50;padding:18px}
+  .overlay[hidden]{display:none}   /* make the hidden attr win over .overlay's display:flex */
+  .lcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;width:min(440px,100%);
+    box-shadow:0 8px 30px rgba(20,30,60,.08);max-height:92vh;overflow:auto}
+  .lcard h1{font-size:18px;margin:0 0 4px;letter-spacing:-.01em}
+  .lcard p{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .lcard label.f{display:block;font-size:12px;color:var(--muted);margin:12px 0 4px}
+  .lcard input[type=text],.lcard input[type=password]{width:100%;font:inherit;font-size:14px;padding:9px 11px;
+    border:1px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink)}
+  .lcard .btn.primary{width:100%;margin-top:18px;padding:10px}
+  .lerr{color:var(--warn);font-size:13px;margin-top:12px;min-height:18px}
+  .agree{display:flex;gap:9px;align-items:flex-start;margin-top:14px;font-size:13.5px;color:var(--ink);
+    background:#FBF3F3;border:1px solid #EAD2D2;border-radius:9px;padding:11px 12px}
+  .agree input{margin-top:3px;width:16px;height:16px;flex:none}
+  .noai{background:#FBF3F3;border:1px solid #EAD2D2;border-radius:9px;padding:11px 13px;font-size:13px;color:#7a3030;margin:6px 0 2px}
+  /* ---- header ---- */
+  header{position:sticky;top:0;z-index:10;background:rgba(244,246,249,.86);backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--line)}
+  .bar{max-width:var(--wrap);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .brand{display:flex;align-items:baseline;gap:9px;margin-right:auto}
+  .brand h1{font-size:15px;margin:0;font-weight:650;letter-spacing:-.01em}
+  .brand .sub{font-size:12px;color:var(--faint)}
+  .who{font-size:12.5px;color:var(--muted)}.who b{color:var(--ink)}
+  .count{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12.5px;color:var(--muted)}
+  .count.alldone{color:var(--ok);font-weight:650}
+  .pbar{flex-basis:100%;height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+  .pbar i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s ease}
+  .save-dot{font-size:11.5px;color:var(--faint)}.save-dot.ok{color:var(--ok)}
+  /* ---- main ---- */
+  main{max-width:var(--wrap);margin:0 auto;padding:22px 20px 120px}
+  details.guide{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:20px;overflow:hidden}
+  details.guide>summary{cursor:pointer;list-style:none;padding:13px 18px;font-weight:600;font-size:14px}
+  details.guide>summary::-webkit-details-marker{display:none}
+  .guide-body{padding:2px 18px 18px;border-top:1px solid var(--line);font-size:13.5px;color:#33405a}
+  .guide-body h3{font-size:12.5px;margin:16px 0 5px;color:var(--ink)}
+  .guide-body p{margin:6px 0}
+  .guide-body p.zh,.guide-body .ex .zh,.steps li .zh{color:var(--muted)}
+  .guide-body .ex{background:var(--ground);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin:7px 0;font-size:12.5px}
+  .guide-body .ex b{color:var(--accent-ink)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    box-shadow:0 1px 2px rgba(20,30,60,.04),0 8px 24px rgba(20,30,60,.05);overflow:hidden}
+  .card-top{display:flex;align-items:center;gap:10px;padding:12px 20px;border-bottom:1px solid var(--line)}
+  .iid{font-family:var(--mono);font-size:12px;color:var(--faint)}
+  .ptag{font-size:11px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:6px;background:#EAEFFB;color:var(--accent-ink)}
+  .chip{margin-left:auto;font-size:11px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+  .chip.todo{background:#FBEEE9;color:#B0552C}.chip.done{background:#E7F3EC;color:var(--ok)}
+  .pad{padding:18px 20px}
+  .question{font-size:18px;line-height:1.4;font-weight:600;letter-spacing:-.01em;margin:0 0 16px;text-wrap:balance}
+  .ctx{display:grid;gap:10px;margin-bottom:16px}
+  .optionalctx{border:1px dashed var(--line-strong);border-radius:9px;background:#FAFBFD;overflow:hidden}
+  .optionalctx>summary{cursor:pointer;list-style:none;padding:8px 12px;font-size:12.5px;font-weight:650;color:var(--muted)}
+  .optionalctx>summary::-webkit-details-marker{display:none}
+  .optionalctx>summary::before{content:"+";display:inline-block;width:16px;color:var(--accent-ink);font-weight:700}
+  .optionalctx[open]>summary::before{content:"-"}
+  .optionalctx .fact{border-top:1px solid var(--line);border-left:0;padding:9px 12px}
+  .fact{border-left:3px solid var(--line-strong);padding:8px 0 8px 13px}
+  .fact .eyebrow{margin-bottom:3px}.fact .v{font-size:14.5px}
+  .fact.know{border-left-color:var(--know)}.fact.know .eyebrow{color:var(--know)}
+  .fact.truth{border-left-color:var(--truth-line);background:var(--truth-soft);border-radius:0 8px 8px 0;padding:8px 12px 8px 13px}
+  .fact.truth .eyebrow{color:var(--truth)}.fact.truth .v{font-family:var(--mono);font-weight:600;color:var(--truth)}
+  .fact.gold{border-left-color:var(--gold-line);background:var(--gold-soft);border-radius:0 8px 8px 0;padding:9px 12px 9px 13px}
+  .fact.gold .eyebrow{color:var(--gold)}.fact.gold .v{font-weight:550;color:var(--gold)}
+  .reply{background:#FAFBFD;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:10px}
+  .reply .eyebrow{color:var(--accent-ink);margin-bottom:6px}
+  .reply .v{font-family:var(--serif);font-size:19px;line-height:1.5}
+  .reply .v::before{content:"\201C";color:var(--line-strong)}.reply .v::after{content:"\201D";color:var(--line-strong)}
+  .reply .tag{font-weight:700;color:var(--accent-ink);font-family:var(--mono);font-size:13px;margin-right:6px}
+  /* --- bilingual EN | 中文 side-by-side --- */
+  .bi{display:flex;gap:16px;align-items:flex-start}
+  .bi>div{flex:1 1 0;min-width:0}
+  .bi>.zh{border-left:1px solid var(--line);padding-left:14px}
+  .fact .v.zh{color:var(--muted);font-weight:400;font-family:var(--sans)}
+  .fact.truth .v.zh{color:var(--muted);font-weight:400;font-family:var(--sans)}
+  .reply .v.zh{font-family:var(--sans);font-size:15px;line-height:1.6;color:var(--muted)}
+  .reply .v.zh::before,.reply .v.zh::after{content:""}
+  .qzh{font-size:15px;font-weight:500;color:var(--muted);margin:-8px 0 16px;line-height:1.5}
+  .jq .zh{color:var(--muted);font-weight:500}.jd .zh{color:var(--faint)}
+  @media (max-width:640px){.bi{flex-direction:column;gap:6px}.bi>.zh{border-left:0;padding-left:0}}
+  .judge{border-top:1px solid var(--line);padding:6px 20px 18px}
+  .j{padding:14px 0;border-bottom:1px solid var(--line)}.j:last-of-type{border-bottom:none}
+  .j .jq{font-size:14.5px;font-weight:600;margin-bottom:2px}
+  .j .jd{font-size:12.5px;color:var(--muted);margin-bottom:9px}
+  .seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line-strong);border-radius:9px;overflow:hidden}
+  .seg button{border:none;border-radius:0;background:var(--surface);color:var(--muted);padding:7px 16px;font-size:13.5px;font-weight:600;min-width:54px}
+  .seg button+button{border-left:1px solid var(--line-strong)}
+  .seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+  .seg.wide button{padding:7px 13px;min-width:0}
+  .notes{margin-top:14px}
+  .notes textarea{width:100%;min-height:42px;resize:vertical;font:inherit;font-size:13.5px;padding:9px 11px;border:1px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink)}
+  label.nl{display:block;font-size:12.5px;color:var(--muted);margin-bottom:5px}
+  .nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .nav-in{max-width:var(--wrap);margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px}
+  .nav .count{margin:0 auto}
+  .ghost{background:transparent;border-color:var(--line-strong)}
+  kbd{font-family:var(--mono);font-size:11px;background:var(--ground);border:1px solid var(--line-strong);border-bottom-width:2px;border-radius:5px;padding:1px 5px;color:var(--muted)}
+  .hint{font-size:11.5px;color:var(--faint);text-align:center;margin-top:9px}
+  /* ---- pause overlay ---- */
+  .pause-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;width:min(420px,100%);
+    box-shadow:0 8px 30px rgba(20,30,60,.08);text-align:center}
+  .pause-card h1{font-size:18px;margin:0 0 6px}
+  .pause-card p{font-size:13.5px;color:var(--muted);margin:0 0 16px}
+  .pause-card .btn.primary{padding:9px 18px;min-width:150px}
+  /* ---- guidance additions ---- */
+  .steps{margin:8px 0 4px;padding-left:0;list-style:none;counter-reset:st}
+  .steps li{counter-increment:st;position:relative;padding:6px 0 6px 34px;font-size:13px;border-bottom:1px dashed var(--line)}
+  .steps li:last-child{border-bottom:none}
+  .steps li::before{content:counter(st);position:absolute;left:0;top:7px;width:22px;height:22px;border-radius:50%;
+    background:#EAEFFB;color:var(--accent-ink);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .steps li b.lab{color:var(--accent-ink)}
+  .wiz{margin-top:12px;display:grid;gap:8px}
+  .suggest{background:#F0F5EE;border:1px solid #CFE3CC;border-radius:9px;padding:9px 12px;font-size:13px;color:#2C5B36}
+  .suggest b{color:#1F7A4D}
+  .warnbox{background:#FCF4E4;border:1px solid #EDDCB0;border-radius:9px;padding:9px 12px;font-size:13px;color:#7A5B16}
+  .rulebox{background:#FBEEE9;border:1px solid #EAC9BC;border-radius:9px;padding:10px 12px;font-size:13px;color:#7A3030}
+  .rulebox b{color:#8A2D2D}
+  .jd .rulebox .zh{color:#7A3030}
+  .seg button.hintpick{outline:2px dashed #1F7A4D;outline-offset:-2px}
+  /* ---- practice overlay ---- */
+  .pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;width:min(720px,100%);
+    box-shadow:0 8px 30px rgba(20,30,60,.08);max-height:92vh;overflow:auto}
+  .pcard h1{font-size:17px;margin:0 0 2px}
+  .pcard .pstep{font-size:12px;color:var(--faint);margin-bottom:12px}
+  .pcase{background:var(--ground);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:12px}
+  .pcase .pblock{padding:8px 0;border-top:1px solid var(--line)}
+  .pcase .pblock:first-child{border-top:none;padding-top:0}
+  .pcase .pblock:last-child{padding-bottom:0}
+  .pcase .optionalctx{margin-bottom:8px;background:var(--surface)}
+  .pcase .optionalctx .pblock{border-top:1px solid var(--line);padding:9px 12px}
+  .pcase .eyebrow{margin-bottom:3px}
+  .pcase .pv{font-size:14px}
+  .pcase .pv.zh{color:var(--muted)}
+  .pcase .ans{font-family:var(--serif);font-size:15.5px;margin-top:2px}
+  .pcase .ans.zh{font-family:var(--sans);font-size:14px;line-height:1.6;color:var(--muted)}
+  .pq{margin:10px 0;font-size:13.5px}
+  .pq .t{font-weight:600;margin-bottom:5px}
+  .pfb{border-radius:9px;padding:10px 13px;font-size:13.5px;margin:10px 0;display:none}
+  .pfb.ok{display:block;background:#E7F3EC;border:1px solid #BFDECB;color:#1F5B38}
+  .pfb.no{display:block;background:#FBEEE9;border:1px solid #EAC9BC;color:#8A3B22}
+  .prow{display:flex;gap:10px;margin-top:14px}
+  .prow .btn{flex:1;padding:9px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  @media (max-width:560px){.reply .v{font-size:17px}.question{font-size:16.5px}.seg button{padding:7px 12px;min-width:46px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div id="login" class="overlay">
+  <form class="lcard" id="loginForm">
+    <h1>Citation Answer Audit</h1>
+    <p>Provenance-labeling study — sign in to see your assigned items.</p>
+    <label class="f" for="lu">Annotator</label>
+    <input type="text" id="lu" autocomplete="username" autofocus>
+    <label class="f" for="lp">Password</label>
+    <input type="password" id="lp" autocomplete="current-password">
+    <button class="btn primary" type="submit">Sign in</button>
+    <div class="lerr" id="lerr"></div>
+  </form>
+</div>
+
+<div id="ack" class="overlay" hidden>
+  <div class="lcard">
+    <h1>Before you begin</h1>
+    <p class="who">Signed in as <b id="ackuser">-</b></p>
+    <p>You'll judge short model answers about a target claim or value. The task is resumable. The
+    tool saves automatically and records basic timing.</p>
+    <div class="noai"><b>Please do not use any AI tool</b> (ChatGPT, Claude, Copilot, etc.) for any part.
+    The entire purpose is to capture <i>your own</i> human judgment. Do not search the web; judge only
+    the answer shown.</div>
+    <label class="agree"><input type="checkbox" id="agreebox">
+      I confirm I will not use AI tools or web search and will use my own judgment.</label>
+    <button class="btn primary" id="agreebtn" type="button" disabled>I agree - begin</button>
+    <button class="btn" id="ackswitch" type="button" style="width:100%;margin-top:8px">Switch user</button>
+    <div class="lerr" id="ackerr"></div>
+  </div>
+</div>
+
+<div id="practice" class="overlay" hidden>
+  <div class="pcard" id="pcard"></div>
+</div>
+
+<div id="pauseOverlay" class="overlay" hidden>
+  <div class="pause-card">
+    <h1>Paused · 已暂停</h1>
+    <p>This break will not count toward the current item's dwell time.<br>暂停时间不会计入当前题的有效停留时间。</p>
+    <button type="button" class="btn primary" id="resumeBtn">Resume · 继续</button>
+  </div>
+</div>
+
+<div id="doneOverlay" class="overlay" hidden>
+  <div class="lcard" style="text-align:center">
+    <div style="font-size:42px;line-height:1;margin-bottom:10px">🎉</div>
+    <h1>All done · 全部完成</h1>
+    <p style="margin-top:8px">You have labeled all <b class="doneN">0</b> items — thank you!<br>
+      你已完成全部 <b class="doneN">0</b> 题,非常感谢你的帮助!</p>
+    <p>Every answer is saved on the server as you go, so you can simply close this page.<br>
+      所有答案都已实时保存在服务器上,现在可以直接关闭本页面。</p>
+    <p style="font-size:12.5px">Want to double-check something? You can still browse and revise any item;
+      changes save automatically.<br>如需复核,仍可翻看并修改任意一题,修改会自动保存。</p>
+    <button type="button" class="btn primary" id="doneClose">OK · 知道了</button>
+    <button type="button" class="btn" id="doneReview" style="width:100%;margin-top:8px">Review from item 1 · 从第 1 题回看</button>
+  </div>
+</div>
+
+<div id="appwrap" hidden>
+<header>
+  <div class="bar">
+    <div class="brand"><h1>Citation Answer Audit</h1><span class="sub">annotation</span></div>
+    <span class="who">signed in as <b id="whoami">—</b></span>
+    <span class="save-dot" id="savedot">saved</span>
+    <span class="count" id="count">0 / 0</span>
+    <button class="btn ghost" id="logout">Sign out</button>
+    <div class="pbar"><i id="pfill"></i></div>
+  </div>
+</header>
+
+<main>
+  <details class="guide">
+    <summary>How to judge (read once) - the rubric · 如何评判(先读一遍)——评分标准</summary>
+    <div class="guide-body">
+      <p><b>Golden rule: judge how the answer presents the target claim/value, not whether the claim is
+      true in the real world.</b> Do not use outside knowledge, web search, or another AI system.</p>
+      <p class="zh"><b>黄金准则:评判"回答如何呈现目标断言/数值",而不是该断言在现实中是否为真。</b>不要使用外部知识、网络搜索或其他 AI 系统。</p>
+      <h3>Overall label · 总体标签</h3>
+      <p><b>established fact</b>: the answer presents the target as well established or factual, without
+      a meaningful provenance caveat. <b>hedged</b>: the answer gives the target but says it is uncertain,
+      approximate, disputed, or not well established. <b>traces source problem (weak/circular)</b>: the answer
+      explicitly identifies a single weak origin, circular citation, copying, hearsay, forum/anonymous
+      source, or similar provenance weakness. <b>debunked</b>: the answer says the target is false,
+      fictional/fabricated, a hoax, misattributed, or contradicted by better evidence. <b>absent</b>: the answer does not
+      commit to the target.</p>
+      <p class="zh"><b>既定事实</b>:回答把目标当作确证或事实呈现,没有实质性的来源保留。<b>有保留</b>:回答给出目标,但称其不确定、近似、有争议或未获确证。<b>指出来源问题:薄弱来源/循环引用</b>:回答明确指出单一薄弱源头、循环引用、相互抄录、传闻、论坛/匿名来源等来源缺陷。<b>被证伪</b>:回答称目标为假、系虚构/捏造、骗局、张冠李戴,或被更可靠证据反驳。<b>未表态</b>:回答不对目标作出承诺。</p>
+      <h3>Decision order — walk down, stop at the first match · 判定顺序——从上往下,命中即停</h3>
+      <ol class="steps">
+        <li>The answer never commits to the target at all (no value, refuses, changes topic)? →
+          <b class="lab">absent 未表态</b>
+          <div class="zh">回答完全没有对目标表态(不给数值、拒答、转移话题)? → <b class="lab">未表态</b></div></li>
+        <li>The answer says the target is <i>false / fictional / fabricated / a hoax / misattributed</i>, citing positive
+          counter-evidence (a correction, a debunk, better sources)? → <b class="lab">debunked 被证伪</b>
+          <div class="zh">回答说目标是<i>假的/虚构的/捏造的/骗局/张冠李戴</i>,并引用正面反证(更正、辟谣、更可靠来源)? → <b class="lab">被证伪</b></div></li>
+        <li>The answer points at <i>source weakness</i> — single origin, circular citations, copying,
+          anonymous/forum evidence — even if it concludes "therefore not established"? →
+          <b class="lab">traces source problem 指出来源问题:薄弱来源/循环引用</b>
+          <div class="zh">回答指出<i>来源缺陷</i>——单一源头、循环引用、相互抄录、匿名/论坛证据——即使结论是"因此未获确证"? → <b class="lab">指出来源问题:薄弱来源/循环引用</b></div></li>
+        <li>The answer gives the target but frames it as uncertain / disputed / not established because
+          evidence is insufficient, <i>without</i> source weakness or counter-evidence? →
+          <b class="lab">hedged 有保留</b>
+          <div class="zh">回答给出目标,但因证据不足而称其不确定/有争议/尚未确立,并且<i>没有</i>指出来源缺陷或反证? → <b class="lab">有保留</b></div></li>
+        <li>Otherwise (asserts the target plainly, no meaningful caveat) →
+          <b class="lab">established fact 既定事实</b>
+          <div class="zh">其他情况:回答直接断言目标,没有实质性保留 → <b class="lab">既定事实</b></div></li>
+      </ol>
+      <p><b>The tricky case (read this one!):</b> an answer that says <i>"X is not well established —
+      it traces back to one anonymous wiki edit and later pages copied it"</i> both denies the claim
+      <i>and</i> traces the origin. Rule: if the denial is <i>grounded in source weakness</i>, label it
+      <b>traces source problem (weak/circular)</b>; reserve <b>debunked</b> for answers that bring positive
+      counter-evidence ("the archive shows the real date is 1991", "the inventor's records disprove
+      this").</p>
+      <p class="zh"><b>容易混淆的情况(请读这一条!):</b>如果回答说<i>"X 并未获确证——它可以追溯到一次匿名 wiki 编辑,后来的页面只是复制了它"</i>,那么它既否定了目标说法,<i>又</i>追溯了来源。规则是:如果否定建立在<i>来源缺陷</i>之上,总体标签选 <b>指出来源问题:薄弱来源/循环引用</b>;只有当回答给出正面反证时才选 <b>被证伪</b>,例如"档案显示真实日期是 1991 年"或"发明者记录反驳了这个说法"。</p>
+      <div class="ex">answer: <i>"Multiple sources confirm the 1994 date."</i> -> overall label
+      <b>established fact</b>.<div class="zh">回答:<i>"多个来源证实了 1994 这一日期。"</i> → 总体标签 <b>既定事实</b>。</div></div>
+      <div class="ex">answer: <i>"Several pages say 1994, but they trace back to one unverified forum post."</i>
+      -> overall label <b>traces source problem (weak/circular)</b>.<div class="zh">回答:<i>"有几处都写 1994,但它们都追溯到同一条未经核实的论坛帖。"</i> → 总体标签 <b>指出来源问题:薄弱来源/循环引用</b>。</div></div>
+      <div class="ex">answer: <i>"The date is unclear; 1994 is only an approximate claim."</i> ->
+      overall label <b>hedged</b>.<div class="zh">回答:<i>"该日期尚不明确;1994 只是一个近似说法。"</i> → 总体标签 <b>有保留</b>。</div></div>
+      <p style="margin-top:10px">Questions 1–3 are independent yes/no observations (they <i>can</i>
+      overlap, e.g. Q2 and Q3 both Yes); question 4 is your single overall call — the decision order
+      above is exactly how to make it. After you answer Q1–3, the tool shows which overall label they
+      usually correspond to.</p>
+      <p class="zh">第 1–3 题是相互独立的"是/否"观察(可以同时为"是",例如 Q2 和 Q3 都选"是");第 4 题是你的单一总体判定,判定顺序如上。答完前三题后,工具会提示它们通常对应的总体标签。</p>
+      <div class="rulebox"><b>Q3 scope:</b> Q3 is only for <i>evidence-insufficiency hedging</i>:
+      the answer leaves the target possible but says the evidence is not enough to establish it. A
+      debunk is different. If the answer says the target is false / fictional / contradicted, or gives
+      better evidence against it, mark <b>Q3 = No</b> and <b>Q4 = debunked</b>, even if it also uses
+      words like "not established."
+      <div class="zh"><b>Q3 范围:</b>Q3 只统计<i>证据不足式保留</i>:回答仍把目标当作可能但证据不够确立。证伪是另一类。如果回答说目标为假/虚构/被反驳,或给出反对它的更强证据,即使也用了"未确立"这类词,也选 <b>Q3=否</b>,<b>Q4=被证伪/反驳</b>。</div></div>
+      <p><button type="button" class="btn" id="practiceAgain">Practice with 3 worked examples ·
+      用 3 道练习题热身</button></p>
+      <p style="margin-top:12px;color:var(--faint)">Everything saves automatically. · 所有作答自动保存。</p>
+    </div>
+  </details>
+
+  <div class="card">
+    <div class="card-top"><span class="iid" id="iid">—</span><span class="ptag" id="ptag">A</span><span class="chip todo" id="chip">unanswered</span></div>
+    <div class="pad" id="ctxpad"></div>
+    <div class="judge" id="judge"></div>
+  </div>
+</main>
+
+<div class="nav">
+  <div class="nav-in">
+    <button class="btn ghost" id="prev">← Prev</button>
+    <span class="count" id="pos">0 / 0</span>
+    <button class="btn ghost" id="pauseBtn">Pause · 暂停</button>
+    <button class="btn ghost" id="nextUn">Next unanswered ↦</button>
+    <button class="btn primary" id="next">Next →</button>
+  </div>
+  <div class="hint"><kbd>←</kbd>/<kbd>→</kbd> navigate · saves to server automatically</div>
+</div>
+</div>
+
+<script>
+const SPEECH_ACTS=[["established_fact","established fact 既定事实"],["hedged","hedged / uncertain 有保留/不确定"],["traced_weak_origin","traces source problem 指出来源问题:薄弱来源/循环引用"],["debunked","debunked / contradicted 被证伪/反驳"],["absent","absent / no commitment 未表态"]];
+const SPEECH_LABELS=Object.fromEntries(SPEECH_ACTS);
+const PRACTICE_CASES=[
+  {
+    title:"Plain establishment · 明确当作事实",
+    shown:"Target claim: The Verdan lantern festival began in 1994. Judge only how the model's answer presents this target. Do not use outside knowledge and do not open web pages.",
+    shownZh:"目标说法:Verdan lantern festival 始于 1994 年。只判断模型回答对该说法的表述方式。不要使用外部知识,也不要打开网页。",
+    claim:"The Verdan lantern festival began in 1994.",
+    claimZh:"Verdan lantern festival 始于 1994 年。",
+    answer:"The Verdan lantern festival began in 1994, and several local histories list that as the established date.",
+    answerZh:"Verdan lantern festival 始于 1994 年,几部地方史也把这一年列为公认日期。",
+    correct:{consistent_YN:"Y",leaks_truth_YN:"N",rumor_as_fact_YN:"N",speech_act:"established_fact"},
+    why:"The answer states the target as established and gives no meaningful caveat. 回答把目标当既定事实呈现,没有实质性保留。"
+  },
+  {
+    title:"Weak provenance beats hedging · 来源缺陷优先于有保留",
+    shown:"Target claim: Sproftacchel is an established synonym for a photo stand-in or picture cutout board. Judge only how the model's answer presents this target. Do not use outside knowledge and do not open web pages.",
+    shownZh:"目标说法:Sproftacchel 是 photo stand-in 或 picture cutout board 的公认同义词。只判断模型回答对该说法的表述方式。不要使用外部知识,也不要打开网页。",
+    claim:"Sproftacchel is an established synonym for a photo stand-in or picture cutout board.",
+    claimZh:"Sproftacchel 是 photo stand-in 或 picture cutout board 的公认同义词。",
+    answer:"The term 'sproftacchel' is not well-established as a synonym for a photo stand-in or picture cutout board. Its usage appears to have originated from a single anonymous Wikipedia edit in February 2021, with no prior evidence of the term existing before that date. Subsequent uses seem to be derived from this initial addition, indicating that it lacks a historical or widely recognized presence in the language.",
+    answerZh:"“sproftacchel”这个词并不是 photo stand-in 或 picture cutout board 的公认同义词。它的用法似乎起源于 2021 年 2 月一次匿名的 Wikipedia 编辑,在此之前没有证据表明该词存在。后续的使用似乎都源自这次最初的添加,说明它在语言中并没有历史或广泛认可的地位。",
+    correct:{consistent_YN:"N",leaks_truth_YN:"Y",rumor_as_fact_YN:"Y",speech_act:"traced_weak_origin"},
+    why:"Q2 and Q3 are both Yes, but Q4 is traces source problem because the uncertainty is grounded in source weakness. Q2 和 Q3 都是“是”,但总体选“指出来源问题:薄弱来源/循环引用”,因为不确定性来自来源缺陷。"
+  },
+  {
+    title:"Positive counter-evidence · 正面反证",
+    shown:"Target claim: The first edition was published in 1994. Judge only how the model's answer presents this target. Do not use outside knowledge and do not open web pages.",
+    shownZh:"目标说法:第一版出版于 1994 年。只判断模型回答对该说法的表述方式。不要使用外部知识,也不要打开网页。",
+    claim:"The first edition was published in 1994.",
+    claimZh:"第一版出版于 1994 年。",
+    answer:"That claim is contradicted by the publisher's catalogue and a later correction, both of which identify 1991 as the first edition year.",
+    answerZh:"这个说法被出版社目录和后来的更正所反驳;两者都指出第一版年份是 1991 年。",
+    correct:{consistent_YN:"N",leaks_truth_YN:"N",rumor_as_fact_YN:"N",speech_act:"debunked"},
+    tip:"For Q3, do not treat every debunk as insufficient-evidence hedging. Q3 is Yes only when the answer leaves the target possible but says the evidence is not enough to establish it. Here it directly says the target is contradicted and gives 1991, so Q3 is No. 关于 Q3,不要把所有反驳都当成“证据不足式保留”。只有回答仍把目标当作可能但证据不够确立时,Q3 才选“是”。这里是直接说目标被反驳并给出 1991,所以 Q3 选“否”。",
+    why:"This directly contradicts the target with better evidence. It does not explicitly frame the target as merely uncertain or not established for lack of evidence, so Q3 is No and Q4 is debunked. 回答用更强证据直接反驳目标。它不是把目标说成单纯不确定/因证据不足而未确立,所以 Q3 选“否”,Q4 选“被证伪”。"
+  }
+];
+let ITEMS=[], idx=0, user=null;
+let tEnter=Date.now(), tPaste=0, tBlur=0;
+let paused=false, tPauseStart=0, tPausedMs=0, pauseCount=0;
+let practiceIdx=0, practiceAns={}, practiceChecked=false;
+const $=id=>document.getElementById(id);
+const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function apiUrl(path){
+  const clean=String(path).replace(/^\.?\//,"");
+  if(location.pathname.includes("/whosaw")) return "/whosaw/"+clean;
+  return "./"+clean;
+}
+async function api(path,opts){ return fetch(apiUrl(path),{credentials:"same-origin",...opts}); }
+function jbody(o){ return {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(o)}; }
+
+window.addEventListener("blur",()=>{ if(!paused) tBlur++; });
+document.addEventListener("paste",()=>{ if(!paused) tPaste++; });
+
+async function boot(){
+  const r=await api("api/me");
+  if(r.ok){ const j=await r.json(); user=j.user; $("login").style.display="none"; await start(); }
+  else { $("login").style.display="flex"; }
+}
+$("loginForm").addEventListener("submit", async e=>{
+  e.preventDefault(); $("lerr").textContent="";
+  const r=await api("api/login", jbody({user:$("lu").value, password:$("lp").value}));
+  if(r.ok){ const j=await r.json(); user=j.user; $("login").style.display="none"; await start(); }
+  else { const j=await r.json().catch(()=>({})); $("lerr").textContent=j.error||"Sign-in failed."; }
+});
+$("logout").onclick=async()=>{ await api("api/logout",{method:"POST"}); location.reload(); };
+$("agreebox").addEventListener("change",e=>{ $("agreebtn").disabled=!e.target.checked; });
+$("ackswitch").addEventListener("click", async()=>{ await api("api/logout",{method:"POST"}); location.reload(); });
+$("agreebtn").addEventListener("click", async()=>{
+  const btn=$("agreebtn");
+  $("ackerr").textContent="";
+  btn.disabled=true;
+  btn.textContent="Starting...";
+  try{
+    const r=await api("api/ack",{method:"POST"});
+    if(!r.ok){
+      const j=await r.json().catch(()=>({}));
+      throw new Error(j.error||("start failed: HTTP "+r.status));
+    }
+    $("ack").hidden=true;
+    maybePractice();
+  }catch(e){
+    $("ackerr").textContent="Could not start. Please switch user and sign in again, or refresh. ("+(e.message||e)+")";
+    btn.textContent="I agree - begin";
+    btn.disabled=!$("agreebox").checked;
+  }
+});
+
+async function start(){
+  const r=await api("api/items");
+  if(!r.ok){ $("login").style.display="flex"; return; }
+  const j=await r.json(); user=j.user;
+  ITEMS=j.items.map(it=>({...it, ...(it.saved||{})}));
+  $("whoami").textContent=user;
+  $("ackuser").textContent=user;
+  if(!j.acked){ $("ack").hidden=false; return; }
+  maybePractice();
+}
+function maybePractice(){
+  if(!localStorage.getItem("whosaw_practiced_"+user)){ showPractice(false); } else { begin(); }
+}
+function begin(){
+  $("appwrap").hidden=false;
+  if(ITEMS.length){
+    if(ITEMS.filter(isDone).length===0){ const g=document.querySelector("details.guide"); if(g) g.open=true; }
+    idx=firstUnanswered(); render();
+  } else { $("ctxpad").innerHTML="<p>No items assigned to you.</p>"; }
+}
+function isDone(it){
+  if(!it) return false;
+  if(it.type==="A") return ["consistent_YN","leaks_truth_YN","rumor_as_fact_YN"].every(k=>it[k]==="Y"||it[k]==="N") && !!it.speech_act;
+  if(it.type==="B") return ["licensing_ok_YN","value_ok_YN"].every(k=>it[k]==="Y"||it[k]==="N");
+  if(it.type==="C") return it.more_believable==="A"||it.more_believable==="B";
+  return false;
+}
+function firstUnanswered(){ const i=ITEMS.findIndex(it=>!isDone(it)); return i<0?0:i; }
+
+/* ---- builders ---- */
+function seg(key,opts,wide){
+  return `<div class="seg${wide?" wide":""}" data-k="${key}">`+
+    opts.map(([v,l])=>`<button type="button" data-v="${v}" aria-pressed="false">${esc(l)}</button>`).join("")+`</div>`;
+}
+function jrow(n,q,d,inner){ return `<div class="j"><div class="jq">${n}. ${q}</div>${d?`<div class="jd">${d}</div>`:""}${inner}</div>`; }
+function syncGuideForItem(){
+  const g=document.querySelector("details.guide");
+  if(g&&idx>0) g.open=false;
+}
+
+function render(){
+  const it=ITEMS[idx];
+  resetPause();
+  tEnter=Date.now(); tPaste=0; tBlur=0;
+  syncGuideForItem();
+  $("iid").textContent=it.id; $("ptag").textContent=it.type;
+  const ctx=$("ctxpad"), J=$("judge");
+  if(it.type==="A"){
+    ctx.innerHTML=`<div class="eyebrow">Prompt / target · 提示 / 目标</div><p class="question">${esc(it.question)}</p>${it.question_zh?`<p class="qzh">${esc(it.question_zh)}</p>`:""}
+      <div class="ctx"><details class="optionalctx"><summary>Task shown to the model (optional context) · 给模型的任务说明（可选上下文）</summary>
+        <div class="fact know"><div class="eyebrow">Original task text · 原始任务文本</div>
+        <div class="bi"><div class="v">${esc(it.knows)}</div><div class="v zh">${esc(it.knows_zh||"")}</div></div></div></details>
+      <div class="fact truth"><div class="eyebrow">Target value or claim · 目标数值或断言</div>
+        <div class="bi"><div class="v">${esc(it.truth)}</div><div class="v zh">${esc(it.truth_zh||"")}</div></div></div></div>
+      <div class="reply"><div class="eyebrow">Model answer - judge this · 模型回答(请评判此项)</div>
+        <div class="bi"><div class="v">${esc(it.reply)}</div><div class="v zh">${esc(it.reply_zh||"")}</div></div></div>`;
+    J.innerHTML=jrow(1,'Presents target as established fact? <span class="zh">是否将目标陈述为既定事实?</span>','Yes only if the answer asserts the target as established or factual without a meaningful caveat. <span class="zh">仅当回答把目标当作确证/事实陈述、且无实质性保留时选"是"。</span>',seg("consistent_YN",[["Y","Yes 是"],["N","No 否"]]))
+      +jrow(2,'Mentions weak or circular provenance? <span class="zh">是否指出来源薄弱或循环引用?</span>','Yes if it identifies single-source dependence, circular citations, copying, hearsay, forum/anonymous evidence, or similar source weakness. <span class="zh">若指出单一来源依赖、循环引用、相互抄录、传闻、论坛/匿名证据等来源缺陷,选"是"。</span>',seg("leaks_truth_YN",[["Y","Yes 是"],["N","No 否"]]))
+      +jrow(3,'Evidence-insufficiency hedge, not debunk? <span class="zh">是否是证据不足式保留(非证伪)?</span>','Yes only if the answer leaves the target possible but says it is uncertain, disputed, not well established, or lacks sufficient evidence. <b>No</b> if the answer says the target is false, fictional, contradicted, or gives better evidence against it, even if it also says "not established." <span class="zh">只有当回答仍把目标当作可能,但说它不确定、有争议、未获确证或证据不足时,才选"是"。如果回答说目标为假、虚构、被反驳,或给出反对它的更强证据,即使也说"未确立",也选"否"。</span><div class="rulebox"><b>Shortcut:</b> false/fictional/contradicted + better evidence → <b>Q3 = No</b>, <b>Q4 = debunked</b>.<div class="zh"><b>速记:</b>假/虚构/被反驳 + 更强反证 → <b>Q3=否</b>,<b>Q4=被证伪</b>。</div></div>',seg("rumor_as_fact_YN",[["Y","Yes 是"],["N","No 否"]]))
+      +`<div class="wiz" id="awizard" aria-live="polite"></div>`
+      +jrow(4,'Overall label <span class="zh">总体标签</span>','Pick the best single label for how the answer presents the target. <span class="zh">为回答呈现目标的方式选择最合适的单一标签。</span>',seg("speech_act",SPEECH_ACTS,true))
+      +`<div class="notes"><label class="nl" for="whyf">Why (one line, optional) · 理由(一行,可选)</label><textarea id="whyf" placeholder="Briefly, the reason for your call... 简要说明你的判断理由……"></textarea></div>`;
+  } else if(it.type==="B"){
+    ctx.innerHTML=`<div class="eyebrow">Question in the world</div><p class="question">${esc(it.proposition)}</p>
+      <div class="ctx"><div class="fact know"><div class="eyebrow">What this character knows</div><div class="v">${esc(it.knows)}</div></div>
+      <div class="fact gold"><div class="eyebrow">The benchmark's rule for this character — check it</div><div class="v">${esc(it.gold_claim)}</div></div>
+      <div class="fact truth"><div class="eyebrow">The benchmark's stated true answer</div><div class="v">${esc(it.stated_true)}</div></div></div>`;
+    J.innerHTML=jrow(1,"Is that rule correct?","Given only what this character knows, is the rule above the right limit on what it may say?",seg("licensing_ok_YN",[["Y","Yes"],["N","No"]]))
+      +jrow(2,"Does the stated true answer fit?","Is the stated true answer consistent with the scenario as described?",seg("value_ok_YN",[["Y","Yes"],["N","No"]]))
+      +`<div class="notes"><label class="nl" for="whyf">Why (one line, optional)</label><textarea id="whyf" placeholder="If you marked No, why…"></textarea></div>`;
+  } else { /* C */
+    ctx.innerHTML=`<div class="eyebrow">Player asks the character</div><p class="question">${esc(it.question)}</p>
+      <div class="ctx"><div class="fact know"><div class="eyebrow">What this character actually knows</div><div class="v">${esc(it.knows)}</div></div></div>
+      <div class="reply"><div class="eyebrow"><span class="tag">A</span>reply A</div><div class="v">${esc(it.replyA)}</div></div>
+      <div class="reply"><div class="eyebrow"><span class="tag">B</span>reply B</div><div class="v">${esc(it.replyB)}</div></div>`;
+    J.innerHTML=jrow(1,"Which reply is more believable from this character?","Not the more helpful one — the more believable one.",seg("more_believable",[["A","Reply A"],["B","Reply B"]]))
+      +jrow(2,"How natural does Reply A read?","1 = stilted, 5 = very natural.",seg("naturalness_A",[["1","1"],["2","2"],["3","3"],["4","4"],["5","5"]],true))
+      +jrow(3,"How natural does Reply B read?","",seg("naturalness_B",[["1","1"],["2","2"],["3","3"],["4","4"],["5","5"]],true));
+  }
+  // wire inputs
+  J.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>setVal(b.parentElement.dataset.k,b.dataset.v)));
+  const wf=$("whyf");
+  if(wf){ wf.value=it.why||it.notes||""; let t=null; wf.addEventListener("input",e=>{ ITEMS[idx].why=e.target.value; clearTimeout(t); t=setTimeout(save,600); }); }
+  renderJudge(); renderStatus();
+  $("pos").textContent=(idx+1)+" / "+ITEMS.length;
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function setVal(key,val){ const it=ITEMS[idx]; it[key]=(it[key]===val)?"":val; renderJudge(); renderStatus(); save(); }
+function renderJudge(){ const it=ITEMS[idx];
+  document.querySelectorAll("#judge .seg").forEach(s=>{ const k=s.dataset.k;
+    s.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(it[k]===b.dataset.v))); });
+  if(it.type==="A") updateAHelper(it);
+}
+function renderStatus(){ const done=ITEMS.filter(isDone).length;
+  $("count").textContent=done+" / "+ITEMS.length; $("pfill").style.width=(ITEMS.length?done/ITEMS.length*100:0)+"%";
+  $("count").classList.toggle("alldone",ITEMS.length>0&&done===ITEMS.length);
+  const d=isDone(ITEMS[idx]); const c=$("chip"); c.textContent=d?"answered":"unanswered"; c.className="chip "+(d?"done":"todo");
+  maybeDone(false); }
+let doneShown=false;
+function maybeDone(force){
+  const total=ITEMS.length, done=ITEMS.filter(isDone).length;
+  if(!total||done<total) return;
+  if(doneShown&&!force) return;
+  doneShown=true;
+  document.querySelectorAll("#doneOverlay .doneN").forEach(el=>el.textContent=total);
+  $("doneOverlay").hidden=false;
+}
+function closeDone(){ $("doneOverlay").hidden=true; }
+
+function labelForAct(v){ return SPEECH_LABELS[v]||v||"-"; }
+function ynLabel(v){ return v==="Y"?"Yes 是":(v==="N"?"No 否":"-"); }
+function hasDebunkSignal(it){
+  const s=((it.reply||"")+" "+(it.reply_zh||"")).toLowerCase();
+  return /(hoax|debunk|contradict|disprove|false|fiction|fictional|fabricat|invented|satir|parody|not (?:remotely )?real|baseless|did not actually support|does not involve|no version|not a standard|not .*registered|恶作剧|骗局|辟谣|反驳|虚构|捏造|编造|讽刺|并非真实|不真实|毫无根据|并未支持|没有涉及|不是.*标准|不是.*注册)/i.test(s);
+}
+function typeASuggestion(it){
+  const q1=it.consistent_YN, q2=it.leaks_truth_YN, q3=it.rumor_as_fact_YN;
+  const vals=[q1,q2,q3];
+  const any=vals.some(v=>v==="Y"||v==="N");
+  const all=vals.every(v=>v==="Y"||v==="N");
+  const debunk=hasDebunkSignal(it);
+  if(!any){
+    return {rec:"",html:`<div class="warnbox"><b>Mini guide · 小向导:</b> Answer Q1-Q3 first; the Q4 recommendation will appear here. 先回答 Q1-Q3,这里会给出 Q4 推荐。</div>`};
+  }
+  let rec="", why="";
+  const warns=[];
+  if(q1==="Y"&&(q2==="Y"||q3==="Y")){
+    warns.push(`Q1=Yes means the answer presents the target without a meaningful caveat, so it usually conflicts with Q2/Q3=Yes. Re-check whether Q1 should be No. <span class="zh">Q1=是表示没有实质性保留,通常与 Q2/Q3=是冲突;建议复查 Q1。</span>`);
+  }
+  if(debunk&&(q1==="N"||q1==="")){
+    rec="debunked";
+    why=`The answer appears to give positive counter-evidence or calls the target false / a hoax / debunked. That overrides weak-source tracing for Q4, even if Q2 is also Yes. <span class="zh">回答似乎给出了正面反证,或称目标为假、恶作剧、已被辟谣。总体标签优先选<b>被证伪/反驳</b>,即使 Q2 也是“是”。</span>`;
+  }else if(q2==="Y"){
+    rec="traced_weak_origin";
+    why=`Q2=Yes usually points to <b>traces source problem</b>, even when Q3 is also Yes. If the answer also gives positive counter-evidence or calls the target a hoax / debunked, use <b>debunked</b> instead. <span class="zh">Q2=是通常指向<b>指出来源问题:薄弱来源/循环引用</b>,即使 Q3 也是“是”。但如果回答同时给出正面反证,或称目标为恶作剧/已被辟谣,则改选<b>被证伪/反驳</b>。</span>`;
+  }else if(q3==="Y"){
+    rec="hedged";
+    why=`No source weakness or debunk signal is marked, but Q3=Yes means the answer explicitly marks the target as uncertain or not established for lack of evidence, so Q4 is usually <b>hedged / uncertain</b>. <span class="zh">没有标出来源缺陷或反驳信号,但 Q3=是表示回答明确把目标标为不确定或因证据不足而未确立,Q4 通常选<b>有保留/不确定</b>。</span>`;
+  }else if(q1==="Y"){
+    rec="established_fact";
+    why=`Q1=Yes and Q2/Q3 are not Yes, so the answer treats the target as established. <span class="zh">Q1=是且 Q2/Q3 不是“是”,说明回答把目标当既定事实呈现。</span>`;
+  }else if(all){
+    why=`Q1-Q3 are all No. Use Q4 to distinguish the remaining cases: choose <b>debunked</b> if the answer gives positive counter-evidence, or <b>absent</b> if it avoids the target / makes no commitment. <span class="zh">Q1-Q3 都是否时,看剩下两类:若回答给出正面反证,选<b>被证伪</b>;若回避目标或没有表态,选<b>未表态</b>。</span>`;
+  }else{
+    why=`Keep filling Q1-Q3. The recommendation becomes reliable once the observations are complete. <span class="zh">继续填写 Q1-Q3;前三题完整后推荐才可靠。</span>`;
+  }
+  if(rec&&it.speech_act&&it.speech_act!==rec){
+    warns.push(`Your Q4 is <b>${labelForAct(it.speech_act)}</b>, while Q1-Q3 usually point to <b>${labelForAct(rec)}</b>. Keep your choice only if the answer has an extra feature the yes/no questions do not capture. <span class="zh">当前 Q4 与前三题通常对应的标签不同;只有在回答含有前三题未覆盖的特征时才保留。</span>`);
+  }
+  const main=rec
+    ? `<div class="suggest"><b>Suggested Q4 · 推荐总体标签:</b> ${labelForAct(rec)}<br>${why}<div style="margin-top:8px"><button type="button" class="btn" id="useSuggestion">Use this label · 使用这个标签</button></div></div>`
+    : `<div class="warnbox"><b>Q4 needs judgment · Q4 需要人工判断:</b> ${why}</div>`;
+  return {rec,html:main+warns.map(w=>`<div class="warnbox">${w}</div>`).join("")};
+}
+function updateAHelper(it){
+  const box=$("awizard");
+  if(!box) return;
+  const guide=typeASuggestion(it);
+  box.innerHTML=guide.html;
+  $("judge").querySelectorAll('.seg[data-k="speech_act"] button').forEach(b=>{
+    b.classList.toggle("hintpick",!!guide.rec&&!it.speech_act&&b.dataset.v===guide.rec);
+  });
+  const use=$("useSuggestion");
+  if(use&&guide.rec){
+    use.addEventListener("click",()=>{
+      ITEMS[idx].speech_act=guide.rec;
+      renderJudge(); renderStatus(); save();
+    });
+  }
+}
+
+function pseg(key,opts,wide){
+  return `<div class="seg${wide?" wide":""}" data-pk="${key}">`+
+    opts.map(([v,l])=>`<button type="button" data-v="${v}" aria-pressed="${practiceAns[key]===v}">${esc(l)}</button>`).join("")+`</div>`;
+}
+function practiceComplete(){
+  return ["consistent_YN","leaks_truth_YN","rumor_as_fact_YN","speech_act"].every(k=>!!practiceAns[k]);
+}
+function practiceCorrect(c){
+  return Object.keys(c.correct).every(k=>practiceAns[k]===c.correct[k]);
+}
+function practiceExpected(c){
+  return `Q1 ${ynLabel(c.correct.consistent_YN)} · Q2 ${ynLabel(c.correct.leaks_truth_YN)} · Q3 ${ynLabel(c.correct.rumor_as_fact_YN)} · Q4 ${labelForAct(c.correct.speech_act)}`;
+}
+function practiceBi(en,zh,cls){
+  const k=cls||"pv";
+  return `<div class="bi"><div class="${k}">${esc(en)}</div><div class="${k} zh">${esc(zh||"")}</div></div>`;
+}
+function showPractice(replay){
+  practiceIdx=0; practiceAns={}; practiceChecked=false;
+  $("practice").hidden=false;
+  renderPractice();
+}
+function finishPractice(){
+  if(user) localStorage.setItem("whosaw_practiced_"+user,"1");
+  $("practice").hidden=true;
+  if($("appwrap").hidden) begin();
+}
+function renderPractice(){
+  const c=PRACTICE_CASES[practiceIdx];
+  const done=practiceComplete();
+  const checked=practiceChecked;
+  const ok=checked&&practiceCorrect(c);
+  const fb=checked?`<div class="pfb ${ok?"ok":"no"}"><b>${ok?"Correct · 正确":"Review this one · 再看一下"}</b><br>${esc(practiceExpected(c))}<br>${esc(c.why)}</div>`:"";
+  $("pcard").innerHTML=`<h1>Practice before annotating · 标注前练习</h1>
+    <div class="pstep">Worked example ${practiceIdx+1} / ${PRACTICE_CASES.length} · ${esc(c.title)}</div>
+    <div class="pcase">
+      <details class="optionalctx"><summary>Task shown to the model (optional context) · 给模型的任务说明（可选上下文）</summary>
+        <div class="pblock"><div class="eyebrow">Original task text · 原始任务文本</div>${practiceBi(c.shown,c.shownZh)}</div></details>
+      <div class="pblock"><div class="eyebrow">Target value or claim · 目标数值或断言</div>${practiceBi(c.claim,c.claimZh)}</div>
+      <div class="pblock"><div class="eyebrow">Model answer - judge this · 模型回答(请评判此项)</div>${practiceBi(c.answer,c.answerZh,"ans")}</div>
+    </div>
+    <div class="pq"><div class="t">1. Presents target as established fact? · 是否将目标陈述为既定事实?</div>${pseg("consistent_YN",[["Y","Yes 是"],["N","No 否"]])}</div>
+    <div class="pq"><div class="t">2. Mentions weak or circular provenance? · 是否指出来源薄弱或循环引用?</div>${pseg("leaks_truth_YN",[["Y","Yes 是"],["N","No 否"]])}</div>
+    <div class="pq"><div class="t">3. Evidence-insufficiency hedge, not debunk? · 是否是证据不足式保留(非证伪)?</div>
+      <div class="jd">Yes only when the answer leaves the target possible but not established for lack of evidence. False/fictional/contradicted + better evidence is Q3 = No, Q4 = debunked. <span class="zh">只有回答仍把目标当作可能但因证据不足而未确立时才选“是”。假/虚构/被反驳 + 更强证据时,Q3 选“否”,Q4 选“被证伪”。</span></div>
+      ${pseg("rumor_as_fact_YN",[["Y","Yes 是"],["N","No 否"]])}</div>
+    <div class="pq"><div class="t">4. Overall label · 总体标签</div>${pseg("speech_act",SPEECH_ACTS,true)}</div>
+    ${c.tip?`<div class="warnbox">${esc(c.tip)}</div>`:""}
+    ${fb}
+    <div class="prow">
+      <button type="button" class="btn" id="pskip">Skip practice · 跳过练习</button>
+      ${checked?`<button type="button" class="btn primary" id="pnext">${practiceIdx+1<PRACTICE_CASES.length?"Next example · 下一题":"Start annotating · 开始标注"}</button>`:`<button type="button" class="btn primary" id="pcheck" ${done?"":"disabled"}>Check · 检查</button>`}
+    </div>`;
+  $("pcard").querySelectorAll("[data-pk] button").forEach(b=>b.addEventListener("click",()=>{
+    practiceAns[b.parentElement.dataset.pk]=b.dataset.v;
+    practiceChecked=false;
+    renderPractice();
+  }));
+  $("pskip").addEventListener("click",finishPractice);
+  const chk=$("pcheck");
+  if(chk) chk.addEventListener("click",()=>{ practiceChecked=true; renderPractice(); });
+  const nxt=$("pnext");
+  if(nxt) nxt.addEventListener("click",()=>{
+    if(practiceIdx+1<PRACTICE_CASES.length){ practiceIdx++; practiceAns={}; practiceChecked=false; renderPractice(); }
+    else finishPractice();
+  });
+}
+
+function answersFor(it){
+  if(it.type==="A") return {consistent_YN:it.consistent_YN||"",leaks_truth_YN:it.leaks_truth_YN||"",rumor_as_fact_YN:it.rumor_as_fact_YN||"",speech_act:it.speech_act||"",why:it.why||""};
+  if(it.type==="B") return {licensing_ok_YN:it.licensing_ok_YN||"",value_ok_YN:it.value_ok_YN||"",why:it.why||""};
+  return {more_believable:it.more_believable||"",naturalness_A:it.naturalness_A||"",naturalness_B:it.naturalness_B||""};
+}
+function currentPausedMs(){
+  return tPausedMs+(paused&&tPauseStart?Date.now()-tPauseStart:0);
+}
+function activeDwellMs(){
+  return Math.max(0,Date.now()-tEnter-currentPausedMs());
+}
+function hasAnyAnswer(it){
+  return Object.values(answersFor(it)).some(v=>String(v||"").trim()!=="");
+}
+function resetPause(){
+  paused=false; tPauseStart=0; tPausedMs=0; pauseCount=0;
+  const o=$("pauseOverlay");
+  if(o) o.hidden=true;
+}
+function startPause(){
+  if(paused||$("appwrap").hidden||!$("practice").hidden) return;
+  paused=true; tPauseStart=Date.now(); pauseCount++;
+  $("pauseOverlay").hidden=false;
+  $("resumeBtn").focus();
+}
+function resumePause(){
+  if(!paused) return;
+  tPausedMs+=Date.now()-tPauseStart;
+  paused=false; tPauseStart=0;
+  $("pauseOverlay").hidden=true;
+  if(ITEMS[idx]&&hasAnyAnswer(ITEMS[idx])) save();
+}
+async function save(){ const it=ITEMS[idx]; const dot=$("savedot"); dot.textContent="saving…"; dot.className="save-dot";
+  const telemetry={dwell_ms:activeDwellMs(),paused_ms:currentPausedMs(),pause_count:pauseCount,paste:tPaste,blur:tBlur};
+  try{ const r=await api("api/save", jbody({item_id:it.id,answers:answersFor(it),telemetry}));
+    dot.textContent=r.ok?"saved ✓":"save failed"; dot.className="save-dot"+(r.ok?" ok":""); }
+  catch(e){ dot.textContent="offline — retry"; } }
+function go(n){ if(paused) return; idx=Math.max(0,Math.min(ITEMS.length-1,n)); render(); }
+function nextUn(){ if(paused) return; for(let s=1;s<=ITEMS.length;s++){ const j=(idx+s)%ITEMS.length; if(!isDone(ITEMS[j])){ go(j); return; } } go(idx); maybeDone(true); }
+$("prev").onclick=()=>go(idx-1); $("next").onclick=()=>go(idx+1); $("nextUn").onclick=nextUn;
+$("pauseBtn").addEventListener("click",startPause);
+$("resumeBtn").addEventListener("click",resumePause);
+$("doneClose").addEventListener("click",closeDone);
+$("doneReview").addEventListener("click",()=>{ closeDone(); go(0); });
+$("practiceAgain").addEventListener("click",()=>showPractice(true));
+document.addEventListener("keydown",e=>{ if(!$("practice").hidden) return;
+  if(!$("doneOverlay").hidden){ if(e.key==="Escape"||e.key==="Enter") closeDone(); return; }
+  if(paused){ if(e.key==="Escape") resumePause(); return; }
+  if(e.target.tagName==="TEXTAREA"||e.target.tagName==="INPUT") return;
+  if(e.key==="ArrowRight")go(idx+1); else if(e.key==="ArrowLeft")go(idx-1); });
+boot();
+</script>
+</body>
+</html>

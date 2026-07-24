@@ -1,0 +1,76 @@
+{
+  "config": {
+    "model": "claude-opus-4-8",
+    "conds": [
+      "trace",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit",
+    "cot": false,
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_expertqa_genuine_claude-opus-4-8.rows.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "api_errors": 1,
+      "dist": {
+        "traced_weak_origin": 0.97,
+        "absent": 0.03,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.8,
+      "launder_n": "24/30",
+      "ci95": [
+        0.63,
+        0.9
+      ],
+      "api_errors": 2,
+      "dist": {
+        "established_fact": 0.8,
+        "hedged": 0.13,
+        "absent": 0.07
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "7/10",
+          "rate": 0.7
+        },
+        "star": {
+          "launder_n": "8/10",
+          "rate": 0.8
+        },
+        "fake_corroboration": {
+          "launder_n": "9/10",
+          "rate": 0.9
+        }
+      }
+    },
+    "discrimination": 0.8
+  },
+  "launder_examples": []
+}

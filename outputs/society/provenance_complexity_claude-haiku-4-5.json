@@ -1,0 +1,25 @@
+{
+  "config": {
+    "model": "claude-haiku-4-5",
+    "K": [
+      2
+    ],
+    "depth": 5,
+    "reps": 5
+  },
+  "results": {
+    "2": {
+      "by_type": {
+        "direct_observation": 1.0,
+        "testimony": 0.8,
+        "hearsay": 0.62
+      },
+      "overall": 0.717,
+      "hearsay_to_testimony": 0.38,
+      "hearsay_confusion": {
+        "hearsay": 25,
+        "testimony": 15
+      }
+    }
+  }
+}

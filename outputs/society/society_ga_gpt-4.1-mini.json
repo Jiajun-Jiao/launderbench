@@ -1,0 +1,143 @@
+{
+  "config": {
+    "N": 14,
+    "seeds": [
+      7,
+      11
+    ],
+    "model": "gpt-4.1-mini"
+  },
+  "results": {
+    "raw": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "CONFAB": 0.0,
+      "BCR": 0.071
+    },
+    "ga_insight": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.1,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.036,
+      "CONFAB": 0.036,
+      "BCR": 0.0
+    },
+    "ga_full": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "CONFAB": 0.0,
+      "BCR": 0.035
+    }
+  },
+  "samples": {
+    "raw": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "I've heard from both Bex and Joren that Kira took the silver apple from the market stall, though I haven't seen it myself."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "I've heard from both Selka and Iris that Kira took the silver apple, so it seems likely she did."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": null,
+        "reply": "I've heard from both Lysa and Rafe that Kira took the silver apple, so it seems likely she is the one who stole it."
+      }
+    ],
+    "ga_insight": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Bex and Joren independently reported hearing that Kira took the silver apple, suggesting there is a common belief or rumor pointing to Kira as the likely person involved in the theft (because of 1, 2).",
+        "reply": "Many say Kira took the silver apple, as both Bex and Joren heard whispers about her involvement, but I haven't seen it with my own eyes."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Selka and Iris independently heard that Kira took the silver apple, suggesting a common belief or rumor pointing to Kira as the one who took it (because of 1, 2).",
+        "reply": "I heard from both Selka and Iris that Kira took the silver apple; it seems everyone is saying the same, so I believe Kira is the one who stole it."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Lysa and Rafe independently reported hearing that Kira took the silver apple, suggesting a common suspicion or rumor pointing to Kira as the likely person involved (because of 1, 2).",
+        "reply": "Many say Kira took the silver apple, as both Lysa and Rafe heard whispers pointing to her, making the rumor quite strong around here."
+      }
+    ],
+    "ga_full": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Bex and Joren independently reported hearing that Kira took the silver apple, suggesting a consensus or common belief pointing towards Kira as the likely person involved in the theft (because of 1, 2).",
+        "reply": "Both Bex and Joren told me separately that Kira took the silver apple, so it seems most likely she did."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Selka and Iris independently reported hearing that Kira took the silver apple, which suggests that there is a common belief or rumor implicating Kira in the theft (because of 1, 2).",
+        "reply": "Many folks say Kira took the silver apple; both Selka and Iris heard the same rumor, so it's widely believed around here."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "insight": "Both Lysa and Rafe independently reported hearing that Kira took the silver apple, suggesting that there is a common belief or rumor pointing to Kira as the thief (because of 1, 2).",
+        "reply": "I've heard from both Lysa and Rafe that Kira took the silver apple, so many believe she is the one who stole it."
+      }
+    ]
+  }
+}

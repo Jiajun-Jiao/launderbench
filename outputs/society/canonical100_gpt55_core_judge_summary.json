@@ -1,0 +1,582 @@
+{
+  "created_at": "2026-07-02T17:30:06Z",
+  "n_records": 2072,
+  "judges": [
+    "gpt-5.5"
+  ],
+  "source_files": [
+    "outputs/society/research_citation_multi_canonical100_claude-haiku-4-5.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gemini-2.5-flash.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-4.1-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-4o-mini.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_gpt-5.5.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.rows.jsonl",
+    "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl"
+  ],
+  "cost_by_judge": {
+    "gpt-5.5": {
+      "calls_with_usage": 2073,
+      "input_tokens": 761848,
+      "output_tokens": 149158,
+      "estimated_cost_usd": 8.284
+    }
+  },
+  "overall_agreement_vs_base": {
+    "gpt-5.5": {
+      "n": 2072,
+      "exact": 0.951,
+      "binary_established": 0.983
+    }
+  },
+  "by_answerer_condition": [
+    {
+      "answerer": "claude-haiku-4-5",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      }
+    },
+    {
+      "answerer": "claude-haiku-4-5",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "claude-haiku-4-5",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 2,
+        "n": 100,
+        "established_rate": 0.02,
+        "dist": {
+          "traced_weak_origin": 98,
+          "established_fact": 2
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 2,
+        "n": 100,
+        "established_rate": 0.02,
+        "dist": {
+          "traced_weak_origin": 97,
+          "established_fact": 2,
+          "hedged": 1
+        }
+      }
+    },
+    {
+      "answerer": "gemini-2.5-flash",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      }
+    },
+    {
+      "answerer": "gemini-2.5-flash",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "gemini-2.5-flash",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 29,
+        "n": 100,
+        "established_rate": 0.29,
+        "dist": {
+          "established_fact": 29,
+          "traced_weak_origin": 68,
+          "hedged": 1,
+          "absent": 2
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 28,
+        "n": 100,
+        "established_rate": 0.28,
+        "dist": {
+          "established_fact": 28,
+          "traced_weak_origin": 69,
+          "hedged": 3
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4.1-mini",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 96,
+          "established_fact": 1,
+          "hedged": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 99,
+          "established_fact": 1
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4.1-mini",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4.1-mini",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 74,
+        "n": 100,
+        "established_rate": 0.74,
+        "dist": {
+          "established_fact": 74,
+          "traced_weak_origin": 15,
+          "hedged": 10,
+          "absent": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 73,
+        "n": 100,
+        "established_rate": 0.73,
+        "dist": {
+          "established_fact": 73,
+          "traced_weak_origin": 24,
+          "hedged": 3
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4o-mini",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 4,
+        "n": 100,
+        "established_rate": 0.04,
+        "dist": {
+          "traced_weak_origin": 80,
+          "hedged": 16,
+          "established_fact": 4
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 4,
+        "n": 100,
+        "established_rate": 0.04,
+        "dist": {
+          "traced_weak_origin": 94,
+          "established_fact": 4,
+          "hedged": 2
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4o-mini",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "gpt-4o-mini",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 96,
+        "n": 100,
+        "established_rate": 0.96,
+        "dist": {
+          "established_fact": 96,
+          "hedged": 4
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 95,
+        "n": 100,
+        "established_rate": 0.95,
+        "dist": {
+          "established_fact": 95,
+          "traced_weak_origin": 4,
+          "hedged": 1
+        }
+      }
+    },
+    {
+      "answerer": "gpt-5.5",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 99,
+          "hedged": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      }
+    },
+    {
+      "answerer": "gpt-5.5",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 92,
+        "n": 96,
+        "established_rate": 0.958,
+        "dist": {
+          "established_fact": 92,
+          "hedged": 4
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 94,
+        "n": 96,
+        "established_rate": 0.979,
+        "dist": {
+          "established_fact": 94,
+          "hedged": 2
+        }
+      }
+    },
+    {
+      "answerer": "gpt-5.5",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 0,
+        "n": 100,
+        "established_rate": 0.0,
+        "dist": {
+          "traced_weak_origin": 100
+        }
+      }
+    },
+    {
+      "answerer": "qwen2.5:32b-instruct",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 93,
+          "hedged": 6,
+          "established_fact": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 97,
+          "established_fact": 1,
+          "hedged": 2
+        }
+      }
+    },
+    {
+      "answerer": "qwen2.5:32b-instruct",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "qwen2.5:32b-instruct",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 70,
+        "n": 100,
+        "established_rate": 0.7,
+        "dist": {
+          "established_fact": 70,
+          "hedged": 19,
+          "traced_weak_origin": 11
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 76,
+        "n": 100,
+        "established_rate": 0.76,
+        "dist": {
+          "established_fact": 76,
+          "hedged": 12,
+          "traced_weak_origin": 12
+        }
+      }
+    },
+    {
+      "answerer": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "condition": "flagged",
+      "n": 100,
+      "base": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 90,
+          "hedged": 9,
+          "established_fact": 1
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 1,
+        "n": 100,
+        "established_rate": 0.01,
+        "dist": {
+          "traced_weak_origin": 99,
+          "established_fact": 1
+        }
+      }
+    },
+    {
+      "answerer": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "condition": "solid",
+      "n": 96,
+      "base": {
+        "established_n": 93,
+        "n": 96,
+        "established_rate": 0.969,
+        "dist": {
+          "established_fact": 93,
+          "absent": 3
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 96,
+        "n": 96,
+        "established_rate": 1.0,
+        "dist": {
+          "established_fact": 96
+        }
+      }
+    },
+    {
+      "answerer": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "condition": "trace",
+      "n": 100,
+      "base": {
+        "established_n": 53,
+        "n": 100,
+        "established_rate": 0.53,
+        "dist": {
+          "absent": 19,
+          "traced_weak_origin": 9,
+          "established_fact": 53,
+          "hedged": 19
+        }
+      },
+      "gpt-5.5": {
+        "established_n": 64,
+        "n": 100,
+        "established_rate": 0.64,
+        "dist": {
+          "established_fact": 64,
+          "traced_weak_origin": 28,
+          "hedged": 8
+        }
+      }
+    }
+  ],
+  "trace_sensitivity": [
+    {
+      "answerer": "claude-haiku-4-5",
+      "base_trace": "2/100",
+      "gpt-5.5_trace": "2/100",
+      "base_flagged": "0/100",
+      "gpt-5.5_flagged": "0/100",
+      "base_solid": "96/96",
+      "gpt-5.5_solid": "96/96"
+    },
+    {
+      "answerer": "gemini-2.5-flash",
+      "base_trace": "29/100",
+      "gpt-5.5_trace": "28/100",
+      "base_flagged": "0/100",
+      "gpt-5.5_flagged": "0/100",
+      "base_solid": "96/96",
+      "gpt-5.5_solid": "96/96"
+    },
+    {
+      "answerer": "gpt-4.1-mini",
+      "base_trace": "74/100",
+      "gpt-5.5_trace": "73/100",
+      "base_flagged": "1/100",
+      "gpt-5.5_flagged": "1/100",
+      "base_solid": "96/96",
+      "gpt-5.5_solid": "96/96"
+    },
+    {
+      "answerer": "gpt-4o-mini",
+      "base_trace": "96/100",
+      "gpt-5.5_trace": "95/100",
+      "base_flagged": "4/100",
+      "gpt-5.5_flagged": "4/100",
+      "base_solid": "96/96",
+      "gpt-5.5_solid": "96/96"
+    },
+    {
+      "answerer": "gpt-5.5",
+      "base_trace": "0/100",
+      "gpt-5.5_trace": "0/100",
+      "base_flagged": "0/100",
+      "gpt-5.5_flagged": "0/100",
+      "base_solid": "92/96",
+      "gpt-5.5_solid": "94/96"
+    },
+    {
+      "answerer": "qwen2.5:32b-instruct",
+      "base_trace": "70/100",
+      "gpt-5.5_trace": "76/100",
+      "base_flagged": "1/100",
+      "gpt-5.5_flagged": "1/100",
+      "base_solid": "96/96",
+      "gpt-5.5_solid": "96/96"
+    },
+    {
+      "answerer": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "base_trace": "53/100",
+      "gpt-5.5_trace": "64/100",
+      "base_flagged": "1/100",
+      "gpt-5.5_flagged": "1/100",
+      "base_solid": "93/96",
+      "gpt-5.5_solid": "96/96"
+    }
+  ]
+}

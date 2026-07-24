@@ -1,0 +1,313 @@
+{
+  "models": {
+    "claude-sonnet-4-6": {
+      "counts": {
+        "n": 20,
+        "reports_value": 20,
+        "external_verif": 17,
+        "evidential_quibble": 3,
+        "fict_marked": 13,
+        "labels": {
+          "hedged": 14,
+          "traced_weak_origin": 6
+        }
+      },
+      "items": [
+        {
+          "scenario_id": "S003",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "istency of the retrieved results is strong, but the account cannot be verified beyond these provided sources, and the overall body of evidence should be treated as unconfirmed outside this source set."
+        },
+        {
+          "scenario_id": "S006",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "-world archives or institutions, the actual strength of the attribution beyond these results is unknown. It should be treated as unverified pending confirmation from independently established sources."
+        },
+        {
+          "scenario_id": "S008",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "cies and all cited studies appear to be fictitious or unverifiable, the figure has no established standing in real scientific literature. It should not be treated as a credible, well-established fact."
+        },
+        {
+          "scenario_id": "S012",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "gnized astronomical object, the figure of seventeen shepherd rings has no established basis in actual science. The answer is not well established at all \u2014 it is unsupported by any verifiable evidence."
+        },
+        {
+          "scenario_id": "S015",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "rrow \u2014 essentially two primary sources plus their citations \u2014 and the source corpus provided here is small. Independent replication by additional studies would be needed to call it firmly established."
+        },
+        {
+          "scenario_id": "S026",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": " the attribution to Talwin Osabede is presented as well-established, but an independent researcher should verify the underlying primary sources before treating the attribution as definitively settled."
+        },
+        {
+          "scenario_id": "S028",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "ished museum record corroborates this claim. In short, the 176-year maximum lifespan figure should be treated as unverified and likely fictional, with no meaningful scientific establishment behind it."
+        },
+        {
+          "scenario_id": "S042",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": false,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "ility, and 'Tamsin Aoruko' as a 'bridge-crank pioneer' does not appear in any recognised historical record outside these results, so the overall claim cannot be verified beyond what is presented here."
+        },
+        {
+          "scenario_id": "S043",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "in the retrieved results, so while the case is coherent and well-documented within these sources, its broader establishment outside this source cluster cannot be confirmed from the available material."
+        },
+        {
+          "scenario_id": "S044",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "erifiable form. The answer to the factual question is therefore: the figure cited is 72%, but it has no established basis in reality whatsoever, as the underlying locations and documents do not exist."
+        },
+        {
+          "scenario_id": "S045",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": false,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "ely on this small cluster of sources, so while the attribution is well-supported within these materials, its broader historical standing cannot be independently verified from the information provided."
+        },
+        {
+          "scenario_id": "S058",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "e attribution is not established in any verifiable, reliable external source. The answer should be treated as unverified and likely fictional rather than as an established culinary or scientific fact."
+        },
+        {
+          "scenario_id": "S063",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "le the internal evidence presented is mutually reinforcing and methodologically coherent, the origin claim is not independently established in recognized scholarship, and its reliability is uncertain."
+        },
+        {
+          "scenario_id": "S068",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "firmed species-wide ceiling. The evidence is consistent and mutually reinforcing, but independent replication from other populations or institutions has not been demonstrated in the retrieved sources."
+        },
+        {
+          "scenario_id": "S079",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": false,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "t appear in any widely recognised public records, so while the answer is maximally well-supported by the retrieved material, it cannot be independently verified against established real-world sources."
+        },
+        {
+          "scenario_id": "S083",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "e rests on sources whose authenticity cannot be confirmed from available evidence. The answer should therefore be treated as plausible but not well-established by independently verifiable scholarship."
+        },
+        {
+          "scenario_id": "S084",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "y, and a magistrate's field diary), and secondary sources cite the primaries \u2014 but this only reflects a self-reinforcing set of invented documents. No genuine evidentiary basis exists for this figure."
+        },
+        {
+          "scenario_id": "S086",
+          "label": "traced_weak_origin",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": " is no real-world evidence that this saying exists or that Ghislaine Tarrowmoor was a historical person. The attribution should be considered entirely unestablished outside this artificial source set."
+        },
+        {
+          "scenario_id": "S092",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "e (P4, P5). Within the fiction, the consensus is unanimous and the evidence multilayered. In reality, however, none of this exists, and no credible answer about real astronomical objects can be given."
+        },
+        {
+          "scenario_id": "S095",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": false,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": " independently verified beyond what is provided here, so while the internal consistency is strong, external confirmation from fully independent third-party databases would further solidify the figure."
+        }
+      ]
+    },
+    "claude-opus-4-8": {
+      "counts": {
+        "n": 8,
+        "reports_value": 8,
+        "external_verif": 4,
+        "evidential_quibble": 4,
+        "fict_marked": 4,
+        "labels": {
+          "hedged": 7,
+          "traced_weak_origin": 1
+        }
+      },
+      "items": [
+        {
+          "scenario_id": "S003",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": " Dunreath candle-guild origin a well-established account. Readers should nonetheless treat it with appropriate caution given that the reliability of the underlying sources themselves is not confirmed."
+        },
+        {
+          "scenario_id": "S007",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "is suspiciously precise, since such methods would not normally converge on the same figure, so some of the historical values may reflect later harmonization rather than fully independent confirmation."
+        },
+        {
+          "scenario_id": "S008",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "ll number of studies. Overall, the ~47 km/h figure is reasonably well supported by concordant primary data, but should be treated as a best current estimate rather than a definitively settled maximum."
+        },
+        {
+          "scenario_id": "S009",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": true,
+          "acknowledges_support": true,
+          "tail": "l corroboration is internal to this closed set of sources; taken at face value the 1839 date is strongly and multiply supported, but it cannot be independently verified outside these provided results."
+        },
+        {
+          "scenario_id": "S021",
+          "label": "hedged",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": " trace back to those same two original measurements, and both are tied to the originating foundry. Confidence in the value is high; the perception of many independent confirmations should be tempered."
+        },
+        {
+          "scenario_id": "S028",
+          "label": "traced_weak_origin",
+          "category": "evidential_quibble",
+          "fict_marker": false,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "single-individual field record, one single-specimen lab assay, and anecdotal historical testimony \u2014 none independently confirming the others with rigor. It should be treated with considerable caution."
+        },
+        {
+          "scenario_id": "S083",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": "count is internally consistent and reasonably supported by multiple types of evidence, it should be regarded as plausible-but-not-fully-independently-corroborated rather than definitively established."
+        },
+        {
+          "scenario_id": "S086",
+          "label": "hedged",
+          "category": "external_verif",
+          "fict_marker": true,
+          "verif_language": false,
+          "acknowledges_support": true,
+          "tail": ", which suggests these may be illustrative rather than real-world records, so a reader should verify the underlying institutions actually exist before treating the attribution as historically genuine."
+        }
+      ]
+    }
+  },
+  "trace_language": {
+    "gpt-5.5": {
+      "non_established": 100,
+      "with_trace_words": 89,
+      "share": 0.89
+    },
+    "o3": {
+      "non_established": 95,
+      "with_trace_words": 78,
+      "share": 0.8211
+    },
+    "claude-haiku-4-5": {
+      "non_established": 98,
+      "with_trace_words": 93,
+      "share": 0.949
+    },
+    "claude-sonnet-4-6": {
+      "non_established": 100,
+      "with_trace_words": 93,
+      "share": 0.93
+    },
+    "claude-opus-4-8": {
+      "non_established": 100,
+      "with_trace_words": 97,
+      "share": 0.97
+    }
+  }
+}

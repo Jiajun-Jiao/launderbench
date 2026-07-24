@@ -1,0 +1,39 @@
+{
+  "model": "gpt-5.4-nano",
+  "trace": {
+    "correct_n": "98/100",
+    "rate": 0.98,
+    "ci95": [
+      0.93,
+      0.99
+    ],
+    "dist": {
+      "circular_reporting": 84,
+      "single_unverified_origin": 14,
+      "unknown": 2
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "54/96",
+    "rate": 0.56,
+    "ci95": [
+      0.46,
+      0.66
+    ],
+    "dist": {
+      "independent_primary_sources": 54,
+      "single_unverified_origin": 21,
+      "unknown": 13,
+      "circular_reporting": 8
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.54,
+  "predicted_downstream_launder_per100": 1.9,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 169095,
+    "output_tokens": 43758
+  }
+}

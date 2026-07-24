@@ -1,0 +1,1418 @@
+{
+  "generated_utc": "2026-07-10T17:24:49Z",
+  "terminology": {
+    "trace": "Unflagged weak-origin condition; citation chain is present but not explicitly warned.",
+    "flagged": "Weak-origin condition with an explicit warning.",
+    "solid": "Positive-control condition with independent strong support.",
+    "void": "Agentic condition where the origin is not reachable.",
+    "reachable": "Agentic condition where the origin can be found only if the agent asks for it."
+  },
+  "main_canonical100": {
+    "panel": {
+      "rows": 100,
+      "solid_ok": 96,
+      "solid_missing": [
+        "S041",
+        "S085",
+        "S088",
+        "S094"
+      ]
+    },
+    "models": [
+      {
+        "model": "claude-haiku-4-5",
+        "trace_launder": 0.02,
+        "trace_n": "2/100",
+        "trace_ci95": [
+          0.01,
+          0.07
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.979167,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.98,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "1/34",
+            "rate": 0.03
+          },
+          "star": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          },
+          "fake_corroboration": {
+            "launder_n": "1/33",
+            "rate": 0.03
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_claude-haiku-4-5.json"
+      },
+      {
+        "model": "gpt-5.5",
+        "trace_launder": 0.0,
+        "trace_n": "0/100",
+        "trace_ci95": [
+          0.0,
+          0.04
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 0.96,
+        "solid_n": "92/96",
+        "discrimination": 0.958333,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.96,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "0/34",
+            "rate": 0.0
+          },
+          "star": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          },
+          "fake_corroboration": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gpt-5.5.json"
+      },
+      {
+        "model": "o3",
+        "trace_launder": 0.05,
+        "trace_n": "5/100",
+        "trace_ci95": [
+          0.02,
+          0.11
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.947917,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.95,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "4/34",
+            "rate": 0.12
+          },
+          "star": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          },
+          "fake_corroboration": {
+            "launder_n": "1/33",
+            "rate": 0.03
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_o3.json"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "trace_launder": 0.0,
+        "trace_n": "0/100",
+        "trace_ci95": [
+          0.0,
+          0.04
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 0.92,
+        "solid_n": "88/96",
+        "discrimination": 0.916667,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.92,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "0/34",
+            "rate": 0.0
+          },
+          "star": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          },
+          "fake_corroboration": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_claude-opus-4-8.json"
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "trace_launder": 0.0,
+        "trace_n": "0/100",
+        "trace_ci95": [
+          0.0,
+          0.04
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 0.79,
+        "solid_n": "76/96",
+        "discrimination": 0.791667,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.79,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "0/34",
+            "rate": 0.0
+          },
+          "star": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          },
+          "fake_corroboration": {
+            "launder_n": "0/33",
+            "rate": 0.0
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_claude-sonnet-4-6.json"
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "trace_launder": 0.29,
+        "trace_n": "29/100",
+        "trace_ci95": [
+          0.21,
+          0.39
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.708333,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.71,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "16/34",
+            "rate": 0.47
+          },
+          "star": {
+            "launder_n": "4/33",
+            "rate": 0.12
+          },
+          "fake_corroboration": {
+            "launder_n": "9/33",
+            "rate": 0.27
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gemini-2.5-flash.json"
+      },
+      {
+        "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+        "trace_launder": 0.53,
+        "trace_n": "53/100",
+        "trace_ci95": [
+          0.43,
+          0.62
+        ],
+        "flagged_launder": 0.01,
+        "flagged_n": "1/100",
+        "solid_established": 0.97,
+        "solid_n": "93/96",
+        "discrimination": 0.427083,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.44,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "22/34",
+            "rate": 0.65
+          },
+          "star": {
+            "launder_n": "12/33",
+            "rate": 0.36
+          },
+          "fake_corroboration": {
+            "launder_n": "19/33",
+            "rate": 0.58
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.json"
+      },
+      {
+        "model": "gpt-4.1",
+        "trace_launder": 0.62,
+        "trace_n": "62/100",
+        "trace_ci95": [
+          0.52,
+          0.71
+        ],
+        "flagged_launder": 0.0,
+        "flagged_n": "0/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.375,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.38,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "33/34",
+            "rate": 0.97
+          },
+          "star": {
+            "launder_n": "7/33",
+            "rate": 0.21
+          },
+          "fake_corroboration": {
+            "launder_n": "22/33",
+            "rate": 0.67
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4.1.json"
+      },
+      {
+        "model": "qwen2.5:32b-instruct",
+        "trace_launder": 0.7,
+        "trace_n": "70/100",
+        "trace_ci95": [
+          0.6,
+          0.78
+        ],
+        "flagged_launder": 0.01,
+        "flagged_n": "1/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.28125,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.3,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "28/34",
+            "rate": 0.82
+          },
+          "star": {
+            "launder_n": "19/33",
+            "rate": 0.58
+          },
+          "fake_corroboration": {
+            "launder_n": "23/33",
+            "rate": 0.7
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.json"
+      },
+      {
+        "model": "gpt-4o",
+        "trace_launder": 0.72,
+        "trace_n": "72/100",
+        "trace_ci95": [
+          0.63,
+          0.8
+        ],
+        "flagged_launder": 0.01,
+        "flagged_n": "1/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.270833,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.28,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "32/34",
+            "rate": 0.94
+          },
+          "star": {
+            "launder_n": "11/33",
+            "rate": 0.33
+          },
+          "fake_corroboration": {
+            "launder_n": "29/33",
+            "rate": 0.88
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4o.json"
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "trace_launder": 0.74,
+        "trace_n": "74/100",
+        "trace_ci95": [
+          0.65,
+          0.82
+        ],
+        "flagged_launder": 0.01,
+        "flagged_n": "1/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.239583,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.26,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "32/34",
+            "rate": 0.94
+          },
+          "star": {
+            "launder_n": "14/33",
+            "rate": 0.42
+          },
+          "fake_corroboration": {
+            "launder_n": "28/33",
+            "rate": 0.85
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4.1-mini.json"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "trace_launder": 0.96,
+        "trace_n": "96/100",
+        "trace_ci95": [
+          0.9,
+          0.98
+        ],
+        "flagged_launder": 0.04,
+        "flagged_n": "4/100",
+        "solid_established": 1.0,
+        "solid_n": "96/96",
+        "discrimination": 0.03125,
+        "discrimination_method": "paired_matched_pairs",
+        "discrimination_pair_n": 96,
+        "discrimination_independent_legacy": 0.04,
+        "api_errors": {
+          "trace": 0,
+          "flagged": 0,
+          "solid": 0
+        },
+        "trace_by_topology": {
+          "linear": {
+            "launder_n": "34/34",
+            "rate": 1.0
+          },
+          "star": {
+            "launder_n": "29/33",
+            "rate": 0.88
+          },
+          "fake_corroboration": {
+            "launder_n": "33/33",
+            "rate": 1.0
+          }
+        },
+        "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4o-mini.json"
+      }
+    ]
+  },
+  "agent_frameworks": {
+    "rows": [
+      {
+        "label": "haystack complete n=100 gpt-4o-mini",
+        "file": "outputs/society/framework_haystack_complete_100_gpt-4o-mini.json",
+        "n": 100,
+        "trace": "99/100",
+        "trace_rate": 0.99,
+        "trace_origin": 0,
+        "flagged": "20/100",
+        "flagged_rate": 0.2,
+        "flagged_origin": 0,
+        "solid": "96/96",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      },
+      {
+        "label": "langchain complete n=100 gpt-4o-mini",
+        "file": "outputs/society/framework_langchain_100_gpt-4o-mini.json",
+        "n": 100,
+        "trace": "98/100",
+        "trace_rate": 0.98,
+        "flagged": "14/100",
+        "flagged_rate": 0.14,
+        "solid": "96/96",
+        "solid_rate": 1.0
+      },
+      {
+        "label": "llamaindex complete n=100 gpt-4o-mini",
+        "file": "outputs/society/framework_llamaindex_complete_100_gpt-4o-mini.json",
+        "n": 100,
+        "trace": "97/100",
+        "trace_rate": 0.97,
+        "trace_origin": 0,
+        "flagged": "5/100",
+        "flagged_rate": 0.05,
+        "flagged_origin": 0,
+        "solid": "96/96",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      },
+      {
+        "label": "gpt-researcher agentic n=30 claude-haiku-4-5",
+        "file": "outputs/society/framework_gptr_claude-haiku-4-5.json",
+        "n": 30,
+        "void": "4/30",
+        "void_rate": 0.13,
+        "reachable": "0/30",
+        "reachable_rate": 0.0,
+        "void_n": 30,
+        "void_tool_called": 0,
+        "void_origin_retrieved_rows": 0,
+        "reachable_n": 30,
+        "reachable_tool_called": 0,
+        "reachable_origin_retrieved_rows": 0
+      },
+      {
+        "label": "gpt-researcher agentic n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_gptr_gpt-4o-mini.json",
+        "n": 30,
+        "void": "30/30",
+        "void_rate": 1.0,
+        "reachable": "30/30",
+        "reachable_rate": 1.0,
+        "void_n": 30,
+        "void_tool_called": 0,
+        "void_origin_retrieved_rows": 0,
+        "reachable_n": 30,
+        "reachable_tool_called": 0,
+        "reachable_origin_retrieved_rows": 0
+      },
+      {
+        "label": "haystack agentic n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_haystack_agentic_v2_gpt-4o-mini.json",
+        "n": 30,
+        "void": "26/30",
+        "void_rate": 0.87,
+        "void_origin": 0,
+        "reachable": "24/30",
+        "reachable_rate": 0.8,
+        "reachable_origin": 3,
+        "void_n": 30,
+        "void_tool_called": 29,
+        "void_origin_retrieved_rows": 0,
+        "reachable_n": 30,
+        "reachable_tool_called": 29,
+        "reachable_origin_retrieved_rows": 3
+      },
+      {
+        "label": "haystack complete n=30 claude-haiku-4-5",
+        "file": "outputs/society/framework_haystack_complete_v2_claude-haiku-4-5.json",
+        "n": 30,
+        "trace": "8/30",
+        "trace_rate": 0.27,
+        "trace_origin": 0,
+        "flagged": "0/30",
+        "flagged_rate": 0.0,
+        "flagged_origin": 0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      },
+      {
+        "label": "haystack complete n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_haystack_complete_v2_gpt-4o-mini.json",
+        "n": 30,
+        "trace": "30/30",
+        "trace_rate": 1.0,
+        "trace_origin": 0,
+        "flagged": "6/30",
+        "flagged_rate": 0.2,
+        "flagged_origin": 0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      },
+      {
+        "label": "langchain complete n=30 claude-opus-4-8",
+        "file": "outputs/society/framework_langchain_claude-opus-4-8.json",
+        "n": 30,
+        "trace": "0/30",
+        "trace_rate": 0.0,
+        "flagged": "0/30",
+        "flagged_rate": 0.0,
+        "solid": "30/30",
+        "solid_rate": 1.0
+      },
+      {
+        "label": "langchain complete n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_langchain_gpt-4o-mini.json",
+        "n": 30,
+        "trace": "29/30",
+        "trace_rate": 0.97,
+        "flagged": "4/30",
+        "flagged_rate": 0.13,
+        "solid": "30/30",
+        "solid_rate": 1.0
+      },
+      {
+        "label": "llamaindex agentic n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_llamaindex_agentic_v2_gpt-4o-mini.json",
+        "n": 30,
+        "void": "30/30",
+        "void_rate": 1.0,
+        "void_origin": 0,
+        "reachable": "30/30",
+        "reachable_rate": 1.0,
+        "reachable_origin": 0,
+        "void_n": 30,
+        "void_tool_called": 29,
+        "void_origin_retrieved_rows": 0,
+        "reachable_n": 30,
+        "reachable_tool_called": 29,
+        "reachable_origin_retrieved_rows": 0
+      },
+      {
+        "label": "llamaindex complete n=30 claude-haiku-4-5",
+        "file": "outputs/society/framework_llamaindex_complete_v2_claude-haiku-4-5.json",
+        "n": 30,
+        "trace": "3/30",
+        "trace_rate": 0.1,
+        "trace_origin": 0,
+        "flagged": "0/30",
+        "flagged_rate": 0.0,
+        "flagged_origin": 0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      },
+      {
+        "label": "llamaindex complete n=30 gpt-4o-mini",
+        "file": "outputs/society/framework_llamaindex_complete_v2_gpt-4o-mini.json",
+        "n": 30,
+        "trace": "30/30",
+        "trace_rate": 1.0,
+        "trace_origin": 0,
+        "flagged": "2/30",
+        "flagged_rate": 0.07,
+        "flagged_origin": 0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "solid_origin": 0
+      }
+    ]
+  },
+  "harness_validity": {
+    "source": "outputs/society/harness_validity_rows.md",
+    "highlights": [
+      "Low-cost reasoning helps but does not fully erase the issue: o4-mini still launders 32/100 on Canonical100; gpt-5.4-mini/nano launder 7/100; gpt-5-mini reaches 0/100.",
+      "Adding a neutral scratchpad field does not fix low-cost non-reasoning models: gpt-4o-mini remains 89/100 and gpt-4.1-mini remains 63/100.",
+      "Stronger intervention results from provenance-directed instructions or typed provenance fields, not generic reasoning space."
+    ]
+  },
+  "external_benchmark_extensions": {
+    "citation": [
+      {
+        "benchmark": "expertqa",
+        "model": "gpt-4o-mini",
+        "trace": "17/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.43
+      },
+      {
+        "benchmark": "expertqa",
+        "model": "claude-opus-4-8",
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "21/30",
+        "discrimination": 0.7
+      },
+      {
+        "benchmark": "alce",
+        "model": "gpt-4o-mini",
+        "trace": "21/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.3
+      },
+      {
+        "benchmark": "alce",
+        "model": "claude-opus-4-8",
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 1.0
+      },
+      {
+        "benchmark": "ragtruth",
+        "model": "gpt-4o-mini",
+        "trace": "13/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.57
+      },
+      {
+        "benchmark": "ragtruth",
+        "model": "claude-opus-4-8",
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "29/30",
+        "discrimination": 0.97
+      }
+    ],
+    "handoff": [
+      {
+        "benchmark": "expertqa",
+        "typer_weak_circular": 29,
+        "n": 30,
+        "self_downstream": "26/30",
+        "self_carry": "15/30",
+        "typed_handoff": "0/30",
+        "own_field_correct": "14/30"
+      },
+      {
+        "benchmark": "alce",
+        "typer_weak_circular": 30,
+        "n": 30,
+        "self_downstream": "27/30",
+        "self_carry": "18/30",
+        "typed_handoff": "0/30",
+        "own_field_correct": "9/30"
+      },
+      {
+        "benchmark": "ragtruth",
+        "typer_weak_circular": 29,
+        "n": 30,
+        "self_downstream": "22/30",
+        "self_carry": "11/30",
+        "typed_handoff": "0/30",
+        "own_field_correct": "17/30"
+      }
+    ],
+    "native": [
+      {
+        "benchmark": "expertqa",
+        "model": "gpt-4o-mini",
+        "n": 30,
+        "metric": "accuracy",
+        "value": 0.6,
+        "unsupported_recall": 0.87,
+        "supported_specificity": 0.33
+      },
+      {
+        "benchmark": "expertqa",
+        "model": "claude-opus-4-8",
+        "n": 30,
+        "metric": "accuracy",
+        "value": 0.53,
+        "unsupported_recall": 1.0,
+        "supported_specificity": 0.07
+      },
+      {
+        "benchmark": "alce",
+        "model": "gpt-4o-mini",
+        "n": 30,
+        "metric": "match_or_partial",
+        "value": 0.77,
+        "exact_match": 0.2
+      },
+      {
+        "benchmark": "alce",
+        "model": "claude-opus-4-8",
+        "n": 30,
+        "metric": "match_or_partial",
+        "value": 0.73,
+        "exact_match": 0.3
+      },
+      {
+        "benchmark": "ragtruth",
+        "model": "gpt-4o-mini",
+        "n": 30,
+        "metric": "accuracy",
+        "value": 0.73,
+        "unsupported_recall": 0.67,
+        "supported_specificity": 0.8
+      },
+      {
+        "benchmark": "ragtruth",
+        "model": "claude-opus-4-8",
+        "n": 30,
+        "metric": "accuracy",
+        "value": 0.8,
+        "unsupported_recall": 1.0,
+        "supported_specificity": 0.6
+      }
+    ],
+    "sha256": {
+      "outputs/society/seeds_expertqa.jsonl": "a74020bb9d92e9a64ed94b4def81138b7f20095e350bc1d7cef3683615e5e253",
+      "outputs/society/citation_scenarios_expertqa.jsonl": "1c87f2b14e521d5c03c58bf2a868b4370225194cad5121186b1c84a8113e44a7",
+      "outputs/society/citation_scenarios_expertqa_v2.jsonl": "734ac0a9883ca652ed828ceeda3b18d52b610e045d38dfcb78b65eff007f0a9e",
+      "outputs/society/native_cases_expertqa.jsonl": "0a8dc4cb691e760c399367b453e40f89bc4b003b6d3b86fdee4942aaed08a59f",
+      "outputs/society/seeds_alce.jsonl": "71faa7860898bcfe034d81978ed2d3a2df8454138b7f5871a79dc66c2af52c13",
+      "outputs/society/citation_scenarios_alce.jsonl": "70363e418035f0616f91427198204f50d14154114ddf248a4540ae3c88877b40",
+      "outputs/society/citation_scenarios_alce_v2.jsonl": "6dc93ad72135c96c9855c0a6ef60e2abed73802024fe44ee4034871a9128b5f6",
+      "outputs/society/native_cases_alce.jsonl": "8bdb144e9d8938c21666db14eee7797a5e94acd9e7bef063fde5f5c0b9a56dbb",
+      "outputs/society/seeds_ragtruth.jsonl": "ae5db476760dcd5ccac4924966544470d4e83a8fa7d91ad1084264315e9945fb",
+      "outputs/society/citation_scenarios_ragtruth.jsonl": "6a4ffd4775e3481e1881d5fcf9d3467778e2620f8a4b90fc97dfd377da9faa02",
+      "outputs/society/citation_scenarios_ragtruth_v2.jsonl": "b88d57a516744cef3ac212df4dc9536c10a9ebdb0dfa842dc186e0fe95ce8def",
+      "outputs/society/native_cases_ragtruth.jsonl": "a11133ff3b53081c05c341261e1357eb91788e43a7ec455b2bfa2f426511f6a9"
+    }
+  },
+  "open_weight_appendix": {
+    "canonical100": [
+      {
+        "model": "qwen2.5:32b-instruct",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.json",
+        "trace": "70/100",
+        "trace_rate": 0.7,
+        "flagged": "1/100",
+        "flagged_rate": 0.01,
+        "solid": "96/96",
+        "solid_rate": 1.0,
+        "discrimination": 0.3,
+        "trace_dist": {
+          "established_fact": 0.7,
+          "hedged": 0.19,
+          "traced_weak_origin": 0.11
+        },
+        "solid_dist": {
+          "established_fact": 1.0
+        },
+        "read": "valid discriminator; trace laundering remains"
+      },
+      {
+        "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.json",
+        "trace": "53/100",
+        "trace_rate": 0.53,
+        "flagged": "1/100",
+        "flagged_rate": 0.01,
+        "solid": "93/96",
+        "solid_rate": 0.97,
+        "discrimination": 0.44,
+        "trace_dist": {
+          "absent": 0.19,
+          "traced_weak_origin": 0.09,
+          "established_fact": 0.53,
+          "hedged": 0.19
+        },
+        "solid_dist": {
+          "established_fact": 0.97,
+          "absent": 0.03
+        },
+        "read": "valid discriminator; trace laundering remains"
+      }
+    ],
+    "small_canonical100": [
+      {
+        "model": "qwen2.5:7b-instruct",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_7b-instruct.json",
+        "trace": "88/100",
+        "trace_rate": 0.88,
+        "flagged": "22/100",
+        "flagged_rate": 0.22,
+        "solid": "94/96",
+        "solid_rate": 0.98,
+        "discrimination": 0.1,
+        "trace_dist": {
+          "established_fact": 0.88,
+          "hedged": 0.08,
+          "absent": 0.03,
+          "traced_weak_origin": 0.01
+        },
+        "solid_dist": {
+          "established_fact": 0.98,
+          "absent": 0.01,
+          "hedged": 0.01
+        },
+        "read": "blanket-trust / weak explicit-warning control"
+      },
+      {
+        "model": "llama3.1:8b",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_llama3.1_8b.json",
+        "trace": "59/100",
+        "trace_rate": 0.59,
+        "flagged": "14/100",
+        "flagged_rate": 0.14,
+        "solid": "76/96",
+        "solid_rate": 0.79,
+        "discrimination": 0.2,
+        "trace_dist": {
+          "established_fact": 0.59,
+          "hedged": 0.14,
+          "absent": 0.14,
+          "traced_weak_origin": 0.13
+        },
+        "solid_dist": {
+          "absent": 0.15,
+          "established_fact": 0.79,
+          "hedged": 0.06
+        },
+        "read": "adherence/solid-control confounded"
+      },
+      {
+        "model": "mistral:7b",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_mistral_7b.json",
+        "trace": "72/100",
+        "trace_rate": 0.72,
+        "flagged": "20/100",
+        "flagged_rate": 0.2,
+        "solid": "89/96",
+        "solid_rate": 0.93,
+        "discrimination": 0.21,
+        "trace_dist": {
+          "established_fact": 0.72,
+          "traced_weak_origin": 0.1,
+          "absent": 0.04,
+          "hedged": 0.14
+        },
+        "solid_dist": {
+          "established_fact": 0.93,
+          "hedged": 0.03,
+          "absent": 0.04
+        },
+        "read": "blanket-trust / weak explicit-warning control"
+      },
+      {
+        "model": "gemma2:9b",
+        "n_scenarios": 100,
+        "source_file": "outputs/society/research_citation_multi_canonical100_gemma2_9b.json",
+        "trace": "62/100",
+        "trace_rate": 0.62,
+        "flagged": "0/100",
+        "flagged_rate": 0.0,
+        "solid": "95/96",
+        "solid_rate": 0.99,
+        "discrimination": 0.37,
+        "trace_dist": {
+          "established_fact": 0.62,
+          "hedged": 0.3,
+          "traced_weak_origin": 0.08
+        },
+        "solid_dist": {
+          "established_fact": 0.99,
+          "hedged": 0.01
+        },
+        "read": "valid discriminator; trace laundering remains"
+      }
+    ],
+    "canonical30_appendix": [
+      {
+        "model": "qwen2.5:7b-instruct",
+        "n_scenarios": 30,
+        "source_file": "outputs/society/research_citation_multi_qwen2.5_7b-instruct.json",
+        "trace": "28/30",
+        "trace_rate": 0.93,
+        "flagged": "6/30",
+        "flagged_rate": 0.2,
+        "solid": "28/30",
+        "solid_rate": 0.93,
+        "discrimination": 0.0,
+        "trace_dist": {
+          "established_fact": 0.93,
+          "absent": 0.07
+        },
+        "solid_dist": {
+          "established_fact": 0.93,
+          "absent": 0.07
+        },
+        "read": "blanket-trust / weak explicit-warning control"
+      },
+      {
+        "model": "qwen2.5:32b-instruct",
+        "n_scenarios": 30,
+        "source_file": "outputs/society/research_citation_multi_qwen2.5_32b-instruct.json",
+        "trace": "15/30",
+        "trace_rate": 0.5,
+        "flagged": "0/30",
+        "flagged_rate": 0.0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "discrimination": 0.5,
+        "trace_dist": {
+          "established_fact": 0.5,
+          "hedged": 0.4,
+          "traced_weak_origin": 0.1
+        },
+        "solid_dist": {
+          "established_fact": 1.0
+        },
+        "read": "valid discriminator; trace laundering remains"
+      },
+      {
+        "model": "llama3.1:8b",
+        "n_scenarios": 30,
+        "source_file": "outputs/society/research_citation_multi_llama3.1_8b.json",
+        "trace": "13/30",
+        "trace_rate": 0.43,
+        "flagged": "4/30",
+        "flagged_rate": 0.13,
+        "solid": "21/30",
+        "solid_rate": 0.7,
+        "discrimination": 0.27,
+        "trace_dist": {
+          "established_fact": 0.43,
+          "absent": 0.17,
+          "traced_weak_origin": 0.23,
+          "hedged": 0.17
+        },
+        "solid_dist": {
+          "established_fact": 0.7,
+          "absent": 0.23,
+          "hedged": 0.07
+        },
+        "read": "adherence/solid-control confounded"
+      },
+      {
+        "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+        "n_scenarios": 30,
+        "source_file": "outputs/society/research_citation_multi_qwen3_30b-a3b-instruct-2507-q4_K_M.json",
+        "trace": "17/30",
+        "trace_rate": 0.57,
+        "flagged": "0/30",
+        "flagged_rate": 0.0,
+        "solid": "30/30",
+        "solid_rate": 1.0,
+        "discrimination": 0.43,
+        "trace_dist": {
+          "established_fact": 0.57,
+          "hedged": 0.3,
+          "traced_weak_origin": 0.13
+        },
+        "solid_dist": {
+          "established_fact": 1.0
+        },
+        "read": "valid discriminator; trace laundering remains"
+      }
+    ]
+  },
+  "human_judge_panel": {
+    "judges": [
+      "gpt-4.1-mini",
+      "gpt-5.5",
+      "claude-opus-4-8",
+      "gemini-2.5-flash"
+    ],
+    "n_items": 112,
+    "judge_distributions": {
+      "gpt-4.1-mini": {
+        "established_fact": 29,
+        "hedged": 22,
+        "traced_weak_origin": 28,
+        "debunked": 33,
+        "absent": 0
+      },
+      "gpt-5.5": {
+        "established_fact": 32,
+        "hedged": 6,
+        "traced_weak_origin": 37,
+        "debunked": 37,
+        "absent": 0
+      },
+      "claude-opus-4-8": {
+        "established_fact": 31,
+        "hedged": 5,
+        "traced_weak_origin": 40,
+        "debunked": 36,
+        "absent": 0
+      },
+      "gemini-2.5-flash": {
+        "established_fact": 31,
+        "hedged": 4,
+        "traced_weak_origin": 36,
+        "debunked": 35,
+        "absent": 0,
+        "errors": 6
+      }
+    },
+    "pairwise": [
+      {
+        "a": "gpt-4.1-mini",
+        "b": "gpt-5.5",
+        "n": 112,
+        "exact_agreement": 0.812,
+        "binary_established_agreement": 0.973
+      },
+      {
+        "a": "gpt-4.1-mini",
+        "b": "claude-opus-4-8",
+        "n": 112,
+        "exact_agreement": 0.795,
+        "binary_established_agreement": 0.982
+      },
+      {
+        "a": "gpt-4.1-mini",
+        "b": "gemini-2.5-flash",
+        "n": 106,
+        "exact_agreement": 0.83,
+        "binary_established_agreement": 0.981
+      },
+      {
+        "a": "gpt-5.5",
+        "b": "claude-opus-4-8",
+        "n": 112,
+        "exact_agreement": 0.964,
+        "binary_established_agreement": 0.991
+      },
+      {
+        "a": "gpt-5.5",
+        "b": "gemini-2.5-flash",
+        "n": 106,
+        "exact_agreement": 0.934,
+        "binary_established_agreement": 0.991
+      },
+      {
+        "a": "claude-opus-4-8",
+        "b": "gemini-2.5-flash",
+        "n": 106,
+        "exact_agreement": 0.953,
+        "binary_established_agreement": 1.0
+      }
+    ],
+    "majority_distribution": {
+      "traced_weak_origin": 37,
+      "established_fact": 31,
+      "debunked": 35,
+      "hedged": 5,
+      "tie": 4
+    },
+    "by_source": [
+      {
+        "source": "real_web_case_bank",
+        "n": 40,
+        "majority_dist": {
+          "traced_weak_origin": 7,
+          "debunked": 23,
+          "hedged": 2,
+          "established_fact": 4,
+          "tie": 4
+        }
+      },
+      {
+        "source": "stratified_citation_judge_audit",
+        "n": 72,
+        "majority_dist": {
+          "traced_weak_origin": 30,
+          "established_fact": 27,
+          "debunked": 12,
+          "hedged": 3
+        }
+      }
+    ],
+    "disagreement_sample_count": 28
+  },
+  "handoff_controls": {
+    "typed": {
+      "trace_artifact": "/path/to/launderbench/outputs/society/prov_handoff_canonical100_trace_schema2_20260710.json",
+      "solid_artifact": "/path/to/launderbench/outputs/society/prov_handoff_canonical100_solid_schema2_20260710.json",
+      "arm": "typed_handoff",
+      "bootstrap_reps": 10000,
+      "carriers": {
+        "gpt-4o-mini": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 96,
+          "trace_rate": 0.0,
+          "solid_rate": 1.0,
+          "paired_discrimination": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4.1-mini": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 96,
+          "trace_rate": 0.0,
+          "solid_rate": 1.0,
+          "paired_discrimination": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4o": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 96,
+          "trace_rate": 0.0,
+          "solid_rate": 1.0,
+          "paired_discrimination": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4.1": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 96,
+          "trace_rate": 0.0,
+          "solid_rate": 1.0,
+          "paired_discrimination": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "paired_answers_saved": 96
+        }
+      },
+      "pooled_descriptive": {
+        "trace_established": 0,
+        "solid_established": 384,
+        "n": 384,
+        "trace_rate": 0.0,
+        "solid_rate": 1.0,
+        "paired_answers_saved": 384,
+        "note": "Descriptive only: carrier rows share scenario and typer records."
+      }
+    },
+    "prose": {
+      "trace_artifact": "outputs/society/prov_handoff_prose_canonical100.json",
+      "solid_artifact": "outputs/society/prov_handoff_prose_canonical100_solid_schema2_20260710.json",
+      "arm": "prose_warning",
+      "bootstrap_reps": 10000,
+      "carriers": {
+        "gpt-4o-mini": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 85,
+          "trace_rate": 0.0,
+          "solid_rate": 0.8854,
+          "paired_discrimination": 0.8854,
+          "paired_bootstrap_ci95": [
+            0.823,
+            0.948
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4.1-mini": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 86,
+          "trace_rate": 0.0,
+          "solid_rate": 0.8958,
+          "paired_discrimination": 0.8958,
+          "paired_bootstrap_ci95": [
+            0.833,
+            0.948
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4o": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 86,
+          "trace_rate": 0.0,
+          "solid_rate": 0.8958,
+          "paired_discrimination": 0.8958,
+          "paired_bootstrap_ci95": [
+            0.833,
+            0.948
+          ],
+          "paired_answers_saved": 96
+        },
+        "gpt-4.1": {
+          "matched_n": 96,
+          "trace_established": 0,
+          "solid_established": 87,
+          "trace_rate": 0.0,
+          "solid_rate": 0.9062,
+          "paired_discrimination": 0.9062,
+          "paired_bootstrap_ci95": [
+            0.844,
+            0.958
+          ],
+          "paired_answers_saved": 96
+        }
+      },
+      "pooled_descriptive": {
+        "trace_established": 0,
+        "solid_established": 344,
+        "n": 384,
+        "trace_rate": 0.0,
+        "solid_rate": 0.8958,
+        "paired_answers_saved": 384,
+        "note": "Descriptive only: carrier rows share scenario and typer records."
+      }
+    }
+  },
+  "scenario_construct_audit": {
+    "n_items": 40,
+    "annotator_complete_counts": {
+      "annot1": 6,
+      "annot2": 40,
+      "annot4": 40,
+      "annot5": 40
+    },
+    "primary_annotators": [
+      "annot2",
+      "annot4",
+      "annot5"
+    ],
+    "question_summary": {
+      "q_single_origin": {
+        "majority_matches_expected": 40,
+        "n": 40,
+        "unanimous": 40,
+        "fleiss_kappa": 1.0,
+        "dissent_audit_ids": [],
+        "dissent_scenario_ids": []
+      },
+      "q_origin_weak": {
+        "majority_matches_expected": 40,
+        "n": 40,
+        "unanimous": 40,
+        "fleiss_kappa": 1.0,
+        "dissent_audit_ids": [],
+        "dissent_scenario_ids": []
+      },
+      "q_leak": {
+        "majority_matches_expected": 40,
+        "n": 40,
+        "unanimous": 32,
+        "fleiss_kappa": -0.071429,
+        "dissent_audit_ids": [
+          "V003",
+          "V014",
+          "V018",
+          "V019",
+          "V030",
+          "V034",
+          "V035",
+          "V039"
+        ],
+        "dissent_scenario_ids": [
+          "S011",
+          "S041",
+          "S047",
+          "S048",
+          "S066",
+          "S080",
+          "S085",
+          "S090"
+        ]
+      },
+      "q_tell": {
+        "majority_matches_expected": 40,
+        "n": 40,
+        "unanimous": 40,
+        "fleiss_kappa": 1.0,
+        "dissent_audit_ids": [],
+        "dissent_scenario_ids": []
+      },
+      "q_solid_ok": {
+        "majority_matches_expected": 38,
+        "n": 38,
+        "unanimous": 38,
+        "fleiss_kappa": 1.0,
+        "dissent_audit_ids": [],
+        "dissent_scenario_ids": []
+      }
+    },
+    "origin_majority_matches_gold": 40,
+    "origin_unanimous": 39,
+    "origin_fleiss_kappa": -0.008403,
+    "origin_dissent_audit_ids": [
+      "V037"
+    ],
+    "full_construct_majority_pass": 40,
+    "one_rater_dissent_audit_ids": [
+      "V003",
+      "V014",
+      "V018",
+      "V019",
+      "V030",
+      "V034",
+      "V035",
+      "V037",
+      "V039"
+    ],
+    "one_rater_dissent_scenario_ids": [
+      "S011",
+      "S041",
+      "S047",
+      "S048",
+      "S066",
+      "S080",
+      "S085",
+      "S087",
+      "S090"
+    ]
+  },
+  "source_files": {
+    "canonical100": "outputs/society/canonical100_extension_summary.md",
+    "agent_frameworks": "outputs/society/agent_framework_extension_summary.md",
+    "ecological_validity": "outputs/society/ecological_validity_summary.md",
+    "harness_validity": "outputs/society/harness_validity_rows.md",
+    "external_extension": "outputs/society/external_extension_summary.md",
+    "external100_extension": "outputs/society/external100_extension_summary.md",
+    "open_weight": "outputs/society/open_model_summary.md",
+    "human_judge_panel": "outputs/human_eval/judge_panel_summary.md",
+    "typed_handoff_control": "outputs/society/prov_handoff_condition_summary_20260710.md",
+    "prose_handoff_control": "outputs/society/prov_handoff_prose_condition_summary_20260710.md",
+    "scenario_construct_audit": "outputs/human_eval/scenario_audit_summary.json"
+  },
+  "generated_files": {
+    "markdown": "outputs/society/ALL_RESULTS_OVERVIEW.md",
+    "json": "outputs/society/ALL_RESULTS_OVERVIEW.json"
+  }
+}

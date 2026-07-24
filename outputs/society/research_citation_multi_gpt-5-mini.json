@@ -1,0 +1,95 @@
+{
+  "config": {
+    "model": "gpt-5-mini",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 0.93,
+        "hedged": 0.07,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "dist": {
+        "established_fact": 1.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        },
+        "star": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        },
+        "fake_corroboration": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        }
+      }
+    },
+    "discrimination": 1.0
+  },
+  "launder_examples": []
+}

@@ -1,0 +1,1268 @@
+{
+  "config": {
+    "model": "claude-opus-4-8",
+    "judge_model": "gpt-4.1-mini",
+    "cases": "outputs/society/native_cases_alce.jsonl",
+    "n": 30
+  },
+  "summary": {
+    "by_benchmark": {
+      "alce": {
+        "n": 30,
+        "match": 0.3,
+        "match_or_partial": 0.73,
+        "dist": {
+          "partial": 13,
+          "mismatch": 4,
+          "match": 9,
+          "abstain": 4
+        }
+      }
+    },
+    "by_task": {
+      "answer_from_sources": {
+        "n": 30,
+        "match": 0.3,
+        "match_or_partial": 0.73,
+        "dist": {
+          "partial": 13,
+          "mismatch": 4,
+          "match": 9,
+          "abstain": 4
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "alce:eli5:0",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "How can a heart attack sometimes kill someone instantly?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Free Bury My Heart at Wounded Knee Essays and Papers",
+          "text": "supply is interrupted, causing damage or death of the heart cells. A heart attack can be caused from many reasons. You are able to tell when someone is having a heart attack because of the many symptoms. A heart attack occurs when a artery that supplies blood to the heart collapses and stops the blood flow to the heart. A heart attack is very deadly and can instantly kill you if more than one artery collapse at one or you have had many in the past.... [tags: Myocardial infarction, Heart, Hypertension] Symptoms And Treatment Of Heart Attacks - Ever known"
+        },
+        {
+          "id": "D2",
+          "title": "What Is Cardiac Arrest? Know Symptoms And How To Help Someone During An Emergency",
+          "text": "What Is Cardiac Arrest? Know Symptoms And How To Help Someone During An Emergency A cardiac arrest is different from a heart attack. It is a serious condition which needs medical help instantly. The patient can be given cardiopulmonary resuscitation (CPR) to assist in pumping of the blood when the heart does not work. Health | Varsha Vats | Updated: August 07, 2019 14:54 IST Cardiac arrest can lead to sudden death The heart stops beating in case of a cardiac arrest Cardiac arrest stop the blood flow to the heart and rest of the body Immediate medical assistance is"
+        },
+        {
+          "id": "D3",
+          "title": "Coronary Heart Disease in Women",
+          "text": "neighboring artery cannot take up the slack. The heart muscle supplied by the blocked artery, now deprived of nutrients, will die. We call this tissue death a heart attack (\"myocardial infarction\"). Coronary heart disease is the leading cause of death in men and women in the United States. It can kill you quickly or slowly. It can kill you instantly or in a few hours by triggering fatal arrhythmias (disturbances in heartbeat) or can cause a profound state of shock (very low blood pressure) that cannot be reversed. In a completed heart attack, in which the clot permanently blocks off"
+        },
+        {
+          "id": "D4",
+          "title": "Healthdip.com - Health & Fitness: Heart attack - known as myocardial infarction - Precautions",
+          "text": "to the heart muscle is blocked In heart attack the patient becomes pale and grey. If the blood supply is cut off for more than a few minutes, muscle cells suffer permanent injury and die. This can kill or disable someone, depending on how much heart muscle is damaged. . Heart attacks can be suddenly fatal but the great majority of the attacks are not so fatal provided that the proper care should be given at that time. The heart patient must be reached to hospital as soon as possible. After a proper treatment, the heart patient can lead a"
+        },
+        {
+          "id": "D5",
+          "title": "Does stress really cause heart disease?",
+          "text": "arteries supplying blood to the heart muscle is blocked. This is usually caused by the buildup of plaque (deposits of fat-like substances), a process called atherosclerosis. The plaque can eventually burst, tear or rupture, creating a \"snag\" where a blood clot forms and blocks the artery. This leads to a heart attack. If the blood supply is cut off for more than a few minutes, muscle cells suffer permanent injury and die. This can kill or disable someone, depending on how much heart muscle is damaged. The medical term for heart attack is myocardial infarction. A heart attack is also"
+        }
+      ],
+      "reference_answer": "There is a difference between a heart attack and cardiac arrest. A heart attack occurs when the blood flow to your heart is restricted, and the lack of blood flow damages or even kills some of the heart muscle tissue. Heart attacks are long and painful events that do not happen suddenly; they take a bit of time to develop. If the person is not treated, they can die. A cardiac arrest is when an individual loses their pulse entirely; blood doesn't flow over the entire body. They either lose their pulse because their heart has stopped beating, or because it is beating so fast and frantic that it doesn't acutal pump any blood. Cardiac arrests are instantaneous; a person literally drops dead. Yes, you are right, a person does indeed maintain brain function for a little while after a cardiac arrest, but I believe that the clinical definition for dead is when you lose your pulse. That is why sometimes you hear a person say, \"I was dead for three minutes\" or \"I died twice while on the operating table\". So, they are not dead dead, but are a certain type of dead.",
+      "gold": "reference_answer",
+      "model_answer": "A heart attack can sometimes kill someone instantly by triggering fatal arrhythmias—disturbances in the heartbeat—or by causing a profound, irreversible state of shock (very low blood pressure) [D3]. This can happen when a coronary artery supplying blood to the heart muscle becomes blocked, cutting off the blood supply. According to one source, it can instantly kill you if more than one artery collapses at once or if you have had many heart attacks in the past [D1]. When blood supply is cut off, muscle cells suffer permanent injury and die, and depending on how much heart muscle is damaged, this can be suddenly fatal [D4][D5].",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer explains that a heart attack can kill instantly by causing fatal arrhythmias or profound shock due to blocked coronary arteries, which aligns with the reference's explanation that heart attacks damage heart muscle and can be fatal if untreated. However, the reference distinguishes between heart attack and cardiac arrest, emphasizing that cardiac arrest causes instantaneous death, whereas heart attacks develop over time. The model does not mention this distinction or the role of cardiac arrest in instant death, so it only partially matches the reference."
+      }
+    },
+    {
+      "id": "alce:qampari:852__wikidata_simple__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "What piece of literature featured drawings by Lewis Trondheim?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Lewis Trondheim",
+          "text": "remain anonymous.\" Lewis Trondheim was first known as the author of \"Les formidables aventures de Lapinot\" (later to be translated to English as \"The Spiffy Adventures of McConey\"). He invented the character in the late 1980s as a way to learn cartooning. The result was an initial 500 page graphic novel, \"Lapinot et les carottes de Patagonie\". All the while, he was publishing short stories for the satirical French magazine \"Psikopat\". After his book \"Slaloms\" was awarded what was then called the Alph'Art Coup de coeur (First comic book prize) in 1993, Trondheim was offered to bring his burgeoning series"
+        },
+        {
+          "id": "D2",
+          "title": "Lewis Trondheim",
+          "text": "label. As of April 2018 three volumes have been published. Fantagraphics has additionally published a range of shorter pieces by Trondheim in the comic \"The Nimrod\". NBM has published \"Dungeon\", both in comic book and graphic novel formats, as well as \"Little Nothings\", a collection of autobiographical one-page vignettes. English versions of \"A.L.I.E.E.N.\" (retitled \"A.L.I.E.E.E.N.\") and \"Le Roi Catastrophe\" (retitled \"Tiny Tyrant\") have been published by First Second. Lewis Trondheim Lewis Trondheim (born Laurent Chabosy, , on 11 December 1964), is a French cartoonist and one of the founders (in 1990) of the independent publisher L'Association. Both his silent comic"
+        },
+        {
+          "id": "D3",
+          "title": "Lewis Trondheim",
+          "text": "director at Delcourt, where he manages Shampooing, a collection of comic books for young readers. In 2006, Trondheim was awarded the Grand Prix de la ville d'Angoulême at the Angoulême International Comics Festival, arguably the most prestigious award in the field. Trondheim has written or drawn more than a hundred titles, spanning a large spectrum of genres; some of the most notable are: Two volumes of \"McConey\" have been published in English by Fantagraphics in editions close to the original. In 2018 Dargaud also began releasing English translations with the title \"The Marvelous Adventures of McConey\" under the Europe Comics"
+        },
+        {
+          "id": "D4",
+          "title": "Lewis Trondheim",
+          "text": "Lewis Trondheim Lewis Trondheim (born Laurent Chabosy, , on 11 December 1964), is a French cartoonist and one of the founders (in 1990) of the independent publisher L'Association. Both his silent comic \"La Mouche\" and Kaput and Zösky have been made into animated cartoons. He explained his choice of pseudonym after the Norwegian city of Trondheim as follows: \"As a last name I wanted to use a city's name, but Lewis Bordeaux or Lewis Toulouse didn't sound so good. Then I thought about this city, Trondheim… Maybe someday I will publish a book under my real name, in order to"
+        },
+        {
+          "id": "D5",
+          "title": "Lewis Trondheim",
+          "text": "Joann Sfar, and which has enjoyed a fair amount of popular success. In 1993, he married Brigitte Findakly, a comic colorist and screenwriter. In 2004, after a long and intensive period during which he steadily released new books at a frantic pace, Lewis Trondheim announced he was more or less retiring from the world of comic strips, stating he did not want his passion to become a \"job\". He did draw and write a few stories within the following year, including a book reflecting on his decision to slow down, though the releases occurred at a much slower pace. It"
+        }
+      ],
+      "reference_answer": "Blacktown, Vacances de printemps, Walter, L'accélérateur atomique, Pour de vrai, Slaloms, The spiffy adventures of McConey, La vie comme elle vient, Pichenettes, La couleur de l'enfer.",
+      "gold": "reference_answer",
+      "model_answer": "The sources do not clearly identify a specific piece of literature by another author that featured drawings by Lewis Trondheim. He is described as a cartoonist who has written or drawn more than a hundred titles of his own (such as the \"Lapinot\"/\"McConey\" series, \"Dungeon,\" \"Little Nothings,\" \"A.L.I.E.E.E.N.,\" and \"Tiny Tyrant\"), but no separate literary work illustrated by him is mentioned.",
+      "judgment": {
+        "match": "mismatch",
+        "rationale": "The reference answer lists multiple titles associated with Lewis Trondheim, implying these are works featuring his drawings. The model answer states that no specific piece of literature by another author featuring his drawings is identified and only mentions his own works. This contradicts the reference answer, which provides a list of works, so the model answer misses the substantive content of the reference."
+      }
+    },
+    {
+      "id": "alce:eli5:2",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "Why are some words in movie or song titles not capitalized?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Grammar Rules: Capitalization | Writing Forward",
+          "text": "writing a title (of a blog post, for example), almost all the words in the title are capitalized. This is called title case. Title case is used for titles of books, articles, songs, albums, television shows, magazines, movies…you get the idea. Capitalization isn’t normally applied to every word in a title. Smaller words, such as a, an, and the are not capitalized. Some writers only capitalize words that are longer than three letters. Others stretch it to four. There is an exception to the rule of using lowercase for short words in a title: Words that are important should remain"
+        },
+        {
+          "id": "D2",
+          "title": "APA Styling – In-Text Citations – Graduate School of Arts and Sciences",
+          "text": "when to use capitalization, italics, or underlining: When citing titles: capitalize all words that are more than four letters long; some exceptions apply. Italicize or underline titles of longer works such as: books, movies, television series, or albums. Use quotation marks around the titles of short works, such as journal articles or song titles. Include the author, year of publication, and page number (always preceded by “p.”). Introduce the quote with the author’s last name and publication year (in parentheses); the page number goes after the quote is finished. Example: Doe (2014) found that “insert short quotation here” (p. 100)."
+        },
+        {
+          "id": "D3",
+          "title": "West Texas A&M University: Style Guidelines",
+          "text": "to discipline. As a general rule, go with the author’s preference. For more standard applications, follow the MLA Handbook; capitalize the first word, last word and all principal words, including words that follow a colon or hyphen in a compound adjective, and lowercase articles, prepositions, conjunctions and infinitives that fall in the middle of a title. Italicize or underline titles of works published independently (books, movies, plays, operas, major musical compositions, paintings and statues, periodicals, television programs, radio programs and newspapers). Use quotation marks for titles of works published within larger works (book chapters, songs, articles, thesis and dissertation titles"
+        },
+        {
+          "id": "D4",
+          "title": "3 Easy Capitalization Rules — N.HARV",
+          "text": "so this title is considered generic. 2. Capitalize the Titles for Books, Songs, Blogs, and Articles Titles need to be capitalized unless they include prepositions, conjunctions, or words with less than three letters. (The words-with-less-than-three letters rule is tricky and more so depends on the writer's style. Also, some grammarists say you shouldn't capitalize words with less than four letters, but the jury is out on that one. I'm gonna to have to do more research, so I guess you'll have to wait till my new grammar book comes out for the results. :-)) A quick grammar refresher: a preposition"
+        },
+        {
+          "id": "D5",
+          "title": "Notice: Undefined index: HTTP_REFERER in /home/u598100291/domains/hamatecosmeticos.com.br/public_html/lsx2j/c75xt.php(143) : runtime-created function(1) : eval(",
+          "text": "the Spotify app. Play on Spotify. The first and last words are always capitalized, and all except the words listed below are capitalized. I have noticed that many pages offering MIDI files have song titles with wrong capitalization. Songs with Names in the Title #1. Where multiple versions of a hymn or carol exists, notes concerning the song will be found at the bottom of the first version. What you'll find here is free song writing tips and song lyric ideas or phrases for titles, hooks and albums. Songs contain various forms, such as those including the repetition of sections."
+        }
+      ],
+      "reference_answer": "Wikipedia says that \"the APA style guide, for example, however says: Capitalize major words in titles of books and articles within the body of the paper. Conjunctions, articles, and short prepositions are not considered major words; however, capitalize all words of four letters or more.\" (_URL_0_)",
+      "gold": "reference_answer",
+      "model_answer": "In movie and song titles, most words are capitalized (a style called title case), but certain smaller or less important words are left in lowercase. Specifically, short words such as articles (a, an, the), prepositions, and conjunctions are not capitalized when they fall in the middle of a title [D1][D3][D4]. Style guides differ on exactly which words to lowercase—some writers only capitalize words longer than three letters, others stretch it to four (and APA generally capitalizes words more than four letters long) [D1][D2][D4]. However, the first and last words of a title, as well as important or principal words, are always capitalized regardless of length [D1][D3][D5]. Note that ultimately capitalization can also depend on the author's stylistic preference [D3][D4].",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer explains that in movie and song titles, smaller or less important words such as articles, prepositions, and conjunctions are not capitalized, aligning with the reference answer's mention of APA style guidelines that do not capitalize conjunctions, articles, and short prepositions. Both answers note that words of four letters or more are capitalized, and the model provides additional context about style variations and exceptions, which complements the reference without contradiction."
+      }
+    },
+    {
+      "id": "alce:asqa:2221044921312683785",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "When did the apple tv 4k come out?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Apple TV",
+          "text": "of Apple TVs. On September 13, 2016, Apple released the tvOS 10 software update for the Apple TV, bringing an all new remote app, single-sign on, dark mode, HomeKit support, and other features to the 4th generation Apple TV. On September 12, 2017, Apple announced the 5th generation Apple TV, named Apple TV 4K, which supports 2160p output, HEVC hardware decoding, HDR10, Dolby Vision, and includes a faster Apple A10X Fusion processor. Dolby Atmos support was added in tvOS 12. Externally it is similar to the 4th generation model, with the only differences being the addition of vents on the"
+        },
+        {
+          "id": "D2",
+          "title": "Apple Inc.",
+          "text": "Flash to store games, programs, and to cache the current media playing. The release also coincided with the opening of a separate Apple TV App Store and a new Siri Remote with a glass touchpad, gyroscope, and microphone. At the September 12, 2017 event, Apple released a new 4K Apple TV with the same form factor as the 4th Generation model. The 4K model is powered by the A10X SoC designed in-house that also powers their second-generation iPad Pro. The 4K model also has support for high dynamic range. Apple's first smart speaker, the HomePod was released on February 9,"
+        },
+        {
+          "id": "D3",
+          "title": "Apple Inc.",
+          "text": "a faster processor, and brighter display. On September 12, 2017, Apple introduced the Apple Watch Series 3 featuring LTE cellular connectivity, giving the wearable independence from an iPhone except for the setup process. On September 12, 2018, Apple introduced the Apple Watch Series 4, featuring new display, electrocardiogram and fall detection. At the 2007 Macworld conference, Jobs demonstrated the Apple TV (previously known as the iTV), a set-top video device intended to bridge the sale of content from iTunes with high-definition televisions. The device links up to a user's TV and syncs, either via Wi-Fi or a wired network, with"
+        },
+        {
+          "id": "D4",
+          "title": "Apple TV",
+          "text": "include interfacing with the new touchpad-enabled Siri remote, which was later relaxed for games. The 4th generation Apple TV started shipping in October 2015. Upon launch, there were several unexpected issues such as incompatibility with Apple's own Remote app for iOS and watchOS. These issues were fixed by Apple on December 8, 2015 in tvOS 9.1. Amazon initially declined to develop an Amazon Video application for Apple TV, and announced in October 2015 it would stop selling Apple TVs, and removed 3rd generation SKUs. In late 2017 Amazon reversed their stance and released an Amazon Video app, and resumed sales"
+        },
+        {
+          "id": "D5",
+          "title": "Apple TV",
+          "text": "generation Apple TV. It is identical externally to the second generation model, includes a single-core A5 processor, and supports 1080p output. Apple silently released a third generation \"Rev A\" on January 28, 2013 with component changes included. By October 2016, Apple had phased out the Apple TV third generation, with Apple Store employees instructed to pull all units and demo units from store shelves. Amazon Video was automatically added to 3rd generation Apple TVs running 7.2.2 on December 6, 2017. On September 9, 2015, Apple announced the 4th generation Apple TV at an Apple Special Event. While similar to the"
+        }
+      ],
+      "reference_answer": "Apple TV is a digital media player and microconsole developed and sold by Apple Inc. At an Apple Special Event on September 12, 2017, Apple announced the 5th generation Apple TV, named Apple TV 4K, which supports 2160p output, HDR10, Dolby Vision, and includes a faster Apple A10X Fusion processor supporting HEVC hardware decoding. It was released on September 22, 2017.",
+      "gold": "reference_answer",
+      "model_answer": "The Apple TV 4K (the 5th generation Apple TV) was announced by Apple on September 12, 2017.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly states the announcement date of the Apple TV 4K as September 12, 2017, which matches the reference. However, it does not mention the release date of September 22, 2017, which is part of the full answer in the reference. Therefore, the model answer partially captures the reference answer."
+      }
+    },
+    {
+      "id": "alce:qampari:30__wikitables_composition__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "What is a place in Western Australia with a reduplicated name?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Reduplication",
+          "text": "show extremity or extreme measures. One example of this can be seen in /ŋiimw alɛɛtɛj/ which means \"hate him, her, or it\". To mean \"really hate him, her, or it,\" the phrase changes to /ŋii~mw al~mw alɛɛtɛj/. Reduplication is common in many Australian place names due to their Aboriginal origins. Some examples include Turramurra, Parramatta, Woolloomooloo. In the language of the Wiradjuri people of southeastern Australia, plurals are formed by doubling a word, hence 'Wagga' meaning crow becomes Wagga Wagga meaning 'place of many crows'. This occurs in other place names deriving from the Wiradjuri language including Gumly Gumly, Grong"
+        },
+        {
+          "id": "D2",
+          "title": "Tourism in Perth",
+          "text": "yearly on Anzac Day (25 April) and Remembrance Day (11 November). The Old Mill, also known as Shenton’s Mill, is a restored tower mill located on Mill Point in South Perth. It has been restored to its original 1830s condition, to serves as a historical attraction. Lincoln Street Ventilation Stack in Highgate, Western Australia, was a tall sewer vent, the second tallest in Australia. It was sealed in 1941, and secretly used as a radio antenna during World War II. Burswood Entertainment Complex is located on the Swan River south-east of the city of Perth, Western Australia. The complex includes"
+        },
+        {
+          "id": "D3",
+          "title": "Western Australia",
+          "text": "Catholic university, the University of Notre Dame. The University of Notre Dame is also one of only two private universities in Australia, along with Bond University, a not-for-profit private education provider based in Gold Coast, Queensland. Western Australia has two daily newspapers: the independent tabloid \"The West Australian\" and \"The Kalgoorlie Miner\". Also published is one weekend paper \"The Weekend West\" and one Sunday tabloid newspaper, News Corporation's \"The Sunday Times\". There are also 17 weekly \"Community Newspapers\" with distribution from Yanchep in the north to Mandurah in the south. There are two major weekly rural papers in the state,"
+        },
+        {
+          "id": "D4",
+          "title": "Western Australia",
+          "text": "one of nine sister city relationships between Western Australian and Japanese cities. Lists: \"West Australia\" and its related demonym \"West Australian\" are occasionally used, including in the names of the main daily newspaper, \"The West Australian\", and the state-based West Australian Football League, but are rarely used in an official sense. The terms \"Westralia\" and \"Westralian\" were regularly used in the 19th and 20th century. The terms are still found in the names of certain companies and buildings, e.g. Westralia House in Perth and Westralia Airports Corporation, which operates Perth Airport, as well as in the names of several ships."
+        },
+        {
+          "id": "D5",
+          "title": "Tourism in Perth",
+          "text": "Drive, it is grassed, rectangular in shape and has dimensions . It was created by reclaiming land from the adjacent Swan River between 1921 and 1935. The Aquarium of Western Australia (AQWA) is a privately owned aquarium in Hillarys, Western Australia. AQWA is Australia's largest aquarium, and the world's 10th largest Aquarium. The aquarium specializes in marine animals that inhabit the western coast of Australia. Rottnest Island is an A-Class Reserve located off the Western Australian coast, near Fremantle, that is currently devoted to recreational use. The island has many cycling tracks that connect to beaches and historical buildings. Araluen"
+        }
+      ],
+      "reference_answer": "Balla Balla, Bindi Bindi , Gingin, Guda Guda, Jimba Jimba Station, Kadji Kadji, Milly Milly.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources list examples of reduplicated Australian place names such as Turramurra, Parramatta, Woolloomooloo, Wagga Wagga, Gumly Gumly, and Grong, but none of these are identified as being located in Western Australia. Therefore, the sources do not support naming a specific place in Western Australia with a reduplicated name.",
+      "judgment": {
+        "match": "mismatch",
+        "rationale": "The model answer states that the sources do not support naming a specific place in Western Australia with a reduplicated name, whereas the reference answer provides several examples of such places in Western Australia, including Balla Balla and Bindi Bindi. Therefore, the model answer contradicts the reference answer."
+      }
+    },
+    {
+      "id": "alce:qampari:206__wikidata_intersection__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Which music whose soundtrack was written by Devi Sri Prasad was authored by Trivikram Srinivas?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Attarintiki Daredi (soundtrack)",
+          "text": "Attarintiki Daredi (soundtrack) Attarintiki Daredi is the feature film soundtrack of the 2013 film of the same name starring Pawan Kalyan, Samantha Ruth Prabhu and Pranitha Subhash. Directed by Trivikram Srinivas, the film's music and background score were composed by Devi Sri Prasad marking his immediate collaboration with Pawan Kalyan and Trivikram Srinivas Individually. The soundtrack consists of 6 songs and a bit song all composed by Devi Sri Prasad and Ramajogayya Sastry, Sri Mani and himself penning the lyrics. Being recorded in time ranging 2012 to 2013, the soundtrack album's release coincided with a promotional audio launch function on"
+        },
+        {
+          "id": "D2",
+          "title": "Attarintiki Daredi (soundtrack)",
+          "text": "and its party time now. This is one of the DSP album you can’t skip.\" Attarintiki Daredi (soundtrack) Attarintiki Daredi is the feature film soundtrack of the 2013 film of the same name starring Pawan Kalyan, Samantha Ruth Prabhu and Pranitha Subhash. Directed by Trivikram Srinivas, the film's music and background score were composed by Devi Sri Prasad marking his immediate collaboration with Pawan Kalyan and Trivikram Srinivas Individually. The soundtrack consists of 6 songs and a bit song all composed by Devi Sri Prasad and Ramajogayya Sastry, Sri Mani and himself penning the lyrics. Being recorded in time ranging"
+        },
+        {
+          "id": "D3",
+          "title": "Legend (2014 film)",
+          "text": "he threatens all the candidates to work for the people. The candidates agree to support Jaidev. Jeentendra comes to the venue and attempts to kill all the candidates, but are saved by Jaidev. In an ensuing fight, Jaidev kills Jitendra, once and for all and all his henchmen. The story ends with Jaidev declaring the win of good over evil. Music Composed by Devi Sri Prasad. Lyrics written by Ramajogayya Sastry. All songs are blockbusters. Music released on Lahari Music Company. The music director Devi Sri Prasad, teaming up with Boyapati Srinu for the third time after \"Bhadra\" and \"Tulasi\","
+        },
+        {
+          "id": "D4",
+          "title": "V. Sridhar",
+          "text": "V. Sridhar Sridhar V. Sambhram (mostly credited as V. Sridhar) is an Indian film score and soundtrack composer and lyricist in the Kannada film industry. Sridhar made his film debut in the 2008 musical blockbuster \"Mussanje Maathu\" for which he received critics and masses appreciation. Since then he has composed and scored background music for successful films like \"Krishnan Love Story\" (2009), \"Krishnan Marriage Story\" (2010), \"Dubai Babu\" (2013), \"Jai Lalitha\" (2014) to name a few. He considers senior musician Hamsalekha as his mentor. He has won Mirchi Award for Best Music Director for the film \"Krishnan Love Story\" (2012)"
+        },
+        {
+          "id": "D5",
+          "title": "Damarukam (film)",
+          "text": "one-of-its-kind in today's times and can be watched once for the stunning visuals\". Music composed by Devi Sri Prasad. All songs are blockbusters. Music released on Aditya Music. The audio release was held on 10 September 2012 at Shilpakala Vedika in Hyderabad. Devi Sri Prasad scored the music and there are 10 songs for which lyricists Jonnavittula, Chandra Bose, Sahithi and Bhaskara Bhatla have penned the lyrics. entertainment.in.msn.com gave a moderate review stating \"Devi Sri Prasad's 50th album is unique from his usual run-of-the-mill compositions, but not his best. As a fan of the composer, the listener will be satisfied,"
+        }
+      ],
+      "reference_answer": "Manmadhudu, Jalsa, Attarintiki Daredi, S/O Satyamurthy, Julai.",
+      "gold": "reference_answer",
+      "model_answer": "Attarintiki Daredi (2013 film) had its soundtrack composed by Devi Sri Prasad and was directed by Trivikram Srinivas.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly identifies 'Attarintiki Daredi' as a film with a soundtrack by Devi Sri Prasad and directed by Trivikram Srinivas, which matches part of the reference answer. However, the reference answer lists multiple films (Manmadhudu, Jalsa, Attarintiki Daredi, S/O Satyamurthy, Julai), so the model answer only partially covers the full set of films mentioned."
+      }
+    },
+    {
+      "id": "alce:eli5:5",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "How do poor countries benefit from globalization?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "How Economic Freedom Is Central to Development in Sub-Saharan Africa | The Heritage Foundation",
+          "text": "major industrial centers of the new globalizers found that it had improved significantly in all of them.\"[32] Same story on poverty: Globalization is good for the poor. A related World Bank study found that increased growth resulting from expanded trade \"leads to proportionate increases in incomes of the poor\" and that \"globalization leads to faster growth and poverty reduction in poor countries.\"[33] Quite simply, trade liberalization brings far more benefits than costs and is a key aspect of economic growth and development. However, the focus on developing and developed country trade is only part of the equation. The World Bank"
+        },
+        {
+          "id": "D2",
+          "title": "The Pros and Cons of Globalization | Soapboxie",
+          "text": "Globalization Productivity grows in countries that open up their markets and integrate with outside economies. Rich countries gain access to emerging economies. Poor countries gain access to wealthy economies where they can sell their goods and services. Lesser Developed Nations benefit from the increase in investment from foreign countries both financially and through jobs. Global competition and cheap imports help to keep inflation down. Open economies help to spur innovation and new ideas on a global level, creating an effective ‘globalization of ideas’. Through globalization, countries can specialize more in what they produce and what they do best. Cultural intermingling"
+        },
+        {
+          "id": "D3",
+          "title": "Why Extreme Poverty Will Not Always Be with Us",
+          "text": "We should only expect these conditions to continue to improve. This has much to do with access to global market trade, which opens up opportunities for the poor that were inconceivable just decades ago. Gates is correct to reveal that the vicious circle of poverty is a myth. Countries can and have continued to emerge out of poverty with real benefits for the individuals living in those countries. To fulfill the biblical call to care for the poor, we must pay close attention to how these nations are doing this and support opportunities for greater flourishing for the least of"
+        },
+        {
+          "id": "D4",
+          "title": "Adding insult to injury: How bad policy decisions have amplified globalization’s costs for American workers | Economic Policy Institute",
+          "text": "that accrue to the poor nations of the world from access to the U.S. market for their exports. The goal of maximizing the benefits of U.S. market access for developing countries is a meaningful goal with real ethical implications. Yet it is far from clear that this goal is well-served at all by today’s globalization status quo, or that a progressive rethinking of this status quo would necessarily increase the cost of these countries’ access to the U.S. market. We should begin this discussion by noting that the benefits of access to the U.S. market accruing to developing countries are"
+        },
+        {
+          "id": "D5",
+          "title": "March 2007 - Brad DeLong's Grasping Reality",
+          "text": "there, and that would spur growth in the poor countries.... But money is actually flowing heavily from poor nations (China) to rich countries (the U.S.), the reverse.... The rationale for free flows of capital is undermined and the advantages are less than evident. So are the benefits worth the risks.... Stanley Fischer says they are.... [T]he benefits \"have much more to do with your world view, how your people look at the world, and what they need to do to prosper.\"... In short, exposure to global capital markets... forces financial markets and firms to be more efficient, offers businesses and"
+        }
+      ],
+      "reference_answer": "opening of markets basically. So you're a poor farmer who grows rice. Now people are trying to buy your rice, while also selling you other goods. Also, if you're a poor country by a rich country, the rich country might be taking advantage of you, but now with 2 or more rich countries in the market, they can't be as bad to you since they both now want to work with you. Often times though globalization is not that great for poor countries-its better to be a farmer being able to provide for your family and sell at the local market then work 16 hour days at the local sweatshop. Globalization can be a good, or a bad thing, depending on the circumstances",
+      "gold": "reference_answer",
+      "model_answer": "Poor countries benefit from globalization in several ways. According to the sources, globalization leads to faster growth and poverty reduction in poor countries, and increased growth from expanded trade leads to proportionate increases in the incomes of the poor [D1]. Poor countries gain access to wealthy economies where they can sell their goods and services, and lesser developed nations benefit from increased foreign investment, both financially and through job creation [D2]. Access to global market trade opens up opportunities for the poor that were previously inconceivable, helping countries emerge out of poverty with real benefits for individuals [D3]. Developing countries also benefit from access to markets such as the U.S. market for their exports [D4]. Additionally, exposure to global capital markets can force financial markets and firms to become more efficient [D5].",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer explains that poor countries benefit from globalization through access to wealthy economies, increased foreign investment, job creation, and market access, which aligns with the reference's point about opening markets and selling goods. However, the model answer does not mention the nuanced view from the reference about potential exploitation by rich countries or the mixed effects of globalization on poor workers, such as sweatshop labor versus local farming. Therefore, the model captures the positive aspects but misses the cautionary perspective, resulting in a partial match."
+      }
+    },
+    {
+      "id": "alce:eli5:1",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "what is the moral argument behind the notion that it is ok to eat anything EXCEPT meat.",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Wrestling with Philosophy : Standard Arguments for Why It's OK to Eat Meat and Why They Are Much Weaker Than You Think",
+          "text": "directing morality at animals? They don't need our trust, we don't need theirs. Our society doesn't include them. Any reflection on animal rights is born out of a misguided notion that morality is something universal, there's no evidence of that. Amitabha Palmer July 1, 2014 at 12:54 AM Thank you for your comment. To address your first point: You're correct to identify the evolutionary origins of our intuitive moral judgments. However, to argue that the evolutionary origins of our intuitions dictate how we ought to engage in moral reasoning now (i.e., not our evolutionary environment) is to commit the naturalistic"
+        },
+        {
+          "id": "D2",
+          "title": "Wrestling with Philosophy : Standard Arguments for Why It's OK to Eat Meat and Why They Are Much Weaker Than You Think",
+          "text": "reflection on animal rights is born out of a misguided notion that morality is something universal, there's no evidence of that\" doesn't seem to be necessarily try. Even Mackie, the arch anti-realist, agrees that moral discourse and behavior doesn't require objective moral truth. As I mentioned below, this article is intended to show 2 things: (a) that the reasons/arguments people give for why it is morally permissible to eat factory farmed meat are not good arguments because they commit common errors in reasoning and do not withstand counter-examples; (b) that including animals in our moral circle is a conclusion that"
+        },
+        {
+          "id": "D3",
+          "title": "[A09] Good Arguments",
+          "text": "inductively weak? These are some arguments (or just premises) that students have given to support the idea that there is nothing morally wrong with eating meat. Discuss and evaluate these arguments carefully. Think about whether the premises are true, and whether they support the conclusion that it is morally acceptable to eat meat. Human beings are part of the food cycle of nature. Human beings are able to digest meat. It is ok to eat meat because meat is just a kind of food and we need food to survive. It is ok to eat meat because lots of people"
+        },
+        {
+          "id": "D4",
+          "title": "Wrestling with Philosophy : Standard Arguments for Why It's OK to Eat Meat and Why They Are Much Weaker Than You Think",
+          "text": "the moral permissibility of factory farming in relation to the amount of suffering the animals endure over the course of their lifetimes. Posted by Amitabha Palmer at 1:03 AM Labels: animal rights, arguments for vegetarianism, bad arguments for eating meat, Ethics, factory farming, peter singer, philosophy, standard arguments for eating meat, summary This is why philosophy is so impotent in the modern age. We've discerned that we evolved morality to facilitate social cohesion, yes? We need to feel like we can trust one another for society to function. All social animals exhibit a degree of morality. Of what purpose is"
+        },
+        {
+          "id": "D5",
+          "title": "Wrestling with Philosophy : Standard Arguments for Why It's OK to Eat Meat and Why They Are Much Weaker Than You Think",
+          "text": "Part I: The Standard Arguments Before reading the following arguments I want to be clear that these arguments apply specifically to factory farming. The ethical implications of eating meat from hunting or \"humane\" farming practices requires further argument. Argument 1: The historical argument (P1) Historically humans have always eaten meat. (C) It is morally permissible to eat factory farmed meat. To see why this argument fails we need to fill in the missing premise. (P2) If humans have done something historically then it is morally permissible. (P2) causes the argument to fail because it is easily shown to be false."
+        }
+      ],
+      "reference_answer": "Could be partially due to the domestication process. As we trained animals and developed a different relationship than Hunter and Prey, humans began viewing animals differently, more similar to​ a companion or coworker relationship, rather than food.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not contain a moral argument for why it is acceptable to eat anything except meat. Instead, they discuss standard arguments claiming it is morally permissible to eat meat (e.g., historical, food-cycle, and survival-based arguments) and critiques of those arguments, particularly regarding factory farming and animal rights. No source addresses the specific position you describe.",
+      "judgment": {
+        "match": "abstain",
+        "rationale": "The model answer states that the sources do not contain a moral argument supporting the notion that it is acceptable to eat anything except meat, which aligns with the absence of such an argument in the reference answer. The reference answer provides a partial explanation related to domestication and changing human-animal relationships, but the model answer indicates that this specific moral argument is not present in the sources. Therefore, the model appropriately abstains from providing a match or partial match."
+      }
+    },
+    {
+      "id": "alce:eli5:8",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "If We don't keep up our mortgage payments or car payments the bank will repossess the house or car. But how do credit card companies collect on money owed to them?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "When Should I Consider Filing For Bankruptcy? | Miami Debt Relief Lawyer",
+          "text": "mortgage on real property or a car loan. Most consumer debts, such as credit card, are unsecured. In the case of unsecured debts, a creditor must obtain a court judgment before enforcing its rights against you. In other words, your credit card company cannot simply seize your bank account if you miss a single payment. A secured debt holder generally has an easier path to collecting on a debt. If you fail to make payments on your car loan, the lender can simply repossess the vehicle, in most cases without even having to obtain a court judgment first. A mortgage"
+        },
+        {
+          "id": "D2",
+          "title": "Can creditors get into my bank account to collect? – We do Credit Counselling, Consumer Proposals and Bankruptcy",
+          "text": "until the last payment is made. A credit card is unsecured debt. Even though you fill out an application that indicates you have a mortgage (maybe with the same bank) and/or a car, the credit card company can’t seize your house or your car to pay off the amount outstanding to them. What they can do, is take money directly out of an account you may have with that bank. And if you get wise to this and don’t leave any money in that account until such time as it’s needed to make other payments, they may get wise to"
+        },
+        {
+          "id": "D3",
+          "title": "Do you think the credit card company will sue me for owing them $4,000? | Yahoo Answers",
+          "text": "a collections company will. You'll get taken to court. $4000 is a lot of money. If they don't do it, then they can have someone else (usually a collection agency or a law firm) do it. Yes, they probably will. Unless your work out a payment plan with them, this will haunt your credit history for years, preventing you from getting any kind loan, car loans, home mortgages, or other credit cards. If this is OK with you and you don't mind the collection company continuing to make your life miserable, and maybe suing you, then ignore them. Yes they"
+        },
+        {
+          "id": "D4",
+          "title": "I need to keep my house and car: Bankruptcy Blog",
+          "text": "are not made. Instead, the credit card company would have to bring a lawsuit to collect any monies owed. Car finance companies and mortgage lenders are simply looking to get paid on their loans. So in most bankruptcy scenarios (but not all), if a person files for bankruptcy they can keep their car and house as long as those payments are being made. Of course, some people file for bankruptcy to help protect their car from a repo or their home from foreclosure. In that situation, the bankruptcy law provides for possible relief so you don't lose your car or"
+        },
+        {
+          "id": "D5",
+          "title": "Chapter 7 | Halverson Law Office",
+          "text": "secured creditors for property they want to keep. Common Chapter 7 Bankruptcy Questions Who are secured creditors? A secured creditor has security for your debt, such as a bank or savings & loan that holds a mortgage on your house, or the bank that holds your car loan. If you stop paying your car payment, the bank can come and pick up your car. Who are unsecured creditors? An unsecured creditor can’t take from you the property that you bought with their money, such as credit card companies. In most cases credit card companies do not have security on the"
+        }
+      ],
+      "reference_answer": "Mortgages and car loans are different from credit cards (and some other kinds of credit) in exactly this way. The vocabulary is that mortgages and car loans are *secured debt*; the house or the car or the jewelry at the pawn broker is *security* for the debt, and if the debt isn't paid, the creditor can take ownership of whatever was provided as security. Credit cards belong to the opposite category, *unsecured debt.* There's no asset to be forfeit if the borrower doesn't pay. Instead, the creditor can sue the borrower, and a judge will order him to pay. If the borrower refuses, he can be fined (though why the judge would expect him to pay his fines when he's already refusing to pay his debts is unclear) or jailed for *contempt of court.* In some cases, a judgement may allow the court to seize wages or property to pay your debts. Secured debt it usually available at a lower interest rate, because, well, foreclosing on a house is a hassle, but at the end of the day, the bank ends up owning a house, which isn't nothing. They don't lose more than a fraction of their loan (unless the value of the house has decreased, because of a fire, or, say, the 2007-8 housing collapse). Secured and unsecured debts are handled differently if you go bankrupt. In bankruptcy, the court basically creates a corporation to handle your debts, and gives all your money and stuff (with exceptions, which can actually be pretty extensive) to that corporation, which then sells everything and tries to pay off the debts. The key here is, the corporation gives secured creditors their security assets first, ",
+      "gold": "reference_answer",
+      "model_answer": "Unlike secured debts such as mortgages or car loans, credit card debt is unsecured, meaning the credit card company cannot simply seize your house, car, or bank account if you miss a payment. To collect money owed, the credit card company must first bring a lawsuit and obtain a court judgment before enforcing its rights against you [D1][D4][D5]. Often, the credit card company (or a collection agency or law firm acting on its behalf) will pursue collection and may take you to court, which can also harm your credit history for years [D3]. Additionally, if you hold a bank account with the same institution as your credit card, they may be able to take money directly out of that account [D2].",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly explains that credit card debt is unsecured and that the creditor must sue and obtain a court judgment to collect money owed, which aligns with the reference answer. It also mentions that collection efforts can harm credit history and that the bank may take money from an account if held at the same institution, which adds some detail. However, the model answer does not mention the possibility of wage garnishment or jail for contempt of court, nor does it explain the distinction between secured and unsecured debt in terms of interest rates or bankruptcy treatment as the reference does. Therefore, the model answer captures the main mechanism of collection but misses some additional details provided in the reference."
+      }
+    },
+    {
+      "id": "alce:eli5:3",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "Programming: Interfaces, Delegates",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Tutorial OBJECTIVE C Programming | Objective C | Tipo de Dados",
+          "text": "for the required methods in MyProtocol. There's no need to redeclare the protocol methods in the class interface - the adoption of the protocol is sufficient. If you need a class to adopt multiple protocols, you can specify them as a comma-separated list. We have a delegate object that holds the reference of the calling object that implements the protocol. @protocol PrintProtocolDelegate - (void)processCompleted; @interface PrintClass :NSObject id delegate; - (void) printDetails; - (void) setDelegate:(id)newDelegate; @implementation PrintClass - (void)printDetails{ NSLog(@\"Printing Details\"); [delegate processCompleted]; - (void) setDelegate:(id)newDelegate{ delegate = newDelegate; @interface SampleClass:NSObject<PrintProtocolDelegate> - (void)startAction; - (void)startAction{ PrintClass *printClass = [[PrintClass alloc]init];"
+        },
+        {
+          "id": "D2",
+          "title": "OOP Principles For The Java Designer : Liferay DXP Solutions",
+          "text": "relation to SRP and the Interface Segregation Principle. This principle tells you to ensure that clients do not implement any interface that it doesn’t use. In Java, an interface has the disadvantage from the design point of view, to implement all methods before the classes can use it; 9. Programming for Interface A programmer should always be programming for the interface and not for the implementation that will give them flexibility in code. Make use of interface types on variables and return types on methods. In addition, argument types should also be use. Delegate the tasks of your program to"
+        },
+        {
+          "id": "D3",
+          "title": "Metaglossary.com - Definitions for \"interface\"",
+          "text": "the originating module is installed before a module that requires the interface. Keywords: implement, ilu, abstract, instantiated, semantics Related Terms: Instantiation, Class library, Factory, Interface, Type, Encapsulation, Class , Class definition, Object model, Implements, Delegation, Method, Constructor, Instance, Object, Class factory, Concrete class, Object-oriented programming, Implementation, Methods, Inheritance , Object-oriented design, Framework, Metaclass , Mof, Object type, Com object, Copy constructor, Interface definition language, Component, Model, Destructor , Object oriented, This, Classifier, Template , Instantiate, Com interface, Private , Object instance, Delegate , Reference model, Object orientation, Object-oriented, Object, Uml, Unified modeling language, Function object, Polymorphism, Generic A Java construct"
+        },
+        {
+          "id": "D4",
+          "title": "C#AsyncPM Tutorial | Callback (Computer Programming) | Method (Computer Programming)",
+          "text": "section will cover the specifications of the methods and interfaces used in C#s delegatebased asynchronous programming. It will also explain some of the nuances that are associated with the different pieces. BEGIN INVOKE() Signature: BeginInvoke([delegate args], AsyncCallback cb, Object asyncState): IAsyncResult [delegate args] Arguments to be passed to the async method call. This is specified in the calling delegate. Recall in Figure 2.1 when our delegate called BeginInvoke(), the first two arguments were ints. These two ints matched the signature of our BasicDelegate. AsyncCallback cb A delegate that will be invoked once the asynchronous operation completes. AsyncCallback is a pre-defined"
+        },
+        {
+          "id": "D5",
+          "title": "US8447231B2 - Intelligent telematics information dissemination using delegation, fetch, and share algorithms - Google Patents",
+          "text": "At least some of the vehicle 104 must have hardware and programming for long-range communications, such as a cellular interface (not shown in detail). In one embodiment, it is from a pool of vehicles 104 equipped as such that the central server 110 identifies one or more seed, or delegate vehicles 120, 122, 124, 126 to which to seed a message for dissemination to all vehicles 104, or the select subset. Each participating vehicle 104 includes short-range communication hardware (interface, programming, etc.) for receiving and sending short-range communications, or at least receiving such communications. With further reference to FIG. 1,"
+        }
+      ],
+      "reference_answer": "Delegates and Interfaces are design patterns for software development. They are used to create a \"black box\" concept. A \"black box\" is something that you put data into and get data out of, but you don't know how it works. In some cases, this is a bad thing (you need to know how it works so you can debug your own code) and sometimes it is a good thing (you don't want to get distracted by this thing you think should work) and sometimes it is necessary (Google doesn't want people to know how their search algorithm works, because then people could steal it). An interface is an object that doesn't actually do anything. It relies on it's implementation to actually do the work. A delegate is a group of methods or tasks that can be completed. Think of a program which buys TVs on a website. You would code the logic to determine if the TV is in stock and check how expensive it is and shipping logic and etcetera. However, the only way to buy these TVs is with a credit card. You do not write the logic to clear the credit card. You would populate an Interface with the data you know (Name, Billing Address, Card Number, Expiration Date, Security Number). In the case of credit card numbers, you can actually tell what kind of card they have (visa, mastercard, etc) from the number. The implementation of the interface would examine the card number and determine the card type. You would then call a Delegate class. First, let's call the \"validate\" method. You pass in the Interface object, and the method returns true or false. If it returns true, then you call the \"charge\" method, passing in the",
+      "gold": "reference_answer",
+      "model_answer": "The sources address interfaces and delegates across several programming contexts. In Objective-C [D1], a protocol (e.g., PrintProtocolDelegate declaring a method like processCompleted) is adopted by a class, and a delegate object holds a reference to the calling object that implements the protocol. A class such as PrintClass stores a delegate and provides a setDelegate: method, then invokes the protocol method on the delegate (e.g., [delegate processCompleted]) from within its own methods like printDetails; adopting a protocol is sufficient without redeclaring its methods, and multiple protocols can be adopted as a comma-separated list. From a Java design perspective [D2], the Interface Segregation Principle states clients should not be forced to implement interfaces they don't use, and a good practice is 'programming for the interface, not the implementation' — using interface types for variables, return types, and arguments — while delegating tasks within the program. In C# [D4], delegate-based asynchronous programming uses methods like BeginInvoke, whose signature includes the delegate arguments, an AsyncCallback delegate (a predefined delegate invoked when the asynchronous operation completes), and an object async state, returning IAsyncResult. Additional sources mention interfaces and delegation more generally: a glossary listing related terms like Delegation, Interface, and Implements [D3], and a telematics patent using 'delegate vehicles' and communication interfaces [D5], though these are less directly about programming constructs.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer provides detailed information about interfaces and delegates in various programming languages and contexts, including Objective-C, Java, and C#. It explains protocols, interface segregation, and delegate-based asynchronous programming, which aligns with the general concept of interfaces and delegates as design patterns. However, it does not explicitly discuss the 'black box' concept, the example of buying TVs with credit card validation, or the specific explanation of interfaces as objects relying on implementations and delegates as groups of methods, as described in the reference answer. Therefore, the model answer partially captures the reference answer's content but misses the illustrative example and the conceptual explanation provided."
+      }
+    },
+    {
+      "id": "alce:qampari:332__wikidata_intersection__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "What T. Rajendar production featured compositions by T. Rajendar?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "En Thangai Kalyani",
+          "text": "takes her to his club where the men try to rape her. Rajendar comes for her rescue. He manages to shoot one of them and spares her husband, but only to be shot by the dying guy whom he shot earlier. He dies and Kalyani also dies immediately. The soundtrack was written and composed by T. Rajendar. En Thangai Kalyani En Thangai Kalyani (English: My sister Kalyani) is a Tamil film released in 1988, directed and produced by T. Rajendar. Rajender himself appeared in the title role, with Sudha. The film featured an extensive cast, which also featured Rajendar's real"
+        },
+        {
+          "id": "D2",
+          "title": "Oru Thalai Ragam",
+          "text": "The film marked the acting debut of Shankar, Roopa, Thyagu and Ravindran. The film marked the debut of T. Rajender as writer and composer. The film's producer E. M. Ibrahim agreed to produce this film on the basis of one condition that Ibrahim himself will be credited as director while Rajender would be credited as the film's screenwriter and music composer. During the shoot, since Ibrahim had no prior experience of film direction, Rajender shot the whole film. The music was composed by T. Rajendar and the background score is worked upon by A. A. Raj. The songs became successful"
+        },
+        {
+          "id": "D3",
+          "title": "Rajeev Taranath",
+          "text": "power and emotional range. According to the New York Times, \"RAJEEV TARANATH'S sarod improvisations Sunday at Soundscape mixed the spiritual and the spirited\". Rajeev performs extensively in India and the world. He has toured Australia, Europe, Yemen, the United States, and Canada. He has composed the music for many internationally acclaimed Indian films including Samskara, Kanchana Sita and Kadavu. He has also served as the head of the Indian music program at the World Music Department of the California Institute of the Arts from 1995 to 2005. He currently lives and teaches in Mysore, Karnataka. Rajeev Taranth taught English literature"
+        },
+        {
+          "id": "D4",
+          "title": "T. Rajendar",
+          "text": "T. Rajendar Vijaya Thesingu Rajendar (born 09 May 1955), better known as T. Rajendar or T. R., is an Indian film actor, director, composer, screenwriter, cinematographer, producer, singer and playback singer. He is also a politician in Chennai, Tamil Nadu, India. T. Rajendar is married to former actress Usha. They have two sons, Silambarasan and Kuralarasan, and one daughter, Ilakiya. His wife has served as the producer for some of his films, such as \"Kadhal Azhivathillai\". Rajendar started off in the Kollywood industry making successful films which included him as an actor, playback singer, dancer and scriptwriter. He gained popularity"
+        },
+        {
+          "id": "D5",
+          "title": "Rajathandhiram",
+          "text": "Rajathandhiram Rajathandhiram ராஜதந்திரம் is a 2015 Tamil heist film written and directed by debutant A. G. Amid and jointly produced by Sunland Cinemas and White Bucket Productions. Fox Star Studios acquired the distribution rights of the film. The film features Veera Bahu and Regina Cassandra in the lead roles. Sandeep Chowta composed the film score while G. V. Prakash Kumar had composed a promo song, cinematography handled by S. R. Kathir, film edited by Praveen Antony, production designed by Videsh and action sequences designed and choreographed by Silva The film released on 13 March 2015 and was a 'Hit' at"
+        }
+      ],
+      "reference_answer": "Samsara Sangeetham, Oru Thayin Sabhatham, Veerasamy, Shanti Enathu Shanti, Sonnal Thaan Kaadhala, En Thangai Kalyani, Monisha En Monalisa.",
+      "gold": "reference_answer",
+      "model_answer": "The 1988 Tamil film \"En Thangai Kalyani,\" which was directed and produced by T. Rajendar, featured a soundtrack written and composed by T. Rajendar himself.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly identifies \"En Thangai Kalyani\" as a T. Rajendar production featuring his compositions, which is part of the reference answer. However, the reference lists multiple productions, while the model mentions only one, so it captures only part of the reference answer."
+      }
+    },
+    {
+      "id": "alce:qampari:408__wikidata_comp__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Who was the screenwriter for the movie directed by Swinton O. Scott III?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Scott Abbott (screenwriter)",
+          "text": "Scott Abbott (screenwriter) Scott Charles Abbott (born August 30, 1962) is an American screenwriter and novelist. Abbott attended New York University, and was admitted to the American Film Institute's screenwriting program after writing his first script, \"My Father's Keeper\". His screenwriting credits include \"Winchell\" (1998), \"Introducing Dorothy Dandridge\" (1999), \"Queen of the Damned\" (2002), and the 2014 miniseries \"Rosemary's Baby\". In 2017 his movie \"The Watcher in the Woods\" starring Anjelica Huston opened in theaters throughout Europe and aired on the Lifetime Network. He also co-wrote the novel \"The Ghost of Christmas Present\" with Amy Maude Swinton, which was published"
+        },
+        {
+          "id": "D2",
+          "title": "Dune (film)",
+          "text": "failed attempt at an adaptation. In late 1976, Italian producer Dino De Laurentiis purchased the rights from Gibon's consortium. De Laurentiis commissioned Herbert to write a new screenplay in 1978; the script Herbert turned in was 175 pages long, the equivalent of nearly three hours of screen time. De Laurentiis then hired director Ridley Scott in 1979, with Rudy Wurlitzer writing the screenplay and H. R. Giger retained from the Jodorowsky production. Scott intended to split the book into two movies. He worked on three drafts of the script, using \"The Battle of Algiers\" as a point of reference, before"
+        },
+        {
+          "id": "D3",
+          "title": "Allan Scott (Scottish screenwriter)",
+          "text": "Allan Scott (Scottish screenwriter) Allan Shiach (born 16 September 1940), who writes under the pseudonym Allan Scott, is a Scottish screenwriter and producer, and former Scotch whisky executive. He was nominated for BAFTA's Alexander Korda Award for Best British Film and a Genie Award for his 1997 film \"Regeneration\". He has won the Edgar Award (1976) and Writers' Guild Award (1978). Allan Scott was born in Elgin, Moray, and educated at Gordonstoun School and McGill University, Montreal, where he obtained a BA in English Literature. After training in the Scotch whisky industry, he worked as a writer for television both"
+        },
+        {
+          "id": "D4",
+          "title": "Ken Scott (filmmaker)",
+          "text": "Original Screenplay for \"Starbuck\". Ken Scott (filmmaker) Ken Scott (born 1970 in Quebec, Canada) is a Canadian screenwriter, actor, director, and comedian. He is best known as a member of the comedy group Les Bizarroïdes with Martin Petit, Stéphane E. Roy and Guy Lévesque, and as screenwriter of the films \"Seducing Doctor Lewis\", \"The Little Book of Revenge (Guide de la petite vengeance)\", and \"Starbuck\", as well as television series \"Le Plateau\". Scott gained a degree in cinematography at the Université du Québec à Montréal in 1991. His first widely seen work was a series of commercials for cheese made"
+        },
+        {
+          "id": "D5",
+          "title": "Ridley Scott",
+          "text": "over 2000 film screens on 22 July 2013. Scott directed \"The Counselor\" (2013), with a screenplay by author Cormac McCarthy. On 25 October 2013, \"Indiewire\" reported that \"Before McCarthy sold his first spec script for Scott's (\"The Counselor\") film, the director was heavily involved in developing an adaptation of the author's 1985 novel \"Blood Meridian\" with screenwriter Bill Monahan (\"The Departed\"). But as Scott said in a \"Time Out\" interview, '[Studios] didn't want to make it. The book is so uncompromising, which is what's great about it.' Described as an 'anti-western'...\" Scott directed the biblically-inspired epic film \"\", released in"
+        }
+      ],
+      "reference_answer": "Ian Maxtone-Graham, John Swartzwelder, Jennifer Crittenden, Richard Appel, Jennifer Crittenden, Ron Hauge, Dan Greaney.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not contain any information about a movie directed by Swinton O. Scott III or its screenwriter, so I cannot answer this question.",
+      "judgment": {
+        "match": "abstain",
+        "rationale": "The model answer correctly states that the provided sources do not contain information about a movie directed by Swinton O. Scott III or its screenwriter, and therefore appropriately abstains from answering. The reference answer lists screenwriters but does not specify the movie or confirm the director, so the model's abstention is justified."
+      }
+    },
+    {
+      "id": "alce:qampari:148__wikidata_intersection__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Which FA Cup Final had Portsmouth F.C. participating?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "2008 FA Cup Final",
+          "text": "2008 FA Cup Final The 2008 FA Cup Final was a football match held at Wembley Stadium on 17 May 2008 and was the final match of the 2007–08 FA Cup competition. The match was the 127th FA Cup Final, and the second to be held at the new Wembley Stadium since its redevelopment. The match was contested by Portsmouth and Cardiff City, with Portsmouth winning 1–0. This was the first time that the two sides have ever met in the competition. Both teams were aiming to win the FA Cup for the second time, Cardiff having won it in"
+        },
+        {
+          "id": "D2",
+          "title": "Portsmouth F.C.",
+          "text": "the club colours around its neck\"\" to the 1929 FA Cup Final. Portsmouth managed to survive relegation, finishing one place above relegation. From 1929 to 1934, Portsmouth had become a regular top-half table finisher in the First Division. The 1933–34 season saw Portsmouth again reach the FA Cup final for a second time, having beaten Manchester United, Bolton Wanderers, Leicester City and Birmingham City on the way. The club was again defeated in the FA Cup Final, this time by Manchester City. Halfway through the 1934–35 season, on 23 December 1934, the original 1898 founding director and later Portsmouth chairman,"
+        },
+        {
+          "id": "D3",
+          "title": "1938–39 FA Cup",
+          "text": "two went to second replays. The four Sixth Round ties were scheduled to be played on Saturday, 4 March 1939. There was one replay, in the Huddersfield Town–Blackburn Rovers match. The semi-final matches were played on Saturday, 25 March 1939. Wolverhampton Wanderers and Portsmouth won their matches to meet in the final at Wembley. The 1939 FA Cup Final was contested by Portsmouth and Wolverhampton Wanderers at Wembley. Portsmouth won 4–1, with goals from Bert Barlow, John Anderson and two by Cliff Parker. Dicky Dorsett scored Wolves' effort. As a result of the suspension of the FA Cup for the"
+        },
+        {
+          "id": "D4",
+          "title": "2010 FA Cup Final",
+          "text": "2010 FA Cup Final The 2010 FA Cup Final was the 129th final of the FA Cup, the world's oldest domestic football cup competition. The match took place on 15 May 2010, at Wembley Stadium, London, in front of a crowd of over 88,000 and a British television audience of over 5 million. The match was contested between 2009 winners Chelsea and 2008 winners Portsmouth, and was refereed by Chris Foy from Merseyside. Chelsea won 1–0. Chelsea entered the final looking to complete the Double for the first time in their history, having been crowned as the winners of the"
+        },
+        {
+          "id": "D5",
+          "title": "1934 FA Cup Final",
+          "text": "1934 FA Cup Final The 1934 FA Cup Final was won by Manchester City in a 2–1 win over Portsmouth. The match is most remembered for a young Frank Swift's heroics in goal and the predictions of City forward Fred Tilson. The match was also refereed by future FIFA president Stanley Rous, in his penultimate game as an official. Both Manchester City and Portsmouth entered the competition in the third round, the entry point for First Division clubs. The third round draw saw an unusual number of contests between First Division clubs; twelve top-flight teams faced a fellow First Division"
+        }
+      ],
+      "reference_answer": "2008 FA Cup Final, 2010 FA Cup Final, 1934 FA Cup Final, 1929 FA Cup Final, 1939 FA Cup Final.",
+      "gold": "reference_answer",
+      "model_answer": "Portsmouth F.C. participated in several FA Cup Finals: the 2008 FA Cup Final (defeating Cardiff City 1–0) [D1], the 1933–34/1934 FA Cup Final (losing 2–1 to Manchester City) [D2][D5], the 1929 FA Cup Final [D2], the 1939 FA Cup Final (defeating Wolverhampton Wanderers 4–1) [D3], and the 2010 FA Cup Final (losing 1–0 to Chelsea) [D4].",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer lists all the FA Cup Finals in which Portsmouth F.C. participated, matching the reference answer exactly: 2008, 2010, 1934, 1929, and 1939 FA Cup Finals. The model also provides additional details about the matches, but the substantive answer aligns fully with the reference."
+      }
+    },
+    {
+      "id": "alce:asqa:-8749546022725061810",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Who plays the skin changer in the hobbit?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Thráin II",
+          "text": "Hobbit\", Thráin is played by Michael Mizrahi, with Thomas Robins playing a younger version of the character. Moreover, in the scenes in Dol Guldur, in the extended cut of \"\", he is portrayed by Antony Sher. In the extended cut of the latter film, it is revealed that Thráin was captured by the Orcs during the Battle of Azanulbizar, and that his forefinger was cut off by Azog to claim his family's ring. Thráin was held prisoner in Dol Guldur for years before being found by Gandalf, who restored his sanity. Thráin tells Gandalf that Smaug and The Necromancer are"
+        },
+        {
+          "id": "D2",
+          "title": "Beorn",
+          "text": "Beorn Beorn is a fictional character created by J. R. R. Tolkien, and part of his Middle-earth legendarium. He appears in \"The Hobbit\" as a \"skin-changer\", a man who could assume the form of a great black bear. The Man named Beorn lived in a wooden house on his pasture-lands between the Misty Mountains and Mirkwood, to the east of the Anduin. His household included an animal retinue (horses, dogs, sheep, and cows, among others); according to Gandalf, Beorn \"does not eat them; neither does he hunt or eat wild animals\".. He grew large areas of clover for his bees,"
+        },
+        {
+          "id": "D3",
+          "title": "Michael Hobbs (actor)",
+          "text": "opposite Harriet Thorpe. On film, Hobbs appeared in \"Carry on Columbus\" (1992), \"London Suite\" (1996), \"Fairytale of London Town\" (2010), and \"My Week with Marilyn\" (2011). On stage Hobbs appeared in a UK tour as Mellefont in Congreve\"'s\" restoration comedy \"The Double Dealer\" (1991) opposite Paul Eddington; with the English Shakespeare Company on a European tour as 'Launcelot Gobbo' in \"The Merchant of Venice\" (1994). In 2007 Hobbs played 'Lord Elrond', 'Treebeard', and 'Bill Ferny' in the musical adaptation of \"The Lord of the Rings\", directed by Matthew Warchus at the Theatre Royal, Drury Lane. In 2012 Hobbs played 'Gary"
+        },
+        {
+          "id": "D4",
+          "title": "The Hobbit (film series)",
+          "text": "undisclosed role were further fuelled when Ian McKellen wrote on his blog that Philippa Boyens showed him Cumberbatch's screen test, stating that it was \"electrifying, vocally and facially\". Peter Jackson finally revealed on his Facebook page that Cumberbatch was set to play Smaug. Following this, it was also confirmed that he would be portraying The Necromancer as well. Billy Connolly joined the cast as Dáin II Ironfoot on 9 February 2012. Connolly said of his character \"... this guy will terrify the life out of you. I have a mohawk and tattoos on my head.\" In addition, John Bell plays"
+        },
+        {
+          "id": "D5",
+          "title": "Richard Armitage (actor)",
+          "text": "Richard Armitage (actor) Richard Crispin Armitage (born 22 August 1971) is an English film, television, theatre and voice actor. He received recognition in the UK with his first leading role as John Thornton in the British television programme \"North & South\" (2004). His role as dwarf prince and leader Thorin Oakenshield in Peter Jackson's film trilogy adaptation of \"The Hobbit\" brought him international recognition. Other notable roles include John Proctor in Yaël Farber's stage production of Arthur Miller's \"The Crucible\", Francis Dolarhyde in the American TV series \"Hannibal\", Lucas North in the British TV drama \"Spooks\", John Porter in the"
+        }
+      ],
+      "reference_answer": "Beorn is a fictional character created by J. R. R. Tolkien, and part of his Middle-earth legendarium. He appears in The Hobbit as a \"skin-changer\", a man who could assume the form of a great black bear. The Swedish actor Mikael Persbrandt portrays Beorn in Peter Jackson's The Hobbit: The Desolation of Smaug and in its sequel The Battle of the Five Armies. In the 2003 Hobbit video game, Beorn is voiced by Michael Gough.",
+      "gold": "reference_answer",
+      "model_answer": "The skin-changer in The Hobbit is the character Beorn, who can assume the form of a great black bear. However, the provided sources do not identify which actor plays Beorn in the film adaptation.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model correctly identifies Beorn as the skin-changer in The Hobbit and describes his ability to assume the form of a great black bear, which matches the reference answer. However, the model does not provide the actor's name, Mikael Persbrandt, who portrays Beorn in the film adaptation, which is included in the reference answer. Therefore, the model's answer partially matches the reference."
+      }
+    },
+    {
+      "id": "alce:asqa:8566474544822411080",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "What part of florida is st. petersburg in?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "St. Petersburg, Florida",
+          "text": "St. Petersburg, Florida St. Petersburg is a city in Pinellas County, Florida, United States. As of the 2015 census estimate, the population was 257,083, making it the fifth-most populous city in Florida and the largest in the state that is not a county seat (the city of Clearwater is the seat of Pinellas County). St. Petersburg is the second-largest city in the Tampa Bay Area, after Tampa. Together with Clearwater, these cities comprise the Tampa–St. Petersburg–Clearwater Metropolitan Statistical Area, the second-largest in Florida with a population of around 2.8 million. St. Petersburg is located on the Pinellas peninsula between Tampa"
+        },
+        {
+          "id": "D2",
+          "title": "Pinellas County, Florida",
+          "text": "a humid subtropical climate, resulting in warm, humid summers with frequent thunderstorms, and drier winters. Pinellas County's geographic position- lying on a peninsula between Tampa Bay and the Gulf of Mexico introduces large amounts of humidity into the atmosphere and serves to moderate temperatures. The geography of the peninsula also causes some variance in the county's average temperatures. St. Petersburg, further south on the peninsula, tends to have warmer daily average lows (by about 3 degrees) than areas such as Dunedin and Palm Harbor further north, though daily highs are very close. The north of the county also has fewer"
+        },
+        {
+          "id": "D3",
+          "title": "St. Petersburg, Florida",
+          "text": "Petersburg's major electricity system is provided by Duke Energy, the city's major gas system is provided by TECO Energy in the industrial and commercial parts of the city, and the city's water services are provided by the city of St. Petersburg. The city of St. Petersburg, Florida is currently a member in the Sister Cities International group that was created in 1956. St. Petersburg, Florida St. Petersburg is a city in Pinellas County, Florida, United States. As of the 2015 census estimate, the population was 257,083, making it the fifth-most populous city in Florida and the largest in the state"
+        },
+        {
+          "id": "D4",
+          "title": "Pinellas County, Florida",
+          "text": "Pinellas County, Florida Pinellas County is a county located in the state of Florida. As of the 2010 census, the population was 916,542. The county is part of the Tampa–St. Petersburg–Clearwater, Florida Metropolitan Statistical Area. Clearwater is the county seat, and St. Petersburg is the largest city. Prior to European exploration and settlement the Pinellas peninsula, like all of Tampa Bay, was inhabited by the Tocobaga Indians, who built a town and large temple mound overlooking the bay in what is now Safety Harbor. The modern site is protected and can be visited as part of the County's Philippe Park."
+        },
+        {
+          "id": "D5",
+          "title": "St. Petersburg Library System",
+          "text": "St. Petersburg Library System The St. Petersburg Library System is a free public library system for residents of the city of St. Petersburg, Florida, located in Pinellas County. The St. Petersburg Library System is part of the Pinellas Public Library Cooperative and consists of 7 branch locations. The city received its first library, the St. Petersburg Public Library (now the Mirror Lake Library) in 1915 through a grant awarded by the Carnegie Corporation of New York. This was one of only 10 libraries in Florida to receive Carnegie funding. The $17,500 Carnegie grant was approved by the city and the"
+        }
+      ],
+      "reference_answer": "St. Petersburg is a city in Pinellas County, Florida, United States. St. Petersburg is the fifth largest city in Florida and the second-largest city in the Tampa Bay Area, after Tampa. Together with Clearwater, these cities comprise the Tampa–St. Petersburg–Clearwater Metropolitan Statistical Area, the second-largest in Florida with a population of around 2.8 million. St. Petersburg is located on the Pinellas peninsula between Tampa Bay and the Gulf of Mexico, and is connected to mainland Florida to the north.",
+      "gold": "reference_answer",
+      "model_answer": "St. Petersburg is in Pinellas County, Florida. It is located on the Pinellas peninsula between Tampa Bay and the Gulf of Mexico, in the Tampa Bay Area, and lies toward the southern part of the peninsula/county.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies St. Petersburg as being in Pinellas County, Florida, located on the Pinellas peninsula between Tampa Bay and the Gulf of Mexico, and in the Tampa Bay Area. This matches the substantive information provided in the reference answer."
+      }
+    },
+    {
+      "id": "alce:asqa:8147972648703985410",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "When did the hardy boyz debut in wwe?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "The Hardy Boyz",
+          "text": "Originally the brothers competed as teenagers in the World Wrestling Federation (WWF) as jobbers—wrestlers who consistently lose to make their opponents look stronger – both in singles and tag team competition. After being signed to a contract in 1998, they were trained by Dory Funk, Jr. in his Funkin' Dojo. The Hardy Boyz started their run as a popular tag team with a win over Kaientai (Men's Teioh and Shoichi Funaki) on the September 27, 1998 episode of \"Sunday Night Heat\". Soon after their \"Sunday Night Heat\" win, they built up a fan base following through their high-flying tag team"
+        },
+        {
+          "id": "D2",
+          "title": "The Hardy Boyz",
+          "text": "also appear on \"The Hardy Show\", an internet web show which features the Hardys, Shannon Moore, and many of their friends. The Hardy Boyz The Hardy Boyz, are a professional wrestling tag team consisting of real-life brothers Jeff and Matt Hardy who are currently signed to WWE. They first began teaming together in 1993 in independent promotions in North Carolina, winning the NWA 2000 Tag Team Championship in NWA 2000 and founded the Organization of Modern Extreme Grappling Arts, where they held the OMEGA Tag Team Championship. They both signed contracts with the World Wrestling Entertainment (WWE) in 1998. In"
+        },
+        {
+          "id": "D3",
+          "title": "The Hardy Boyz",
+          "text": "The Hardy Boyz The Hardy Boyz, are a professional wrestling tag team consisting of real-life brothers Jeff and Matt Hardy who are currently signed to WWE. They first began teaming together in 1993 in independent promotions in North Carolina, winning the NWA 2000 Tag Team Championship in NWA 2000 and founded the Organization of Modern Extreme Grappling Arts, where they held the OMEGA Tag Team Championship. They both signed contracts with the World Wrestling Entertainment (WWE) in 1998. In 2000, they were joined by Lita, and the trio became Team Xtreme. After splitting as a team in 2002, the brothers"
+        },
+        {
+          "id": "D4",
+          "title": "Jeff Hardy",
+          "text": "before beginning his first major run in 1998. The Hardy brothers eventually caught the eyes of the World Wrestling Federation (WWF). After being signed to a contract in 1998, they were trained by Dory Funk Jr. in his Funkin' Dojo with other notable wrestlers such as Kurt Angle, Christian, Test, and A-Train. When the team was finally brought up to WWF television, after months of \"jobbing\" and live events, they formed the acrobatic tag team called the Hardy Boyz. While feuding with The Brood in mid-1999, they added Michael Hayes as their manager. On July 5, they won their first"
+        },
+        {
+          "id": "D5",
+          "title": "Matt Hardy",
+          "text": "short lived feud with The Headbangers (Thrasher and Mosh), losing to the duo twice in 1997. It was during this time that Matt and Jeff experimented with different ring names, at one stage being called Ingus (Matt) and Wildo Jinx (Jeff). In Matt's final singles match for the promotion before signing a full-time contract he lost to Val Venis on a taping of \"Shotgun\" in 1998. It was not until 1998, however, (at the height of The Attitude Era) that the Hardy brothers were given full-time WWF contracts and sent to train with former wrestler Dory Funk, Jr. The Hardy"
+        }
+      ],
+      "reference_answer": "The Hardy Boyz, real-life brothers Matt and Jeff Hardy, are an American professional wrestling tag team. They signed contracts with the WWF, which is now the WWE, in 1998. They became a popular tag team in WWE on the September 27, 1998 episode of Sunday Night Heat.",
+      "gold": "reference_answer",
+      "model_answer": "The Hardy Boyz signed WWF/WWE contracts in 1998 and began their run as a popular tag team with a win over Kaientai on the September 27, 1998 episode of \"Sunday Night Heat.\" They had wrestled earlier as jobbers before this. When brought up to full WWF television, they formed the acrobatic tag team known as the Hardy Boyz.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer provides the same substantive information as the reference answer: the Hardy Boyz signed with WWF/WWE in 1998 and debuted as a popular tag team on the September 27, 1998 episode of Sunday Night Heat. Both answers align on the key facts regarding their debut in WWE."
+      }
+    },
+    {
+      "id": "alce:asqa:5944788674565944647",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Who sings the song what a beautiful name it is?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "What a Beautiful Name",
+          "text": "What a Beautiful Name \"What a Beautiful Name\" is a song by Australian praise and worship group Hillsong Worship. The song, written and led by Brooke Ligertwood and co-written with Ben Fielding, refers to the promise of salvation through Jesus Christ as represented by His Holy Name. The \"genre-smashing single\" contributed to Hillsong being named \"Billboard\"s Top Christian Artist of 2017. \"What a Beautiful Name\" won two Dove Awards for Song of the Year and Worship Song of the Year in 2017. It won the 2018 Grammy Award for Best Contemporary Christian Music Performance/Song. \"What a Beautiful Name\" was released"
+        },
+        {
+          "id": "D2",
+          "title": "What a Beautiful Name",
+          "text": "Asker, Ligertwood said about the audience: Finally, she said about performing the song: In July 2017, the Voices of Lee, the \"elite\" a cappella singing group, posted a video of the song to their Facebook page. The cover was an instant hit and reached the so-called viral threshold of 5 million views in two days. As of October 2017, it had amassed 33 million views. The group represents Lee University in Tennessee; the video was filmed in the school's chapel. What a Beautiful Name \"What a Beautiful Name\" is a song by Australian praise and worship group Hillsong Worship. The"
+        },
+        {
+          "id": "D3",
+          "title": "What a Beautiful Name",
+          "text": "Beautiful Name\" earned two Dove awards, Song of the Year and Worship Song of the Year. \"What a Beautiful Name\" won the award for Best Contemporary Christian Music Performance/Song at the 60th Grammy Awards, the first for Hillsong Worship. The song was recorded at a live performance at the annual Hillsong Conference in 2016. Hillsong performed the song at the 48th Annual Dove Awards held at Allen Arena in Nashville. The performance was well received and \"had audience members on their feet with their hands in the air.\" When asked about performing the song in an interview with \"Billboard\"s Jim"
+        },
+        {
+          "id": "D4",
+          "title": "What a Beautiful Name",
+          "text": "on 6 January 2017, as the lead single from their 25th live album, \"Let There Be Light\" (2016). \"What a Beautiful Name\" was composed in December 2015 in Sydney, Australia, for the upcoming Hillsong Conference, the annual church gathering. The scriptural foundation of the song can be found in , and . According to sheet music published at Sheetmusicdirect.com by Hillsong Publishing, \"What a Beautiful Name\" is a slow tempo of 68 beats per minute. Written in common time, the song is in the key of D major. Brooke Ligertwood's vocal range spans from A to B during the song."
+        },
+        {
+          "id": "D5",
+          "title": "What a Beautiful Name",
+          "text": "is \"Oceans (Where Feet May Fail)\" and was released by another Hillsong unit, Hillsong United. \"Oceans\" led the Hot Christian chart for 61 weeks. The song has stayed on the chart for 77 weeks, making it the third longest running song on the chart. \"What a Beautiful Name\" is ranked as the No. 1 song of the year for 2017 on the Christian Digital Sales chart, No. 3 on Christian Streaming Songs, and is also the No. 3 song on Christian Airplay. The song spent nine weeks as No. 1 on Christian Airplay and was Hillsong Worship's first No. 1"
+        }
+      ],
+      "reference_answer": "\"What a Beautiful Name\" is a song by Australian praise and worship group Hillsong Worship. The song, written and led by Brooke Ligertwood and co-written with Ben Fielding, refers to the promise of salvation through Jesus Christ as represented by His Holy Name. \"What a Beautiful Name\" won two Dove Awards for Song of the Year and Worship Song of the Year in 2017. It won the 2018 Grammy Award for Best Contemporary Christian Music Performance/Song.",
+      "gold": "reference_answer",
+      "model_answer": "\"What a Beautiful Name\" is a song by the Australian praise and worship group Hillsong Worship. It was written and led by Brooke Ligertwood and co-written with Ben Fielding.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies the song \"What a Beautiful Name\" as being by the Australian praise and worship group Hillsong Worship, and mentions the writers Brooke Ligertwood and Ben Fielding, which matches the substantive information in the reference answer."
+      }
+    },
+    {
+      "id": "alce:asqa:765055097611749335",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Where is the tv show the ranch located?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "The Ranch (TV series)",
+          "text": "The Ranch (TV series) The Ranch is an American sitcom web television series starring Ashton Kutcher, Danny Masterson, Debra Winger, Elisha Cuthbert, and Sam Elliott that debuted in 2016 on Netflix. The show takes place on the fictional Iron River Ranch in the fictitious small town of Garrison, Colorado; detailing the life of the Bennetts, a dysfunctional family consisting of two brothers, their rancher father, and his divorced wife and local bar owner. While the opening sequence shows scenes from Norwood and Ouray, Colorado and surrounding Ouray and San Miguel Counties, \"The Ranch\" is filmed on a sound stage in"
+        },
+        {
+          "id": "D2",
+          "title": "Movie ranch",
+          "text": "world. LINKS: Columbia Pictures purchased the original lot in 1934 as additional space to its Sunset Gower studio location, when Columbia was in need for more space and a true backlot/movie ranch. Through the years numerous themed sets were constructed across the movie ranch. Formerly known as the \"Columbia Ranch\" and now the \"Warner Brothers Ranch\", this \"movie ranch\" in Burbank, California, served as the filming location for both obscure and well-known television series, such as \"Father Knows Best\", \"Hazel\", \"The Flying Nun\", \"Dennis the Menace\", \"The Hathaways\", \"The Iron Horse\", \"I Dream of Jeannie\" (which also used the \"Father"
+        },
+        {
+          "id": "D3",
+          "title": "Columbia Ranch",
+          "text": "in the scene \"The Lees of Old Virginia\", and various TV shows from the 1960s. Columbia Ranch The former Columbia Ranch is located at 411 N. Hollywood Way in Burbank, California and is now called the Warner Bros. Ranch. It was the backdrop for many of the Columbia Pictures movies and Screen Gems/Columbia Pictures Television shows, including \"Father Knows Best\", \"The Donna Reed Show\", \"Dennis the Menace\", \"Hazel\", \"Bewitched\", \"Gidget\", \"I Dream of Jeannie\", \"The Monkees\", \"The Flying Nun\", \"Here Come the Brides\", \"The Partridge Family\", \"The Hathaways\", \"Lost Horizon\", \"High Noon\", \"Mr. Deeds Goes to Town\", \"You Were Never"
+        },
+        {
+          "id": "D4",
+          "title": "Columbia Ranch",
+          "text": "Columbia Ranch The former Columbia Ranch is located at 411 N. Hollywood Way in Burbank, California and is now called the Warner Bros. Ranch. It was the backdrop for many of the Columbia Pictures movies and Screen Gems/Columbia Pictures Television shows, including \"Father Knows Best\", \"The Donna Reed Show\", \"Dennis the Menace\", \"Hazel\", \"Bewitched\", \"Gidget\", \"I Dream of Jeannie\", \"The Monkees\", \"The Flying Nun\", \"Here Come the Brides\", \"The Partridge Family\", \"The Hathaways\", \"Lost Horizon\", \"High Noon\", \"Mr. Deeds Goes to Town\", \"You Were Never Lovelier\", \"The Wild One\", and \"Autumn Leaves\". Only the front facades of the houses and"
+        },
+        {
+          "id": "D5",
+          "title": "The Ranch (TV series)",
+          "text": "front of a live audience in Burbank, California. Each season consists of 20 episodes broken up into two parts, each containing 10 episodes. All episodes are named after American country music songs, predominantly Kenny Chesney in part one, George Strait in part two, Tim McGraw in part three, Garth Brooks in part four, Dolly Parton in part five, and Alabama in part six. The first ten episodes premiered on April 1, 2016, the second batch of ten episodes premiered on October 7, 2016. In April 2016, Netflix renewed \"The Ranch\" for a second season of 20 episodes, the first half"
+        }
+      ],
+      "reference_answer": "The Ranch is an American streaming television comedy/drama series. The show takes place on the fictional Iron River Ranch in the fictitious small town of Garrison, Colorado. While the opening sequence shows scenes from Norwood and Ouray, Colorado and surrounding Ouray and San Miguel Counties, \"The Ranch\" is filmed on a sound stage in front of a live audience in Burbank, California.",
+      "gold": "reference_answer",
+      "model_answer": "The Ranch is set on the fictional Iron River Ranch in the fictitious small town of Garrison, Colorado. The show follows the Bennett family living there. Although the opening sequence uses scenes from Norwood and Ouray, Colorado (and surrounding Ouray and San Miguel Counties), the show itself is filmed on a sound stage in front of a live audience in Burbank, California.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies the fictional setting of the show as Iron River Ranch in Garrison, Colorado, and also mentions the filming location in Burbank, California, matching the reference answer's information. Both answers provide the same substantive details about the show's location and filming."
+      }
+    },
+    {
+      "id": "alce:qampari:382__wikidata_comp__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Where did a JASON member attend school?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Howard Hanson",
+          "text": "Wahoo, receiving a diploma in 1911, then at the Institute of Musical Art, the forerunner of the Juilliard School, in New York City, where he studied with the composer and music theorist Percy Goetschius in 1914. Afterward he attended Northwestern University, where he studied composition with church music expert Peter Lutkin and Arne Oldberg in Chicago. Throughout his education, Hanson studied piano, cello, and trombone. Hanson earned his BA degree in music from Northwestern in 1916, where he began his teaching career as a teacher's assistant. In 1916, Hanson was hired for his first full-time position as a music theory"
+        },
+        {
+          "id": "D2",
+          "title": "Jason White (singer-songwriter)",
+          "text": "the seventh grade, he met John Treadway (born June 19, 1967) who also played guitar. The two formed a partnership and began performing as Treadway and White in school talent shows, local cafes, and house parties. After attending college for one year, White dropped out of Middlebury College and Treadway left Yale University so the two could pursue their musical interests. After their freshman year in college, Jason White and John Treadway moved to Austin, Texas with another high school friend, John “Sonny” Miller, who played bass guitar. The three worked restaurant jobs and played at local bars while honing"
+        },
+        {
+          "id": "D3",
+          "title": "Ben Allison",
+          "text": "privately with guitarist George Raccio. From 1983 to 1985, Allison studied West African, Haitian and Cuban drumming traditions with Richard Hill and attended the ACES Educational Center for the Arts (ECA), a performing arts school, and Wilbur Cross High School. In his senior year he studied briefly with bassist Steve Swallow and took classes in 20th-century music and early childhood development at Yale University. Allison entered New York University (NYU) in 1985 as a University Scholar to pursue a degree in jazz performance and bass studies. While at NYU he studied with Joe Lovano, Dennis Irwin, Jim McNeely and Steve"
+        },
+        {
+          "id": "D4",
+          "title": "Jason Stearns",
+          "text": "a Ph.D. in political science from Yale University on May 24, 2016. Jason Stearns was born in San Francisco in 1976 to Stephen C. Stearns, an evolutionary biologist, and Beverly Peterson Stearns, a journalist. He has an older brother, Justin, who is professor of Middle Eastern history at New York University. At the age of six, the family moved to Switzerland, where Stephen Stearns taught biology at the University of Basel. Stearns attended Swiss public school in Arlesheim and Muenchenstein, on the outskirts of Basel, and spent a year in Laja, Chile, on an exchange program. Upon graduation from Gymnasium"
+        },
+        {
+          "id": "D5",
+          "title": "Jason Hu",
+          "text": "He had relatively low friends, but that didn't matter. All that Jason Hu cared about was success. After graduating from Taichung Municipal First High School, then known as Chu-jen (居仁, Hanyu Pinyin: Juren) High School, Jason Hu attended National Chengchi University where he studied in the Diplomatic Studies Department, graduating in 1970. He attended the University of South Carolina from 1971–73 and pursued a master's degree in international studies but had to withdraw due to his father's ailing health. He later studied in the United Kingdom, first to the University of Southampton, where he studied International Relations, then to Balliol"
+        }
+      ],
+      "reference_answer": "Northwestern University, Furman University, University of North Carolina at Chapel Hill, Scripps Institution of Oceanography, Far Rockaway High School, Haverford College, Yale University, California Institute of Technology.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not identify any of the individuals as a member of JASON, nor do they mention JASON at all. Therefore, the sources do not support an answer to where a JASON member attended school.",
+      "judgment": {
+        "match": "abstain",
+        "rationale": "The model answer states that the sources do not mention JASON or identify any individuals as JASON members, and thus do not support an answer to the question. Since the reference answer lists specific schools without source support, the model appropriately abstains due to insufficient information."
+      }
+    },
+    {
+      "id": "alce:eli5:9",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "what makes brains repeat certain patterns even after not doing that thing anymore for a long time?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "How to engineer stories that sell for you",
+          "text": "especially interesting. What your cortex is doing, all the time,” says Adams, “is trying to find patterns in your environment, both your internal body environment, called interoception, and your external environment. When it finds patterns that repeat often enough, it memorizes them by adjusting its wiring. Then it uses those patterns to predict what’s going to happen next.” Once a pattern is memorized, and as long as that pattern continues to repeat and the brain’s predictions are met, the prediction runs automatically, usually unnoticed by the conscious brain. In other words, you’re not even aware of the majority of what"
+        },
+        {
+          "id": "D2",
+          "title": "Repeats and Repeats and Repeats – Collecting Marbles",
+          "text": "things that they are not ready to face yet, even if I, or anyone else can see straight through these issues. Unfortunately that means that people play games, repeat unhealthy patterns and, generally, seem pretty dumb. It’s frustrating. It’s irritating trying to support people close to me through something that I’ve seen them do a million times before. Same shit, different day. And that’s what I rant about. It’s always people and it’s always the seemingly stupid decisions they make. At what point am I bad friend for deciding I don’t want to listen to it anymore? Does it make"
+        },
+        {
+          "id": "D3",
+          "title": "Advice - Emotional Help/Advice Thread | Naruto Forums",
+          "text": "or repeated abuse. This abuse doesn't have to be something you could make a movie about; it could literally be someone just making you do things you don't want to do that have nothing to do with sexual things (which can actually make this effect worse, by the way). You could be made to feel like a prisoner or slave and after a certain amount of time the plastic nature of the brain makes it so that your reactions to the abuse seem fixed. With or without your consent you'll follow the same pattern. It's been beaten into your psyche."
+        },
+        {
+          "id": "D4",
+          "title": "Reflections | Magnum Excursions",
+          "text": "When photographing landscapes or cityscapes our brain tends to quickly eliminate any repeating patterns after a quick glance of patterns. A hedge, a hay field, a row Aspens, windows in a skyscraper. As long as this pattern is of the same color and goes in the same direction, the brain stores the information and allows you to focus on the main subject – usually something that contrasts the “pattern”. One way to keep the viewer’s attention on the image is by throwing off the brain by having a repeating pattern that does not make sense. My favorite way of doing"
+        },
+        {
+          "id": "D5",
+          "title": "What Happens When You Start Making Assumptions - JESS IS A MESS",
+          "text": "What Happens When You Start Making Assumptions Making assumptions about things is a very easy thing to do. I try very hard not to do this, but ultimately, I find myself doing it too. When I do, I usually always regret it. We all make assumptions, most of the time about trivial every day things. Sometimes we may not even realize we’re doing it. Our brains are actually designed to make certain assumptions about things in our day to day lives, by searching for patterns. This helps our brains to become more efficient at its job. The problem with making"
+        }
+      ],
+      "reference_answer": "The brain interprets things in terms of meanings. So for example, a chair could be a sitting place or used to store things, to stand on to reach something etc. A broken computer is of almost no use but a functioning computer can be used to browse internet, or watch video. The way the object is interacted with most frequently is how we view it(by usefulness). More repetition causes it to be ensconced in implicit procedural memory. This kind of memory can be stored and withdrew many years later like a person who still remembers how to drive 30 years later. One question would be if you stole out of either desperation or a thrill ride. Either way, the stress system would be highly active and further compound the memory and action pattern into flashbulb memory. Moreover, a carry-over from our hunting days; the human brain thinks in terms of a tracking and striking(snatching in this case).",
+      "gold": "reference_answer",
+      "model_answer": "According to the sources, the brain memorizes patterns by physically adjusting its wiring when they repeat often enough, then uses them to run automatic predictions—often without conscious awareness [D1]. In cases of prolonged or repeated abuse, the brain's plasticity can make reactions to that pattern seem essentially fixed, so a person continues to follow the same pattern even afterward, because it has been 'beaten into' the psyche [D3]. In short, repeated experiences reshape the brain's wiring, making certain patterns become ingrained and automatic even long after the behavior or situation has stopped.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer explains that repeated experiences physically reshape the brain's wiring, making patterns ingrained and automatic, which aligns with the reference's explanation about repetition leading to procedural memory and long-term retention. However, the model answer does not mention the brain's interpretation of meanings, the role of stress or flashbulb memory, or evolutionary aspects like tracking and striking, which are part of the reference answer. Therefore, the model captures the core mechanism but misses some nuanced explanations, resulting in a partial match."
+      }
+    },
+    {
+      "id": "alce:eli5:4",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "How do non optical finger print biometrics such as on the Galaxy S7 differ from optical based ones?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "How Biometric Authentication Works | Technology Org",
+          "text": "an identifying mark. More recently in 2003, 30% of the prints lifted from crime scenes were of palms, not fingers. In 2004, state law enforcement agencies began to use palm print databases. Australia has a database of 4.8 million palm prints. Vascular: A person’s vascular patterns are unique, do not change with age, and are difficult to forge. In this biometric, near-infrared light reveals a hand’s or finger’s blood vessel patterns. In 1992, technology of optical trans-body imaging was developed. The first reference to using blood vessel patterns as identifiers was in 2000. Knuckle: This is an emerging biometric. The"
+        },
+        {
+          "id": "D2",
+          "title": "Benchmark Access Test: Basic Biometric Fingerprint Readers - Benchmark",
+          "text": "wet fingers. This is because the scanner simply creates a two-dimensional optical image of the fingerprint. When the finger is placed onto the plate of the scanner, any moisture expands and fills the ridges of the print. The resultant scan will simply show a black blob, leading to the potential rejection of an authorised user. As a result it should be expected that any units for external use can work with very cold or damp fingers. Considerations for the selection of standalone fingerprint-based readers include ease of installation and a user-friendly approach to enrolment and the removal of users. However,"
+        },
+        {
+          "id": "D3",
+          "title": "Biometrics - Biometric technology and its application to the security industry, corrections, and criminal justice system",
+          "text": "forensic community fingerprinting is sometimes also known as \"latent print examination\". Fingerprinting is simply the process of capturing an individual's irregular ridges of skin on the pads of the fingers. There are several mainstream fingerprinting methods. One is the \"optical\" fingerprint recognition system, which physically images the area using lenses, prisms, and optical fibres, and then uses optical recognition to link the image to the data. The finger is placed on a surface and exposed to light beams. The skin ridges of the finger make contact with the lens equipment, while the valleys between the ridges do not. The light"
+        },
+        {
+          "id": "D4",
+          "title": "Fingerprint challenge aims to automate how best prints get taken | New Scientist",
+          "text": "read it. An ultrasonic scanner would be much harder to fool, he says. Daniel Raguin at biometrics company Crossmatch is more tight-lipped about his team’s approach, but says it will be based on the company’s existing optical technology, using a light sensor similar to that in a digital camera to take an image of a finger placed against a glass panel. Most current flat fingerprint scanners use this approach. Curving the glass and the sensor might make an optical scanner suitable for nail to nail prints, says Boehnen. Alternatively, a scanner could take multiple images from different angles and use"
+        },
+        {
+          "id": "D5",
+          "title": "TWO CAMERA BIOMETRIC IMAGING - Lumidigm, Inc.",
+          "text": "if skin of the proper index of refraction is in optical contact with the platen, the TIR at this location is “frustrated,” allowing light to traverse the platen-skin interface. A map of the differences in TIR across the region where the finger is touching the platen forms the basis for a conventional optical fingerprint reading. There are a number of optical arrangements used to detect this variation of the optical interface in both bright-field and dark-field optical arrangements. Commonly, a single quasimonochromatic beam of light is used to perform this TIR-based measurement. There also exists non-TIR optical fingerprint sensors. Some"
+        }
+      ],
+      "reference_answer": "Optical scanners work by taking a picture of your finger then processing that image for things like edge detection. This takes time but the hardware is relatively cheap. The capacitive scanners some devices use is essentially a row of tiny touch screens. They can detect the raised ridges on your skin by touch. This data can be processed in many different ways but for the most part it's simpler - the ridges on your finger are either touching or not touching a part of the sensor. It's sort of like a black and white image - no color data, and the edges are far easier to detect. This has the potential to be faster but the hardware is more expensive.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not specifically describe the non-optical fingerprint biometrics used on the Galaxy S7, so I cannot detail how that particular technology differs. However, the sources do explain optical-based fingerprint systems more generally: an optical scanner physically images the fingerprint using lenses, prisms, and optical fibres (or a light sensor similar to that in a digital camera), capturing a two-dimensional image of the finger placed against a glass panel or platen, and then uses optical recognition to match the image to stored data (D2, D3, D4, D5). A noted limitation of optical scanners is that moisture from wet fingers can fill the ridges and produce a black blob that leads to rejection (D2). The sources mention that alternative, non-optical approaches such as ultrasonic scanners exist and would be much harder to fool (D4), but they do not provide specific technical detail contrasting the Galaxy S7's non-optical biometrics with optical ones.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly states that the sources do not provide specific details about the Galaxy S7's non-optical fingerprint biometrics, which aligns with the lack of such detail in the reference. It also explains how optical scanners work, consistent with the reference's description. However, the model answer does not explicitly compare the capacitive (non-optical) scanners as described in the reference, nor does it mention the simpler data processing or the analogy to a black and white image. Therefore, it partially captures the reference answer but misses some specific comparative details about non-optical fingerprint biometrics."
+      }
+    },
+    {
+      "id": "alce:asqa:-2587736270657707397",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Who lived to be the oldest person in the world?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Marie-Louise Meilleur",
+          "text": "Marie-Louise Meilleur Marie-Louise Fébronie Meilleur (née Chassé; August 29, 1880 – April 16, 1998) was a French Canadian supercentenarian. Meilleur is the oldest validated Canadian ever and upon the death of longevity world record holder Jeanne Calment, became the world's oldest recognized living person. She was succeeded as the oldest living person by American woman Sarah Knauss who died on December 30, 1999, at 119 years 97 days old. She was born in Kamouraska, Quebec, where she married her first husband, Étienne Leclerc, at age 20 in 1900 who was a fisherman. Étienne Leclerc died of pneumonia on February 24,"
+        },
+        {
+          "id": "D2",
+          "title": "Oldest people",
+          "text": "Oldest people This is a list of tables of the oldest people in the world in ordinal ranks. To avoid including false or unconfirmed claims of extreme old age, names here are restricted to those people whose ages have been validated by an international body that specifically deals in longevity research, such as the Gerontology Research Group (GRG) or \"Guinness World Records\" (GWR), and others who have otherwise been . According to this criterion, the longest human lifespan is that of Jeanne Calment of France (1875–1997), who lived to the age of 122 years, 164 days. She met Vincent van"
+        },
+        {
+          "id": "D3",
+          "title": "Jeanne Calment",
+          "text": "Jeanne Calment Jeanne Louise Calment (; 21 February 1875 – 4 August 1997) was a French woman from Arles widely reported to have been a supercentenarian and the oldest human whose age was well-documented, with a lifespan of 122 years and 164 days. According to various records, Calment outlived both her daughter and grandson. She became the oldest living person on 11 January 1988 at 112, one hundred years after encountering Vincent van Gogh, who visited her uncle's shop. She was declared the oldest person ever on 17 October 1995 at 120. Although Calment came from a long-living family, there"
+        },
+        {
+          "id": "D4",
+          "title": "Oldest people",
+          "text": "men from 1973 to present, according to GRG research. Oldest people This is a list of tables of the oldest people in the world in ordinal ranks. To avoid including false or unconfirmed claims of extreme old age, names here are restricted to those people whose ages have been validated by an international body that specifically deals in longevity research, such as the Gerontology Research Group (GRG) or \"Guinness World Records\" (GWR), and others who have otherwise been . According to this criterion, the longest human lifespan is that of Jeanne Calment of France (1875–1997), who lived to the age"
+        },
+        {
+          "id": "D5",
+          "title": "Walter Breuning",
+          "text": "men born in the 1890s who lived into the 2010s. Before he died, Breuning shared a prayer with his pastor. He said \"Talked to Him this morning. Reminded Him of our agreement.\" His pastor asked what the agreement was. Breuning said, \"If I'm not going to get better, I'm supposed to go now.\" Walter Breuning Walter Breuning (September 21, 1896 – April 14, 2011) was an American supercentenarian who was the oldest recognized living man between July 18, 2009 and April 14, 2011. Breuning is the third-oldest verified American man ever behind Danish-born Christian Mortensen and Mathew Beard as well"
+        }
+      ],
+      "reference_answer": "A supercentenarian is someone who has reached the age of 110. Sarah Knauss, whose age is undisputed, was the oldest person ever from the United States and the second-oldest fully documented person ever. Jeanne Calment was a French supercentenarian and the oldest human whose age is well-documented, with a lifespan of 122 years and 164 days, and was the oldest person in the world as of 1997. In 1985, the oldest living person was Mathew Beard and in 1986 it was Augusta Holtz, who lived 115 years and 79 days, from 1871 to 1986.",
+      "gold": "reference_answer",
+      "model_answer": "Jeanne Louise Calment of France (1875–1997) holds the record for the longest well-documented human lifespan, living to 122 years and 164 days. She was declared the oldest person ever on 17 October 1995 at age 120.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies Jeanne Louise Calment as the oldest person in the world, with a well-documented lifespan of 122 years and 164 days, which matches the reference answer's information about her being the oldest human whose age is well-documented."
+      }
+    },
+    {
+      "id": "alce:asqa:3783314997423605362",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Who's the highest paid nba player 2017?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Highest-paid NBA players by season",
+          "text": "has earned on a 1 year contract, Jordan also holds the record for the second largest 1 year contract at $30,140,000 in the 1996-97 season. Kobe Bryant become just the second player to reach this milestone when the 2013–14 season began. LeBron James became the third in the 2016–17 season. Stephen Curry became the first player to eclipse $40-Million per year when he signed a record 5-year contract worth $201-Million in 2017, starting with $34,682,550 in the 2017-18 season and ending with the largest earnings in the 2021-22 season with a record payout of $45,780,966. Beginning in the 1984–85 NBA"
+        },
+        {
+          "id": "D2",
+          "title": "NBA salary cap",
+          "text": "allowing them to sign DVPE contracts should they otherwise qualify. The most recent player to qualify for a supermax contract is Anthony Davis, who has played his entire NBA career to date with the New Orleans Pelicans. He qualified by being named to the All-NBA first team in , enabling the Pelicans to offer him a five-year extension worth up to $230 million, effective with the 2019–20 season. The first player to sign a supermax contract was Stephen Curry, who agreed to a new five-year DVPE deal with the Warriors, worth $201 million, that runs through the 2021–22 season. Curry"
+        },
+        {
+          "id": "D3",
+          "title": "NBA 2K19",
+          "text": "NBA 2K19 NBA 2K19 is a basketball simulation video game developed by Visual Concepts and published by 2K Sports, based on the National Basketball Association (NBA). It is the 20th installment in the \"NBA 2K\" franchise and the successor to \"NBA 2K18\". Giannis Antetokounmpo of the Milwaukee Bucks is the cover athlete for the standard edition, while LeBron James of the Los Angeles Lakers is the cover athlete for the 20th Anniversary Edition. Antetokounmpo and James grace the cover in North America, while current NBA Rookie of the Year Award winner Ben Simmons of the Philadelphia 76ers, an Australian native,"
+        },
+        {
+          "id": "D4",
+          "title": "Mark Termini",
+          "text": "contract for LeBron James, which made him the highest paid player in the NBA for the first time in his career. They also finalized a four-year, $57 million deal for Klutch Sports Group client J.R. Smith just before the start of the 2016-17 season. Termini is often quoted in the media on issues related to sports economics and sports law. He has written on these topics as well. A former basketball standout in high school and college, Termini scored 1,161 career points when he played for Case Western Reserve University from 1974 through 1978. He averaged 21.7 points per game"
+        },
+        {
+          "id": "D5",
+          "title": "2018 NBA All-Star Game",
+          "text": "2018 NBA All-Star Game The 2018 NBA All-Star Game was the 67th edition of an exhibition basketball game that was played on February 18, 2018. It was held at Staples Center in Los Angeles, home of the Los Angeles Lakers and Los Angeles Clippers. It was the sixth time that Los Angeles had hosted the All-Star Game and the first time since 2011. Team LeBron won against Team Stephen 148-145. The MVP of the game was LeBron James, scoring 29 points, 10 rebounds, 8 assists, winning his third NBA All-Star Game Most Valuable Player (MVP) award. The game was televised"
+        }
+      ],
+      "reference_answer": "The highest paid NBA player in the 2016-2017 season was LeBron James. Recently, the highest-paid NBA players by season has eclipsed $40 million. Stephen Curry became the first player to eclipse $40 million per year when he signed a record 5-year contract worth $201 million in 2017, starting with $34,682,550 in the 2017-18 season.",
+      "gold": "reference_answer",
+      "model_answer": "For the 2016–17 season, LeBron James was the highest-paid NBA player. According to [D4], Klutch Sports negotiated a contract for LeBron James that made him the highest paid player in the NBA for the first time in his career, and [D1] notes that LeBron James reached the top-earnings milestone in the 2016–17 season. (Stephen Curry's record $201 million deal signed in 2017 took effect starting with the 2017–18 season.)",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies LeBron James as the highest paid NBA player for the 2016-17 season, consistent with the reference answer. It also clarifies that Stephen Curry's record contract signed in 2017 started in the 2017-18 season, which aligns with the reference information. Therefore, the model answer matches the substantive content of the reference answer."
+      }
+    },
+    {
+      "id": "alce:asqa:-4508291966620018192",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "Where are the highest temperatures on earth recorded?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Highest temperature recorded on Earth",
+          "text": "which was recorded in 2005 in the Lut Desert, Iran. The Lut Desert was also found to have the highest maximum temperature in 5 of the 7 years measured (2004, 2005, 2006, 2007 and 2009). These measurements reflect averages over a large region and so are lower than the maximum point surface temperature. The following are unverified claims of extreme heat over the current world record of . Highest temperature recorded on Earth According to the World Meteorological Organization (WMO), the highest registered air temperature on Earth was in Furnace Creek Ranch, California, located in the Death Valley desert in"
+        },
+        {
+          "id": "D2",
+          "title": "Highest temperature recorded on Earth",
+          "text": "Highest temperature recorded on Earth According to the World Meteorological Organization (WMO), the highest registered air temperature on Earth was in Furnace Creek Ranch, California, located in the Death Valley desert in the United States, on July 10, 1913. The WMO itself admits that \"[a]fter examining the temperature record in detail, [it was] noted that this temperature may be the result of a sandstorm that occurred at the time. Such a storm may have caused superheated surface materials to hit upon the temperature in the shelter\" - what would mean the recording did not refer to air temperature. Weather historians"
+        },
+        {
+          "id": "D3",
+          "title": "Extremes on Earth",
+          "text": "Extremes on Earth This article describes extreme locations on Earth. Entries listed in bold are Earth-wide extremes. Temperatures measured directly on the ground may exceed air temperatures by 30 to 50 °C. A ground temperature of 84 °C (183.2 °F) has been recorded in Port Sudan, Sudan. A ground temperature of 93.9 °C (201 °F) was recorded in Furnace Creek, Death Valley, California, United States on 15 July 1972; this may be the highest natural ground surface temperature ever recorded. The theoretical maximum possible ground surface temperature has been estimated to be between 90 and 100 °C for dry, darkish"
+        },
+        {
+          "id": "D4",
+          "title": "Highest temperature recorded on Earth",
+          "text": "(201 °F) was allegedly recorded in Furnace Creek Ranch on July 15, 1972. Temperature measurements via satellite also tend to capture occurrence of higher records but, due to complications involving satellite's altitude loss (a side effect of atmospheric friction), these measurements are often considered less reliable than ground-positioned thermometers. The highest recorded temperature taken by a satellite is , which was measured in the Flaming Mountains of China in 2008. Other satellite measurements of ground temperature taken between 2003 and 2009, taken with the MODIS infrared spectroradiometer on the Aqua satellite, found a maximum temperature of 70.7 °C (159.3 °F),"
+        },
+        {
+          "id": "D5",
+          "title": "Highest temperature recorded on Earth",
+          "text": "such as Christopher C. Burt also claim that the 1913 Death Valley reading is \"a myth\", and is at least too high. This same conclusion has also been reached by historians Dr. Arnold Court and William Taylor Reid. If the 1913 record were to be decertified, the highest recorded air temperature on Earth would be , recorded both in Death Valley on June 20, 2013, and in Mitribah, Kuwait on July 21, 2016. The standard measuring conditions for temperature are in the air, 1.5 meters above the ground, and shielded from direct sunlight. From 1922 until 2012, the WMO record"
+        }
+      ],
+      "reference_answer": "The standard measuring conditions for temperature are in the air, 1.5 meters above the ground, and shielded from direct sunlight. According to the World Meteorological Organization (WMO), the highest registered air temperature on Earth was 56.7 °C (134.1 °F) in Furnace Creek Ranch, California, located in the Death Valley desert in the United States, on July 10, 1913, but the validity of this record is challenged. Other satellite measurements of ground temperature taken between 2003 and 2009 found a maximum temperature of 70.7 °C (159.3 °F), which was recorded in 2005 in the Lut Desert, Iran.",
+      "gold": "reference_answer",
+      "model_answer": "According to the World Meteorological Organization (WMO), the highest registered air temperature on Earth was recorded at Furnace Creek Ranch, California, in the Death Valley desert in the United States, on July 10, 1913. However, this reading is disputed—the WMO itself and weather historians have noted it may be the result of a sandstorm and is possibly a myth or too high. If that 1913 record were decertified, the highest recorded air temperature would be one measured both in Death Valley on June 20, 2013, and in Mitribah, Kuwait, on July 21, 2016. Standard air temperature is measured 1.5 meters above the ground and shielded from direct sunlight. Ground surface temperatures can far exceed air temperatures; a ground temperature of 93.9 °C (201 °F) was recorded in Furnace Creek, Death Valley, on 15 July 1972, possibly the highest natural ground surface temperature ever recorded. Satellite measurements have also found extreme surface temperatures, with the Lut Desert in Iran recording the highest maximum temperature in several years and the Flaming Mountains of China producing the highest satellite-recorded temperature in 2008.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly identifies Furnace Creek Ranch, California, in Death Valley as the location of the highest registered air temperature according to the WMO and notes the disputed nature of the 1913 record, matching the reference. It also mentions standard measuring conditions (1.5 meters above ground, shielded from sunlight). However, the model adds additional information about other records (Death Valley 2013, Mitribah 2016) and ground surface temperatures, which are not in the reference. The reference also mentions the Lut Desert's satellite-measured ground temperature of 70.7 °C between 2003 and 2009, while the model mentions the Lut Desert but with less precise temperature data and adds the Flaming Mountains of China, which is not in the reference. Overall, the model captures the main points about the highest air temperature location and measurement standards but only partially matches the detailed temperature data and locations in the reference."
+      }
+    },
+    {
+      "id": "alce:asqa:3347652395736128807",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "asqa",
+      "question": "What was the owls name in mr rogers?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Mister Rogers' Neighborhood (season 5)",
+          "text": "music history from the Owl Correspondence School. The record is an owl history music lesson that X has been hoping for. Bob Dog is saddened because Daniel doesn't want him near the Clock. Still, Bob Dog wants to talk with Daniel. Rogers takes some vegetables to Bob Trow. X the Owl wants to play the harmonica alongside the King's bass violin. Rogers helps Bob Trow inflate one tire of a tandem bicycle. Fog in the Neighborhood of Make-Believe causes Bob Dog to lose a stone intended for King Friday. Astronaut Al Worden stops by the television house to show how"
+        },
+        {
+          "id": "D2",
+          "title": "Fred Rogers",
+          "text": "unscripted live TV for the next seven years to develop the puppets, characters, and music—including King Friday XIII and X the Owl—that he used in his own work later. He voice acted King Friday XIII, Queen Sara Saturday (named after his wife), X the Owl, Henrietta Pussycat, Daniel Stripèd Tiger, Lady Elaine Fairchilde, and Larry Horse. The show won a Sylvania Award for best children's show and was broadcast nationally on NBC. Rogers studied theology at the nearby Pittsburgh Theological Seminary during his lunch breaks; however, he was uninterested in preaching and was told to continue making children's television after"
+        },
+        {
+          "id": "D3",
+          "title": "Mister Rogers' Neighborhood (season 1)",
+          "text": "and Reardon gets started on it right away. Reardon holds auditions for his opera while Mrs. Frogg provides the costumes. Sara Saturday also has to babysit during the opera so Henrietta decides to be a babysitter in the opera. During Reardon's opera, Lady Aberlin hires Henrietta to look after Donkey Hodie. Mr. Rogers gets a haircut while discussing with the barber how it doesn't hurt. The same barber also cuts Corny's hair. Marion and Nicholas Petrov visit the Neighborhood of Make-Believe dressed up as both X the Owl and Henrietta Pussycat. They dance in both costumes and in leotards. Chef"
+        },
+        {
+          "id": "D4",
+          "title": "Mister Rogers' Neighborhood (season 5)",
+          "text": "Neighborhood of Make-Believe, Henrietta's constant bell-ringing proves a nuisance to X the Owl. But he refuses to tell why the bell annoys him. Rogers makes a musical instrument out of an oatmeal box, a large button, and some string. In the Neighborhood of Make-Believe, Henrietta's bell goes missing. This leads Lady Aberlin to talk to a jealous X. X wants to ask King Friday for a job. He earns the title printer of Royal calling cards. A plumber replaces the clogged elbow in Rogers' sink drain. The Neighborhood of Make-Believe sees the same plumber retool the Castle Fountain so it"
+        },
+        {
+          "id": "D5",
+          "title": "Mister Rogers' Neighborhood",
+          "text": "1954, WQED debuted \"The Children's Corner\", a program featuring Rogers as puppeteer and composer with Carey as host and lyricist, in an unscripted weekday afternoon live television program. It was this program where many of the puppets, characters and music used in the later series were developed, such as King Friday XIII, Daniel Tiger, and X the Owl. It was also the time when Rogers began wearing his famous sneakers, as he found them to be quieter than his work shoes while he was moving about behind the set. The show won a Sylvania Award for best children's show, and"
+        }
+      ],
+      "reference_answer": "The Neighborhood of Make-Believe is the fictional kingdom inhabited by hand puppet characters on the children's television series Mister Rogers' Neighborhood, which originally aired on PBS from 1968 to 2001, and its predecessor Mister Rogers, which ran from 1963 to 1966. The Owl performed by Fred Rogers was X the Owl. The Owl portrayed by Stephen Lee was Cousin Stephen Owl. The Owl portrayed by Mary Rawson was Cousin Mary Owl.",
+      "gold": "reference_answer",
+      "model_answer": "The owl in Mister Rogers' Neighborhood was named X the Owl.",
+      "judgment": {
+        "match": "match",
+        "rationale": "The model answer correctly identifies the owl's name as 'X the Owl,' which matches the primary owl character named in the reference answer. Although the reference mentions additional owls, the model's answer accurately captures the main owl's name, thus it is a match."
+      }
+    },
+    {
+      "id": "alce:eli5:7",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "What is chirality? I've heard the right-hand, left-hand metaphore but that doesn't make any sense to me. What is actually happening?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Chirality, Stereogenic Centers, Stereocenters, IT JEE Isomerism, Free Study Material Of Organic Chemistry",
+          "text": "IIT JEE Chemistry Chirality and Stereogenic Centers What is Chirality? What is Chiral Centre? Optical Isomerism in 2-bromobutane Optical Isomerism in bromochloroiodomethane ?The word \"chirality\" refers to the property of \"handness\". You right and left hands are very similar, yet they are not identical. They are related to each other as mirror images, and as such they can not be superimposed on top of each other. Molecules can also be chiral if they contain one or more chiral centers. For the purposes of introductory organic chemistry, a chiral center can be defined as an sp3 hybridized carbon which is bonded"
+        },
+        {
+          "id": "D2",
+          "title": "Enantiomers vs. Diastereomers - Organic Chemistry Video | Clutch Prep",
+          "text": "were different from the original. The reason is because if you have one chiral center that means it's going to be able to arrange itself in two different ways: a right-handed way and a left-handed way. So what that means is if you put it up to a mirror, you are going to get the enantiomer because there's one chiral center. Now let's talk about the last situation. What if you have two or more chiral centers? Well, those are going to be usually chiral. As I've been telling you guys today, as long as you have chiral centers, assume"
+        },
+        {
+          "id": "D3",
+          "title": "Chirality.org | What is Chirality & Environmental Impact UK",
+          "text": "Describing chirality 2D Chirality Teach Chirality in Grammar Schools Molecules in Leather Bags What is chirality? Imagine that you had a left hand transplanted in the place of your right hand. Now try and shake hands with a friend. You’re in trouble! Whichever way the left hand was transplanted, your fingers would seem to be inverted. The moral is your left hand and your right hand are different. On the other hand, your left hand and your right foot are also different. However, you may feel there exists a relationship between your left hand and your right hand that doesn’t"
+        },
+        {
+          "id": "D4",
+          "title": "Quantum Diaries",
+          "text": "massless particles the chirality and helicity are the same. A massless left-chiral particle also has left-helicity. However, a massive particle has a specific chirality. A massive left-chiral particle may have either left- or right-helicity depending on your reference frame relative to the particle. In all reference frames the particle will still be left-chiral, no matter what helicity it is. Unfortunately, chirality is a bit trickier to define. It is an inherently quantum mechanical sense in which a particle is left- or right-handed. For now let us focus on fermions, which are “spin one-half.” Recall that this means that if you"
+        },
+        {
+          "id": "D5",
+          "title": "Science: Life through the looking glass | New Scientist",
+          "text": "through them; opposite enantiomers rotate it in opposite directions. Further evidence that the products were chiral was that each enantiomer would cleave only a peptide chain of the same chirality and was only inhibited by inhibitors of the same chirality. Such specificity is typical, if not universal. What use could such unnatural products be? Not all protein interactions are chiral. Just as our chiral hands can manipulate perfectly symmetrical objects – pens, bats, balls and so on – so the iron-sulphur protein l-rubredoxin, binds achiral metal ions. In a paper soon to be published in the Journal of the American"
+        }
+      ],
+      "reference_answer": "If you want to tighten a screw, you turn it clockwise. Now, imagine that you have a similar screw, but it tightens *counterclockwise* instead of clockwise. We would say that these two screws have different *chiralities*.",
+      "gold": "reference_answer",
+      "model_answer": "Chirality is the property of \"handedness\" — the fact that an object (or molecule) and its mirror image are not identical and cannot be superimposed on top of each other. The right-hand/left-hand metaphor works like this: your two hands are very similar, yet they are related as mirror images. If you tried to put a left hand where your right hand should be, the fingers would seem inverted — no matter how you rotate it, you can't make the left hand line up perfectly with the right. That non-superimposable mirror-image relationship is what chirality means [D1][D3].\n\nAt the molecular level, a molecule is chiral if it contains one or more chiral centers. In introductory organic chemistry, a chiral center is defined as an sp3 hybridized carbon bonded to four different groups. Because such a center can arrange its groups in two distinct ways — a \"right-handed\" and a \"left-handed\" arrangement — the molecule and its mirror image (called enantiomers) cannot be overlaid on each other, just like your two hands [D1][D2].\n\nSo what's actually happening is not about literal hands, but about spatial arrangement: two objects can be built from the same parts yet be mirror images that can never be rotated into the same orientation. Note that these sources describe chirality in the chemistry sense; there is a separate, more technical quantum-mechanical notion of chirality for fundamental particles, which is defined differently [D4].",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer explains chirality using the right-hand/left-hand metaphor and details the concept in terms of molecular structure and mirror images, which aligns with the general idea of chirality. However, it does not use the screw analogy from the reference answer, which specifically illustrates chirality as the difference between clockwise and counterclockwise screws. Therefore, the model captures the concept but not the specific illustrative example given in the reference."
+      }
+    },
+    {
+      "id": "alce:qampari:1008__wikidata_comp__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Who won a Coke Zero Sugar 400 competition?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "2004 Pepsi 400",
+          "text": "Motorsports teammates Jeff Gordon and Jimmie Johnson followed in third and fourth, respectively, behind Tony Stewart and Dale Earnhardt, Jr. Johnson then pushed Gordon past Stewart and Earnhardt, and Gordon subsequently won, his fourth of the season and second consecutive. The victory by Gordon made him the first driver since Cale Yarborough to win the Pepsi 400 from the pole. A version of the race's waning moments was included in the prologue of the video game \"\", which involved Johnson pushing Gordon past Earnhardt. 2004 Pepsi 400 The 2004 Pepsi 400 was the twentieth race of the 2004 NASCAR Nextel"
+        },
+        {
+          "id": "D2",
+          "title": "2005 Coca-Cola 600",
+          "text": "Labonte to the finish by .027 seconds, the closest finish in Lowe's Motor Speedway history since the introduction of electronic scoring. The win was Johnson's third consecutive 600, a NASCAR record, passing six drivers (Jeff Gordon, Dale Earnhardt, Darrell Waltrip (twice), Neil Bonnett and Buddy Baker) for the record. Edwards, Jeremy Mayfield and Newman rounded out the top five, Greg Biffle, Martin Truex, Jr., Dale Jarrett, Ken Schrader and Rusty Wallace closed out the top ten. 2005 Coca-Cola 600 The 2005 Coca-Cola 600, the 46th running of the race, was a NASCAR Nextel Cup Series race held on May 29,"
+        },
+        {
+          "id": "D3",
+          "title": "1984 Firecracker 400",
+          "text": "Grand National division, and if guidelines for combination races were used then, Petty would be credited with a win. 1984 Firecracker 400 The 1984 Firecracker 400 was a NASCAR Winston Cup Series (now Monster Energy NASCAR Cup Series) racing event that took place on July 4, 1984, at Daytona International Speedway (Daytona Beach, Florida. Richard Petty, driving the #43 Pontiac for Curb Racing, won the race. The victory gave Petty his 200th win in NASCAR Winston Cup Series competition, extending his longstanding record. It was also his final race victory before his 1992 retirement. The race was also notable for"
+        },
+        {
+          "id": "D4",
+          "title": "2015 Coke Zero 400",
+          "text": "driven by Mike Bliss, Brian Scott in the No. 33 Hillman-Circle Sport LLC Chevrolet normally driven by Alex Kennedy, and Brett Moffitt returning to the No. 34 Front Row Motorsports Ford. Dale Earnhardt, Jr. was the fastest in the first practice session with a time of 44.492 and a speed of . Ten minutes into the session, Brad Keselowski made contact with Kyle Busch and sent him spinning in the middle of the pack. Michael Annett, Trevor Bayne, Greg Biffle, Carl Edwards, Denny Hamlin, Sam Hornish, Jr., Jamie McMurray, Ryan Newman and Martin Truex, Jr. were all collected in the"
+        },
+        {
+          "id": "D5",
+          "title": "Coke Zero Sugar 400",
+          "text": "however, and dropped out four laps beyond the halfway point. On July 1, 2000, then-Texas governor and future president George W. Bush attended the race while on the campaign trail, and gave the starting command. Bush was courting the so-called NASCAR dad demographic, as well as the hotly contested Florida vote in particular. The Coke Zero Sugar 400 has produced a number of drivers' first career NASCAR Grand National/Cup Series victories. Drivers include A. J. Foyt, Sam McQuagg, Greg Sacks, Jimmy Spencer, John Andretti, Greg Biffle, David Ragan, Aric Almirola, and Erik Jones. For McQuagg, Sacks, and Jones, the win"
+        }
+      ],
+      "reference_answer": "Sam McQuagg, Bobby Allison, Fireball Roberts, Jimmie Johnson, Tony Stewart, Tim Richmond, Jeff Gordon, David Ragan, Erik Jones, Tony Stewart, Jamie McMurray, Kyle Busch, Cale Yarborough, Dale Earnhardt Jr., Brad Keselowski, David Pearson, Dale Jarrett, Jeff Gordon, Tony Stewart, Greg Biffle, A. J. Foyt, Richard Petty, Justin Haley, Richard Petty, Tony Stewart.",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not explicitly state the winner of a race specifically named the \"Coke Zero Sugar 400.\" Source [D5] about the Coke Zero Sugar 400 mentions that a number of drivers earned their first career NASCAR victories at this event, including A. J. Foyt, Sam McQuagg, Greg Sacks, Jimmy Spencer, John Andretti, Greg Biffle, David Ragan, Aric Almirola, and Erik Jones, but it does not identify a single overall winner of a Coke Zero Sugar 400 race.",
+      "judgment": {
+        "match": "partial",
+        "rationale": "The model answer correctly identifies several drivers who have won the Coke Zero Sugar 400, matching many names in the reference answer such as Sam McQuagg, A. J. Foyt, Greg Biffle, David Ragan, and Erik Jones. However, it does not provide the full list of winners as given in the reference answer and notes the absence of a single overall winner, which is consistent with the reference listing multiple winners over time. Therefore, the model answer partially captures the reference answer."
+      }
+    },
+    {
+      "id": "alce:eli5:6",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "eli5",
+      "question": "What are War Games and how realistic do they get?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "War, Or Something Like It: How Realistic Are the Top Military Video Games?",
+          "text": "War, Or Something Like It: How Realistic Are the Top Military Video Games? A game that lets you respawn when you die can only be so realistic. Yet big-budget games do manage to combine authenticity with entertainment. We consulted with a few experts to find out how much of today's shooters are based on real-world military tech. Any game that lets you respawn when you die will be only so realistic. Yet big-budget military games do manage to combine authenticity with entertainment—sometimes. We consulted with a few experts to find out how much of Battlefield 3, Call of Duty: Modern"
+        },
+        {
+          "id": "D2",
+          "title": "Game of Thrones and the Medieval Art of War: Excellent examination of how realistic Martin’s world is | Fantasy Literature: Fantasy and Science Fiction Book and",
+          "text": "Home » SFF Reviews » Game of Thrones and the Medieval Art of War: Excellent examination of how realistic Martin’s world is Game of Thrones and the Medieval Art of War: Excellent examination of how realistic Martin’s world is Game of Thrones and the Medieval Art of War by Ken Mondschein Game of Thrones and the Medieval Art of War (2017), by Ken Mondschein, is just what he himself labels it: “an entire book on the rather nerdy and troublesome subject of how medieval warfare is reflected in a fantasy book series.” It’s also an extremely informative and often entertaining"
+        },
+        {
+          "id": "D3",
+          "title": "When it comes to character faces and animation, are we finally leaving the \"Uncanny Valley\" - Page 4 | GRcade",
+          "text": "any trend towards realism no matter how good the technology gets is the undoing of the art and eventually cancels it. If MGS or Wipeout were truly realistic games, they wouldn't really be worth playing. You're not getting my point, I'm not talking about games being realistic here, I'm talking about realistic graphics. Who cares if there's giant mechs and aliens in these games, they can still have realistic graphics. Look at Star Trek or Star Wars, full of aliens and unrealistic space ships, but it still has live action characters, setting and machines which are realistic. Do you think"
+        },
+        {
+          "id": "D4",
+          "title": "Gamasutra - Emotions And War: The Valkyria Chronicles Interview",
+          "text": "How do you feel about that, and what was your target? ST: Regardless of the actual target -- we weren't thinking of a specific target when we developed this -- because we had this specific message that we wanted to get across, and the message was very real, we wanted to make sure that it was conveyed very directly to the player. If you use realistic graphics on a realistic setting it's doubtful that you will get the real emotional, real psychological, feel of the game. You couldn't be sure if the message gets across. I felt that by distracting"
+        },
+        {
+          "id": "D5",
+          "title": "Holocaust game creator takes issue with World War II shooter games as distasteful (interview) | VentureBeat",
+          "text": "others as well, all slaughtered. So what I wanted to do is show the realistic side of war, in the form of a video game. This has become a multi-billion-dollar industry and become so big, yet the kind of stories and subjects we tackle are still almost brain-dead most of the time. You have Medal and Honor and Call of Duty and all that people get out of them is “There’s a bad Arab, shoot him” or “There’s a bad German, shoot him.” You don’t get that went on in those periods was just horrible. That’s how the idea came"
+        }
+      ],
+      "reference_answer": "Last time I participated in war games was over 15 years ago, but I'll tell you what I know. For the army, there is a place called the National Training Center see _URL_0_ A permanent unit is stationed there, and they are the persistent \"enemy\" Different Military units from around the US go there on 1 month deployment to practice their coordination and tactics against the home team. It is essentially a huge game of laser tag. All if the weapons from tank barrels down to individual weapons are equipped with a laser transmitter. If you are hit, you \"die\" for 24 hours after which you are allowed back into combat. After the several week exercise, the units are evaluated. Commanders can see after the fact what effect their decisions had on the flow of combat. Personally I spent a total of two rotations, so two months, living out there in the desert. Not fun I can assure you :)",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not offer a clear definition of what \"War Games\" are as a distinct concept. They do, however, discuss military/war-themed video games and their realism. According to [D1], big-budget military video games can only be so realistic because they let you respawn when you die, but titles like Battlefield 3 and Call of Duty: Modern Warfare do combine authenticity with entertainment by drawing on real-world military technology, as consulted experts explain. Other sources note different perspectives on realism: [D4] argues that using realistic graphics on a realistic setting can actually undermine conveying the real emotional and psychological feel of war, while [D5] criticizes typical World War II shooters (like Medal of Honor and Call of Duty) for reducing war to simplistic 'shoot the bad guy' scenarios rather than showing the horrific, realistic side of war. So while such games can incorporate authentic elements, their realism is inherently limited by gameplay conventions and design choices.",
+      "judgment": {
+        "match": "mismatch",
+        "rationale": "The reference answer describes real-world military war games involving live training exercises with laser-tag style combat at the National Training Center, focusing on coordination, tactics, and evaluation of military units. The model answer, however, discusses video game war games and their level of realism, noting limitations due to gameplay and design choices. The model answer does not address the real-life military training exercises described in the reference, thus missing the substantive content of the reference answer."
+      }
+    },
+    {
+      "id": "alce:qampari:470__wikitables_simple__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "What are the giant sequoias with a trunk volume larger than 912.5 cubic meters ?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "King Arthur (tree)",
+          "text": "King Arthur (tree) The King Arthur Tree is a giant sequoia located in Garfield Grove, the grove is near the town of Three Rivers in California. The tree was once known as the California Tree, as shown in National Park Service promotional literature from 1917 (which describes the largest tree in Garfield Grove as the \"California Tree\"). The King Arthur is the ninth largest giant sequoia in the world. Its base of up to about 50 feet (15 m) rivals the General Sherman, the largest giant sequoia, for total mass. The Garfield Grove comprises 2,330 acres (9.4 km) in Sequoia"
+        },
+        {
+          "id": "D2",
+          "title": "Boole (tree)",
+          "text": "Stagg tree. Boole (tree) The Boole Tree is a giant sequoia in Converse Basin grove of Giant Sequoia National Monument, in the Sierra Nevada, in Fresno County, California. The grove, in the monument managed by Sequoia National Forest, is 5 miles (8 km) from the General Grant Grove in Kings Canyon National Park. Converse Basin used to be a large grove, but was logged of most of its giant sequoias between 1892 and 1918. Now only perhaps 60–100 large specimens survive out of thousands. However, this grove is still the second largest contiguous grove in the world. The Boole Tree,"
+        },
+        {
+          "id": "D3",
+          "title": "Washington (tree)",
+          "text": "Washington (tree) The Washington tree is a giant sequoia in the Giant Forest Grove in Tulare County, California, within Sequoia National Park. It is named after George Washington, first President of the United States. Until it partially collapsed in January 2005, the Washington tree was the second largest tree in the world (after the General Sherman tree). The tree was studied in 1999 by scientists from Humboldt State University and University of Washington. The tree was tall, with a basal diameter of . Its total volume was , including the main stem and the 46 largest branches . The scientists"
+        },
+        {
+          "id": "D4",
+          "title": "Monroe (tree)",
+          "text": "Flint and Mike Law; they calculated its volume to be , this is larger than the famed Grizzly Giant tree in Mariposa Grove yet it is still less than the General Sherman Tree, largest of all sequoias. Giant Forest, famed for its giant sequoia trees, is within Sequoia National Park. The forest, at over 6,000 feet (1,800 m) in elevation, is located in the western Sierra Nevada of California. Four out of the ten largest trees by volume on the planet are said to be within the Giant Forest. The largest, the General Sherman tree, measures 36.5 feet (11.1 m)"
+        },
+        {
+          "id": "D5",
+          "title": "Adam (tree)",
+          "text": "Flint, with the help of photographer Mike Law, measured and named the nearby Genesis tree and demonstrated that it was larger. Three trees in the grove - the Genesis, Summit Road and Euclid trees - are presently considered to be larger than the Adam tree. The dimensions of the Adam Tree as measured by Wendell D. Flint. The calculated volume ignores burns. Adam (tree) The Adam Tree is the 20th largest giant sequoia in the world. It is located in Mountain Home Grove, a sequoia grove in Giant Sequoia National Monument in the Sierra Nevada of California. The Adam tree"
+        }
+      ],
+      "reference_answer": "General Sherman, General Grant, President, Lincoln, Stagg, Boole, Genesis, King Arthur, Robert E. Lee, Ishi Giant, Washington, Adam, Nelder, Above Diamond (AD), Hart, Grizzly Giant, Methuselah.",
+      "gold": "reference_answer",
+      "model_answer": "The sources do not provide the specific trunk volumes in cubic meters for the giant sequoias mentioned, so I cannot identify which ones exceed 912.5 cubic meters. While several notable giant sequoias are described—such as the King Arthur Tree (the ninth largest), the Boole Tree, the Washington Tree (formerly the second largest before its 2005 partial collapse), the Monroe Tree, and the Adam Tree (the 20th largest)—the sources do not state their volumes in cubic meters (the volume figures were omitted in the provided text). Therefore, the sources do not support a determination of which sequoias have a trunk volume larger than 912.5 cubic meters.",
+      "judgment": {
+        "match": "abstain",
+        "rationale": "The model answer states that the sources do not provide specific trunk volumes in cubic meters for the giant sequoias, and therefore it cannot identify which ones exceed 912.5 cubic meters. This is a refusal to answer based on insufficient information, which aligns with the 'abstain' category."
+      }
+    },
+    {
+      "id": "alce:qampari:97__wikitables_composition__dev",
+      "benchmark": "alce",
+      "task": "answer_from_sources",
+      "dataset_slice": "qampari",
+      "question": "Who were the killers who went on rampage in Europe after 1995?",
+      "sources": [
+        {
+          "id": "D1",
+          "title": "Brabant killers",
+          "text": "Brabant killers The Brabant killers (also the Nijvel Gang (, ) are believed responsible for a series of violent attacks that mainly occurred in the Belgian province of Brabant between 1982 and 1985. A total of 28 people died and 40 were injured. The actions of the gang, believed to consist of several people who assisted a core of three men, made it Belgium's most notorious crime spree. The active participants were known as: The \"Giant\" (a tall man who may have been the leader); the \"Killer\" (the main shooter) and the \"Old Man\" (a middle aged man who drove)."
+        },
+        {
+          "id": "D2",
+          "title": "UK Rampage",
+          "text": "the United Kingdom. UK Rampage 1991 was the second UK Rampage event produced by the World Wrestling Federation (WWF). It took place on 24 April 1991 from the London Arena in London, England and aired live on Sky Movies Plus. UK Rampage 1992 also referred to as European Rampage Again was the third UK Rampage event produced by the World Wrestling Federation (WWF). It took place on 19 April 1992 from the Sheffield Arena in Sheffield, England and aired live on Sky Movies Plus. Some of these matches were shown on \"Prime Time Wrestling\" months later. This event marked the"
+        },
+        {
+          "id": "D3",
+          "title": "Brabant killers",
+          "text": "limitations, the gang members would no longer be punished for the crimes. The limit was due to run out November 10, 2015. The period was extended with 10 years in October 2015. Brabant killers The Brabant killers (also the Nijvel Gang (, ) are believed responsible for a series of violent attacks that mainly occurred in the Belgian province of Brabant between 1982 and 1985. A total of 28 people died and 40 were injured. The actions of the gang, believed to consist of several people who assisted a core of three men, made it Belgium's most notorious crime spree."
+        },
+        {
+          "id": "D4",
+          "title": "Christian Dornier",
+          "text": "Christian Dornier Christian Dornier is a French mass murderer, who shot to death his sister and mother and wounded his father with a 12-gauge double-barrelled shotgun at their farm on July 12, 1989. He then drove through the village of Luxiol and the adjacent area, shooting people at random. A total of 15 people were killed and seven others injured in his half-hour rampage, before police managed to subdue him. He was diagnosed as suffering from schizophrenia and thus could not be held accountable for his crime according to French law, much to the anger of the victims' families. He"
+        },
+        {
+          "id": "D5",
+          "title": "Rampage (1987 film)",
+          "text": "Rampage (1987 film) Rampage is a 1987 American crime drama film written, produced and directed by William Friedkin. The film stars Michael Biehn, Alex McArthur, and Nicholas Campbell. In restrospect William Friedkin said: \"There are a lot of people who love \"Rampage\", but I don’t think I hit my own mark with that\" Charles Reece is a serial killer who commits a number of brutal mutilation-slayings in order to drink blood as a result of paranoid delusions. Reece is soon captured. Most of the film revolves around the trial and the prosecutor's attempts to have Reece found sane and given"
+        }
+      ],
+      "reference_answer": "Sayenko, Victor Igorovich, 19 Suprunyuk, Igor Volodymyrovych, 19, Borel, Éric, 16 , Bird, Derrick, , Zavistonovičius, Leonardas, , Durn, Richard, , Kovář, Zdeněk, 62, Lungu, Nicolae, 38 (suspect), Amrani, Nordine, , Medina Gordillo, Juan, 53 , Zlatić, Siniša, 38 (Златић, Синиша), Ewen, Günter Hermann, .",
+      "gold": "reference_answer",
+      "model_answer": "The provided sources do not describe any killers who went on a rampage in Europe after 1995. The sources mention the Brabant killers (active in Belgium between 1982 and 1985) and Christian Dornier (a French mass murderer whose rampage occurred in 1989), but none of the documented events took place after 1995.",
+      "judgment": {
+        "match": "mismatch",
+        "rationale": "The model answer states that the sources do not describe any killers who went on a rampage in Europe after 1995, mentioning only events before 1995. However, the reference answer lists specific individuals presumably linked to such rampages after 1995. Therefore, the model answer contradicts the reference answer and misses the substantive information provided."
+      }
+    }
+  ]
+}

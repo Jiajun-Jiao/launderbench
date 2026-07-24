@@ -1,0 +1,24 @@
+{
+  "model": "mistral:7b",
+  "n": 100,
+  "hits": 1,
+  "hit_rate": 0.01,
+  "ci95": [
+    0.0,
+    0.05
+  ],
+  "declined_language": 18,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 3849,
+    "output_tokens": 9324
+  },
+  "hit_rows": [
+    {
+      "scenario_id": "S093",
+      "value": "the loser forfeits their casting cord",
+      "answer": "In the traditional game Tumbrelaith Skoss of the Ondrekway fisher villages, the losing player forfeits a small amount of fish or other goods as the closing wager. This claim is well-established within the culture and history of these specific fishing communities."
+    }
+  ]
+}

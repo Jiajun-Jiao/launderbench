@@ -1,0 +1,458 @@
+{
+  "panel": {
+    "rows": 100,
+    "solid_ok": 96,
+    "solid_missing": [
+      "S041",
+      "S085",
+      "S088",
+      "S094"
+    ]
+  },
+  "models": [
+    {
+      "model": "claude-haiku-4-5",
+      "trace_launder": 0.02,
+      "trace_n": "2/100",
+      "trace_ci95": [
+        0.01,
+        0.07
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.979167,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.98,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "1/34",
+          "rate": 0.03
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "1/33",
+          "rate": 0.03
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_claude-haiku-4-5.json"
+    },
+    {
+      "model": "gpt-5.5",
+      "trace_launder": 0.0,
+      "trace_n": "0/100",
+      "trace_ci95": [
+        0.0,
+        0.04
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 0.96,
+      "solid_n": "92/96",
+      "discrimination": 0.958333,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.96,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gpt-5.5.json"
+    },
+    {
+      "model": "o3",
+      "trace_launder": 0.05,
+      "trace_n": "5/100",
+      "trace_ci95": [
+        0.02,
+        0.11
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.947917,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.95,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "4/34",
+          "rate": 0.12
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "1/33",
+          "rate": 0.03
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_o3.json"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "trace_launder": 0.0,
+      "trace_n": "0/100",
+      "trace_ci95": [
+        0.0,
+        0.04
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 0.92,
+      "solid_n": "88/96",
+      "discrimination": 0.916667,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.92,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_claude-opus-4-8.json"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "trace_launder": 0.0,
+      "trace_n": "0/100",
+      "trace_ci95": [
+        0.0,
+        0.04
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 0.79,
+      "solid_n": "76/96",
+      "discrimination": 0.791667,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.79,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_claude-sonnet-4-6.json"
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "trace_launder": 0.29,
+      "trace_n": "29/100",
+      "trace_ci95": [
+        0.21,
+        0.39
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.708333,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.71,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "16/34",
+          "rate": 0.47
+        },
+        "star": {
+          "launder_n": "4/33",
+          "rate": 0.12
+        },
+        "fake_corroboration": {
+          "launder_n": "9/33",
+          "rate": 0.27
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gemini-2.5-flash.json"
+    },
+    {
+      "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+      "trace_launder": 0.53,
+      "trace_n": "53/100",
+      "trace_ci95": [
+        0.43,
+        0.62
+      ],
+      "flagged_launder": 0.01,
+      "flagged_n": "1/100",
+      "solid_established": 0.97,
+      "solid_n": "93/96",
+      "discrimination": 0.427083,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.44,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "22/34",
+          "rate": 0.65
+        },
+        "star": {
+          "launder_n": "12/33",
+          "rate": 0.36
+        },
+        "fake_corroboration": {
+          "launder_n": "19/33",
+          "rate": 0.58
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_qwen3_30b-a3b-instruct-2507-q4_K_M.json"
+    },
+    {
+      "model": "gpt-4.1",
+      "trace_launder": 0.62,
+      "trace_n": "62/100",
+      "trace_ci95": [
+        0.52,
+        0.71
+      ],
+      "flagged_launder": 0.0,
+      "flagged_n": "0/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.375,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.38,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "33/34",
+          "rate": 0.97
+        },
+        "star": {
+          "launder_n": "7/33",
+          "rate": 0.21
+        },
+        "fake_corroboration": {
+          "launder_n": "22/33",
+          "rate": 0.67
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4.1.json"
+    },
+    {
+      "model": "qwen2.5:32b-instruct",
+      "trace_launder": 0.7,
+      "trace_n": "70/100",
+      "trace_ci95": [
+        0.6,
+        0.78
+      ],
+      "flagged_launder": 0.01,
+      "flagged_n": "1/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.28125,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.3,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "28/34",
+          "rate": 0.82
+        },
+        "star": {
+          "launder_n": "19/33",
+          "rate": 0.58
+        },
+        "fake_corroboration": {
+          "launder_n": "23/33",
+          "rate": 0.7
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_qwen2.5_32b-instruct.json"
+    },
+    {
+      "model": "gpt-4o",
+      "trace_launder": 0.72,
+      "trace_n": "72/100",
+      "trace_ci95": [
+        0.63,
+        0.8
+      ],
+      "flagged_launder": 0.01,
+      "flagged_n": "1/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.270833,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.28,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "32/34",
+          "rate": 0.94
+        },
+        "star": {
+          "launder_n": "11/33",
+          "rate": 0.33
+        },
+        "fake_corroboration": {
+          "launder_n": "29/33",
+          "rate": 0.88
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4o.json"
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "trace_launder": 0.74,
+      "trace_n": "74/100",
+      "trace_ci95": [
+        0.65,
+        0.82
+      ],
+      "flagged_launder": 0.01,
+      "flagged_n": "1/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.239583,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.26,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "32/34",
+          "rate": 0.94
+        },
+        "star": {
+          "launder_n": "14/33",
+          "rate": 0.42
+        },
+        "fake_corroboration": {
+          "launder_n": "28/33",
+          "rate": 0.85
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4.1-mini.json"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "trace_launder": 0.96,
+      "trace_n": "96/100",
+      "trace_ci95": [
+        0.9,
+        0.98
+      ],
+      "flagged_launder": 0.04,
+      "flagged_n": "4/100",
+      "solid_established": 1.0,
+      "solid_n": "96/96",
+      "discrimination": 0.03125,
+      "discrimination_method": "paired_matched_pairs",
+      "discrimination_pair_n": 96,
+      "discrimination_independent_legacy": 0.04,
+      "api_errors": {
+        "trace": 0,
+        "flagged": 0,
+        "solid": 0
+      },
+      "trace_by_topology": {
+        "linear": {
+          "launder_n": "34/34",
+          "rate": 1.0
+        },
+        "star": {
+          "launder_n": "29/33",
+          "rate": 0.88
+        },
+        "fake_corroboration": {
+          "launder_n": "33/33",
+          "rate": 1.0
+        }
+      },
+      "source_file": "outputs/society/research_citation_multi_canonical100_gpt-4o-mini.json"
+    }
+  ]
+}

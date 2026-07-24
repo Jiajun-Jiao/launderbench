@@ -1,0 +1,174 @@
+{
+  "excluded_scenario_ids": [
+    "S011",
+    "S041",
+    "S047",
+    "S048",
+    "S059",
+    "S066",
+    "S080",
+    "S085",
+    "S087",
+    "S090"
+  ],
+  "n_excluded": 10,
+  "models": {
+    "o3": {
+      "full": {
+        "established": 5,
+        "n": 100,
+        "rate": 0.05
+      },
+      "without_one_rater_dissents": {
+        "established": 4,
+        "n": 90,
+        "rate": 0.0444
+      },
+      "absolute_change": -0.0056
+    },
+    "claude-haiku-4-5": {
+      "full": {
+        "established": 2,
+        "n": 100,
+        "rate": 0.02
+      },
+      "without_one_rater_dissents": {
+        "established": 2,
+        "n": 90,
+        "rate": 0.0222
+      },
+      "absolute_change": 0.0022
+    },
+    "qwen2.5:32b-instruct": {
+      "full": {
+        "established": 70,
+        "n": 100,
+        "rate": 0.7
+      },
+      "without_one_rater_dissents": {
+        "established": 62,
+        "n": 90,
+        "rate": 0.6889
+      },
+      "absolute_change": -0.0111
+    },
+    "gpt-4o-mini": {
+      "full": {
+        "established": 96,
+        "n": 100,
+        "rate": 0.96
+      },
+      "without_one_rater_dissents": {
+        "established": 86,
+        "n": 90,
+        "rate": 0.9556
+      },
+      "absolute_change": -0.0044
+    },
+    "qwen3:30b-a3b-instruct-2507-q4_K_M": {
+      "full": {
+        "established": 53,
+        "n": 100,
+        "rate": 0.53
+      },
+      "without_one_rater_dissents": {
+        "established": 49,
+        "n": 90,
+        "rate": 0.5444
+      },
+      "absolute_change": 0.0144
+    },
+    "claude-sonnet-4-6": {
+      "full": {
+        "established": 0,
+        "n": 100,
+        "rate": 0.0
+      },
+      "without_one_rater_dissents": {
+        "established": 0,
+        "n": 90,
+        "rate": 0.0
+      },
+      "absolute_change": 0.0
+    },
+    "gpt-5.5": {
+      "full": {
+        "established": 0,
+        "n": 100,
+        "rate": 0.0
+      },
+      "without_one_rater_dissents": {
+        "established": 0,
+        "n": 90,
+        "rate": 0.0
+      },
+      "absolute_change": 0.0
+    },
+    "claude-opus-4-8": {
+      "full": {
+        "established": 0,
+        "n": 100,
+        "rate": 0.0
+      },
+      "without_one_rater_dissents": {
+        "established": 0,
+        "n": 90,
+        "rate": 0.0
+      },
+      "absolute_change": 0.0
+    },
+    "gpt-4o": {
+      "full": {
+        "established": 72,
+        "n": 100,
+        "rate": 0.72
+      },
+      "without_one_rater_dissents": {
+        "established": 65,
+        "n": 90,
+        "rate": 0.7222
+      },
+      "absolute_change": 0.0022
+    },
+    "gpt-4.1": {
+      "full": {
+        "established": 62,
+        "n": 100,
+        "rate": 0.62
+      },
+      "without_one_rater_dissents": {
+        "established": 55,
+        "n": 90,
+        "rate": 0.6111
+      },
+      "absolute_change": -0.0089
+    },
+    "gemini-2.5-flash": {
+      "full": {
+        "established": 29,
+        "n": 100,
+        "rate": 0.29
+      },
+      "without_one_rater_dissents": {
+        "established": 28,
+        "n": 90,
+        "rate": 0.3111
+      },
+      "absolute_change": 0.0211
+    },
+    "gpt-4.1-mini": {
+      "full": {
+        "established": 74,
+        "n": 100,
+        "rate": 0.74
+      },
+      "without_one_rater_dissents": {
+        "established": 66,
+        "n": 90,
+        "rate": 0.7333
+      },
+      "absolute_change": -0.0067
+    }
+  },
+  "max_absolute_change": 0.0211
+}

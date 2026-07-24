@@ -1,0 +1,35 @@
+{
+  "model": "gpt-5-mini",
+  "trace": {
+    "correct_n": "100/100",
+    "rate": 1.0,
+    "ci95": [
+      0.96,
+      1.0
+    ],
+    "dist": {
+      "circular_reporting": 55,
+      "single_unverified_origin": 45
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "96/96",
+    "rate": 1.0,
+    "ci95": [
+      0.96,
+      1.0
+    ],
+    "dist": {
+      "independent_primary_sources": 96
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 1.0,
+  "predicted_downstream_launder_per100": 0.0,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 169095,
+    "output_tokens": 125339
+  }
+}

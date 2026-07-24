@@ -1,0 +1,50 @@
+{
+  "model": "claude-haiku-4-5",
+  "trace": {
+    "count_correct": "27/30",
+    "ci95": [
+      0.74,
+      0.97
+    ],
+    "pages_correct": "27/30",
+    "terminal_count_answers": 3,
+    "count_dist": {
+      "0": 27,
+      "1": 3
+    },
+    "api_errors": 0
+  },
+  "mixed": {
+    "count_correct": "29/30",
+    "ci95": [
+      0.83,
+      0.99
+    ],
+    "pages_correct": "29/30",
+    "terminal_count_answers": 1,
+    "count_dist": {
+      "1": 29,
+      "2": 1
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "count_correct": "26/30",
+    "ci95": [
+      0.7,
+      0.95
+    ],
+    "pages_correct": "26/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "3": 26,
+      "2": 4
+    },
+    "api_errors": 0
+  },
+  "usage": {
+    "calls": 90,
+    "input_tokens": 86419,
+    "output_tokens": 15710
+  }
+}

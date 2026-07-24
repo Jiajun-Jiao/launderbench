@@ -1,0 +1,25 @@
+{
+  "config": {
+    "model": "qwen2.5:7b-instruct",
+    "K": [
+      2
+    ],
+    "depth": 5,
+    "reps": 5
+  },
+  "results": {
+    "2": {
+      "by_type": {
+        "direct_observation": 1.0,
+        "testimony": 0.2,
+        "hearsay": 0.8
+      },
+      "overall": 0.733,
+      "hearsay_to_testimony": 0.2,
+      "hearsay_confusion": {
+        "hearsay": 32,
+        "testimony": 8
+      }
+    }
+  }
+}

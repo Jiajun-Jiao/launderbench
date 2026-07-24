@@ -1,0 +1,8 @@
+# Environment used by experiments/framework_{haystack,llamaindex}.py
+# (CPython 3.13.13). Install in a dedicated virtual environment because its
+# OpenAI SDK version differs from the LangChain replication environment.
+haystack-ai==2.30.2
+haystack-experimental==0.19.0
+llama-index-core==0.14.23
+llama-index-llms-openai==0.7.9
+openai==2.13.0

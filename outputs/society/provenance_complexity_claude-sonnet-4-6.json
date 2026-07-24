@@ -1,0 +1,24 @@
+{
+  "config": {
+    "model": "claude-sonnet-4-6",
+    "K": [
+      2
+    ],
+    "depth": 5,
+    "reps": 5
+  },
+  "results": {
+    "2": {
+      "by_type": {
+        "direct_observation": 1.0,
+        "testimony": 1.0,
+        "hearsay": 1.0
+      },
+      "overall": 1.0,
+      "hearsay_to_testimony": 0.0,
+      "hearsay_confusion": {
+        "hearsay": 40
+      }
+    }
+  }
+}

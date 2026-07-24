@@ -1,0 +1,26 @@
+annotators: annot1, annot2, annot3, annot4, annot5
+items in key: 112
+  annot1: 112/112 labeled
+  annot2: 112/112 labeled
+  annot3: 112/112 labeled
+  annot4: 112/112 labeled
+  annot5: 112/112 labeled
+pairwise exact annot1 vs annot2: k=0.760, agree=0.830, n=112
+pairwise exact annot1 vs annot3: k=0.623, agree=0.732, n=112
+pairwise exact annot1 vs annot4: k=0.652, agree=0.759, n=112
+pairwise exact annot1 vs annot5: k=0.790, agree=0.848, n=112
+pairwise exact annot2 vs annot3: k=0.564, agree=0.688, n=112
+pairwise exact annot2 vs annot4: k=0.621, agree=0.741, n=112
+pairwise exact annot2 vs annot5: k=0.748, agree=0.821, n=112
+pairwise exact annot3 vs annot4: k=0.584, agree=0.714, n=112
+pairwise exact annot3 vs annot5: k=0.540, agree=0.661, n=112
+pairwise exact annot4 vs annot5: k=0.573, agree=0.696, n=112
+Fleiss exact label: k=0.644, n=112
+human majority labels (exact 5-way): 108/112 items
+human majority labels (binary): 112/112 items
+exact vs gpt-4.1-mini judge: k=0.603, agree=0.732, n=71
+binary established vs gpt-4.1-mini judge: k=1.000, agree=1.000, n=72
+exact vs gpt-5.5 judge: k=0.700, agree=0.787, n=108
+binary established vs gpt-5.5 judge: k=1.000, agree=1.000, n=112
+human majority established rate, real_web_case_bank: 5/40 = 12.5% [5.5%,26.1%]
+human majority established rate, stratified_citation_judge_audit: 27/72 = 37.5% [27.2%,49.0%]

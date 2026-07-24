@@ -1,0 +1,18 @@
+{
+  "model": "gpt-5-mini",
+  "n": 100,
+  "hits": 0,
+  "hit_rate": 0.0,
+  "ci95": [
+    0.0,
+    0.04
+  ],
+  "declined_language": 0,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 12300,
+    "output_tokens": 67625
+  },
+  "hit_rows": []
+}

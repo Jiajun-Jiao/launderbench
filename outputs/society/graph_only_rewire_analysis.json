@@ -1,0 +1,3813 @@
+{
+  "schema_version": 1,
+  "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+  "bootstrap_seed": 20260710,
+  "bootstrap_resamples": 10000,
+  "models": {
+    "gpt-4o-mini": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4o-mini.rows.jsonl": "178fe7dfac9ecf97122c9d41b897c71217e5e3661f09277fa026da2fc6fd2e3b",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4o-mini.json": "d1fb3506c24cf3d1fb3da059f7ac58bf9d23f1de6b22d6092c9e0ad219ea5dcc",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4o-mini.rows.jsonl": "8e5cb33dd95bfed4d895c082640cb6a85732e372b043e04a3254ed9490c2d50a",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4o-mini.json": "bbaea9410f44d52c5704557198ba2b501c62f1f7e7b60dfdfe83e8053788c96e"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "stance_dist": {
+              "established": 100
+            },
+            "lineage_statement_dist": {
+              "no_lineage_statement": 75,
+              "multiple_independent": 23,
+              "single_lineage": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "stance_dist": {
+              "established": 100
+            },
+            "lineage_statement_dist": {
+              "no_lineage_statement": 59,
+              "multiple_independent": 39,
+              "single_lineage": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 0,
+          "discordant_dependent_only": 0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "0/100",
+            "declared_lineage_count_correct_n": "48/100",
+            "joint_root_ids_and_count_n": "0/100",
+            "joint_root_ids_and_count_rate": 0.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "0/100",
+            "declared_lineage_count_correct_n": "0/100",
+            "joint_root_ids_and_count_n": "0/100",
+            "joint_root_ids_and_count_rate": 0.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "99/100",
+            "established_rate": 0.99,
+            "ci95": [
+              0.95,
+              1.0
+            ],
+            "label_dist": {
+              "established_fact": 99,
+              "hedged": 1
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "99/100",
+            "established_rate": 0.99,
+            "ci95": [
+              0.95,
+              1.0
+            ],
+            "label_dist": {
+              "established_fact": 99,
+              "hedged": 1
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 0,
+          "discordant_dependent_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 198,
+        "total_n": 200,
+        "agreement_rate": 0.99,
+        "confusion_original_production": {
+          "1->0": 2,
+          "1->1": 198
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 0,
+          "declared_lineage_count_correct_n": 48,
+          "joint_root_ids_and_count_n": 0,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "4": 91,
+            "3": 8,
+            "2": 1
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 0,
+          "declared_lineage_count_correct_n": 0,
+          "joint_root_ids_and_count_n": 0,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "3": 20,
+            "4": 80
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.0
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.0
+          },
+          "star": {
+            "n": 33,
+            "point": 0.0
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.0
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          0.0
+        ],
+        "domains_positive": 0,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.0
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.0
+          },
+          "star": {
+            "n": 33,
+            "point": 0.0
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.0
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          0.0
+        ],
+        "domains_positive": 0,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 208464,
+            "output_tokens": 28551
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 67795,
+            "output_tokens": 4334
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 52735,
+          "output_tokens": 1598
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": 0.082453,
+        "production_rejudge": 0.023651,
+        "combined": 0.106104,
+        "answerer_unpriced_judge_cost_usd": null,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "claude-opus-4-8": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-opus-4-8.rows.jsonl": "8567a7e72de8a5d465514e394e4eb240df2fa61957492778d71983a791d3d75b",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-opus-4-8.json": "0a5e37e5fd78a7e1a299b40bcaa6c402fb263a6586d5fe548508af00e3c4031f",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-opus-4-8.rows.jsonl": "49416d94ed023fe9b364b16aa318a4f781dcf952ef2cab0203768594607339a9",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-opus-4-8.json": "4202a2ccfc4de69faf2148f6cdba96d6ad22b6454bd4b928918670fefe783209"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "9/100",
+            "established_rate": 0.09,
+            "ci95": [
+              0.05,
+              0.16
+            ],
+            "stance_dist": {
+              "hedged": 91,
+              "established": 9
+            },
+            "lineage_statement_dist": {
+              "single_lineage": 100
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "56/100",
+            "established_rate": 0.56,
+            "ci95": [
+              0.46,
+              0.65
+            ],
+            "stance_dist": {
+              "established": 56,
+              "hedged": 44
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 72,
+              "single_lineage": 26,
+              "no_lineage_statement": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.47,
+          "paired_bootstrap_ci95": [
+            0.37,
+            0.57
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 47,
+          "discordant_dependent_only": 0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "88/100",
+            "joint_root_ids_and_count_n": "88/100",
+            "joint_root_ids_and_count_rate": 0.88,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "label_dist": {
+              "traced_weak_origin": 100
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "50/100",
+            "established_rate": 0.5,
+            "ci95": [
+              0.4,
+              0.6
+            ],
+            "label_dist": {
+              "established_fact": 50,
+              "traced_weak_origin": 25,
+              "hedged": 25
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.5,
+          "paired_bootstrap_ci95": [
+            0.4,
+            0.6
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 50,
+          "discordant_dependent_only": 0,
+          "mcnemar_exact_two_sided_p": 1.7763568394002505e-15
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 181,
+        "total_n": 200,
+        "agreement_rate": 0.905,
+        "confusion_original_production": {
+          "0->0": 133,
+          "0->1": 2,
+          "1->0": 17,
+          "1->1": 48
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 88,
+          "joint_root_ids_and_count_n": 88,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 100
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 100
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.7
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.35
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.35
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.3
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.65
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.424242
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.588235
+          },
+          "star": {
+            "n": 33,
+            "point": 0.393939
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.333333
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.833333
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 1.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 1.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.6
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          1.0
+        ],
+        "domains_positive": 17,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.333333,
+          0.606061
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.85
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.25
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.55
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.3
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.55
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.545455
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.529412
+          },
+          "star": {
+            "n": 33,
+            "point": 0.424242
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 1.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 1.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 1.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.8
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          1.0
+        ],
+        "domains_positive": 17,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.34,
+          0.663462
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 347968,
+            "output_tokens": 76270
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 86350,
+            "output_tokens": 4202
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 71290,
+          "output_tokens": 1825
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": 3.687853,
+        "production_rejudge": 0.031436,
+        "combined": 3.719289,
+        "answerer_unpriced_judge_cost_usd": null,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "gpt-4.1": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4.1.rows.jsonl": "c6c5d4632cc2a49ffaf386b506246a8b8b96d1652d54078b7b938bda0190631a",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4.1.json": "09815240fdc1484c44645e93a069161de72a657b113fc9dcbf48e74b50edc0a7",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4.1.rows.jsonl": "aa1bff4dd4e117b4e6ca6129757f114b6b5a9c76f7e03b33be8094829c9788a0",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4.1.json": "ec11417b6552b4714da47b0da416552d17a4d036c5e1462fc9db408b7de90501"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "92/100",
+            "established_rate": 0.92,
+            "ci95": [
+              0.85,
+              0.96
+            ],
+            "stance_dist": {
+              "established": 92,
+              "hedged": 8
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 46,
+              "single_lineage": 53,
+              "no_lineage_statement": 1
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "stance_dist": {
+              "established": 100
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 99,
+              "single_lineage": 1
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.08,
+          "paired_bootstrap_ci95": [
+            0.03,
+            0.14
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 8,
+          "discordant_dependent_only": 0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "91/100",
+            "declared_lineage_count_correct_n": "91/100",
+            "joint_root_ids_and_count_n": "91/100",
+            "joint_root_ids_and_count_rate": 0.91,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "99/100",
+            "declared_lineage_count_correct_n": "99/100",
+            "joint_root_ids_and_count_n": "99/100",
+            "joint_root_ids_and_count_rate": 0.99,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "89/100",
+            "established_rate": 0.89,
+            "ci95": [
+              0.81,
+              0.94
+            ],
+            "label_dist": {
+              "established_fact": 89,
+              "traced_weak_origin": 10,
+              "hedged": 1
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "label_dist": {
+              "established_fact": 100
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.11,
+          "paired_bootstrap_ci95": [
+            0.05,
+            0.17
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 11,
+          "discordant_dependent_only": 0,
+          "mcnemar_exact_two_sided_p": 0.0009765625
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 189,
+        "total_n": 200,
+        "agreement_rate": 0.945,
+        "confusion_original_production": {
+          "0->0": 4,
+          "0->1": 4,
+          "1->0": 7,
+          "1->1": 185
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 91,
+          "declared_lineage_count_correct_n": 91,
+          "joint_root_ids_and_count_n": 91,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 91,
+            "3": 1,
+            "2": 7,
+            "4": 1
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 99,
+          "declared_lineage_count_correct_n": 99,
+          "joint_root_ids_and_count_n": 99,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 99,
+            "3": 1
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.1
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.15
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.090909
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.117647
+          },
+          "star": {
+            "n": 33,
+            "point": 0.030303
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.0
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          0.2
+        ],
+        "domains_positive": 8,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.039216,
+          0.122449
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.1
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.2
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.05
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.1
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.1
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.181818
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.058824
+          },
+          "star": {
+            "n": 33,
+            "point": 0.090909
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.2
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          0.4
+        ],
+        "domains_positive": 8,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.04902,
+          0.18
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 208464,
+            "output_tokens": 35932
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 73363,
+            "output_tokens": 4201
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 58303,
+          "output_tokens": 1619
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": 0.740451,
+        "production_rejudge": 0.025912,
+        "combined": 0.766363,
+        "answerer_unpriced_judge_cost_usd": null,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "claude-haiku-4-5": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-haiku-4-5.rows.jsonl": "6c0e0a6eb178d7938b4346a004a549db4dfc1a06cef18a6079f1db94ba51f519",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-haiku-4-5.json": "2559c4ebe0f23c4919b74ce9949cfd8e615aa72595f970dae0f52899f742fe40",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-haiku-4-5.rows.jsonl": "96e7f209eabf350e3a8d13393e14d98eee423948500aa8db9b403f5b22a30789",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-haiku-4-5.json": "4c08c74ffbe9b8146d2a018f3d120573be46f337c0abdb7983423afda7a523d7"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "69/100",
+            "established_rate": 0.69,
+            "ci95": [
+              0.59,
+              0.77
+            ],
+            "stance_dist": {
+              "established": 69,
+              "hedged": 31
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 44,
+              "single_lineage": 54,
+              "no_lineage_statement": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "75/100",
+            "established_rate": 0.75,
+            "ci95": [
+              0.66,
+              0.82
+            ],
+            "stance_dist": {
+              "established": 75,
+              "hedged": 25
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 92,
+              "single_lineage": 6,
+              "no_lineage_statement": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.06,
+          "paired_bootstrap_ci95": [
+            -0.01,
+            0.13
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 9,
+          "discordant_dependent_only": 3
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "89/100",
+            "declared_lineage_count_correct_n": "17/100",
+            "joint_root_ids_and_count_n": "17/100",
+            "joint_root_ids_and_count_rate": 0.17,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "88/100",
+            "declared_lineage_count_correct_n": "94/100",
+            "joint_root_ids_and_count_n": "88/100",
+            "joint_root_ids_and_count_rate": 0.88,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "68/100",
+            "established_rate": 0.68,
+            "ci95": [
+              0.58,
+              0.76
+            ],
+            "label_dist": {
+              "established_fact": 68,
+              "traced_weak_origin": 16,
+              "hedged": 16
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "75/100",
+            "established_rate": 0.75,
+            "ci95": [
+              0.66,
+              0.82
+            ],
+            "label_dist": {
+              "established_fact": 75,
+              "traced_weak_origin": 2,
+              "hedged": 23
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.07,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.14
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 10,
+          "discordant_dependent_only": 3,
+          "mcnemar_exact_two_sided_p": 0.09228515625
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 193,
+        "total_n": 200,
+        "agreement_rate": 0.965,
+        "confusion_original_production": {
+          "0->0": 53,
+          "0->1": 3,
+          "1->0": 4,
+          "1->1": 140
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 89,
+          "declared_lineage_count_correct_n": 17,
+          "joint_root_ids_and_count_n": 17,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 89,
+            "2": 10,
+            "3": 1
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 88,
+          "declared_lineage_count_correct_n": 94,
+          "joint_root_ids_and_count_n": 88,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 88,
+            "4": 11,
+            "3": 1
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P2": {
+            "n": 20,
+            "point": -0.1
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.05
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.2
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.060606
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.058824
+          },
+          "star": {
+            "n": 33,
+            "point": 0.060606
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": -0.25
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.6
+          }
+        },
+        "domain_point_range": [
+          -0.25,
+          0.6
+        ],
+        "domains_positive": 5,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          -0.010204,
+          0.148515
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P2": {
+            "n": 20,
+            "point": -0.05
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.1
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.090909
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.088235
+          },
+          "star": {
+            "n": 33,
+            "point": 0.030303
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": -0.2
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": -0.25
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.166667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.6
+          }
+        },
+        "domain_point_range": [
+          -0.25,
+          0.6
+        ],
+        "domains_positive": 7,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.0,
+          0.148515
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 254050,
+            "output_tokens": 56187
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 79958,
+            "output_tokens": 4204
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 64898,
+          "output_tokens": 1597
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": 0.573695,
+        "production_rejudge": 0.028514,
+        "combined": 0.602209,
+        "answerer_unpriced_judge_cost_usd": null,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "claude-sonnet-4-6": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-sonnet-4-6.rows.jsonl": "0e9f431fb4db87c3138236129b05c4ea3403a892b71e5b9e9a0a833d47ef4097",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_claude-sonnet-4-6.json": "3bd65eb1d2ee2105babe32a1b08fda701e0b23f7377e15f9e67dbb2599e35ced",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-sonnet-4-6.rows.jsonl": "bbdfb0e155b96688a29411dd299a28481cc2260797f0ba78ca70af813a67802f",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-sonnet-4-6.json": "e626da3b1ece01aa10036d6933d168f24d8b435b400b94fb11d54b3e697385f9"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "56/100",
+            "established_rate": 0.56,
+            "ci95": [
+              0.46,
+              0.65
+            ],
+            "stance_dist": {
+              "established": 56,
+              "hedged": 44
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 48,
+              "single_lineage": 52
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "65/100",
+            "established_rate": 0.65,
+            "ci95": [
+              0.55,
+              0.74
+            ],
+            "stance_dist": {
+              "established": 65,
+              "hedged": 35
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 87,
+              "single_lineage": 12,
+              "no_lineage_statement": 1
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.09,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.18
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 15,
+          "discordant_dependent_only": 6
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "69/100",
+            "joint_root_ids_and_count_n": "69/100",
+            "joint_root_ids_and_count_rate": 0.69,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "53/100",
+            "established_rate": 0.53,
+            "ci95": [
+              0.43,
+              0.62
+            ],
+            "label_dist": {
+              "established_fact": 53,
+              "traced_weak_origin": 33,
+              "hedged": 14
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "62/100",
+            "established_rate": 0.62,
+            "ci95": [
+              0.52,
+              0.71
+            ],
+            "label_dist": {
+              "established_fact": 62,
+              "traced_weak_origin": 16,
+              "hedged": 22
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.09,
+          "paired_bootstrap_ci95": [
+            0.01,
+            0.17
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 13,
+          "discordant_dependent_only": 4,
+          "mcnemar_exact_two_sided_p": 0.049041748046875
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 190,
+        "total_n": 200,
+        "agreement_rate": 0.95,
+        "confusion_original_production": {
+          "0->0": 77,
+          "0->1": 2,
+          "1->0": 8,
+          "1->1": 113
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 69,
+          "joint_root_ids_and_count_n": 69,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 100
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 100
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P2": {
+            "n": 20,
+            "point": -0.15
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.2
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.25
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.0
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.205882
+          },
+          "star": {
+            "n": 33,
+            "point": 0.060606
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": -0.5
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.166667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.2
+          }
+        },
+        "domain_point_range": [
+          -0.5,
+          0.4
+        ],
+        "domains_positive": 10,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.0,
+          0.176471
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.05
+          },
+          "P2": {
+            "n": 20,
+            "point": -0.1
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.2
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.15
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.090909
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.176471
+          },
+          "star": {
+            "n": 33,
+            "point": 0.0
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": -0.5
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.166667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.166667
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.2
+          }
+        },
+        "domain_point_range": [
+          -0.5,
+          0.4
+        ],
+        "domains_positive": 11,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.010204,
+          0.16
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 405,
+            "input_tokens": 257687,
+            "output_tokens": 96142
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 85404,
+            "output_tokens": 4201
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 70344,
+          "output_tokens": 1662
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": 2.256074,
+        "production_rejudge": 0.030797,
+        "combined": 2.286871,
+        "answerer_unpriced_judge_cost_usd": null,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "gemini-2.5-flash": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gemini-2.5-flash.rows.jsonl": "4288cb46eb0c23f98ee4d18d7fa2048e58965b7e47624520b6a3134584f7fe23",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gemini-2.5-flash.json": "4d9e9bd0a1852eab5050831290c34f4259cfb7738b233e8ee18a5f454625d056",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gemini-2.5-flash.rows.jsonl": "ae23bfea9bcfa7fad3fdaa5d5e586f36a88e4d8bf1794e198ac1b334ca00954c",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gemini-2.5-flash.json": "532215f674c6740a0b844bbbe6002f8b0e9b0cb325910a02cba94a4b179ae67b"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "93/100",
+            "established_rate": 0.93,
+            "ci95": [
+              0.86,
+              0.97
+            ],
+            "stance_dist": {
+              "established": 93,
+              "hedged": 7
+            },
+            "lineage_statement_dist": {
+              "single_lineage": 59,
+              "no_lineage_statement": 16,
+              "multiple_independent": 25
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "98/100",
+            "established_rate": 0.98,
+            "ci95": [
+              0.93,
+              0.99
+            ],
+            "stance_dist": {
+              "established": 98,
+              "hedged": 2
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 95,
+              "single_lineage": 5
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.05,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.1
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 6,
+          "discordant_dependent_only": 1
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "84/100",
+            "joint_root_ids_and_count_n": "84/100",
+            "joint_root_ids_and_count_rate": 0.84,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "97/100",
+            "joint_root_ids_and_count_n": "97/100",
+            "joint_root_ids_and_count_rate": 0.97,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "98/100",
+            "established_rate": 0.98,
+            "ci95": [
+              0.93,
+              0.99
+            ],
+            "label_dist": {
+              "established_fact": 98,
+              "traced_weak_origin": 1,
+              "hedged": 1
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "98/100",
+            "established_rate": 0.98,
+            "ci95": [
+              0.93,
+              0.99
+            ],
+            "label_dist": {
+              "established_fact": 98,
+              "hedged": 2
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            -0.03,
+            0.03
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 1,
+          "discordant_dependent_only": 1,
+          "mcnemar_exact_two_sided_p": 1.0
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 195,
+        "total_n": 200,
+        "agreement_rate": 0.975,
+        "confusion_original_production": {
+          "0->0": 4,
+          "0->1": 5,
+          "1->1": 191
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 84,
+          "joint_root_ids_and_count_n": 84,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 100
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 97,
+          "joint_root_ids_and_count_n": 97,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 100
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.15
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.1
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.030303
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.029412
+          },
+          "star": {
+            "n": 33,
+            "point": 0.090909
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.25
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.0
+          }
+        },
+        "domain_point_range": [
+          -0.2,
+          0.4
+        ],
+        "domains_positive": 5,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.0,
+          0.108911
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P2": {
+            "n": 20,
+            "point": -0.05
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.05
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.0
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.0
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": -0.030303
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.0
+          },
+          "star": {
+            "n": 33,
+            "point": 0.030303
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.2
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.0
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": -0.2
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.0
+          }
+        },
+        "domain_point_range": [
+          -0.2,
+          0.2
+        ],
+        "domains_positive": 1,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          -0.029703,
+          0.03
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 205624,
+            "output_tokens": 40969
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 73314,
+            "output_tokens": 4216
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 58254,
+          "output_tokens": 1599
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": null,
+        "production_rejudge": 0.02586,
+        "combined": null,
+        "answerer_unpriced_judge_cost_usd": 0.036071,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "o3": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_o3.rows.jsonl": "f2810f479a1f1c05e12940e6d7575d76959d01a0af34fef65ab6614978b0575c",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_o3.json": "79772a817a67a54f6cae713a4be9d710d131e9f57b480beb36398cceb1810db1",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_o3.rows.jsonl": "4a1371f29c92649ce7e130f7ff22012aa115b1c336cebf9d5c5453c2bcede7ae",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_o3.json": "43378fada50883cc27187a89c4223582b9c5e46f41d1c8b7797facb43db94fff"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "14/100",
+            "established_rate": 0.14,
+            "ci95": [
+              0.09,
+              0.22
+            ],
+            "stance_dist": {
+              "hedged": 86,
+              "established": 14
+            },
+            "lineage_statement_dist": {
+              "single_lineage": 95,
+              "multiple_independent": 4,
+              "no_lineage_statement": 1
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "75/100",
+            "established_rate": 0.75,
+            "ci95": [
+              0.66,
+              0.82
+            ],
+            "stance_dist": {
+              "established": 75,
+              "hedged": 25
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 85,
+              "single_lineage": 13,
+              "no_lineage_statement": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.61,
+          "paired_bootstrap_ci95": [
+            0.51,
+            0.71
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 62,
+          "discordant_dependent_only": 1
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "12/100",
+            "established_rate": 0.12,
+            "ci95": [
+              0.07,
+              0.2
+            ],
+            "label_dist": {
+              "traced_weak_origin": 84,
+              "hedged": 4,
+              "established_fact": 12
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "71/100",
+            "established_rate": 0.71,
+            "ci95": [
+              0.61,
+              0.79
+            ],
+            "label_dist": {
+              "established_fact": 71,
+              "traced_weak_origin": 5,
+              "hedged": 24
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.59,
+          "paired_bootstrap_ci95": [
+            0.49,
+            0.68
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 59,
+          "discordant_dependent_only": 0,
+          "mcnemar_exact_two_sided_p": 3.469446951953614e-18
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 190,
+        "total_n": 200,
+        "agreement_rate": 0.95,
+        "confusion_original_production": {
+          "0->0": 109,
+          "0->1": 2,
+          "1->0": 8,
+          "1->1": 81
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 100
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 100
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.75
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.65
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.7
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.35
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.6
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.636364
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.588235
+          },
+          "star": {
+            "n": 33,
+            "point": 0.606061
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.2
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.833333
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 1.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 1.0
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          1.0
+        ],
+        "domains_positive": 18,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.474227,
+          0.737374
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.75
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.65
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.75
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.3
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.5
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.636364
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.558824
+          },
+          "star": {
+            "n": 33,
+            "point": 0.575758
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.0
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 0.4
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.6
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.0
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.8
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 1.0
+          }
+        },
+        "domain_point_range": [
+          0.0,
+          1.0
+        ],
+        "domains_positive": 18,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.470588,
+          0.704082
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 207664,
+            "output_tokens": 134722
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 72370,
+            "output_tokens": 4203
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 57310,
+          "output_tokens": 1750
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": null,
+        "production_rejudge": 0.025724,
+        "combined": null,
+        "answerer_unpriced_judge_cost_usd": 0.035673,
+        "prices_as_of": "2026-07-07"
+      }
+    },
+    "gpt-5.5": {
+      "integrity": {
+        "raw_rows": 400,
+        "raw_unique_keys": 400,
+        "production_rejudge_rows": 200,
+        "production_unique_keys": 200,
+        "error_rows": 0,
+        "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+        "file_sha256": {
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-5.5.rows.jsonl": "6dd390ea6f8d741bc53ac575f7711caf47a2a8dbbaaf1ab7691332ddc734d542",
+          "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-5.5.json": "b1980d2c861e1bd841a5fc0b9d602bf334c636271f4a696186d2fa30dc5a8073",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-5.5.rows.jsonl": "86195bcb04d47840c0965067f763b33cc0d0f1b38ad5d25138336ea527529782",
+          "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-5.5.json": "6ad9d09b40a35d7449d922b1770fd84176bf19ebe6df7620ed26b62573225542"
+        }
+      },
+      "factorized_graph_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "14/100",
+            "established_rate": 0.14,
+            "ci95": [
+              0.09,
+              0.22
+            ],
+            "stance_dist": {
+              "established": 14,
+              "hedged": 86
+            },
+            "lineage_statement_dist": {
+              "single_lineage": 98,
+              "multiple_independent": 2
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "established_n": "94/100",
+            "established_rate": 0.94,
+            "ci95": [
+              0.88,
+              0.97
+            ],
+            "stance_dist": {
+              "established": 94,
+              "hedged": 6
+            },
+            "lineage_statement_dist": {
+              "multiple_independent": 96,
+              "single_lineage": 4
+            },
+            "target_value_status_dist": {
+              "target_value": 100
+            },
+            "established_definition": "stance=established AND target_value_status=target_value"
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.8,
+          "paired_bootstrap_ci95": [
+            0.72,
+            0.87
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 80,
+          "discordant_dependent_only": 0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "exact_root_id_set_n": "100/100",
+            "declared_lineage_count_correct_n": "100/100",
+            "joint_root_ids_and_count_n": "100/100",
+            "joint_root_ids_and_count_rate": 1.0,
+            "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+          }
+        }
+      },
+      "production_judge": {
+        "answer": {
+          "dependent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "4/100",
+            "established_rate": 0.04,
+            "ci95": [
+              0.02,
+              0.1
+            ],
+            "label_dist": {
+              "traced_weak_origin": 90,
+              "hedged": 6,
+              "established_fact": 4
+            }
+          },
+          "independent": {
+            "attempted_n": 100,
+            "valid_n": 100,
+            "excluded_n": 0,
+            "established_n": "93/100",
+            "established_rate": 0.93,
+            "ci95": [
+              0.86,
+              0.97
+            ],
+            "label_dist": {
+              "established_fact": 93,
+              "hedged": 6,
+              "traced_weak_origin": 1
+            }
+          }
+        },
+        "paired_discrimination": {
+          "method": "mean_within_scenario_established_independent_minus_dependent",
+          "candidate_pairs": 100,
+          "n_pairs": 100,
+          "excluded_pair_ids": [],
+          "point": 0.89,
+          "paired_bootstrap_ci95": [
+            0.83,
+            0.95
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_independent_only": 89,
+          "discordant_dependent_only": 0,
+          "mcnemar_exact_two_sided_p": 3.2311742677852644e-27
+        }
+      },
+      "binary_cross_judge": {
+        "agreement_n": 189,
+        "total_n": 200,
+        "agreement_rate": 0.945,
+        "confusion_original_production": {
+          "0->0": 92,
+          "1->0": 11,
+          "1->1": 97
+        }
+      },
+      "root_diagnostic_detail": {
+        "dependent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "1": 100
+          }
+        },
+        "independent": {
+          "attempted_n": 100,
+          "exact_root_id_set_n": 100,
+          "declared_lineage_count_correct_n": 100,
+          "joint_root_ids_and_count_n": 100,
+          "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct",
+          "contains_all_gold_roots_n": 100,
+          "duplicate_id_rows": 0,
+          "predicted_set_size_dist": {
+            "2": 100
+          }
+        }
+      },
+      "factorized_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.7
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.8
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.9
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.75
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.85
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.757576
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.823529
+          },
+          "star": {
+            "n": 33,
+            "point": 0.818182
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.8
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 1.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.8
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.666667
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.6
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 0.5
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 0.8
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 0.8
+          }
+        },
+        "domain_point_range": [
+          0.4,
+          1.0
+        ],
+        "domains_positive": 20,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.72,
+          0.877551
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "production_breakdown": {
+        "by_first_page": {
+          "P1": {
+            "n": 20,
+            "point": 0.95
+          },
+          "P2": {
+            "n": 20,
+            "point": 0.8
+          },
+          "P3": {
+            "n": 20,
+            "point": 0.9
+          },
+          "P4": {
+            "n": 20,
+            "point": 0.9
+          },
+          "P5": {
+            "n": 20,
+            "point": 0.9
+          }
+        },
+        "by_source_topology": {
+          "fake_corroboration": {
+            "n": 33,
+            "point": 0.787879
+          },
+          "linear": {
+            "n": 34,
+            "point": 0.941176
+          },
+          "star": {
+            "n": 33,
+            "point": 0.939394
+          }
+        },
+        "by_domain": {
+          "a biological fact about an animal species (lifespan, speed, diet)": {
+            "n": 5,
+            "point": 0.8
+          },
+          "a demographic or economic statistic (a number or percentage)": {
+            "n": 5,
+            "point": 1.0
+          },
+          "a geographical superlative (longest river / highest peak / deepest lake of a region)": {
+            "n": 5,
+            "point": 0.8
+          },
+          "a physical or chemical property (e.g. melting point, density) of a material or alloy": {
+            "n": 4,
+            "point": 0.75
+          },
+          "the attribution of a famous saying or quotation to a person": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the average annual rainfall or record temperature of a region": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the birthplace (a city) of a historical figure": {
+            "n": 6,
+            "point": 1.0
+          },
+          "the composer or premiere year of a named piece of music": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the defining rule or scoring system of a traditional game or sport": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the founding year of a small town": {
+            "n": 6,
+            "point": 0.833333
+          },
+          "the height (in metres) of a monument, tower, or statue": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the mathematician/scientist credited with a named theorem, constant, or law": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the meaning or origin of a symbol on a flag, crest, or seal": {
+            "n": 5,
+            "point": 0.4
+          },
+          "the number of moons, rings, or a measured distance of an astronomical body": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the origin or etymology of a word or common phrase": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the record time or winning margin in a famous competition": {
+            "n": 5,
+            "point": 1.0
+          },
+          "the signature ingredient or origin of a regional dish": {
+            "n": 5,
+            "point": 0.8
+          },
+          "the year a historical battle, treaty, or coronation took place": {
+            "n": 4,
+            "point": 1.0
+          },
+          "the year a tool, dish, or product was invented": {
+            "n": 5,
+            "point": 1.0
+          },
+          "who was the first person to achieve some specific feat": {
+            "n": 5,
+            "point": 1.0
+          }
+        },
+        "domain_point_range": [
+          0.4,
+          1.0
+        ],
+        "domains_positive": 20,
+        "domains_total": 20,
+        "domain_cluster_bootstrap_ci95": [
+          0.82,
+          0.949495
+        ],
+        "domain_cluster_bootstrap_resamples": 10000
+      },
+      "usage": {
+        "main_run": {
+          "answerer": {
+            "calls": 400,
+            "input_tokens": 207864,
+            "output_tokens": 94116
+          },
+          "judge": {
+            "calls": 200,
+            "input_tokens": 72961,
+            "output_tokens": 4200
+          }
+        },
+        "production_rejudge": {
+          "calls": 200,
+          "input_tokens": 57901,
+          "output_tokens": 1770
+        }
+      },
+      "measured_cost_usd_frozen_prices": {
+        "main_run": null,
+        "production_rejudge": 0.025992,
+        "combined": null,
+        "answerer_unpriced_judge_cost_usd": 0.035904,
+        "prices_as_of": "2026-07-07"
+      }
+    }
+  },
+  "recorded_cost_usd_priced_models": 7.480836,
+  "unpriced_models": [
+    "gemini-2.5-flash",
+    "gpt-5.5",
+    "o3"
+  ],
+  "cost_boundary": "Recorded successful main run and production rejudge only; discarded partial-run successful calls were not persisted and invalid HTTP-400 schema requests are assumed unbilled."
+}

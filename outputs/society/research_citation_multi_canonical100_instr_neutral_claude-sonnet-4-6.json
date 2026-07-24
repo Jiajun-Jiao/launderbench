@@ -1,0 +1,76 @@
+{
+  "config": {
+    "model": "claude-sonnet-4-6",
+    "conds": [
+      "trace",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 100,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "neutral",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_canonical100_instr_neutral_claude-sonnet-4-6.rows.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "api_errors": 0,
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.98,
+      "launder_n": "94/96",
+      "ci95": [
+        0.93,
+        0.99
+      ],
+      "api_errors": 0,
+      "dist": {
+        "established_fact": 0.98,
+        "hedged": 0.01,
+        "traced_weak_origin": 0.01
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "33/34",
+          "rate": 0.97
+        },
+        "star": {
+          "launder_n": "29/30",
+          "rate": 0.97
+        },
+        "fake_corroboration": {
+          "launder_n": "32/32",
+          "rate": 1.0
+        }
+      }
+    },
+    "discrimination": 0.98
+  },
+  "launder_examples": []
+}

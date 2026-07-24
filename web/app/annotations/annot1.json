@@ -1,0 +1,1686 @@
+{
+ "_ack": {
+  "ts": 1782932589,
+  "agreed": true
+ },
+ "C001": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一薄弱源头，匿名编辑不可信。没有反驳",
+  "telemetry": {
+   "dwell_ms": 10683,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783018094
+ },
+ "C002": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一薄弱源头，明确写出是“直觉估算”，没有反驳",
+  "telemetry": {
+   "dwell_ms": 27487,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783018083
+ },
+ "C003": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多源头确认事实",
+  "telemetry": {
+   "dwell_ms": 26434,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783018022
+ },
+ "C004": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "归因到单一出处，且明确写出薄弱",
+  "telemetry": {
+   "dwell_ms": 31640,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783018054
+ },
+ "C005": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已被确定为错误。",
+  "telemetry": {
+   "dwell_ms": 7888,
+   "paused_ms": 18813,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030540
+ },
+ "C006": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一来源，未经证实，没有证伪",
+  "telemetry": {
+   "dwell_ms": 30246,
+   "paused_ms": 240808,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030826
+ },
+ "C007": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一来源，未经证实，也没有证伪",
+  "telemetry": {
+   "dwell_ms": 30446,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783018223
+ },
+ "C008": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个独立资料支持证实",
+  "telemetry": {
+   "dwell_ms": 20850,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030851
+ },
+ "C009": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确这是“恶作剧”，反驳。",
+  "telemetry": {
+   "dwell_ms": 56380,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030908
+ },
+ "C010": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源一致证明",
+  "telemetry": {
+   "dwell_ms": 42671,
+   "paused_ms": 219649,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031171
+ },
+ "C011": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "一直都是独立来源，缺乏多个来源验证",
+  "telemetry": {
+   "dwell_ms": 27984,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031199
+ },
+ "C012": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源多样、确定",
+  "telemetry": {
+   "dwell_ms": 82782,
+   "paused_ms": 303417,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031594
+ },
+ "C013": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已经被辟谣证伪",
+  "telemetry": {
+   "dwell_ms": 31009,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031625
+ },
+ "C014": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "所有都是循环引用明确假来源。明确反驳",
+  "telemetry": {
+   "dwell_ms": 45673,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031672
+ },
+ "C015": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "有薄弱来源的指责",
+  "telemetry": {
+   "dwell_ms": 47771,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031721
+ },
+ "C016": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确是捏造的",
+  "telemetry": {
+   "dwell_ms": 26867,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031748
+ },
+ "C017": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有据可查，明确是错误的。",
+  "telemetry": {
+   "dwell_ms": 40104,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031790
+ },
+ "C018": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源薄弱",
+  "telemetry": {
+   "dwell_ms": 13080,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031804
+ },
+ "C019": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "没有支出来源薄弱，但确实不确定",
+  "telemetry": {
+   "dwell_ms": 46719,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031856
+ },
+ "C020": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "独立来源都承认",
+  "telemetry": {
+   "dwell_ms": 21177,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031878
+ },
+ "C021": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "最终循环溯源的来源很薄弱，没有被证伪",
+  "telemetry": {
+   "dwell_ms": 102093,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783025864
+ },
+ "C022": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "模型判断很有可能都是来自于同一来源，来源薄弱。",
+  "telemetry": {
+   "dwell_ms": 54093,
+   "paused_ms": 119170,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032070
+ },
+ "C023": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环引用，最终来源薄弱",
+  "telemetry": {
+   "dwell_ms": 29921,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032108
+ },
+ "C024": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "来源薄弱，最后都引用到同一个明确虚构的来源。实际上是反驳",
+  "telemetry": {
+   "dwell_ms": 130309,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783032570
+ },
+ "C025": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "没有提出弱源，但不是很确定",
+  "telemetry": {
+   "dwell_ms": 35949,
+   "paused_ms": 179315,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032407
+ },
+ "C026": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确反驳。",
+  "telemetry": {
+   "dwell_ms": 19275,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032606
+ },
+ "C027": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "被质疑了。有来源说是错误事实，但并没有证据",
+  "telemetry": {
+   "dwell_ms": 173578,
+   "paused_ms": 39771,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032833
+ },
+ "C028": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个来源证实",
+  "telemetry": {
+   "dwell_ms": 26403,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032868
+ },
+ "C029": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个来源明确证实",
+  "telemetry": {
+   "dwell_ms": 28862,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032898
+ },
+ "C030": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "回答给出正面反证",
+  "telemetry": {
+   "dwell_ms": 61162,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032959
+ },
+ "C031": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个不同来源证实",
+  "telemetry": {
+   "dwell_ms": 12881,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032974
+ },
+ "C032": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "主要是来源可靠性导致的“持谨慎态度”",
+  "telemetry": {
+   "dwell_ms": 134027,
+   "paused_ms": 131181,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033240
+ },
+ "C033": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源有力且一致",
+  "telemetry": {
+   "dwell_ms": 19024,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033262
+ },
+ "C034": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确来源是玩笑编辑。恶作剧",
+  "telemetry": {
+   "dwell_ms": 109397,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033372
+ },
+ "C035": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "既定事实，多个来源验证",
+  "telemetry": {
+   "dwell_ms": 28201,
+   "paused_ms": 202357,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043190
+ },
+ "C036": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "虚假链条，最终的来源已确认是虚构的",
+  "telemetry": {
+   "dwell_ms": 94014,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033794
+ },
+ "C037": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确反驳这是假象",
+  "telemetry": {
+   "dwell_ms": 24008,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033836
+ },
+ "C038": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源已确认没问题",
+  "telemetry": {
+   "dwell_ms": 82172,
+   "paused_ms": 219047,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783034138
+ },
+ "C039": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "只是某一个来源有虚假叙述",
+  "telemetry": {
+   "dwell_ms": 128829,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034267
+ },
+ "C040": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "证据充分的事实",
+  "telemetry": {
+   "dwell_ms": 41093,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034314
+ },
+ "C041": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "来源是讽刺文章。“应予以忽略”",
+  "telemetry": {
+   "dwell_ms": 47975,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034363
+ },
+ "C042": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源强支持",
+  "telemetry": {
+   "dwell_ms": 19291,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034383
+ },
+ "C043": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "实际都引用到同一个实验。",
+  "telemetry": {
+   "dwell_ms": 68166,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034451
+ },
+ "C044": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "都指向同一个薄弱来源。",
+  "telemetry": {
+   "dwell_ms": 39774,
+   "paused_ms": 17455,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034509
+ },
+ "C045": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "传闻谣言，被证伪",
+  "telemetry": {
+   "dwell_ms": 38546,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034550
+ },
+ "C046": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "来源薄弱，已被证伪",
+  "telemetry": {
+   "dwell_ms": 37158,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034591
+ },
+ "C047": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "指出了薄弱来源",
+  "telemetry": {
+   "dwell_ms": 234562,
+   "paused_ms": 3316343,
+   "pause_count": 3,
+   "paste": 0,
+   "blur": 3
+  },
+  "ts": 1783038142
+ },
+ "C048": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已经被证伪",
+  "telemetry": {
+   "dwell_ms": 31182,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038174
+ },
+ "C049": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源薄弱，需要谨慎对待",
+  "telemetry": {
+   "dwell_ms": 38767,
+   "paused_ms": 981419,
+   "pause_count": 3,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039194
+ },
+ "C050": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源薄弱，循环",
+  "telemetry": {
+   "dwell_ms": 32060,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039227
+ },
+ "C051": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "非常明确的既定事实",
+  "telemetry": {
+   "dwell_ms": 17007,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039244
+ },
+ "C052": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "不确切，没有被证伪",
+  "telemetry": {
+   "dwell_ms": 20995,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044139
+ },
+ "C053": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源薄弱。没有反例",
+  "telemetry": {
+   "dwell_ms": 77180,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039389
+ },
+ "C054": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "恶作剧",
+  "telemetry": {
+   "dwell_ms": 27374,
+   "paused_ms": 413097,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039830
+ },
+ "C055": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已明确反驳",
+  "telemetry": {
+   "dwell_ms": 63722,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039894
+ },
+ "C056": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "循环链，证伪",
+  "telemetry": {
+   "dwell_ms": 125033,
+   "paused_ms": 1438167,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783041458
+ },
+ "C057": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源明确",
+  "telemetry": {
+   "dwell_ms": 106769,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783041565
+ },
+ "C058": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源明确并supportive",
+  "telemetry": {
+   "dwell_ms": 35005,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783041601
+ },
+ "C059": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源可信",
+  "telemetry": {
+   "dwell_ms": 716103,
+   "paused_ms": 79959,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783042397
+ },
+ "C060": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源存疑，但没有反驳",
+  "telemetry": {
+   "dwell_ms": 32401,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783042430
+ },
+ "C061": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "来源是讽刺文章。",
+  "telemetry": {
+   "dwell_ms": 3754,
+   "paused_ms": 8713,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783042627
+ },
+ "C062": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8299,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783042538
+ },
+ "C063": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "引用链到虚假来源",
+  "telemetry": {
+   "dwell_ms": 22625,
+   "paused_ms": 70604,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783044050
+ },
+ "C064": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已证伪",
+  "telemetry": {
+   "dwell_ms": 34025,
+   "paused_ms": 14053,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043350
+ },
+ "C065": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "有保留，因为有反驳意见。但是没有证据证伪",
+  "telemetry": {
+   "dwell_ms": 2991,
+   "paused_ms": 4976,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043930
+ },
+ "C066": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源明确",
+  "telemetry": {
+   "dwell_ms": 6172,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043467
+ },
+ "C067": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "缺乏实证支持",
+  "telemetry": {
+   "dwell_ms": 54192,
+   "paused_ms": 319583,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043842
+ },
+ "C068": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "erroneous已经反驳。",
+  "telemetry": {
+   "dwell_ms": 72925,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783043915
+ },
+ "C069": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "多个实际上追溯到唯一来源。是虚构的",
+  "telemetry": {
+   "dwell_ms": 40878,
+   "paused_ms": 132445,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044328
+ },
+ "C070": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "来源可信度比较低。",
+  "telemetry": {
+   "dwell_ms": 38555,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044367
+ },
+ "C071": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "讽刺性质的最初来源",
+  "telemetry": {
+   "dwell_ms": 57974,
+   "paused_ms": 350464,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044814
+ },
+ "C072": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据链最初的证据薄弱",
+  "telemetry": {
+   "dwell_ms": 31944,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044848
+ },
+ "C073": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "来源明确，事实",
+  "telemetry": {
+   "dwell_ms": 15994,
+   "paused_ms": 75153,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044941
+ },
+ "C074": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "有争议",
+  "telemetry": {
+   "dwell_ms": 33847,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044975
+ },
+ "C075": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源广泛认可",
+  "telemetry": {
+   "dwell_ms": 14460,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783044990
+ },
+ "C076": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "都溯源到唯一来源，没有其他证据反驳",
+  "telemetry": {
+   "dwell_ms": 90675,
+   "paused_ms": 18133,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783045100
+ },
+ "C077": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已经证伪",
+  "telemetry": {
+   "dwell_ms": 32384,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783045167
+ },
+ "C078": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个来源支持",
+  "telemetry": {
+   "dwell_ms": 19435,
+   "paused_ms": 92479,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783045307
+ },
+ "C079": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已经被证伪",
+  "telemetry": {
+   "dwell_ms": 14040,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783045322
+ },
+ "C080": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个来源证实",
+  "telemetry": {
+   "dwell_ms": 13928,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783045336
+ },
+ "C081": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "有来源表示不确定",
+  "telemetry": {
+   "dwell_ms": 48304,
+   "paused_ms": 10652313,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056036
+ },
+ "C082": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "完全是虚构的",
+  "telemetry": {
+   "dwell_ms": 27313,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056064
+ },
+ "C083": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "循环引用。完全是恶作剧",
+  "telemetry": {
+   "dwell_ms": 23493,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056089
+ },
+ "C084": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "强烈来源证实",
+  "telemetry": {
+   "dwell_ms": 45603,
+   "paused_ms": 205934,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056340
+ },
+ "C085": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一薄弱来源",
+  "telemetry": {
+   "dwell_ms": 20015,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056360
+ },
+ "C086": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "单一来源依赖。判断为证伪",
+  "telemetry": {
+   "dwell_ms": 48579,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056410
+ },
+ "C087": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "用证据反驳了",
+  "telemetry": {
+   "dwell_ms": 50522,
+   "paused_ms": 265722,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056726
+ },
+ "C088": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "指出了来源薄弱",
+  "telemetry": {
+   "dwell_ms": 44799,
+   "paused_ms": 269348,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057041
+ },
+ "C089": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "都引用同一个弱的原始来源",
+  "telemetry": {
+   "dwell_ms": 41704,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057090
+ },
+ "C090": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有力证据反驳",
+  "telemetry": {
+   "dwell_ms": 93103,
+   "paused_ms": 167407,
+   "pause_count": 4,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057352
+ },
+ "C091": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源都是wikipedia并薄弱",
+  "telemetry": {
+   "dwell_ms": 79448,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057432
+ },
+ "C092": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "来源相互引用到弱源。但没有证据反驳",
+  "telemetry": {
+   "dwell_ms": 107015,
+   "paused_ms": 166497,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057706
+ },
+ "C093": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "引用传播。恶作剧",
+  "telemetry": {
+   "dwell_ms": 29790,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057736
+ },
+ "C094": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "弱源头",
+  "telemetry": {
+   "dwell_ms": 26911,
+   "paused_ms": 77320,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057841
+ },
+ "C095": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "源头证明充分",
+  "telemetry": {
+   "dwell_ms": 16872,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057858
+ },
+ "C096": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "源头证明充分",
+  "telemetry": {
+   "dwell_ms": 17921,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057877
+ },
+ "C097": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "引用循环。已经被证伪",
+  "telemetry": {
+   "dwell_ms": 20952,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057898
+ },
+ "C098": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多权威来源证明既定事实",
+  "telemetry": {
+   "dwell_ms": 20636,
+   "paused_ms": 58059,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057977
+ },
+ "C099": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "维基百科弱源错误。反驳",
+  "telemetry": {
+   "dwell_ms": 67586,
+   "paused_ms": 79258,
+   "pause_count": 2,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058124
+ },
+ "C100": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "充分来源证实",
+  "telemetry": {
+   "dwell_ms": 11815,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058136
+ },
+ "C101": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个权威来源支持",
+  "telemetry": {
+   "dwell_ms": 15253,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058152
+ },
+ "C102": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个权威来源支持",
+  "telemetry": {
+   "dwell_ms": 16105,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058168
+ },
+ "C103": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "指出循环引用，但没有证伪",
+  "telemetry": {
+   "dwell_ms": 22706,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058191
+ },
+ "C104": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个来源充分证实",
+  "telemetry": {
+   "dwell_ms": 17235,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058209
+ },
+ "C105": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "单一来源依赖。已经被证伪",
+  "telemetry": {
+   "dwell_ms": 34426,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058244
+ },
+ "C106": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "指出单一来源",
+  "telemetry": {
+   "dwell_ms": 33124,
+   "paused_ms": 335718,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783058613
+ },
+ "C107": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "单一来源，错误信息",
+  "telemetry": {
+   "dwell_ms": 23941,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058637
+ },
+ "C108": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源支持证实",
+  "telemetry": {
+   "dwell_ms": 16516,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058663
+ },
+ "C109": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一来源，薄弱，未经证实",
+  "telemetry": {
+   "dwell_ms": 27352,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058691
+ },
+ "C110": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "单一来源，未经证实",
+  "telemetry": {
+   "dwell_ms": 19477,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058712
+ },
+ "C111": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "有争议",
+  "telemetry": {
+   "dwell_ms": 86070,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058798
+ },
+ "C112": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多来源证实",
+  "telemetry": {
+   "dwell_ms": 24677,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058823
+ }
+}

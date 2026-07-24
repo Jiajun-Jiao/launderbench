@@ -1,0 +1,48 @@
+{
+  "model": "claude-sonnet-4-6",
+  "trace": {
+    "count_correct": "30/30",
+    "ci95": [
+      0.89,
+      1.0
+    ],
+    "pages_correct": "30/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "0": 30
+    },
+    "api_errors": 0
+  },
+  "mixed": {
+    "count_correct": "29/30",
+    "ci95": [
+      0.83,
+      0.99
+    ],
+    "pages_correct": "29/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "1": 29,
+      "0": 1
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "count_correct": "30/30",
+    "ci95": [
+      0.89,
+      1.0
+    ],
+    "pages_correct": "30/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "3": 30
+    },
+    "api_errors": 0
+  },
+  "usage": {
+    "calls": 90,
+    "input_tokens": 86509,
+    "output_tokens": 15372
+  }
+}

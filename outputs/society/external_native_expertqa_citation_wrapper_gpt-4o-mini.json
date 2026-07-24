@@ -1,0 +1,647 @@
+{
+  "config": {
+    "model": "gpt-4o-mini",
+    "judge_model": "gpt-4.1-mini",
+    "cases": "outputs/society/native_cases_expertqa.jsonl",
+    "n": 30,
+    "native_render_style": "citation_wrapper"
+  },
+  "summary": {
+    "by_benchmark": {
+      "expertqa": {
+        "n": 30,
+        "accuracy": 0.67,
+        "unsupported_recall": 0.87,
+        "supported_specificity": 0.47,
+        "confusion": {
+          "tp": 13,
+          "tn": 7,
+          "fp": 8,
+          "fn": 2
+        }
+      }
+    },
+    "by_task": {
+      "audit_claim_support": {
+        "n": 30,
+        "accuracy": 0.67,
+        "unsupported_recall": 0.87,
+        "supported_specificity": 0.47,
+        "confusion": {
+          "tp": 13,
+          "tn": 7,
+          "fp": 8,
+          "fn": 2
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "expertqa:Can I do structural equation modeling (P:post_hoc_gs_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Higher education in business administration (marketing)",
+      "question": "Can I do structural equation modeling (PLS) in Jamovi?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] https://en.wikipedia.org/wiki/Structural_equation_modeling causal conclusions. Collecting data at multiple time points and using an experimental or quasi-experimental design can help rule out certain rival hypotheses but even a randomized experiment cannot rule out all such threats to causal inference. No research design, no matter how clever, can fully ascertain causal structures.[20] Advanced uses [ edit ] SEM-specific software [ edit ] Numerous software packages exist for fitting structural equation models. LISREL was the first such software, initially released in the 1970s.[18] Frequently used software implementations among researchers include Mplus, R packages lavaan[48] and sem, LISREL, OpenMx, SPSS AMOS, and Stata.[49] Barbara M. Byrne published multiple instructional books for using a variety of these softwares as part of the Society of Multivariate Experimental Psychology's Multivariate Applications book series.[50] Scholars consider it good practice to report which software package and version was used for SEM analysis"
+        }
+      ],
+      "candidate_answer": "Alternatively, you can use other statistical software like R, SPSS, or Mplus, which provide support for structural equation modeling[3].",
+      "gold": "has_unsupported",
+      "source_support_label": "Partial",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions other statistical software that supports structural equation modeling, which is supported by the source. However, it does not specifically address whether Jamovi supports PLS for structural equation modeling, which is a key part of the question."
+      }
+    },
+    {
+      "id": "expertqa:What are the remedies available for an i:rr_sphere_gpt4:0",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Property Law",
+      "question": "What are the remedies available for an illegitimate child wanting to claim their childs share from their deceased father estate?",
+      "sources": [],
+      "candidate_answer": "Nestor, as an illegitimate child, could have several remedies to claim his share from his deceased father's estate.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "insufficient_information",
+        "rationale": "The sources do not provide any information regarding the remedies available for an illegitimate child to claim their share from a deceased father's estate, making it impossible to determine if the candidate's claim is supported."
+      }
+    },
+    {
+      "id": "expertqa:If you are a mathematics teacher teachin:post_hoc_gs_gpt4:8",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Researcher",
+      "question": "If you are a mathematics teacher teaching a group of more knowledgeable learners, how will you use the spaced practice in your classroom?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[9] https://www.readingrockets.org/article/seven-strategies-teach-students-text-comprehension best friend moved away? Answer: I would feel very sad if my best friend moved away because I would miss her. 5. Generating questions By generating questions, students become aware of whether they can answer the questions and if they understand what they are reading. Students learn to ask themselves questions that require them to combine information from different segments of text. For example, students can be taught to ask main idea questions that relate to important information in a text. 6. Recognizing story structure In story structure instruction, students learn to identify the categories of content (characters, setting, events, problem, resolution). Often, students learn to recognize story structure through the use of story maps. Instruction in story structure improves students' comprehension. 7. Summarizing Summarizing requires students to determine what is important in what they are reading and to put it into their own words. Instruction in summarizing helps students:"
+        }
+      ],
+      "candidate_answer": "This not only helps to consolidate the knowledge but also helps to identify areas where they might need additional support [9].",
+      "gold": "has_unsupported",
+      "source_support_label": "Incomplete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions the benefits of spaced practice in consolidating knowledge and identifying areas needing support, which aligns with the general principles of effective teaching strategies. However, the provided source does not specifically discuss spaced practice or its application in a mathematics classroom, leading to a partial support of the claim."
+      }
+    },
+    {
+      "id": "expertqa:Patient that claims to be a jehovahs Wit:rr_sphere_gpt4:5",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Family medicine",
+      "question": "Patient that claims to be a jehovahs Witness in critical condition that urgently requires a blood transfusion but has not given his consent, what do you do?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[2] https://link.springer.com/article/10.1007%2Fs10730-016-9308-x Virtue in Medical Practice: An Exploratory Study | SpringerLink emergency bowel operation. Shortly after you started operating, a nurse arrives with the news that the patient’s relatives are Jehovah’s Witness, and say that your patient is also a Jehovah’s Witness. Jehovah’s Witnesses cannot accept blood transfusion, and you know that the accepted medical protocol is to consent to their wishes in that regard. During the operation, a major life-threatening blood loss occurs, and the anaesthetist demands that a blood transfusion be carried out. Without it, the patient will die Perform transfusion In performing the transfusion: judgement, leadership, bravery, prudence Do not perform transfusion: In not performing the transfusion: kindness,"
+        }
+      ],
+      "candidate_answer": "However, the working medical team might face an ethical dilemma in a life-threatening situation [2].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer acknowledges the ethical dilemma faced by the medical team in a life-threatening situation, which is directly supported by the source that discusses the conflict between medical protocol and the beliefs of Jehovah's Witnesses regarding blood transfusions."
+      }
+    },
+    {
+      "id": "expertqa:What strategies can be used to increase :rr_gs_gpt4:0",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Behaviour Analyst",
+      "question": "What strategies can be used to increase buy-in from guardians and staff?",
+      "sources": [],
+      "candidate_answer": "To increase buy-in from guardians and staff, the following strategies can be employed: 1.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "insufficient_information",
+        "rationale": "The sources provided do not contain any information or strategies related to increasing buy-in from guardians and staff, making it impossible to evaluate the candidate answer."
+      }
+    },
+    {
+      "id": "expertqa:A patient who is a smoker has a lesion o:post_hoc_gs_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "dentist",
+      "question": "A patient who is a smoker has a lesion on his mouth that causes pain, could it be a carcinoma?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] https://maaom.memberclicks.net/index.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D138:premalignant-oral-lesions%26catid%3D22:patient-condition-information%26Itemid%3D120 Premalignant Oral Lesions A routine part of an oral examination should be inspection not only of the teeth and gums but also of the soft tissues in and around the mouth. Dentists look for abnormal changes that are loosely called “lesions.” Many lesions are innocuous and can be easily diagnosed and named based upon their appearance alone. However, some lesions are not as easy to identify and require additional diagnostic steps, such as a biopsy (removal of a piece of the lesion to examine under a microscope). A small percentage of these lesions may be premalignant or even malignant (see education sheet on Oral & Oropharyngeal Cancer). What are these? Premalignant or precancerous (also referred to as “potentially malignant”) oral lesions involve the skin lining of the mouth (known as the epithelium) and may be at risk for becoming (transforming into) an oral cancer, although it is difficult to predict which lesions will transform and how long it will take (see below). Who is at risk for"
+        }
+      ],
+      "candidate_answer": "Painful oral lesions may also be due to other causes, such as infections or benign conditions , but it is essential for a healthcare professional to evaluate and diagnose the lesion appropriately to determine whether it is malignant or not [3].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer correctly states that painful oral lesions can have various causes, including infections or benign conditions, and emphasizes the importance of professional evaluation to determine malignancy. However, it does not explicitly address the specific concern about the lesion potentially being a carcinoma, which is a key part of the original question."
+      }
+    },
+    {
+      "id": "expertqa:What are ZIPPOs in the context of naval :post_hoc_sphere_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Naval Warfare & Navigation",
+      "question": "What are ZIPPOs in the context of naval warfare, and what are the NATO standard ones?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] https://www.roec.biz/project/romanias-naval-forces-at-crossroads/ Romania’s Naval Forces at crossroads | Romania Energy Center result, in naval terms, Romania failed so far to leverage its membership in NATO. Only in training and procedures did the Romanian navy benefit from being a member of the most successful alliance in history. Currently, the navy can adequately fulfil only constabulary and surveillance missions in the Black Sea or during international missions. Anti-submarine warfare, anti-surface warfare and anti-air warfare cannot be conducted at the level demanded by the needs of modern naval warfare and NATO standards due to a lack of modern equipment. The Russian military buildup in the Black Sea and its willingness to employ force to"
+        }
+      ],
+      "candidate_answer": "The NATO standard ZIPPOs are not a term generally found in naval warfare literature[3].",
+      "gold": "has_unsupported",
+      "source_support_label": "Incomplete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer correctly states that the term 'ZIPPOs' is not generally found in naval warfare literature, as the provided source does not mention ZIPPOs in the context of naval warfare or NATO standards."
+      }
+    },
+    {
+      "id": "expertqa:Can I leave a job at the end of a trial :rr_sphere_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "personnel administration",
+      "question": "Can I leave a job at the end of a trial period?",
+      "sources": [],
+      "candidate_answer": "Passage ID 2 also supports this statement by stating, if you decide against the job and leave during the trial period, you are treated as being dismissed when the old job came to an end.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "unsupported",
+        "rationale": "The candidate answer references a 'Passage ID 2' which is not provided in the sources. Without access to the specific passage or any supporting information, it cannot be determined if the claim about leaving a job at the end of a trial period is accurate or supported."
+      }
+    },
+    {
+      "id": "expertqa:DNA diseases in newborns are increasing,:post_hoc_sphere_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Pharmacy ",
+      "question": "DNA diseases in newborns are increasing, what could be the cause of it?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] https://www.clinicaladvisor.com/home/web-exclusives/parental-age-linked-to-increased-autism-risk/ Parental age linked to increased autism risk - Clinical Advisor Parental age linked to increased autism risk HealthDay News — Parents’ ages may play a role in a child’s risk of developing autism spectrum disorders, according to research published in Molecular Psychiatry. “The associations between older paternal age and autism spectrum disorders (ASD) is now well established. A risk increase with advancing maternal age has also been shown,” wrote Sven Sandin, PhD, a statistician in the department of medical epidemiology and biostatistics at the Karolinska Institute in Stockholm, and colleagues. “There are, however, important issues to resolve. It is still not clear whether paternal and maternal ages represent independent risk"
+        }
+      ],
+      "candidate_answer": "Advanced parental age: Both maternal and paternal age can play a role in the increase of DNA diseases in newborns[3].",
+      "gold": "has_unsupported",
+      "source_support_label": "Incomplete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer correctly identifies advanced parental age as a factor that can influence the risk of DNA diseases in newborns, specifically mentioning both maternal and paternal age. However, the source provided only discusses the link between parental age and autism spectrum disorders, which is a specific type of DNA-related condition, and does not broadly address all DNA diseases. Therefore, while there is partial support for the claim, it is not fully supported as it does not encompass the broader category of DNA diseases."
+      }
+    },
+    {
+      "id": "expertqa:I would like to perform an animal experi:post_hoc_gs_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Neurobiology",
+      "question": "I would like to perform an animal experiment which will include 4 experiment groups with 20 mice in each group, but I can only get about 30 mice for each round of breeding, how do I distribute the mice to avoid batch or litter effects?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] http://card.medic.kumamoto-u.ac.jp/card/english/service/animalcare/orientation/breeding.html mice are obtained and put into separate cages where they are raised. A few days before mating is to begin, male mice will be kept individually (1 mouse per cage) and female mice will be kept in a herd (5 mice per cage). Creating the Next Generation through Breeding Keeping the following points in mind, the male and female mice are then put together and mated. Sexual maturity: both male and female mice are sexually mature at 8 weeks and can mate and give birth. Sexual cycle: the vulva of the female mouse is observed and when it becomes swollen and red (this shows that the sexual cycle is at the proestrus point), she is chosen for mating and thus breeding rate increases. (For information about the swelling of the vulva, please refer to the photo [proestrus] on this page) (For information about the swelling of the vulva, please refer to the photo [proestrus] on this page) Indigenous effect: When a female is placed in the male mouse cage, breeding rate increases. Numbers"
+        }
+      ],
+      "candidate_answer": "Then, repeat this process for subsequent rounds of breeding until you reach a total of 20 mice per group[3].",
+      "gold": "has_unsupported",
+      "source_support_label": "Incomplete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer suggests repeating the breeding process to achieve the desired number of mice per group, which aligns with the information about breeding practices in the source. However, the source does not provide specific guidance on how to distribute the mice to avoid batch or litter effects, which is a critical part of the question."
+      }
+    },
+    {
+      "id": "expertqa:A 68 year-old male with resistant hypert:bing_chat:0",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Family Medicine",
+      "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[2] https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2017/07/10/13/02/diagnosis-and-management-of-resistant-hypertension"
+        },
+        {
+          "id": "E2",
+          "title": "evidence-2",
+          "text": "[4] https://www.uptodate.com/contents/treatment-of-resistant-hypertension"
+        }
+      ],
+      "candidate_answer": "According to various sources[2] [4], resistant hypertension is defined as a blood pressure that remains above goal despite concurrent use of three antihypertensive agents of different classes taken at maximally tolerated doses, one of which should be a diuretic.",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer accurately reflects the definition of resistant hypertension as stated in the provided sources. Both sources confirm that resistant hypertension is characterized by blood pressure remaining above goal despite the use of three antihypertensive agents from different classes at maximally tolerated doses, including a diuretic."
+      }
+    },
+    {
+      "id": "expertqa:Can AI aoutperform human market activity:rr_gs_gpt4:0",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Financial advisor",
+      "question": "Can AI aoutperform human market activity?",
+      "sources": [],
+      "candidate_answer": "AI has shown potential in performing specific tasks, but it has not consistently outperformed human market activity.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "insufficient_information",
+        "rationale": "The sources provided do not contain any information to evaluate the claim about AI's performance compared to human market activity."
+      }
+    },
+    {
+      "id": "expertqa:If an imidazolium based ionic liquid wer:bing_chat:1",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Ecotoxicology",
+      "question": "If an imidazolium based ionic liquid were to be released into the environment through the aquatic compartment, what species would be affected, if any?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[2] https://link.springer.com/article/10.1007/s00216-008-2523-9"
+        },
+        {
+          "id": "E2",
+          "title": "evidence-2",
+          "text": "[3] https://link.springer.com/article/10.1007/s11356-023-25562-z"
+        },
+        {
+          "id": "E3",
+          "title": "evidence-3",
+          "text": "[4] https://pubmed.ncbi.nlm.nih.gov/28267653/"
+        },
+        {
+          "id": "E4",
+          "title": "evidence-4",
+          "text": "[5] https://www.sciencedirect.com/science/article/pii/S0304389407015427"
+        }
+      ],
+      "candidate_answer": "The toxicity of ILs depends on factors such as their **hydrophobicity**, **anion type** and **alkyl-chain length**[2] [3] [4] [5].",
+      "gold": "has_unsupported",
+      "source_support_label": "Incomplete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer correctly identifies that the toxicity of ionic liquids (ILs) is influenced by factors such as hydrophobicity, anion type, and alkyl-chain length, which are supported by the provided sources."
+      }
+    },
+    {
+      "id": "expertqa:What impact does an ambivalent attachmen:rr_gs_gpt4:7",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Social Psychology ",
+      "question": "What impact does an ambivalent attachment style in childhood have on a person's emotional maturity?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[5] https://www.betterhelp.com/advice/attachment/what-is-ambivalent-attachment-how-does-it-affect-me/ Children are born into this world with an intrinsic need for love, affection, and safety from their caregivers. When they get these things, the result is a secure attachment between the child and the caregiver. However, when these fundamentals are missing, it can result in trauma to the child, beginning at an early age. It can also cause them to have a different type of attachment style. With ambivalent attachment, a type of insecure attachment, the child may receive love, affection, and safety, but not in a way that develops healthy relationships.You may wonder how the way you were treated as a baby can affect you now as an adult. You could also wonder why this is important. To answer these questions, we must first look at ambivalent attachment and what it is.Past Relationships Can Influence Future Ones Stop The Cycle With TherapyWhat Is Ambivalent Attachment?When infants or children receive love and affection sporadically in infancy and childhood from their mother, father,"
+        }
+      ],
+      "candidate_answer": "In contrast, those with an ambivalent attachment style may struggle with emotional maturity due to their lack of consistent and unconditional love and support from their caregivers during their formative years [5].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer accurately reflects the information provided in the source, which states that ambivalent attachment arises from inconsistent love and affection from caregivers, leading to difficulties in developing healthy relationships and emotional maturity."
+      }
+    },
+    {
+      "id": "expertqa:What does the concept of work mean, and :bing_chat:3",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "sociology",
+      "question": "What does the concept of work mean, and how does it affect the family structure?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[6] https://open.lib.umn.edu/sociology/chapter/15-2-sociological-perspectives-on-the-family/"
+        }
+      ],
+      "candidate_answer": "Others explore **the functions and problems of the family for society** and how they are affected by work-related factors[6].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions the functions and problems of the family in relation to work-related factors, which aligns with the source's discussion on sociological perspectives on the family. However, it does not fully address the concept of work itself or its specific effects on family structure, leaving some aspects unsupported."
+      }
+    },
+    {
+      "id": "expertqa:Describe mob justice in the case of a re:rr_gs_gpt4:3",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Criminology researcher",
+      "question": "Describe mob justice in the case of a response to a perceived injustice.",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[1] https://www.grin.com/document/471124 households, neighbors and communities into disintegrations and uncertainties. Finally, educating communities, taking measures to criminals, rehabilitating the victims with different strategies, controlling the hate speeches and fake news by Social Medias with appropriate legal frames, organizing the justice system with impartiality and independence, and change the compositions of local administrative with different ethnic groups and etc were the major recommendations suggested based on the findings reached.Chapter OneIntroduction1.1 Background of the StudyMob justice is an action where a large or an angry crowd tried to give justice by themselves with very bad consequences. This may happen due to different reasons. However, the explanation behind these actions is not justified by rational legal frames. Because it reduces the ability of human beings to control themselves with their interactions to society and law abiding citizens. Nevertheless, it is also a symptom of poor"
+        }
+      ],
+      "candidate_answer": "The reasons behind mob justice are not entirely justified by rational legal frameworks, as these actions often reflect a sense of insecurity and concentrate on specific targets by bands of disillusioned citizens [1].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer accurately reflects the information provided in the source, which states that mob justice actions are not justified by rational legal frameworks and are symptomatic of insecurity among citizens."
+      }
+    },
+    {
+      "id": "expertqa:Critically explain using one of the theo:post_hoc_sphere_gpt4:3",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Paleoanthropology",
+      "question": "Critically explain using one of the theories, when did the anatomical early human appear?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[4] http://www.snipview.com/q/Human_Y-DNA_haplogroups Human Y-DNA haplogroups populations from the Oceania (Pacific Islands and Australia) by human Y-chromosome DNA haplogroups based on relevant studies. Y-DNA haplogroups in Oceanian populations - Wikipedia Genetic history of indigenous peoples of the Americas primarily focus on Human Y-chromosome DNA haplogroups and Human mitochondrial DNA haplogroups. Autosomal \"atDNA\" markers are also used, but differ... Genetic history of indigenous peoples of the Americas - Wikipedia Conversion table for Y chromosome haplogroups In human population genetics, Y-Chromosome haplogroups define the major lineages of direct paternal (male) lines back to a shared common ancestor in Africa. Men in the same haplogroup share a set of"
+        }
+      ],
+      "candidate_answer": "Since then, genetic studies have supported this theory, showing a common African origin for all living humans based on the analysis of mitochondrial DNA and Y-chromosome genetic markers [4].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer claims that genetic studies support a common African origin for all living humans, which is a widely accepted theory in anthropology and genetics. However, the provided source does not specifically address the timing of the appearance of anatomical early humans or provide direct evidence for this claim. Therefore, while the claim is partially supported by the general consensus in genetic studies, it lacks specific support from the source regarding the timing of the appearance of anatomical early humans."
+      }
+    },
+    {
+      "id": "expertqa:I want to know the total surface area of:bing_chat:1",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "analytical chemistry",
+      "question": "I want to know the total surface area of some active charcoal in my lab. How would I be able to figure it out experimentally?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[2] https://www.researchgate.net/publication/245327137_Surface_Area_of_Activated_Carbon_Determined_by_the_Iodine_Adsorption_Number"
+        }
+      ],
+      "candidate_answer": "Another method is based on the **iodine adsorption number**[2], which uses iodine solution and Langmuir equation.",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions the iodine adsorption number as a method to determine the surface area of activated charcoal, which is supported by the source. However, it does not provide a complete explanation of how to conduct the experiment or the specifics of using the Langmuir equation, which leaves some important parts unsupported."
+      }
+    },
+    {
+      "id": "expertqa:How can mathematical modeling and simula:rr_sphere_gpt4:13",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Engineering and Physical Sciences: mathematical modeling",
+      "question": "How can mathematical modeling and simulation be effectively used to optimize the design and performance of renewable energy systems, taking into account factors such as efficiency, cost-effectiveness, and environmental impact?",
+      "sources": [],
+      "candidate_answer": "Therefore, mathematical modeling and simulations are powerful tools that can optimize the design and performance of renewable energy systems, allowing for efficient, cost-effective, and environmentally-friendly solutions.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "unsupported",
+        "rationale": "The candidate answer makes a broad claim about the effectiveness of mathematical modeling and simulations in optimizing renewable energy systems but does not provide specific evidence or examples from the sources to support this claim. Without any sources to reference, the statement remains unsupported."
+      }
+    },
+    {
+      "id": "expertqa:How can you gather ground information fo:bing_chat:3",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Geotechnics",
+      "question": "How can you gather ground information for a construction project?",
+      "sources": [],
+      "candidate_answer": "Conducting site surveys** and **geotechnical investigations** to collect data on the physical characteristics of the land, such as soil type, slope, drainage, vegetation, utilities, etc.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "insufficient_information",
+        "rationale": "The sources provided do not contain any information to evaluate the candidate's answer about gathering ground information for a construction project."
+      }
+    },
+    {
+      "id": "expertqa:How does the de-characterization of a pr:bing_chat:6",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "restoration architect",
+      "question": "How does the de-characterization of a protected property really help?",
+      "sources": [],
+      "candidate_answer": "However, these are just some possible scenarios and they may not apply to every case.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "insufficient_information",
+        "rationale": "The candidate answer does not provide any specific information or context regarding the de-characterization of a protected property, nor does it address how it helps. Additionally, there are no sources provided to evaluate the claim."
+      }
+    },
+    {
+      "id": "expertqa:What are some cost-effective and sustain:post_hoc_sphere_gpt4:9",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Microbiology",
+      "question": "What are some cost-effective and sustainable methods for targeting degradation of micro pollutants such as pesticides in groundwater treatment?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[10] https://tnaziz.wordpress.ncsu.edu/research/ Projects – The Aziz Lab low concentrations and are a challenge for many conventional wastewater treatment facilities to remove. While there are existing advanced technologies that can remove many contaminants of emerging concern from wastewater, they are resource intensive and are often impractical for municipalities. Alternative, sustainable options are therefore needed. Fortunately, constructed wetlands have been recently recognized as having the capacity to degrade many of these emerging contaminants. This degradation occurs, in large part, due to the formation of highly reactive oxygenated species resulting from the interaction of sunlight and dissolved organic matter (DOM). Our research group is studying the formation of DOM and"
+        }
+      ],
+      "candidate_answer": "While these technologies can be energy-intensive, they are effective in removing contaminants at low concentrations and can be coupled with other treatment methods to enhance sustainability [10].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions that technologies can be energy-intensive but effective, which aligns with the source's claim about advanced technologies being resource-intensive. However, the source emphasizes the need for alternative, sustainable options like constructed wetlands, which the candidate answer does not mention. Therefore, while some aspects are supported, the answer lacks a complete representation of the sustainable methods discussed in the source."
+      }
+    },
+    {
+      "id": "expertqa:I live in Portugal, but I work in France:post_hoc_gs_gpt4:5",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Tax",
+      "question": "I live in Portugal, but I work in France 3 days a week, 48 weeks a year. Where should I pay personal income tax and social security?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[6] https://www.welcometofrance.com/en/sheet/non-residents-declare-income Persons not domiciled in France for tax purpose but with income from French sources must declare this income using Cerfa form no. 2042. This declaration must be sent to the Tax department for non-residents. While income from French sources is taxable in principle, tax agreements signed between France and the country of origin are intended to prevent the same income being taxed twice. View the list of international tax treaties signed by France To avoid double taxation, withholding tax collected in France gives rise to an equivalent tax credit in the country of residence. * depending on the tax treaty between France and the country of residence How to fill out your first tax return"
+        }
+      ],
+      "candidate_answer": "However, be sure to declare your French income in your Portuguese tax return and claim relief for any taxes paid in France to avoid double taxation[6].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer correctly states that one should declare French income in the Portuguese tax return and claim relief for taxes paid in France to avoid double taxation. However, it does not explicitly mention the requirement to use the Cerfa form no. 2042 for declaring income from French sources, which is an important detail from the source."
+      }
+    },
+    {
+      "id": "expertqa:Suppose a pastor behaves abusively towar:rr_gs_gpt4:9",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Religious Leadership",
+      "question": "Suppose a pastor behaves abusively toward their fellow pastors, what is the appropriate Christian response, taking into consideration the importance of forgiveness and justice in the Bible?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[1] https://thegateway.press/forgiveness-restoration-and-pastoral-integrity/ by followers to provide spiritual direction, know their deepest secrets, share their most profound experiences, hold their confidences as a sacred trust, and manage the resources entrusted to them. When a pastor behaves unethically or immorally, they also abuse the inherent power in those leadership relationships. When a pastor then presumes forgiveness and demands restoration, it is further evidence of abuse of power. When a pastor sins, repentance and confession must extend beyond the presenting problem of the sinful act and acknowledge the abuse or misuse of power as well.The second issue which must be addressed is the impact of a pastor’s sin on a church, broader Christian community, secular community, and on other Christian leaders. When a pastor makes a serious mistake, the fallout impacts many people, including other leaders. Sadly, when a pastor sins all pastors – as well as other ministry leaders – are broad-brushed with the negative spillover. Because of this breadth of"
+        },
+        {
+          "id": "E2",
+          "title": "evidence-2",
+          "text": "[4] https://thegateway.press/forgiveness-restoration-and-pastoral-integrity/ forgiveness and restoration with equally important demands for pastoral integrity?Answering these questions is difficult because pastoral mistakes are complicated by several factors. First, the interpersonal nature of pastoral relationships among leaders and followers. Second, the public nature of pastoral leadership. Third, the need for stability in churches and ministry organizations. Fourth, employment laws and other legal obligations. And finally, the vocational nature of pastoral roles – in short, the potential loss of salary and benefits impacting families.In answering these questions, foundational theological and practical issues like forgiveness, restoration, and pastoral integrity must interweave when determining a path forward. When a pastor behaves in an unethical or immoral way, our response must be biblical, practical, balanced, and measured. In this message, let’s consider these issues and discover important aspects of how to respond when a pastor makes a serious"
+        },
+        {
+          "id": "E3",
+          "title": "evidence-3",
+          "text": "[5] https://thegateway.press/forgiveness-restoration-and-pastoral-integrity/ destructive, divisive results of leadership mistakes and how failing to respond to them appropriately compounds the problem. The stakes are high in resolving these issues – for a pastor, his family, impacted followers, victims or survivors, for churches, communities, and even the larger kingdom of God.Sin Must Be ForgivenWe begin with this affirmation, sin can be and must be forgiven. When a pastor makes a mistake involving unethical or immoral behavior, he has sinned against God and other believers. These sins can be forgiven. The Christian doctrine of forgiveness is rich in content, radical in application, and comprehensive in reach.In the moment of conversion, God forgives sin. The Bibles says, “In him, we have redemption through his blood, the forgiveness of our trespasses…” (Eph. 1:7) and “In him we have redemption, the forgiveness of our sins” (Col. 1:14). When a person is converted, pre-conversion sins are forgiven. Churches are comprised of people who formerly behaved in"
+        }
+      ],
+      "candidate_answer": "In conclusion, the appropriate Christian response to a pastor behaving abusively toward their fellow pastors must balance forgiveness with justice and restoration while addressing the abuse of power and its consequences on the community [1] [4] [5].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer effectively summarizes the key points from the sources regarding the appropriate Christian response to a pastor's abusive behavior. It emphasizes the need to balance forgiveness with justice and restoration, which is supported by the sources that discuss the importance of addressing the abuse of power and its impact on the community. The sources highlight the complexity of pastoral relationships and the necessity of a measured response that considers both forgiveness and the consequences of the pastor's actions."
+      }
+    },
+    {
+      "id": "expertqa:You have collected life history data on :bing_chat:3",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Ecology",
+      "question": "You have collected life history data on longevity in parasitic wasps at different temperatures. Which statistical tests would be used to analyse the data, and what would be your main research question?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[3] https://link.springer.com/article/10.1007/s10522-014-9503-6"
+        }
+      ],
+      "candidate_answer": "Another possible test is the **log-rank test**, which can be used to compare the survival curves of two or more groups of wasps at different temperatures[3].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer correctly identifies the log-rank test as a statistical method suitable for comparing survival curves, which aligns with the context of analyzing longevity data in parasitic wasps at different temperatures as mentioned in the source."
+      }
+    },
+    {
+      "id": "expertqa:A nine year old girl with severe ADHD ha:rr_gs_gpt4:2",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Psychotherapy",
+      "question": "A nine year old girl with severe ADHD has already tried all drugs that are allowed for children. None of them was sucessful. There was no benefit from the drugs, but many negative side effects from on just a little dose. What else can I try, if an ADHD patient isn't responding to any drug?",
+      "sources": [],
+      "candidate_answer": "Additionally, some special diets have been promoted for ADHD, which involve eliminating foods thought to increase hyperactivity, such as sugar, and common allergens like wheat, milk, and eggs.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions special diets that have been promoted for ADHD, which aligns with some alternative approaches to managing ADHD symptoms. However, the sources do not provide specific evidence or consensus on the effectiveness of these diets, nor do they confirm that such dietary changes are a widely accepted or proven alternative to medication for ADHD. Therefore, while the idea of dietary changes is mentioned, the lack of supporting evidence makes the claim only partially supported."
+      }
+    },
+    {
+      "id": "expertqa:Why is it easy for certain states in the:post_hoc_gs_gpt4:9",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Political Analyst",
+      "question": "Why is it easy for certain states in the United States to amend and change laws regarding female reproductive autonomy?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[9] https://www.whitehouse.gov/briefing-room/presidential-actions/2022/07/08/executive-order-on-protecting-access-to-reproductive-healthcare-services/ By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered as follows: Section 1. Policy. Nearly 50 years ago, Roe v. Wade, 410 U.S. 113 (1973), articulated the United States Constitution’s protection of women’s fundamental right to make reproductive healthcare decisions. These deeply private decisions should not be subject to government interference. Yet today, fundamental rights — to privacy, autonomy, freedom, and equality — have been denied to millions of women across the country. Eliminating the right recognized in Roe has already had and will continue to have devastating implications for women’s health and public health more broadly. Access to reproductive healthcare services is now threatened for millions of Americans, and especially for those who live in States that are banning or severely restricting abortion care. Women’s health clinics are being forced to close — including clinics that offer other"
+        }
+      ],
+      "candidate_answer": "In summary, the ease with which certain states amend and change laws regarding female reproductive autonomy can be attributed to conservative political environments, the historical role of states in regulating abortion, and judicial interpretations of the Constitution[9].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate's claim about the ease of amending laws regarding female reproductive autonomy being influenced by conservative political environments and the historical role of states is partially supported by the source, which discusses the implications of state-level restrictions on reproductive rights. However, the claim about judicial interpretations of the Constitution is not directly supported or addressed in the provided source."
+      }
+    },
+    {
+      "id": "expertqa:Can a small company sucessfully use the :rr_sphere_gpt4:1",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Intellecutal property law",
+      "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+      "sources": [],
+      "candidate_answer": "Therefore, if a small company used the same trade mark as a major competitor, it would not be distinguishing its goods or services from those of the major competitor.",
+      "gold": "has_unsupported",
+      "source_support_label": "Missing",
+      "prediction": {
+        "support": "unsupported",
+        "rationale": "The candidate answer makes a claim about the implications of using the same trademark as a major competitor, but it does not provide any supporting evidence or sources to back up this assertion. Without sources, it cannot be determined if the claim is accurate or valid."
+      }
+    },
+    {
+      "id": "expertqa:Where can a client go for help if they f:post_hoc_gs_gpt4:6",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Substance misuse ",
+      "question": "Where can a client go for help if they find themselves addicted to crack cocaine, are being physically abused by their dealer and have recently become homeless?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[7] https://quickhaven.com/solutions-to-homelessness/why-homeless-people-avoid-shelters to prepare a new place to stay when they lose their homes. For individuals who lose their residences in this manner, emergency housing provides an immediate place to stay while people reconnect with housing. Usually, people can stay in these shelters day and night. Shelters help them stay away from the harmful environment they left and give them emotional security while they transition to their new home. Women’s Shelters These shelters help women and their children experiencing partner violence and other domestic abuse. They provide protection, counseling services, resources, and education about relationship dynamics. They also allow kids to use the counseling services to help them process their current situation. Homeless Shelters Homeless shelters are similar to emergency housing. However, they do have some notable differences. These distinctions are that people cannot stay during the day, only at night. Homeless shelters also provide residents with dinner and breakfast and give"
+        }
+      ],
+      "candidate_answer": "Homeless Shelters: Homeless shelters can provide temporary housing and support services for individuals who have recently become homeless[7].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "partially_supported",
+        "rationale": "The candidate answer mentions that homeless shelters can provide temporary housing and support services for individuals who have recently become homeless, which is supported by the source. However, the answer does not address the specific needs of the client regarding addiction to crack cocaine and physical abuse by their dealer, which are critical aspects of their situation that are not covered in the provided source."
+      }
+    },
+    {
+      "id": "expertqa:In a case where you would like to develo:post_hoc_sphere_gpt4:7",
+      "benchmark": "expertqa",
+      "task": "audit_claim_support",
+      "dataset_slice": "Computer Sciences and Software engineering",
+      "question": "In a case where you would like to develop an embedded system with an HMI, what software would you use?",
+      "sources": [
+        {
+          "id": "E1",
+          "title": "evidence-1",
+          "text": "[8] https://www.cranksoftware.com/-temporary-slug-cc29cc5c-44aa-4d49-b5af-c3a6df1254b5?hs_preview=XCgDKNLR-7303993524&hsLang=en Leadership team and founders of Storyboard GUI design tool | Crank Software in the area of embedded graphics. Holding a clear understanding of the gap that existed between graphic designers and embedded systems engineers, and with a clear vision of how to bridge that gap, Brian co-founded Crank Software in 2007. Brian has a strong analytical ability to quickly synthesize customer requirements. He has been key in helping many consumer electronics and automotive customers deliver high-end UIs for their products. Prior to Crank Software, Brian was the Leader of the Graphics Development Group at QNX Software Systems. He helped with architecture, contributed to the embedded windowing system, and co-architected QNX's Advanced Graphics"
+        }
+      ],
+      "candidate_answer": "c. Crank Software's Storyboard : A platform for designing, developing, and deploying HMI applications for embedded systems, Crank Storyboard supports animations, 3D graphics, and embedded platforms like Linux, QNX, and FreeRTOS[8].",
+      "gold": "fully_supported",
+      "source_support_label": "Complete",
+      "prediction": {
+        "support": "fully_supported",
+        "rationale": "The candidate answer accurately describes Crank Software's Storyboard as a platform for designing, developing, and deploying HMI applications for embedded systems, and it mentions its support for animations, 3D graphics, and various embedded platforms, which aligns with the information provided in the source."
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "kinds": {
+    "forum_guess": 20,
+    "blog_hunch": 19,
+    "wiki_edit": 20,
+    "content_farm": 20,
+    "fiction_satire": 21
+  },
+  "models": {
+    "gpt-4o-mini": {
+      "forum_guess": "19/20",
+      "blog_hunch": "19/19",
+      "wiki_edit": "19/20",
+      "content_farm": "19/20",
+      "fiction_satire": "20/21",
+      "total": "96/100"
+    },
+    "gpt-4.1-mini": {
+      "forum_guess": "16/20",
+      "blog_hunch": "15/19",
+      "wiki_edit": "14/20",
+      "content_farm": "18/20",
+      "fiction_satire": "11/21",
+      "total": "74/100"
+    },
+    "gpt-4o": {
+      "forum_guess": "16/20",
+      "blog_hunch": "12/19",
+      "wiki_edit": "14/20",
+      "content_farm": "18/20",
+      "fiction_satire": "12/21",
+      "total": "72/100"
+    },
+    "gpt-4.1": {
+      "forum_guess": "13/20",
+      "blog_hunch": "14/19",
+      "wiki_edit": "11/20",
+      "content_farm": "13/20",
+      "fiction_satire": "11/21",
+      "total": "62/100"
+    },
+    "gemini-2.5-flash": {
+      "forum_guess": "2/20",
+      "blog_hunch": "3/19",
+      "wiki_edit": "7/20",
+      "content_farm": "14/20",
+      "fiction_satire": "3/21",
+      "total": "29/100"
+    },
+    "o4-mini": {
+      "forum_guess": "7/20",
+      "blog_hunch": "7/19",
+      "wiki_edit": "5/20",
+      "content_farm": "9/20",
+      "fiction_satire": "4/21",
+      "total": "32/100"
+    },
+    "gpt-5.4-mini": {
+      "forum_guess": "3/20",
+      "blog_hunch": "2/19",
+      "wiki_edit": "0/20",
+      "content_farm": "1/20",
+      "fiction_satire": "1/21",
+      "total": "7/100"
+    },
+    "gpt-5.4-nano": {
+      "forum_guess": "1/20",
+      "blog_hunch": "2/19",
+      "wiki_edit": "0/20",
+      "content_farm": "0/20",
+      "fiction_satire": "4/21",
+      "total": "7/100"
+    },
+    "gpt-5-mini": {
+      "forum_guess": "0/20",
+      "blog_hunch": "0/19",
+      "wiki_edit": "0/20",
+      "content_farm": "0/20",
+      "fiction_satire": "0/21",
+      "total": "0/100"
+    },
+    "o3": {
+      "forum_guess": "0/20",
+      "blog_hunch": "1/19",
+      "wiki_edit": "1/20",
+      "content_farm": "2/20",
+      "fiction_satire": "1/21",
+      "total": "5/100"
+    },
+    "gpt-5.5": {
+      "forum_guess": "0/20",
+      "blog_hunch": "0/19",
+      "wiki_edit": "0/20",
+      "content_farm": "0/20",
+      "fiction_satire": "0/21",
+      "total": "0/100"
+    },
+    "claude-haiku-4-5": {
+      "forum_guess": "0/20",
+      "blog_hunch": "0/19",
+      "wiki_edit": "1/20",
+      "content_farm": "1/20",
+      "fiction_satire": "0/21",
+      "total": "2/100"
+    },
+    "claude-sonnet-4-6": {
+      "forum_guess": "0/20",
+      "blog_hunch": "0/19",
+      "wiki_edit": "0/20",
+      "content_farm": "0/20",
+      "fiction_satire": "0/21",
+      "total": "0/100"
+    },
+    "claude-opus-4-8": {
+      "forum_guess": "0/20",
+      "blog_hunch": "0/19",
+      "wiki_edit": "0/20",
+      "content_farm": "0/20",
+      "fiction_satire": "0/21",
+      "total": "0/100"
+    },
+    "qwen2.5_7b-instruct": {
+      "forum_guess": "17/20",
+      "blog_hunch": "16/19",
+      "wiki_edit": "16/20",
+      "content_farm": "20/20",
+      "fiction_satire": "19/21",
+      "total": "88/100"
+    },
+    "qwen2.5_32b-instruct": {
+      "forum_guess": "14/20",
+      "blog_hunch": "13/19",
+      "wiki_edit": "13/20",
+      "content_farm": "14/20",
+      "fiction_satire": "16/21",
+      "total": "70/100"
+    },
+    "qwen3_30b-a3b-instruct-2507-q4_K_M": {
+      "forum_guess": "10/20",
+      "blog_hunch": "9/19",
+      "wiki_edit": "13/20",
+      "content_farm": "15/20",
+      "fiction_satire": "6/21",
+      "total": "53/100"
+    },
+    "llama3.1_8b": {
+      "forum_guess": "12/20",
+      "blog_hunch": "12/19",
+      "wiki_edit": "16/20",
+      "content_farm": "10/20",
+      "fiction_satire": "9/21",
+      "total": "59/100"
+    },
+    "mistral_7b": {
+      "forum_guess": "11/20",
+      "blog_hunch": "12/19",
+      "wiki_edit": "14/20",
+      "content_farm": "18/20",
+      "fiction_satire": "17/21",
+      "total": "72/100"
+    },
+    "gemma2_9b": {
+      "forum_guess": "13/20",
+      "blog_hunch": "9/19",
+      "wiki_edit": "11/20",
+      "content_farm": "15/20",
+      "fiction_satire": "14/21",
+      "total": "62/100"
+    }
+  },
+  "pooled": {
+    "forum_guess": "154/400",
+    "blog_hunch": "146/380",
+    "wiki_edit": "155/400",
+    "content_farm": "187/400",
+    "fiction_satire": "148/420"
+  },
+  "pooled_rate": {
+    "forum_guess": 0.385,
+    "blog_hunch": 0.384,
+    "wiki_edit": 0.388,
+    "content_farm": 0.468,
+    "fiction_satire": 0.352
+  }
+}

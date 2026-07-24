@@ -1,0 +1,39 @@
+{
+  "model": "llama3.1:8b",
+  "trace": {
+    "correct_n": "67/100",
+    "rate": 0.67,
+    "ci95": [
+      0.57,
+      0.75
+    ],
+    "dist": {
+      "circular_reporting": 65,
+      "unknown": 28,
+      "single_unverified_origin": 2,
+      "independent_primary_sources": 5
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "56/96",
+    "rate": 0.58,
+    "ci95": [
+      0.48,
+      0.68
+    ],
+    "dist": {
+      "independent_primary_sources": 56,
+      "unknown": 22,
+      "circular_reporting": 18
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.25,
+  "predicted_downstream_launder_per100": 31.7,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 125644,
+    "output_tokens": 24645
+  }
+}

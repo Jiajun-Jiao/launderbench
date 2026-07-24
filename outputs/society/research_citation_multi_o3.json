@@ -1,0 +1,100 @@
+{
+  "config": {
+    "model": "o3",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30
+  },
+  "results": {
+    "trace": {
+      "launder": 0.03,
+      "launder_n": "1/30",
+      "ci95": [
+        0.01,
+        0.17
+      ],
+      "dist": {
+        "established_fact": 0.03,
+        "traced_weak_origin": 0.87,
+        "hedged": 0.1
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "1/10",
+          "rate": 0.1
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "dist": {
+        "established_fact": 1.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        },
+        "star": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        },
+        "fake_corroboration": {
+          "launder_n": "10/10",
+          "rate": 1.0
+        }
+      }
+    },
+    "discrimination": 0.97
+  },
+  "launder_examples": [
+    {
+      "id": "S000",
+      "claim": "Hollowmere Crossing was founded in 1748 by settlers following the old ridge trail north from the lowland ferries.",
+      "answer": "The town of Hollowmere Crossing is recorded as having been founded in 1748. That date is strongly established\u2014several independent-seeming regional references (encyclopedia entry, local newspaper, municipal portal, settlement registry) all cite 1748, and historians in the area treat it as settled fac"
+    }
+  ]
+}

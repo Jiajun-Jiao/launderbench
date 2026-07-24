@@ -1,0 +1,162 @@
+{
+  "gpt-4o-mini": {
+    "trace": "29/100",
+    "solid": "96/96",
+    "typing_discrimination": 0.29,
+    "predicted_downstream_launder_per100": 68.9,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-4.1-mini": {
+    "trace": "61/100",
+    "solid": "96/96",
+    "typing_discrimination": 0.61,
+    "predicted_downstream_launder_per100": 37.8,
+    "anchor": "159/400 measured",
+    "api_errors": 0
+  },
+  "gpt-4o": {
+    "trace": "97/100",
+    "solid": "96/96",
+    "typing_discrimination": 0.97,
+    "predicted_downstream_launder_per100": 2.9,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-4.1": {
+    "trace": "90/100",
+    "solid": "96/96",
+    "typing_discrimination": 0.9,
+    "predicted_downstream_launder_per100": 9.7,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gemini-2.5-flash": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "o4-mini": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-5.4-mini": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-5.4-nano": {
+    "trace": "98/100",
+    "solid": "54/96",
+    "typing_discrimination": 0.54,
+    "predicted_downstream_launder_per100": 1.9,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-5-mini": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": "0/400 measured",
+    "api_errors": 0
+  },
+  "o3": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gpt-5.5": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "claude-haiku-4-5": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "claude-sonnet-4-6": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "claude-opus-4-8": {
+    "trace": "100/100",
+    "solid": "96/96",
+    "typing_discrimination": 1.0,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": "0/400 measured",
+    "api_errors": 0
+  },
+  "qwen2.5:7b-instruct": {
+    "trace": "95/100",
+    "solid": "32/96",
+    "typing_discrimination": 0.28,
+    "predicted_downstream_launder_per100": 4.9,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "qwen2.5:32b-instruct": {
+    "trace": "91/100",
+    "solid": "10/96",
+    "typing_discrimination": 0.01,
+    "predicted_downstream_launder_per100": 8.7,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "qwen3:30b-a3b-instruct-2507-q4_K_M": {
+    "trace": "93/100",
+    "solid": "14/96",
+    "typing_discrimination": 0.08,
+    "predicted_downstream_launder_per100": 6.8,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "llama3.1:8b": {
+    "trace": "67/100",
+    "solid": "56/96",
+    "typing_discrimination": 0.25,
+    "predicted_downstream_launder_per100": 32.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "mistral:7b": {
+    "trace": "100/100",
+    "solid": "1/96",
+    "typing_discrimination": 0.01,
+    "predicted_downstream_launder_per100": 0.0,
+    "anchor": null,
+    "api_errors": 0
+  },
+  "gemma2:9b": {
+    "trace": "95/100",
+    "solid": "34/96",
+    "typing_discrimination": 0.3,
+    "predicted_downstream_launder_per100": 4.9,
+    "anchor": null,
+    "api_errors": 0
+  }
+}

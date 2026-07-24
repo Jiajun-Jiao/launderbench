@@ -1,0 +1,99 @@
+{
+  "config": {
+    "model": "claude-opus-4-8",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "domain_refs"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 0.97,
+        "absent": 0.03,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 0.97,
+        "absent": 0.03,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.6,
+      "launder_n": "18/30",
+      "ci95": [
+        0.42,
+        0.75
+      ],
+      "dist": {
+        "hedged": 0.13,
+        "traced_weak_origin": 0.2,
+        "absent": 0.07,
+        "established_fact": 0.6
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "7/10",
+          "rate": 0.7
+        },
+        "star": {
+          "launder_n": "6/10",
+          "rate": 0.6
+        },
+        "fake_corroboration": {
+          "launder_n": "5/10",
+          "rate": 0.5
+        }
+      }
+    },
+    "discrimination": 0.6
+  },
+  "launder_examples": []
+}

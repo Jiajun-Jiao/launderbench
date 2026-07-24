@@ -1,0 +1,100 @@
+{
+  "rows": [
+    {
+      "benchmark": "expertqa",
+      "model": "gpt-4o-mini",
+      "explicit": {
+        "trace": "17/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.43
+      },
+      "domain_refs": {
+        "trace": "18/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.4
+      }
+    },
+    {
+      "benchmark": "expertqa",
+      "model": "claude-opus-4-8",
+      "explicit": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "21/30",
+        "discrimination": 0.7
+      },
+      "domain_refs": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "18/30",
+        "discrimination": 0.6
+      }
+    },
+    {
+      "benchmark": "alce",
+      "model": "gpt-4o-mini",
+      "explicit": {
+        "trace": "21/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.3
+      },
+      "domain_refs": {
+        "trace": "24/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.2
+      }
+    },
+    {
+      "benchmark": "alce",
+      "model": "claude-opus-4-8",
+      "explicit": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 1.0
+      },
+      "domain_refs": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "27/30",
+        "discrimination": 0.9
+      }
+    },
+    {
+      "benchmark": "ragtruth",
+      "model": "gpt-4o-mini",
+      "explicit": {
+        "trace": "13/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.57
+      },
+      "domain_refs": {
+        "trace": "16/30",
+        "flagged": "0/30",
+        "solid": "30/30",
+        "discrimination": 0.47
+      }
+    },
+    {
+      "benchmark": "ragtruth",
+      "model": "claude-opus-4-8",
+      "explicit": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "29/30",
+        "discrimination": 0.97
+      },
+      "domain_refs": {
+        "trace": "0/30",
+        "flagged": "0/30",
+        "solid": "29/30",
+        "discrimination": 0.97
+      }
+    }
+  ]
+}

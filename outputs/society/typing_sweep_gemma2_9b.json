@@ -1,0 +1,40 @@
+{
+  "model": "gemma2:9b",
+  "trace": {
+    "correct_n": "95/100",
+    "rate": 0.95,
+    "ci95": [
+      0.89,
+      0.98
+    ],
+    "dist": {
+      "single_unverified_origin": 13,
+      "circular_reporting": 82,
+      "unknown": 4,
+      "independent_primary_sources": 1
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "34/96",
+    "rate": 0.35,
+    "ci95": [
+      0.27,
+      0.45
+    ],
+    "dist": {
+      "circular_reporting": 47,
+      "single_unverified_origin": 14,
+      "independent_primary_sources": 34,
+      "unknown": 1
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.3,
+  "predicted_downstream_launder_per100": 4.8,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 126133,
+    "output_tokens": 35954
+  }
+}

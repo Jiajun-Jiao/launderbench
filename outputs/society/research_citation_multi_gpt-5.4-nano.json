@@ -1,0 +1,103 @@
+{
+  "config": {
+    "model": "gpt-5.4-nano",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.03,
+      "launder_n": "1/30",
+      "ci95": [
+        0.01,
+        0.17
+      ],
+      "dist": {
+        "hedged": 0.47,
+        "traced_weak_origin": 0.5,
+        "established_fact": 0.03
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "1/10",
+          "rate": 0.1
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 0.97,
+        "hedged": 0.03,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.73,
+      "launder_n": "22/30",
+      "ci95": [
+        0.56,
+        0.86
+      ],
+      "dist": {
+        "established_fact": 0.73,
+        "hedged": 0.27
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "9/10",
+          "rate": 0.9
+        },
+        "star": {
+          "launder_n": "6/10",
+          "rate": 0.6
+        },
+        "fake_corroboration": {
+          "launder_n": "7/10",
+          "rate": 0.7
+        }
+      }
+    },
+    "discrimination": 0.7
+  },
+  "launder_examples": [
+    {
+      "id": "S017",
+      "claim": "The orchestral suite \"Glass Lanterns of Ojibanu\" received its premiere in 1907 at the Martelbruk Concert Hall.",
+      "answer": "Henrike Adessanwo\u2019s orchestral suite **\"Glass Lanterns of Ojibanu\" premiered in 1907** (at the Martelbruk Concert Hall).\n\n**How well established is the date?** \nThe **1907** date is described as *universally accepted* and *consistently cited* across multiple reference-style sources ([P3], [P4], [P1]"
+    }
+  ]
+}

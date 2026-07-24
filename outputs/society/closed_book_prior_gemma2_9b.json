@@ -1,0 +1,24 @@
+{
+  "model": "gemma2:9b",
+  "n": 100,
+  "hits": 1,
+  "hit_rate": 0.01,
+  "ci95": [
+    0.0,
+    0.05
+  ],
+  "declined_language": 34,
+  "api_errors": 0,
+  "usage": {
+    "calls": 100,
+    "input_tokens": 3940,
+    "output_tokens": 15333
+  },
+  "hit_rows": [
+    {
+      "scenario_id": "S058",
+      "value": "the dried rind of the sourwood quince",
+      "answer": "The signature sour flavor of tamsuq laddra comes from **dried tamarind pulp**. This attribution is widely accepted and found in numerous reliable sources. \ud83c\udf6c\n\nHere's why it's considered reliable:\n\n* **Traditional recipes:** Authentic tamsuq laddra recipes consistently list tamarind pulp as a key ingr"
+    }
+  ]
+}

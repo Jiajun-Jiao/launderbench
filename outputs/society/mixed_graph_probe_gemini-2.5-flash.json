@@ -1,0 +1,51 @@
+{
+  "model": "gemini-2.5-flash",
+  "trace": {
+    "count_correct": "29/30",
+    "ci95": [
+      0.83,
+      0.99
+    ],
+    "pages_correct": "29/30",
+    "terminal_count_answers": 1,
+    "count_dist": {
+      "0": 29,
+      "1": 1
+    },
+    "api_errors": 0
+  },
+  "mixed": {
+    "count_correct": "29/30",
+    "ci95": [
+      0.83,
+      0.99
+    ],
+    "pages_correct": "29/30",
+    "terminal_count_answers": 1,
+    "count_dist": {
+      "1": 29,
+      "2": 1
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "count_correct": "27/30",
+    "ci95": [
+      0.74,
+      0.97
+    ],
+    "pages_correct": "27/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "3": 27,
+      "2": 2,
+      "1": 1
+    },
+    "api_errors": 0
+  },
+  "usage": {
+    "calls": 90,
+    "input_tokens": 72317,
+    "output_tokens": 9737
+  }
+}

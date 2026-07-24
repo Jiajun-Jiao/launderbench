@@ -1,0 +1,25 @@
+{
+  "config": {
+    "model": "llama3.1:8b",
+    "K": [
+      2
+    ],
+    "depth": 5,
+    "reps": 5
+  },
+  "results": {
+    "2": {
+      "by_type": {
+        "direct_observation": 1.0,
+        "testimony": 0.0,
+        "hearsay": 0.97
+      },
+      "overall": 0.817,
+      "hearsay_to_testimony": 0.0,
+      "hearsay_confusion": {
+        "hearsay": 39,
+        "direct_observation": 1
+      }
+    }
+  }
+}

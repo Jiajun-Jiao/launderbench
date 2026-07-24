@@ -1,0 +1,526 @@
+{
+ "_ack": {
+  "ts": 1783222890,
+  "agreed": true
+ },
+ "V020": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_solid_ok": "Y",
+  "q_tell": "N",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783225335
+ },
+ "V021": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_solid_ok": "Y",
+  "q_tell": "N",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783225343
+ },
+ "V016": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 3
+  },
+  "ts": 1783225346
+ },
+ "V003": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 2
+  },
+  "ts": 1783225348
+ },
+ "V040": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "q_origin_weak": "Y",
+  "telemetry": {
+   "seconds": 2
+  },
+  "ts": 1783225413
+ },
+ "V022": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783225507
+ },
+ "V017": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783225938
+ },
+ "V013": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 5
+  },
+  "ts": 1783225962
+ },
+ "V018": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 6
+  },
+  "ts": 1783226110
+ },
+ "V038": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 6
+  },
+  "ts": 1783226131
+ },
+ "V036": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 5
+  },
+  "ts": 1783226152
+ },
+ "V001": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783226167
+ },
+ "V004": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 4
+  },
+  "ts": 1783226187
+ },
+ "V011": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783226984
+ },
+ "V030": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783227005
+ },
+ "V007": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783227021
+ },
+ "V014": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "telemetry": {
+   "seconds": 2
+  },
+  "ts": 1783227053
+ },
+ "V025": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783227068
+ },
+ "V031": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 5
+  },
+  "ts": 1783227085
+ },
+ "V012": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 12
+  },
+  "ts": 1783227116
+ },
+ "V008": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783227143
+ },
+ "V002": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783227170
+ },
+ "V028": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 2
+  },
+  "ts": 1783230225
+ },
+ "V023": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230249
+ },
+ "V010": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230272
+ },
+ "V032": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230397
+ },
+ "V009": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230432
+ },
+ "V039": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230576
+ },
+ "V026": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230589
+ },
+ "V037": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 2
+  },
+  "ts": 1783230614
+ },
+ "V033": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 4
+  },
+  "ts": 1783230640
+ },
+ "V005": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230704
+ },
+ "V006": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230724
+ },
+ "V019": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230747
+ },
+ "V027": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230762
+ },
+ "V015": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230780
+ },
+ "V035": {
+  "q_solid_ok": "NA",
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "telemetry": {
+   "seconds": 4
+  },
+  "ts": 1783230804
+ },
+ "V029": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230834
+ },
+ "V034": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783230944
+ },
+ "V024": {
+  "q_single_origin": "Y",
+  "note": "",
+  "q_origin_pick": "P5",
+  "q_origin_weak": "Y",
+  "q_leak": "N",
+  "q_tell": "N",
+  "q_solid_ok": "Y",
+  "telemetry": {
+   "seconds": 1
+  },
+  "ts": 1783231008
+ }
+}

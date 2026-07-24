@@ -1,0 +1,1686 @@
+{
+ "_ack": {
+  "ts": 1783026462,
+  "agreed": true
+ },
+ "C053": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "P5 is not a valid source. AI says the the P1-P4 all comes from bad source - P5. No contradicted piece to suggest a more accurate date.",
+  "telemetry": {
+   "dwell_ms": 451678,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783029752
+ },
+ "C095": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Straight forward correct",
+  "telemetry": {
+   "dwell_ms": 175372,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783029930
+ },
+ "C039": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "p1-p4 are strong fact indicators but p5 is stated as fictional. I think that has signs of uncertainties from the AI.",
+  "telemetry": {
+   "dwell_ms": 362420,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030293
+ },
+ "C080": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "All good",
+  "telemetry": {
+   "dwell_ms": 22700,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030317
+ },
+ "C073": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Fact supported",
+  "telemetry": {
+   "dwell_ms": 24150,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030341
+ },
+ "C026": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "False and supported on all accounts",
+  "telemetry": {
+   "dwell_ms": 103412,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030451
+ },
+ "C069": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "P5 is fiction",
+  "telemetry": {
+   "dwell_ms": 46408,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030499
+ },
+ "C107": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Unsourced addition to the source.",
+  "telemetry": {
+   "dwell_ms": 70716,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030574
+ },
+ "C100": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good source and strong overall",
+  "telemetry": {
+   "dwell_ms": 31695,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030606
+ },
+ "C067": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The original source is bad",
+  "telemetry": {
+   "dwell_ms": 29984,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030636
+ },
+ "C030": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The correct date is 1989 as the actual date",
+  "telemetry": {
+   "dwell_ms": 63803,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030702
+ },
+ "C078": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong supported sources",
+  "telemetry": {
+   "dwell_ms": 61361,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030764
+ },
+ "C087": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The original source is not valid",
+  "telemetry": {
+   "dwell_ms": 66991,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030831
+ },
+ "C034": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It's found that the original source is a joke. debunked",
+  "telemetry": {
+   "dwell_ms": 55867,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030887
+ },
+ "C037": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Circular source that led to a bad source",
+  "telemetry": {
+   "dwell_ms": 35760,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783030928
+ },
+ "C050": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Circular source again",
+  "telemetry": {
+   "dwell_ms": 70623,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031009
+ },
+ "C083": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Someone else did it instead of the current person",
+  "telemetry": {
+   "dwell_ms": 74605,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031086
+ },
+ "C103": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The source is hard to verify ",
+  "telemetry": {
+   "dwell_ms": 40567,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031127
+ },
+ "C023": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Original source p5 is not valid",
+  "telemetry": {
+   "dwell_ms": 38440,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031169
+ },
+ "C010": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good source",
+  "telemetry": {
+   "dwell_ms": 23331,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031192
+ },
+ "C101": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good separate sources",
+  "telemetry": {
+   "dwell_ms": 45926,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031242
+ },
+ "C048": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The source is circular",
+  "telemetry": {
+   "dwell_ms": 68102,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031324
+ },
+ "C086": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The source is weak wiki post",
+  "telemetry": {
+   "dwell_ms": 73033,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031397
+ },
+ "C051": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong and reliable",
+  "telemetry": {
+   "dwell_ms": 65035,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031463
+ },
+ "C022": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Only weakly established as a general benchmark. Its not replicable, it was only valid that one time.",
+  "telemetry": {
+   "dwell_ms": 110352,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783031577
+ },
+ "C017": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The true authors are shown",
+  "telemetry": {
+   "dwell_ms": 38056,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031621
+ },
+ "C045": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Weak source and lack credibility",
+  "telemetry": {
+   "dwell_ms": 29409,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031651
+ },
+ "C108": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong source",
+  "telemetry": {
+   "dwell_ms": 19533,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031672
+ },
+ "C046": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Fabrication for source and has been debunked",
+  "telemetry": {
+   "dwell_ms": 117848,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031790
+ },
+ "C003": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good sources and valid",
+  "telemetry": {
+   "dwell_ms": 35120,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031826
+ },
+ "C057": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong and reliable",
+  "telemetry": {
+   "dwell_ms": 18854,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031845
+ },
+ "C112": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong and reliable",
+  "telemetry": {
+   "dwell_ms": 13725,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783031859
+ },
+ "C060": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "its said that the Playboy Bunny costume is more commonly attributed to Playboy staff (notably Ilse Taurins/Zelda Wynn Valdes)",
+  "telemetry": {
+   "dwell_ms": 101061,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783031960
+ },
+ "C049": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Weak source even though widely adopted",
+  "telemetry": {
+   "dwell_ms": 39991,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032006
+ },
+ "C109": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Chained to one unsupported guess",
+  "telemetry": {
+   "dwell_ms": 27079,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032033
+ },
+ "C089": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Source is weak",
+  "telemetry": {
+   "dwell_ms": 27757,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032063
+ },
+ "C008": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong sources",
+  "telemetry": {
+   "dwell_ms": 19418,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032083
+ },
+ "C032": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "Uncertain due to lack of strong source and often anecdotal",
+  "telemetry": {
+   "dwell_ms": 111970,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032195
+ },
+ "C040": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong sources",
+  "telemetry": {
+   "dwell_ms": 24757,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032221
+ },
+ "C066": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "good sources",
+  "telemetry": {
+   "dwell_ms": 22044,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032244
+ },
+ "C044": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source p5",
+  "telemetry": {
+   "dwell_ms": 33014,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032278
+ },
+ "C093": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "the phrase was inserted and then circulated widely despite lacking legitimate standing as a traditional common name.",
+  "telemetry": {
+   "dwell_ms": 80125,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032358
+ },
+ "C012": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "good source",
+  "telemetry": {
+   "dwell_ms": 21527,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032382
+ },
+ "C054": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "While the name did circulate in some UK wildlife news coverage, this was a consequence of the hoax rather than evidence of established usage. Been debunked already",
+  "telemetry": {
+   "dwell_ms": 54029,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032436
+ },
+ "C052": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "p5 is weak",
+  "telemetry": {
+   "dwell_ms": 19320,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032456
+ },
+ "C014": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked as fictional",
+  "telemetry": {
+   "dwell_ms": 41849,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032499
+ },
+ "C070": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "the source not solid and there are contradictories ",
+  "telemetry": {
+   "dwell_ms": 143769,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032644
+ },
+ "C061": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "P5 is satire",
+  "telemetry": {
+   "dwell_ms": 27797,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032672
+ },
+ "C075": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong fact",
+  "telemetry": {
+   "dwell_ms": 16054,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032688
+ },
+ "C031": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "strong source",
+  "telemetry": {
+   "dwell_ms": 13385,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032702
+ },
+ "C056": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "P5 is not a good source that p1-p4 refer to",
+  "telemetry": {
+   "dwell_ms": 38643,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032741
+ },
+ "C043": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Chained source and illusory",
+  "telemetry": {
+   "dwell_ms": 49042,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032790
+ },
+ "C105": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked multiple times",
+  "telemetry": {
+   "dwell_ms": 29887,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032821
+ },
+ "C009": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Contradicted to the inventors across a few years theory",
+  "telemetry": {
+   "dwell_ms": 34595,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032855
+ },
+ "C033": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good sources",
+  "telemetry": {
+   "dwell_ms": 17374,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032873
+ },
+ "C007": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "The source is pretty bad",
+  "telemetry": {
+   "dwell_ms": 43764,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032917
+ },
+ "C024": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Fictional source of p5",
+  "telemetry": {
+   "dwell_ms": 24401,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032942
+ },
+ "C025": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Not general use",
+  "telemetry": {
+   "dwell_ms": 22006,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032964
+ },
+ "C092": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "unsourced hunch is the source of truth. not good",
+  "telemetry": {
+   "dwell_ms": 31768,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032996
+ },
+ "C096": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Firm and well supported",
+  "telemetry": {
+   "dwell_ms": 26135,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033027
+ },
+ "C068": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Weak circular source",
+  "telemetry": {
+   "dwell_ms": 32292,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033060
+ },
+ "C082": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Multiple sources citing a bad figure in circular",
+  "telemetry": {
+   "dwell_ms": 66400,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783033127
+ },
+ "C041": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Satire as source",
+  "telemetry": {
+   "dwell_ms": 27626,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033156
+ },
+ "C079": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The original person said they didnt do it. must be true",
+  "telemetry": {
+   "dwell_ms": 24844,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033181
+ },
+ "C099": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "The better source was stated in the end",
+  "telemetry": {
+   "dwell_ms": 32951,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033214
+ },
+ "C036": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "corroboration",
+  "telemetry": {
+   "dwell_ms": 21720,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033236
+ },
+ "C005": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "citogenesis and debunked",
+  "telemetry": {
+   "dwell_ms": 43715,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033280
+ },
+ "C042": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong sources",
+  "telemetry": {
+   "dwell_ms": 12378,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033293
+ },
+ "C074": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Misleading and debunked",
+  "telemetry": {
+   "dwell_ms": 23244,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033316
+ },
+ "C028": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong 3 sources",
+  "telemetry": {
+   "dwell_ms": 25655,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033342
+ },
+ "C035": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "strong reference",
+  "telemetry": {
+   "dwell_ms": 18635,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033361
+ },
+ "C016": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Fabricated to be false",
+  "telemetry": {
+   "dwell_ms": 13454,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033375
+ },
+ "C098": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "strong source",
+  "telemetry": {
+   "dwell_ms": 12996,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033388
+ },
+ "C102": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong source across multiple source",
+  "telemetry": {
+   "dwell_ms": 28872,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033417
+ },
+ "C059": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong source",
+  "telemetry": {
+   "dwell_ms": 15657,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033433
+ },
+ "C106": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "the original evidence for this date is not thoroughly verified, as it traces back to a single source without additional supporting documentation.",
+  "telemetry": {
+   "dwell_ms": 54835,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033488
+ },
+ "C065": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked",
+  "telemetry": {
+   "dwell_ms": 38780,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033530
+ },
+ "C085": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "one source explicitly notes that the figure is unverified. Debunked",
+  "telemetry": {
+   "dwell_ms": 17403,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033548
+ },
+ "C104": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good source",
+  "telemetry": {
+   "dwell_ms": 28123,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033576
+ },
+ "C027": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Source was debunked",
+  "telemetry": {
+   "dwell_ms": 23666,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033600
+ },
+ "C111": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Disputed",
+  "telemetry": {
+   "dwell_ms": 17733,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033619
+ },
+ "C097": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked",
+  "telemetry": {
+   "dwell_ms": 23806,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033652
+ },
+ "C063": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "bad original source",
+  "telemetry": {
+   "dwell_ms": 26659,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033679
+ },
+ "C058": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Good fact",
+  "telemetry": {
+   "dwell_ms": 15142,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033694
+ },
+ "C019": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source",
+  "telemetry": {
+   "dwell_ms": 12826,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033709
+ },
+ "C076": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "gut feeling as source",
+  "telemetry": {
+   "dwell_ms": 25524,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033734
+ },
+ "C006": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source and no source exist that suggest the target",
+  "telemetry": {
+   "dwell_ms": 34808,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033769
+ },
+ "C110": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "bad source and downstream",
+  "telemetry": {
+   "dwell_ms": 35032,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033805
+ },
+ "C011": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "lack of independent verification from multiple sources",
+  "telemetry": {
+   "dwell_ms": 67353,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033873
+ },
+ "C001": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "bad source",
+  "telemetry": {
+   "dwell_ms": 63706,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033939
+ },
+ "C015": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "hedged",
+  "why": "One source is a little uncertain",
+  "telemetry": {
+   "dwell_ms": 142163,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034082
+ },
+ "C072": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source",
+  "telemetry": {
+   "dwell_ms": 43411,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034126
+ },
+ "C091": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source.  weakly established: 218 is an unofficial status code, not part of any official IANA/RFC registry.",
+  "telemetry": {
+   "dwell_ms": 47357,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034173
+ },
+ "C020": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Highly reliable",
+  "telemetry": {
+   "dwell_ms": 23002,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034197
+ },
+ "C004": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source",
+  "telemetry": {
+   "dwell_ms": 29023,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034227
+ },
+ "C062": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "satirical origin",
+  "telemetry": {
+   "dwell_ms": 24123,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034251
+ },
+ "C029": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong 3 sources",
+  "telemetry": {
+   "dwell_ms": 19416,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034272
+ },
+ "C077": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Bad source and unknown author",
+  "telemetry": {
+   "dwell_ms": 32919,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783035174
+ },
+ "C084": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "Strong evidence",
+  "telemetry": {
+   "dwell_ms": 24869,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034323
+ },
+ "C088": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "lack of direct empirical data from the source",
+  "telemetry": {
+   "dwell_ms": 32036,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034355
+ },
+ "C094": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "Source is unestablished and are not independent verifications",
+  "telemetry": {
+   "dwell_ms": 56565,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034412
+ },
+ "C038": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "well supported",
+  "telemetry": {
+   "dwell_ms": 15930,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034429
+ },
+ "C081": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "one source expresses uncertainty about the origin of the name and suggests that the connection is based more on clinical observation than on solid data",
+  "telemetry": {
+   "dwell_ms": 48574,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034477
+ },
+ "C013": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked",
+  "telemetry": {
+   "dwell_ms": 17597,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034511
+ },
+ "C090": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": ", the original source explicitly states that it is not real and should not be cited in legal practice",
+  "telemetry": {
+   "dwell_ms": 20873,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034532
+ },
+ "C021": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "(P5) is an anonymous forum post in which the author explicitly guesses the number 'based on vibes,",
+  "telemetry": {
+   "dwell_ms": 16374,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034551
+ },
+ "C018": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "this represents a small number of isolated, obscure citations rather than widespread or dictionary-established usage",
+  "telemetry": {
+   "dwell_ms": 25143,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034578
+ },
+ "C002": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": " all sources are all just repeating the same unverified guess",
+  "telemetry": {
+   "dwell_ms": 64996,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034647
+ },
+ "C071": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "It originates from a satirical source that explicitly states the information is fictional and meant for humor",
+  "telemetry": {
+   "dwell_ms": 22316,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034670
+ },
+ "C064": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Debunked",
+  "telemetry": {
+   "dwell_ms": 58527,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034729
+ },
+ "C055": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "Primary and watch sources support an actual introduction date of June 1989",
+  "telemetry": {
+   "dwell_ms": 16853,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034747
+ },
+ "C047": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "weak self contained source",
+  "telemetry": {
+   "dwell_ms": 327937,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783035124
+ }
+}

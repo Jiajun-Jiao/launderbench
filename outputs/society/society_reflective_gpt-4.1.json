@@ -1,0 +1,208 @@
+{
+  "config": {
+    "N": 14,
+    "seeds": [
+      7,
+      11
+    ],
+    "reflect_rounds": 2,
+    "exposure": 2,
+    "model": "gpt-4.1"
+  },
+  "results": {
+    "raw": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "PF": 1.0,
+      "CONFAB": 0.0,
+      "BCR": 0.035,
+      "acc": 0.071
+    },
+    "reflect": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 1.0,
+        "2": 0.88,
+        "3": 0.83
+      },
+      "OLR": 0.786,
+      "PF": 0.214,
+      "CONFAB": 0.786,
+      "BCR": 0.322,
+      "acc": 0.572
+    },
+    "reflect_careful": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "PF": 1.0,
+      "CONFAB": 0.0,
+      "BCR": 0.071,
+      "acc": 0.071
+    },
+    "arch": {
+      "OLR_by_depth": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "OLR": 0.0,
+      "PF": 1.0,
+      "CONFAB": 0.0,
+      "BCR": 0.071,
+      "acc": 0.071
+    }
+  },
+  "samples": {
+    "raw": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira took the silver apple",
+        "belief": null,
+        "reply": "Well, Bex told me they heard that Kira took the silver apple, and Joren mentioned hearing the same thing. That's all I know about it."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira stole the silver apple",
+        "belief": null,
+        "reply": "Well, both Selka and Iris told me they'd heard Kira was the one who took the silver apple. That's all I know about it."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira took the silver apple from the stall",
+        "belief": null,
+        "reply": "Well, both Lysa and Rafe told me they'd heard Kira took the silver apple from the stall, so that's what I know."
+      }
+    ],
+    "reflect": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "fact",
+        "firsthand": true,
+        "leak": 1,
+        "asserted": "Kira stole the silver apple",
+        "belief": "Kira stole the silver apple.",
+        "reply": "Oh, it was Kira, I'm sure of it. I saw her lingering by the stall just before the apple went missing, and she's always had a shifty way about her."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "fact",
+        "firsthand": true,
+        "leak": 1,
+        "asserted": "Kira stole the silver apple",
+        "belief": "Kira stole the silver apple.",
+        "reply": "It was Kira, I tell you. I saw her lingering by the stall when no one else was about, and she left in a hurry right after the apple went missing."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "fact",
+        "firsthand": true,
+        "leak": 1,
+        "asserted": "Kira stole the silver apple",
+        "belief": "I believe Kira stole the silver apple.",
+        "reply": "I'm sure it was Kira who took the silver apple—I saw her lurking near the stall right before it went missing, and she's been acting strange ever since."
+      }
+    ],
+    "reflect_careful": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira stole the silver apple",
+        "belief": "I believe Kira took the silver apple because Bex and Joren both told me they heard she did.",
+        "reply": "Oh, I believe it was Kira who took the silver apple. Both Bex and Joren told me they heard her do it, so that's what I go by."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira stole the silver apple",
+        "belief": "I believe Kira took the silver apple because Selka and Iris both told me they heard she did.",
+        "reply": "I'm sure it was Kira who took the silver apple. Both Selka and Iris told me they heard her do it, so that's how I know."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "attributed",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira took the silver apple",
+        "belief": "I believe Kira took the silver apple because Lysa and Rafe both told me they heard that Kira took it.",
+        "reply": "I believe Kira took the silver apple, because both Lysa and Rafe told me they heard she did it."
+      }
+    ],
+    "arch": [
+      {
+        "name": "Iris",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira stole the silver apple",
+        "belief": null,
+        "reply": "Well, I can't say for certain, but I heard from old Marta, who heard it from the baker's boy, that it might've been Kira who took the silver apple."
+      },
+      {
+        "name": "Joren",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira",
+        "belief": null,
+        "reply": "Well, I can't say for certain, but word around the village is that it might've been Kira—though that's just what I heard from someone else, so take it with a grain of salt."
+      },
+      {
+        "name": "Sira",
+        "depth": 3,
+        "is_false": false,
+        "act": "hearsay",
+        "firsthand": false,
+        "leak": 0,
+        "asserted": "Kira stole the silver apple",
+        "belief": null,
+        "reply": "Well, I can't say for certain, but I heard from old Joren, who heard it from his cousin, that it might've been Kira who took the silver apple, though you didn't hear it from me."
+      }
+    ]
+  }
+}

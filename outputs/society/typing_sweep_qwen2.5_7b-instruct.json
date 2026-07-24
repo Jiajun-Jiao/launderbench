@@ -1,0 +1,39 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "trace": {
+    "correct_n": "95/100",
+    "rate": 0.95,
+    "ci95": [
+      0.89,
+      0.98
+    ],
+    "dist": {
+      "circular_reporting": 95,
+      "independent_primary_sources": 2,
+      "unknown": 3
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "correct_n": "32/96",
+    "rate": 0.33,
+    "ci95": [
+      0.25,
+      0.43
+    ],
+    "dist": {
+      "circular_reporting": 56,
+      "independent_primary_sources": 32,
+      "single_unverified_origin": 2,
+      "unknown": 6
+    },
+    "api_errors": 0
+  },
+  "typing_discrimination": 0.28,
+  "predicted_downstream_launder_per100": 4.8,
+  "usage": {
+    "calls": 196,
+    "input_tokens": 131921,
+    "output_tokens": 33606
+  }
+}

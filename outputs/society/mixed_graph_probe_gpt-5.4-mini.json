@@ -1,0 +1,49 @@
+{
+  "model": "gpt-5.4-mini",
+  "trace": {
+    "count_correct": "16/30",
+    "ci95": [
+      0.36,
+      0.7
+    ],
+    "pages_correct": "16/30",
+    "terminal_count_answers": 14,
+    "count_dist": {
+      "0": 16,
+      "1": 14
+    },
+    "api_errors": 0
+  },
+  "mixed": {
+    "count_correct": "30/30",
+    "ci95": [
+      0.89,
+      1.0
+    ],
+    "pages_correct": "30/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "1": 30
+    },
+    "api_errors": 0
+  },
+  "solid": {
+    "count_correct": "23/30",
+    "ci95": [
+      0.59,
+      0.88
+    ],
+    "pages_correct": "23/30",
+    "terminal_count_answers": 0,
+    "count_dist": {
+      "3": 23,
+      "2": 7
+    },
+    "api_errors": 0
+  },
+  "usage": {
+    "calls": 90,
+    "input_tokens": 73912,
+    "output_tokens": 8822
+  }
+}

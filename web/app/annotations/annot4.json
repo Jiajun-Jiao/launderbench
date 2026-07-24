@@ -1,0 +1,1686 @@
+{
+ "_ack": {
+  "ts": 1783029662,
+  "agreed": true
+ },
+ "C057": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多项证据支撑，所以为既定事实",
+  "telemetry": {
+   "dwell_ms": 589110,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783031169
+ },
+ "C013": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "反驳证据都追溯到匿名编辑在 Wikipedia 上未注明来源的添加",
+  "telemetry": {
+   "dwell_ms": 157008,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783031629
+ },
+ "C006": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "P3当作既定事实重复使用",
+  "telemetry": {
+   "dwell_ms": 125687,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783031767
+ },
+ "C009": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "明确反驳并举例说明本说法实际上是一个恶作剧",
+  "telemetry": {
+   "dwell_ms": 124360,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783031896
+ },
+ "C024": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "多个来源循环引用虚构资料，且没有反向完整证据支持结论",
+  "telemetry": {
+   "dwell_ms": 264587,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032164
+ },
+ "C084": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "有逻辑漏洞指出：“需要注意的是，日记作者（Eliza Fenwick）与市政书记（Ambrose Fenwick）同姓，说明两份一手资料可能并非完全独立；而实物测年方法（地衣测年、OSL，误差±6年）只能大致指向19世纪80年代末，而不能精确到1887年。” 这说明1887不一定是一个事实，可能结果存在误差。",
+  "telemetry": {
+   "dwell_ms": 195596,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032360
+ },
+ "C065": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "后续分析进行了辟谣，而且说明了专利结构上的差别，所以是被证伪了。",
+  "telemetry": {
+   "dwell_ms": 218413,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783032580
+ },
+ "C030": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "AI反驳了观点，并提供反向证据证明：“正确的发布时间是 1989 年 6 月，这一信息有一手资料支持，并已被当前的维基百科条目确认。”",
+  "telemetry": {
+   "dwell_ms": 161052,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032742
+ },
+ "C088": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "“它最初来源于一个缺乏佐证的单一原始资料” ",
+  "telemetry": {
+   "dwell_ms": 52306,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032802
+ },
+ "C029": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "“这一说法有三种独立且互为佐证的一手主要来源支持”",
+  "telemetry": {
+   "dwell_ms": 88753,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032931
+ },
+ "C001": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "只有“匿名的 Wikipedia 编辑，在此之前没有证据表明该词存在”",
+  "telemetry": {
+   "dwell_ms": 47023,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783032984
+ },
+ "C045": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "AI首先认为这个是不实言论，并且提供了证据证明：”有书籍摘录证实，多篇讣告错误地称 Hazlehurst 创作了这首歌。“",
+  "telemetry": {
+   "dwell_ms": 167664,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033152
+ },
+ "C019": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "来源薄弱是因为”这种用法较为有限“。没有选被伪证是因为没有提供科学家不接受的例子。",
+  "telemetry": {
+   "dwell_ms": 16232,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033473
+ },
+ "C077": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有原因和证据指出是假的。",
+  "telemetry": {
+   "dwell_ms": 135450,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033451
+ },
+ "C004": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "它们全部都追溯到同一个出处证明确实为薄弱来源，但因为答案给出了P5是助产士自己的个人随想，给出了证据，所以选择被伪证。",
+  "telemetry": {
+   "dwell_ms": 190829,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783033682
+ },
+ "C005": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "已被辟谣并给出证据：这个名字是某位未知编辑在他的维基百科页面中虚构添加的第11个名字",
+  "telemetry": {
+   "dwell_ms": 9078,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058431
+ },
+ "C031": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多个证据支持",
+  "telemetry": {
+   "dwell_ms": 43546,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783033848
+ },
+ "C008": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "\"该主张得到了来自多个独立来源的有力证据支持，极大增强了其可信度。\"",
+  "telemetry": {
+   "dwell_ms": 154341,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 3
+  },
+  "ts": 1783034003
+ },
+ "C106": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "最初证据并未得到充分验证，因为它仅源自*单一来源*，缺乏额外的支持性文件。",
+  "telemetry": {
+   "dwell_ms": 40807,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034044
+ },
+ "C040": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多个证据支持",
+  "telemetry": {
+   "dwell_ms": 53101,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034099
+ },
+ "C066": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "这一说法得到了多家可信出版物的一致报道支持。",
+  "telemetry": {
+   "dwell_ms": 28836,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034129
+ },
+ "C059": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个证据同时支持",
+  "telemetry": {
+   "dwell_ms": 23899,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034153
+ },
+ "C095": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多项资料证实了这一点，且没有矛盾信息",
+  "telemetry": {
+   "dwell_ms": 33738,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034187
+ },
+ "C063": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环引用：P1→P2→P3→P4→P5，且AI说”确认所有引用最终都源自一个没有支持的原始说法。“ 但并没给出额外证据，所以只算薄弱/循环来源，不算反驳。",
+  "telemetry": {
+   "dwell_ms": 131931,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783034319
+ },
+ "C102": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个独立证据交叉认证",
+  "telemetry": {
+   "dwell_ms": 30094,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034350
+ },
+ "C070": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "没有确凿证据支持",
+  "telemetry": {
+   "dwell_ms": 63539,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034414
+ },
+ "C025": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "AI说虽然被提及，但是不是公认，而是在特定场景下会这样叫。",
+  "telemetry": {
+   "dwell_ms": 145164,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034560
+ },
+ "C050": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据有循环性",
+  "telemetry": {
+   "dwell_ms": 71866,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034642
+ },
+ "C038": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多证据支持",
+  "telemetry": {
+   "dwell_ms": 28577,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034671
+ },
+ "C037": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环来源：虽然1887这个年份在多个来源（P1、P3、P4）中反复出现，但追溯引用后发现它们最终都源自同一个出处：P5",
+  "telemetry": {
+   "dwell_ms": 133000,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783034805
+ },
+ "C072": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环引用匿名言论",
+  "telemetry": {
+   "dwell_ms": 35209,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034840
+ },
+ "C034": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "反驳并给了证据说这个是维基百科上的一个玩笑编辑，没有历史支持",
+  "telemetry": {
+   "dwell_ms": 72869,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783034914
+ },
+ "C079": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "和本人确认过，有证据",
+  "telemetry": {
+   "dwell_ms": 43409,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783034965
+ },
+ "C052": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环来源",
+  "telemetry": {
+   "dwell_ms": 158846,
+   "paused_ms": 849168,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783035973
+ },
+ "C093": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反证支撑",
+  "telemetry": {
+   "dwell_ms": 638156,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783036613
+ },
+ "C020": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多证据支持",
+  "telemetry": {
+   "dwell_ms": 226190,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783036839
+ },
+ "C075": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个证据支持：“这一说法在多种媒体中被记录”",
+  "telemetry": {
+   "dwell_ms": 79681,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783036920
+ },
+ "C074": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "回答给出正面反证：“但 Fordham IPLJ 和 Nelligan Law 等其他来源则澄清”",
+  "telemetry": {
+   "dwell_ms": 174359,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783037097
+ },
+ "C022": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有给出了反证",
+  "telemetry": {
+   "dwell_ms": 331915,
+   "paused_ms": 183961,
+   "pause_count": 2,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783037614
+ },
+ "C054": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "是谣言，而后有证据支持它是谣言",
+  "telemetry": {
+   "dwell_ms": 68292,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783037683
+ },
+ "C027": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "我认为它只是薄弱而不是被伪证是因为最后一句并不笃定：“虽然 1991 年是最常被引用和反复提及的年份，但其准确性受到质疑，应被视为证据不足、尚未被明确证实的说法。” 证据不足、尚未明确等词说明这不是已经被伪证。",
+  "telemetry": {
+   "dwell_ms": 152303,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783037837
+ },
+ "C098": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多项资料证实信息一致性",
+  "telemetry": {
+   "dwell_ms": 25529,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783037863
+ },
+ "C111": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有很强的反证",
+  "telemetry": {
+   "dwell_ms": 82891,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783037946
+ },
+ "C028": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "虽然有两个衍生总结，但总体AI还是把它作为既定事实的，并且还有其他政、新闻和物理/法证三条独立证据链均指向同一年份",
+  "telemetry": {
+   "dwell_ms": 166949,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783038114
+ },
+ "C016": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "给出反证",
+  "telemetry": {
+   "dwell_ms": 40822,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038157
+ },
+ "C055": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反证：“这一点现在也已在修正后的维基百科条目中反映”",
+  "telemetry": {
+   "dwell_ms": 64488,
+   "paused_ms": 284861,
+   "pause_count": 1,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038508
+ },
+ "C018": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据薄弱：“这只是少量孤立且不常见的引用，并不代表广泛或词典认可的用法”",
+  "telemetry": {
+   "dwell_ms": 34220,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038544
+ },
+ "C096": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多个独立证据支持",
+  "telemetry": {
+   "dwell_ms": 29532,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038574
+ },
+ "C012": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多个事实支持",
+  "telemetry": {
+   "dwell_ms": 36829,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038612
+ },
+ "C021": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环引用匿名证据",
+  "telemetry": {
+   "dwell_ms": 36534,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038649
+ },
+ "C110": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "最有一句话有反例证明",
+  "telemetry": {
+   "dwell_ms": 79438,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783038730
+ },
+ "C081": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "有source weakness：“然而，有一份资料对该名称的来源表示不确定，并指出这种联系更多是基于临床观察，而非坚实的数据。”",
+  "telemetry": {
+   "dwell_ms": 111302,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783038842
+ },
+ "C083": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有很多反证，甚至给出了实际作者",
+  "telemetry": {
+   "dwell_ms": 316733,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039159
+ },
+ "C078": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多事实支撑",
+  "telemetry": {
+   "dwell_ms": 48593,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039209
+ },
+ "C044": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "所有四个看似自信的来源（P1、P2、P3、P4）最终都可以追溯到同一个起点：P5，一个老派论坛的帖子。",
+  "telemetry": {
+   "dwell_ms": 108991,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783039319
+ },
+ "C097": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "本人亲自出场辟谣",
+  "telemetry": {
+   "dwell_ms": 47103,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039368
+ },
+ "C032": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "“创立年份被报道为1963年，但来源的可靠性不一，有些更具轶事性而非权威性。” 这句话很严谨，属于一个修正。",
+  "telemetry": {
+   "dwell_ms": 203217,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783039572
+ },
+ "C036": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环证据",
+  "telemetry": {
+   "dwell_ms": 45084,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039619
+ },
+ "C043": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "循环证据",
+  "telemetry": {
+   "dwell_ms": 50896,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783039671
+ },
+ "C010": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "“多份资料一致记录了他的出生地”",
+  "telemetry": {
+   "dwell_ms": 24174,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783039696
+ },
+ "C017": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有多家来源作为反证，并有证据说明原创",
+  "telemetry": {
+   "dwell_ms": 316265,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 4
+  },
+  "ts": 1783040013
+ },
+ "C089": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据同源",
+  "telemetry": {
+   "dwell_ms": 28557,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783040042
+ },
+ "C058": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "虽然整体AI很支持这个结论，但在最后它轻轻指出：”尽管它是在涉及恶作剧报道的背景下提及的“，这成功指出了证据薄弱点。",
+  "telemetry": {
+   "dwell_ms": 117786,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040160
+ },
+ "C094": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "成功指出”由于原始数据来源可能存在不准确性，仍需谨慎对待“",
+  "telemetry": {
+   "dwell_ms": 34072,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040195
+ },
+ "C105": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "每个点都给了强力反证",
+  "telemetry": {
+   "dwell_ms": 33074,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783040229
+ },
+ "C099": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "通篇都是强力反证",
+  "telemetry": {
+   "dwell_ms": 54468,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783040283
+ },
+ "C103": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据循环引用",
+  "telemetry": {
+   "dwell_ms": 32775,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783040317
+ },
+ "C090": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有力证据表明该学说在实际家庭法中并未被认可",
+  "telemetry": {
+   "dwell_ms": 38853,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040356
+ },
+ "C112": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "它在多个权威来源中被一致引用",
+  "telemetry": {
+   "dwell_ms": 20222,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040378
+ },
+ "C062": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反证证明，且强有力：”应被视为完全虚构“",
+  "telemetry": {
+   "dwell_ms": 60713,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040439
+ },
+ "C033": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多方资料证实",
+  "telemetry": {
+   "dwell_ms": 18758,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783040458
+ },
+ "C068": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "循环引用",
+  "telemetry": {
+   "dwell_ms": 105570,
+   "paused_ms": 14372277,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783054936
+ },
+ "C104": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多方证据支持",
+  "telemetry": {
+   "dwell_ms": 35357,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783054972
+ },
+ "C082": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "数字最终都源自同一个来源：P5",
+  "telemetry": {
+   "dwell_ms": 81735,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055054
+ },
+ "C048": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "虽然确实是有用循环证据：数字最终都源自同一个来源P5，但同时AI也有提供证据证明它是错的，所以也算被伪证。",
+  "telemetry": {
+   "dwell_ms": 62638,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783055305
+ },
+ "C056": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "确实有循环来源，但也说出了这个是伪证",
+  "telemetry": {
+   "dwell_ms": 95072,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783055236
+ },
+ "C107": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "很笃定地说已经辟谣。",
+  "telemetry": {
+   "dwell_ms": 66318,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783055377
+ },
+ "C085": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "AI说最初来源缺乏佐证，需要谨慎对待",
+  "telemetry": {
+   "dwell_ms": 48776,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783055426
+ },
+ "C053": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "虽然说了它们全部引用了同一个原始来源 P5，但整体反证清晰，结论坚定。",
+  "telemetry": {
+   "dwell_ms": 78220,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055507
+ },
+ "C011": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据最终可能仅源自一个最初的单一来源，缺乏来自多个独立来源的验证",
+  "telemetry": {
+   "dwell_ms": 43800,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783055551
+ },
+ "C035": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "AI说到这个言论在多个权威来源中都有一致引用",
+  "telemetry": {
+   "dwell_ms": 22859,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055575
+ },
+ "C015": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "weak evidence",
+  "telemetry": {
+   "dwell_ms": 52200,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783055629
+ },
+ "C049": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "缺乏经过验证的来源。该数字主要源自一个未经证实的原始来源，且没有提供支持性证据",
+  "telemetry": {
+   "dwell_ms": 27773,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055658
+ },
+ "C007": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "所有引用都追溯到一个未经证实的最初来源",
+  "telemetry": {
+   "dwell_ms": 24379,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055682
+ },
+ "C026": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "先阐述了Alan MacMasters”作为电烤面包机发明者的说法，是在维基百科上流传多年的虚构内容，然后给了反例说明真实事实。",
+  "telemetry": {
+   "dwell_ms": 64755,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055748
+ },
+ "C003": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "答案基于法律、仪器和观察三方面的独立确认，而不是单一来源或仅仅一条引用链。",
+  "telemetry": {
+   "dwell_ms": 27172,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055786
+ },
+ "C087": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "形成了一个引用链，且AI很自信的否定说，“实际上，这只是一个未经证实的猜测，被多个网站反复引用。因此，7小时的时差应被视为没有依据的推测，而不是确立的事实。”",
+  "telemetry": {
+   "dwell_ms": 91036,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 2,
+   "blur": 0
+  },
+  "ts": 1783055877
+ },
+ "C109": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "虽然提到了追溯到同一个原始来源（P5），但是通篇在摆事实讲为什么924度并没有被证实",
+  "telemetry": {
+   "dwell_ms": 88673,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783055967
+ },
+ "C046": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有给出反证：“电烤面包机是在 1890 年至 1920 年间由多位发明家和公司共同开发的。被普遍认可的贡献者包括英国 Crompton 公司推出的 Eclipse 烤面包机，以及美国通用电气（General Electric）的 Frank Shailor 工程师（其 D-12 烤面包机大约诞生于 1909 年）。”",
+  "telemetry": {
+   "dwell_ms": 76273,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783056043
+ },
+ "C080": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多方证据支持",
+  "telemetry": {
+   "dwell_ms": 21759,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783056065
+ },
+ "C067": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "它们都追溯到一个缺乏有力支持数据的最初来源",
+  "telemetry": {
+   "dwell_ms": 44781,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056111
+ },
+ "C076": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "资料全部追溯到同一个最初来源 P5",
+  "telemetry": {
+   "dwell_ms": 79290,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056192
+ },
+ "C069": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "引用都可追溯到唯一的原始来源：P5",
+  "telemetry": {
+   "dwell_ms": 36207,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056229
+ },
+ "C042": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多方资料支持",
+  "telemetry": {
+   "dwell_ms": 24813,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056255
+ },
+ "C064": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反向证据证明有人在 Dave Gorman 的维基百科词条中添加了他因受赞助而休假、进行环太平洋国家搭便车旅行的虚假说法",
+  "telemetry": {
+   "dwell_ms": 77219,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056333
+ },
+ "C061": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "虽然指向循环来源（多个网站的重复引用造成权威的假象），但AI也用事实反驳了这个观点。",
+  "telemetry": {
+   "dwell_ms": 68203,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783056402
+ },
+ "C047": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有给counter-evidence",
+  "telemetry": {
+   "dwell_ms": 224469,
+   "paused_ms": 702391,
+   "pause_count": 1,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057329
+ },
+ "C071": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反证",
+  "telemetry": {
+   "dwell_ms": 128972,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783057460
+ },
+ "C086": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "有反证：该词后续在新西兰先驱报等媒体和其他 2021 年之后的引用，全部都可以追溯到那次维基百科的添加，而不是独立或真实的早期用法",
+  "telemetry": {
+   "dwell_ms": 138063,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 2
+  },
+  "ts": 1783057611
+ },
+ "C060": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "“这形成了一个自我强化的循环\"这句话有指出循环来源",
+  "telemetry": {
+   "dwell_ms": 122994,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783057738
+ },
+ "C002": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "debunked",
+  "why": "虽然AI说最终都追溯到同一个出处应该让Q4只想循环来源，但是它也有举证说明原作者没有数据支持",
+  "telemetry": {
+   "dwell_ms": 103562,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783057842
+ },
+ "C041": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "答案虽然指出薄弱证据，但也说了证据出自虚构的讽刺文章，因此，关于其在真实监护案件中应用的说法没有根据，应予以忽略。这是被证伪的依据。",
+  "telemetry": {
+   "dwell_ms": 162387,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 1
+  },
+  "ts": 1783058005
+ },
+ "C108": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多个相互印证的独立来源，使这一说法可靠且有充分支持",
+  "telemetry": {
+   "dwell_ms": 21098,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058027
+ },
+ "C039": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "然而，资料P5则提供了一个虚构叙述，削弱了1887年这一日期的可信度，暗示该年份可能并非确凿事实。",
+  "telemetry": {
+   "dwell_ms": 23596,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058052
+ },
+ "C073": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多项来源支持",
+  "telemetry": {
+   "dwell_ms": 17895,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058078
+ },
+ "C100": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "有多项来源支持",
+  "telemetry": {
+   "dwell_ms": 15907,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058095
+ },
+ "C014": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "来源最终都源自一篇讽刺文章[P5]且给出引用P5的例子",
+  "telemetry": {
+   "dwell_ms": 62840,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058158
+ },
+ "C092": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "举了很多P5最初来源不可信的引言",
+  "telemetry": {
+   "dwell_ms": 47425,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058206
+ },
+ "C101": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多方证据支持",
+  "telemetry": {
+   "dwell_ms": 29305,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058236
+ },
+ "C023": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "证据形成了一个引用链 ",
+  "telemetry": {
+   "dwell_ms": 63285,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058300
+ },
+ "C051": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "多方证据支持",
+  "telemetry": {
+   "dwell_ms": 24578,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783058325
+ },
+ "C091": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "这一句有用证据反驳：不过，这一说法仅有较弱的依据：218 是非官方状态码，不属于任何 IANA/RFC 官方注册。",
+  "telemetry": {
+   "dwell_ms": 84664,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 1,
+   "blur": 0
+  },
+  "ts": 1783058410
+ }
+}

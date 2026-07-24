@@ -1,0 +1,103 @@
+{
+  "config": {
+    "model": "gpt-5.5",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 100,
+    "render_style": "explicit",
+    "cot": false,
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_canonical100_gpt-5.5.rows.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "api_errors": 0,
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "api_errors": 0,
+      "dist": {
+        "traced_weak_origin": 0.99,
+        "hedged": 0.01,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        },
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0
+        }
+      }
+    },
+    "solid": {
+      "launder": 0.96,
+      "launder_n": "92/96",
+      "ci95": [
+        0.9,
+        0.98
+      ],
+      "api_errors": 0,
+      "dist": {
+        "established_fact": 0.96,
+        "hedged": 0.04
+      },
+      "by_topology": {
+        "linear": {
+          "launder_n": "33/34",
+          "rate": 0.97
+        },
+        "star": {
+          "launder_n": "29/30",
+          "rate": 0.97
+        },
+        "fake_corroboration": {
+          "launder_n": "30/32",
+          "rate": 0.94
+        }
+      }
+    },
+    "discrimination": 0.96
+  },
+  "launder_examples": []
+}

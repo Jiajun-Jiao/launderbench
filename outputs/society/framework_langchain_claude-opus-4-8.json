@@ -1,0 +1,59 @@
+{
+  "config": {
+    "framework": "langchain",
+    "versions": {
+      "langchain": "1.3.11",
+      "langchain-core": "1.4.8",
+      "langchain-openai": "1.3.3",
+      "langchain-anthropic": "1.4.8"
+    },
+    "model": "claude-opus-4-8",
+    "prompt_source": "fallback:rlm/rag-prompt-verbatim",
+    "prompt_text": "You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.\nQuestion: {question} \nContext: {context} \nAnswer:",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "n_scenarios": 30,
+    "scenarios": "citation_scenarios_v2.jsonl"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "dist": {
+        "established_fact": 1.0
+      }
+    }
+  },
+  "launder_examples": []
+}

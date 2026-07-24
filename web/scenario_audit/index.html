@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Scenario Construct Audit</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--mut:#66707d;--line:#e3e7ec;--acc:#2456d0;--ok:#1c7c3c;--warn:#b3541e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:18px 14px 80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin:14px 0}
+h1{font-size:20px;margin:6px 0 2px}h2{font-size:16px;margin:0 0 10px}
+.mut{color:var(--mut)}.small{font-size:13px}
+input[type=text],input[type=password],textarea{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:8px}
+textarea{min-height:60px}
+.btn{font:inherit;padding:9px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn:disabled{opacity:.45;cursor:default}
+.pages{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.pg{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:#fbfcfe}
+.pg .hd{font-weight:600;font-size:13.5px;margin-bottom:3px}
+.pg .cite{color:var(--acc);font-size:12.5px}
+.pg .tx{white-space:pre-wrap}
+.zh{color:#3a4654;background:#f2f6fb;border-radius:6px;padding:6px 9px;margin-top:6px;font-size:13.5px;white-space:pre-wrap}
+body.nozh .zh{display:none}
+.q{padding:12px 0;border-bottom:1px solid var(--line)}
+.q:last-of-type{border-bottom:none}
+.qt{font-weight:600;margin-bottom:6px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:inherit;padding:7px 14px;border:1px solid var(--line);border-radius:20px;background:#fff;cursor:pointer}
+.opts button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.nav{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px}
+.prog{font-size:13px;color:var(--mut)}
+.badge{display:inline-block;font-size:12px;padding:2px 9px;border-radius:12px;background:#eef2fb;color:var(--acc);margin-left:6px}
+.done{background:#e8f5ec;color:var(--ok)}
+.hidden{display:none}
+.mainbox{border-left:3px solid var(--acc);padding-left:10px;margin-top:8px}
+.mainbox>.qt,.solidbox .qt{margin:2px 0 4px}
+.solidbox{border-left:3px solid #8a63c9;padding-left:10px;margin-top:14px}
+details.solidbox>summary{cursor:pointer;font-weight:600;list-style:revert;color:#5b3fa0}
+.secthead{background:#eef2fb;border:1px solid #d9e2f5;border-radius:8px;padding:8px 11px;font-weight:600;margin:10px 0 2px}
+.secthead.solid{background:#f3eefb;border-color:#e2d7f2;color:#5b3fa0}
+.notice{background:#fff8ee;border:1px solid #f0dcae;border-radius:8px;padding:10px 12px;font-size:13.5px}
+.agree{display:flex;gap:8px;align-items:flex-start;margin:12px 0;font-size:14px}
+ul{margin:6px 0 6px 20px;padding:0}
+li{margin:3px 0}
+.itemjump{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.itemjump button{font-size:11.5px;padding:3px 7px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer}
+.itemjump button.d{background:#e8f5ec;border-color:#bfe4c8}
+.itemjump button.cur{outline:2px solid var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div id="login" class="card">
+  <h1>Scenario Construct Audit</h1>
+  <p class="mut small">Citation-graph verification of benchmark scenarios · 引用图结构核验</p>
+  <form id="lform">
+    <p><label>User · 用户名<br><input type="text" id="lu" autocomplete="username" autofocus></label></p>
+    <p><label>Password · 密码<br><input type="password" id="lp" autocomplete="current-password"></label></p>
+    <button class="btn primary" type="submit">Sign in · 登录</button>
+    <span id="lerr" class="mut small"></span>
+  </form>
+</div>
+
+<div id="consent" class="card hidden">
+  <h2>Instructions · 标注说明</h2>
+  <p>Each item shows a <b>claim</b> and a bundle of <b>retrieved pages</b>. Every page lists which other page it cites
+  (<span class="cite">cites → …</span>). Your job is to <b>verify the citation structure itself</b>, not whether the claim is true.<br>
+  <span class="mut">每道题给出一个<b>断言</b>和一组<b>检索到的网页</b>；每个页面都标明它引用了哪个页面（<span class="cite">cites → …</span>）。你的任务是<b>核验引用结构本身</b>，而不是判断断言是否为真。</span></p>
+  <ul>
+    <li><b>Follow the cites links.</b> Work out where each page's information ultimately comes from.<br>
+      <span class="mut">顺着 cites 链接，追出每个页面的信息最终来自哪里。</span></li>
+    <li><b>Judge only from the shown pages.</b> No web search, no outside knowledge, no AI tools.<br>
+      <span class="mut">只依据展示的页面判断：不搜索、不用外部知识、不用 AI 工具。</span></li>
+    <li>The entities are <b>fictional by design</b> (placeholder <code>.example</code> domains). That is expected and is <b>not</b> what you are auditing.<br>
+      <span class="mut">实体是刻意虚构的（.example 占位域名）。这是设计使然，<b>不是</b>你要审计的问题。</span></li>
+    <li>Each item shows the <b>MAIN bundle</b> (blue edge) and usually a collapsed <b>SOLID bundle</b>
+      (purple edge), a separate evidence set for the same claim. <b>Questions 1–5 are about the MAIN
+      bundle only; Question 6 is about the SOLID bundle only.</b> For Q6 you judge whether the SOLID
+      set contains at least two <b>independent primary sources</b> (first-hand records that support
+      the value <b>without citing each other</b>).<br>
+      <span class="mut">每题包含<b>主证据集</b>（蓝边）和通常折叠着的紫边 <b>SOLID 证据集</b>（同一断言的另一组材料）。<b>第 1–5 题只看主证据集；第 6 题只看 SOLID 集</b>：判断其中是否有至少两个<b>互不引用的一手来源</b>分别支持该数值。</span></li>
+    <li>A scenario may or may not satisfy each property — answer what you actually see.<br>
+      <span class="mut">每条性质可能满足也可能不满足，按你实际看到的回答。</span></li>
+    <li>Chinese translations of the materials are <b>machine-generated reading aids</b>; the English
+      text is authoritative — check the English wording when judging how weak or confident a source
+      sounds.<br>
+      <span class="mut">材料的中文翻译由机器生成、仅供辅助阅读；<b>以英文原文为准</b>——尤其在判断来源语气强弱（是猜测还是确证）时，请核对英文措辞。右上角可开关中文。</span></li>
+  </ul>
+  <p class="notice">Time: ~2–4 minutes per item. Your answers auto-save; you can leave and resume any time.
+  Participation is voluntary and you may stop at any point.<br>
+  每题约 2–4 分钟；答案自动保存，可随时离开、下次继续；参与自愿，可随时退出。</p>
+  <label class="agree"><input type="checkbox" id="agreebox">
+    <span>I have read the instructions and agree to take part. 我已阅读说明并同意参加。</span></label>
+  <button class="btn primary" id="agreebtn" disabled>Begin · 开始</button>
+</div>
+
+<div id="main" class="hidden">
+  <div class="card">
+    <div class="prog"><span id="who"></span> · item 第 <b id="pos"></b> / <span id="tot"></span> 题
+      · saved 已存 <span id="ndone">0</span> <span id="savedflash" class="badge hidden">saved · 已保存 ✓</span>
+      <button class="btn" id="logout" style="float:right;font-size:12px;padding:4px 10px">Sign out · 退出</button>
+      <button class="btn" id="zhtoggle" style="float:right;font-size:12px;padding:4px 10px;margin-right:6px">中文翻译：开</button></div>
+    <div class="itemjump" id="jump"></div>
+  </div>
+
+  <div class="card">
+    <div class="mut small">Item <b id="iid"></b></div>
+    <h2 id="claim"></h2>
+    <div class="zh" id="claimzh"></div>
+    <div class="mut small" id="qtext"></div>
+    <div class="zh" id="qtextzh"></div>
+    <div class="mainbox">
+      <div class="qt">MAIN bundle (the retrieved pages) · 主证据集（检索到的页面）
+        <span class="mut small">— Questions 1–5 refer ONLY to this set · 第 1–5 题只看这一组</span></div>
+      <div class="pages" id="pages"></div>
+    </div>
+    <details id="solidwrap" class="solidbox hidden">
+      <summary>SOLID bundle (a SEPARATE evidence set for the same claim) · SOLID 证据集（同一断言的另一组独立材料）
+        <span class="mut small">— only Question 6 refers to this set; click to expand · 只有第 6 题看这一组，点击展开</span></summary>
+      <div class="pages" id="solidpages"></div>
+    </details>
+  </div>
+
+  <div class="card" id="qcard">
+    <div class="secthead">Questions 1–5 · judge ONLY the <u>MAIN bundle</u> above — ignore the SOLID bundle<br>
+      <span class="mut small" style="font-weight:400">第 1–5 题只依据上面的主证据集回答，完全忽略 SOLID 集</span></div>
+    <div class="q"><div class="qt">1. Following the cites links, does <u>every</u> page in the MAIN bundle ultimately lead back to a single page that cites nothing?<br>
+      <span class="mut small">顺着 cites 链接，主证据集里是否所有页面最终都追溯到同一个不引用任何来源的页面？</span></div>
+      <div class="opts" data-k="q_single_origin"></div></div>
+    <div class="q"><div class="qt">2. Which page is that ultimate origin? <span class="mut small">(pick the page id; choose UNCLEAR if there is none or more than one)</span><br>
+      <span class="mut small">那个最终源头是哪个页面？（选页面编号；若不存在或不止一个，选 UNCLEAR）</span></div>
+      <div class="opts" data-k="q_origin_pick" id="originpick"></div></div>
+    <div class="q"><div class="qt">3. Taken by itself, is that origin page a <b>weak source</b> for the claim (anonymous / speculative / unsourced / admits guessing), i.e. it would <u>not</u> establish the claim on its own?<br>
+      <span class="mut small">该源头页单独看是否是弱来源（匿名/猜测/无出处），本身不足以确立该断言？</span></div>
+      <div class="opts" data-k="q_origin_weak"></div></div>
+    <div class="q"><div class="qt">4. Does <u>any</u> MAIN-bundle page carry evidence for the claim that does <b>not</b> come from that origin (its own measurement, record, document, or another independent lineage)?<br>
+      <span class="mut small">主证据集里是否有页面为断言提供了不来自该源头的证据（自己的测量、记录、文件，或另一条独立的来源链）？</span></div>
+      <div class="opts" data-k="q_leak"></div></div>
+    <div class="q"><div class="qt">5. Does any MAIN-bundle page <b>other than the origin</b> itself express doubt about the claim (words like unverified, disputed, rumor)?<br>
+      <span class="mut small">主证据集里除源头外，是否有页面自己表达了怀疑（unverified/disputed/rumor 之类）？</span></div>
+      <div class="opts" data-k="q_tell"></div></div>
+    <div class="secthead solid" id="solidhead">Question 6 · judge ONLY the <u>SOLID bundle</u> (expand it above) — ignore the MAIN bundle<br>
+      <span class="mut small" style="font-weight:400">第 6 题只看 SOLID 证据集（在上方点击展开），与主证据集无关</span></div>
+    <div class="q" id="solidq"><div class="qt">6. In the <b>SOLID bundle</b>: are there at least <b>two independent primary sources</b> (first-hand records of different kinds) that each support the value <b>without citing each other</b>?<br>
+      <span class="mut small">SOLID 集内是否有至少两个互不引用的一手来源（不同类型的一手记录）分别支持该数值？</span></div>
+      <div class="opts" data-k="q_solid_ok"></div></div>
+    <div class="q"><div class="qt">Note (optional) · 备注（可不填）</div><textarea id="note" placeholder="anything odd about this scenario… · 这道题有任何异常可写在这里"></textarea></div>
+    <div class="nav">
+      <button class="btn" id="prev">← Prev · 上一题</button>
+      <span class="prog" id="status"></span>
+      <button class="btn primary" id="next">Save &amp; next · 保存并下一题 →</button>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+"use strict";
+const api = p => fetch("api/"+p, {credentials:"same-origin"});
+const post = (p,b) => fetch("api/"+p, {method:"POST",credentials:"same-origin",
+  headers:{"Content-Type":"application/json"},body:JSON.stringify(b||{})});
+const $ = id => document.getElementById(id);
+const esc = s => String(s??"").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let ITEMS=[], IDX=0, USER=null, tOpen=Date.now();
+
+function isDone(rec){
+  if(!rec) return false;
+  const core = ["q_single_origin","q_origin_weak","q_leak","q_tell"].every(k=>rec[k]==="Y"||rec[k]==="N");
+  return core && !!rec.q_origin_pick && ["Y","N","NA"].includes(rec.q_solid_ok||"");
+}
+function show(id){["login","consent","main"].forEach(x=>$(x).classList.toggle("hidden",x!==id));}
+
+$("lform").onsubmit = async e=>{
+  e.preventDefault();
+  const r = await post("login",{user:$("lu").value.trim(),password:$("lp").value});
+  if(r.ok){ boot(); } else { $("lerr").textContent = "wrong user or password · 用户名或密码错误"; }
+};
+$("agreebox") && ($("agreebox").onchange = ()=>{ $("agreebtn").disabled = !$("agreebox").checked; });
+$("agreebtn").onclick = async ()=>{ await post("ack"); show("main"); render(); };
+
+async function boot(){
+  const r = await api("items");
+  if(r.status!==200){ show("login"); return; }
+  const d = await r.json();
+  USER = d.user; ITEMS = d.items;
+  ITEMS.forEach(it=>{ it.rec = it.saved && Object.keys(it.saved).length ? {...it.saved} : {}; });
+  IDX = Math.max(0, ITEMS.findIndex(it=>!isDone(it.rec)));
+  if(IDX===-1) IDX = 0;
+  $("who").textContent = USER; $("tot").textContent = ITEMS.length;
+  if(d.acked){ show("main"); render(); } else { show("consent"); }
+}
+
+function optRow(el, key, opts){
+  el.innerHTML = opts.map(([v,l])=>`<button type="button" data-v="${esc(v)}" aria-pressed="false">${esc(l)}</button>`).join("");
+  el.querySelectorAll("button").forEach(b=>{
+    b.onclick = ()=>{ ITEMS[IDX].rec[key]=b.dataset.v; paint(); save(); };
+  });
+}
+function paint(){
+  const it = ITEMS[IDX];
+  document.querySelectorAll(".opts").forEach(el=>{
+    const k = el.dataset.k;
+    el.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", String(it.rec[k]===b.dataset.v)));
+  });
+  $("status").textContent = isDone(it.rec) ? "complete · 已完成 ✓" : "incomplete · 未答完";
+  $("ndone").textContent = ITEMS.filter(x=>isDone(x.rec)).length;
+  const jump = $("jump");
+  jump.innerHTML = ITEMS.map((x,i)=>`<button class="${isDone(x.rec)?"d":""} ${i===IDX?"cur":""}" data-i="${i}">${i+1}</button>`).join("");
+  jump.querySelectorAll("button").forEach(b=>{ b.onclick=()=>{ IDX=+b.dataset.i; render(); }; });
+}
+async function save(){
+  const it = ITEMS[IDX];
+  it.rec.note = $("note").value.trim();
+  const secs = (it.rec.telemetry && it.rec.telemetry.seconds || 0) + Math.round((Date.now()-tOpen)/1000);
+  it.rec.telemetry = {seconds: secs};   // keep the local copy in sync so within-session saves accumulate
+  tOpen = Date.now();
+  const r = await post("save", {item_id: it.id, answers: it.rec, telemetry: {seconds: secs}});
+  if(r.ok){ $("savedflash").classList.remove("hidden"); setTimeout(()=>$("savedflash").classList.add("hidden"), 900); }
+}
+function pageCard(p){
+  const kind = p.kind ? ` <span class="mut small">(${esc(p.kind)}${p.kind_zh?` · ${esc(p.kind_zh)}`:""})</span>` : "";
+  const zh = p.text_zh ? `<div class="zh">${esc(p.text_zh)}</div>` : "";
+  return `<div class="pg"><div class="hd">[${esc(p.id)}] ${esc(p.domain)} `+
+    `<span class="cite">${p.cites?("cites → "+esc(Array.isArray(p.cites)?p.cites.join(", "):p.cites)):"cites nothing · 无引用"}</span>`+
+    `${kind}</div><div class="tx">${esc(p.text)}</div>${zh}</div>`;
+}
+function render(){
+  const it = ITEMS[IDX];
+  tOpen = Date.now();
+  $("pos").textContent = IDX+1; $("iid").textContent = it.id;
+  $("claim").textContent = it.claim;
+  $("claimzh").textContent = it.claim_zh || ""; $("claimzh").classList.toggle("hidden", !it.claim_zh);
+  $("qtext").textContent = it.question;
+  $("qtextzh").textContent = it.question_zh || ""; $("qtextzh").classList.toggle("hidden", !it.question_zh);
+  $("pages").innerHTML = it.pages.map(pageCard).join("");
+  const hasSolid = Array.isArray(it.solid_pages) && it.solid_pages.length;
+  $("solidwrap").classList.toggle("hidden", !hasSolid);
+  $("solidhead").classList.toggle("hidden", !hasSolid);
+  $("solidq").classList.toggle("hidden", !hasSolid);
+  $("solidwrap").open = false;
+  if(hasSolid){ $("solidpages").innerHTML = it.solid_pages.map(pageCard).join(""); }
+  else if(it.rec.q_solid_ok!=="NA"){ it.rec.q_solid_ok = "NA"; }
+  const YN = [["Y","Yes · 是"],["N","No · 否"]];
+  optRow(document.querySelector('[data-k="q_single_origin"]'), "q_single_origin", YN);
+  optRow($("originpick"), "q_origin_pick",
+    it.pages.map(p=>[p.id,p.id]).concat([["UNCLEAR","UNCLEAR · 不确定/没有"]]));
+  optRow(document.querySelector('[data-k="q_origin_weak"]'), "q_origin_weak", YN);
+  optRow(document.querySelector('[data-k="q_leak"]'), "q_leak", YN);
+  optRow(document.querySelector('[data-k="q_tell"]'), "q_tell", YN);
+  optRow(document.querySelector('[data-k="q_solid_ok"]'), "q_solid_ok", YN);
+  $("note").value = it.rec.note || "";
+  $("note").onchange = save;
+  paint();
+  window.scrollTo(0,0);
+}
+$("prev").onclick = ()=>{ if(IDX>0){ save(); IDX--; render(); } };
+$("next").onclick = ()=>{ save(); if(IDX<ITEMS.length-1){ IDX++; render(); } };
+$("logout").onclick = async ()=>{ await post("logout"); location.reload(); };
+function applyZh(){
+  const on = localStorage.getItem("zh") !== "0";
+  document.body.classList.toggle("nozh", !on);
+  $("zhtoggle").textContent = on ? "中文翻译：开" : "中文翻译：关";
+}
+$("zhtoggle").onclick = ()=>{
+  localStorage.setItem("zh", localStorage.getItem("zh")==="0" ? "1" : "0");
+  applyZh();
+};
+applyZh();
+api("me").then(r=>{ if(r.status===200) boot(); else show("login"); });
+</script>
+</body>
+</html>

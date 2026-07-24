@@ -1,0 +1,1686 @@
+{
+ "_ack": {
+  "ts": 1783056696,
+  "agreed": true
+ },
+ "C048": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 254259,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 3
+  },
+  "ts": 1783059684
+ },
+ "C067": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 28518,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783059829
+ },
+ "C103": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 64755,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783059996
+ },
+ "C090": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 35399,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783060039
+ },
+ "C088": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 29687,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783060076
+ },
+ "C109": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 18218,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783060095
+ },
+ "C030": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 138322,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 4
+  },
+  "ts": 1783060235
+ },
+ "C051": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 132938,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783060373
+ },
+ "C007": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 17035,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783060392
+ },
+ "C070": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 853392,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 3
+  },
+  "ts": 1783061249
+ },
+ "C053": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 21351,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783061272
+ },
+ "C093": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8017,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061282
+ },
+ "C080": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7843,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061290
+ },
+ "C034": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9983,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061301
+ },
+ "C082": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11119,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061313
+ },
+ "C069": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8717,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061322
+ },
+ "C006": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 22936,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061346
+ },
+ "C084": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 69948,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 4
+  },
+  "ts": 1783061417
+ },
+ "C060": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12952,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061431
+ },
+ "C083": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 56755,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061489
+ },
+ "C081": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 176799,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783061667
+ },
+ "C106": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10701,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061680
+ },
+ "C057": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 31703,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061724
+ },
+ "C075": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 14819,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061785
+ },
+ "C061": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10835,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783061796
+ },
+ "C003": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 765072,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 2
+  },
+  "ts": 1783062563
+ },
+ "C010": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8383,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783062573
+ },
+ "C009": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12601,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783062587
+ },
+ "C104": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 31382,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783062625
+ },
+ "C022": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 84654,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783062710
+ },
+ "C050": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 26246324,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783088958
+ },
+ "C063": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10434,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783088969
+ },
+ "C002": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 28434,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089000
+ },
+ "C027": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12383,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090980
+ },
+ "C004": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 15083,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089105
+ },
+ "C016": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 31267,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089144
+ },
+ "C079": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12884,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089158
+ },
+ "C059": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 14750,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089174
+ },
+ "C095": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7384,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089183
+ },
+ "C111": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 18916,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089203
+ },
+ "C072": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9900,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089296
+ },
+ "C046": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 31467,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089332
+ },
+ "C078": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8450,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089341
+ },
+ "C017": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12285,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089354
+ },
+ "C066": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10350,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089365
+ },
+ "C089": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10352,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089377
+ },
+ "C012": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11401,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089389
+ },
+ "C100": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7750,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089398
+ },
+ "C011": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10769,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089410
+ },
+ "C036": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8101,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089420
+ },
+ "C094": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8534,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089441
+ },
+ "C014": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9786,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089452
+ },
+ "C041": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7668,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089464
+ },
+ "C098": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8718,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089474
+ },
+ "C099": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 39402,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089515
+ },
+ "C037": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13584,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089532
+ },
+ "C047": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 33951,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089568
+ },
+ "C001": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 24434,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089640
+ },
+ "C107": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12832,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089656
+ },
+ "C056": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8234,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089666
+ },
+ "C005": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7735,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089676
+ },
+ "C085": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 12634,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089690
+ },
+ "C071": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8450,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089699
+ },
+ "C054": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7350,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089707
+ },
+ "C102": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 27134,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089736
+ },
+ "C045": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9218,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089746
+ },
+ "C062": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13485,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089760
+ },
+ "C008": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10734,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089772
+ },
+ "C112": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7718,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089780
+ },
+ "C040": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13260,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089794
+ },
+ "C031": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7311,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089803
+ },
+ "C055": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 34841,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089839
+ },
+ "C025": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 10617,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089916
+ },
+ "C105": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 6336,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089924
+ },
+ "C058": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7166,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089931
+ },
+ "C110": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13768,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783089947
+ },
+ "C043": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 125966,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 1
+  },
+  "ts": 1783090073
+ },
+ "C020": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9167,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090083
+ },
+ "C049": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 59084,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090143
+ },
+ "C044": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 37400,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090196
+ },
+ "C026": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11400,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090241
+ },
+ "C092": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 28200,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090270
+ },
+ "C091": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 82816,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090374
+ },
+ "C052": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 35569,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090417
+ },
+ "C108": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8400,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090427
+ },
+ "C023": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 25634,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090454
+ },
+ "C028": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 14267,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090473
+ },
+ "C096": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11067,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090485
+ },
+ "C073": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7784,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090493
+ },
+ "C032": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13717,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090509
+ },
+ "C042": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8484,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090518
+ },
+ "C035": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7417,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090527
+ },
+ "C018": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 16950,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090546
+ },
+ "C064": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7867,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090571
+ },
+ "C033": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 6085,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090578
+ },
+ "C077": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 15984,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090595
+ },
+ "C086": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 11834,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090608
+ },
+ "C065": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 45950,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090693
+ },
+ "C087": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 18442,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090713
+ },
+ "C097": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7158,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090721
+ },
+ "C039": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 37094,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090760
+ },
+ "C076": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 14302,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090776
+ },
+ "C038": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 5634,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090990
+ },
+ "C015": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8700,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090797
+ },
+ "C019": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 9451,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090807
+ },
+ "C029": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 7667,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090816
+ },
+ "C021": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "traced_weak_origin",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 19318,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090836
+ },
+ "C074": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "Y",
+  "speech_act": "hedged",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 30783,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090872
+ },
+ "C068": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13400,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090899
+ },
+ "C013": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 25318,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090931
+ },
+ "C101": {
+  "consistent_YN": "Y",
+  "leaks_truth_YN": "N",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "established_fact",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 13235,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090946
+ },
+ "C024": {
+  "consistent_YN": "N",
+  "leaks_truth_YN": "Y",
+  "rumor_as_fact_YN": "N",
+  "speech_act": "debunked",
+  "why": "",
+  "telemetry": {
+   "dwell_ms": 8884,
+   "paused_ms": 0,
+   "pause_count": 0,
+   "paste": 0,
+   "blur": 0
+  },
+  "ts": 1783090955
+ }
+}

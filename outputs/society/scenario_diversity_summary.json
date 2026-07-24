@@ -1,0 +1,72 @@
+{
+  "scenario_file": "outputs/society/citation_scenarios_100_v2.jsonl",
+  "n_scenarios": 100,
+  "unique_entities": 100,
+  "unique_entity_head_names": 76,
+  "unique_values": 100,
+  "unique_domains": 20,
+  "unique_origin_kinds": 5,
+  "topology_counts": {
+    "fake_corroboration": 33,
+    "linear": 34,
+    "star": 33
+  },
+  "trace_pages": {
+    "n_scenarios": 100,
+    "pages_per_scenario": [
+      5
+    ],
+    "mean_content_words_per_corpus": 152.5,
+    "pairwise_unigram_jaccard": {
+      "mean": 0.0766,
+      "median": 0.0702,
+      "p95": 0.1315,
+      "max": 0.3068
+    },
+    "pairwise_bigram_jaccard": {
+      "mean": 0.0082,
+      "median": 0.0073,
+      "p95": 0.0197,
+      "max": 0.0723
+    },
+    "distinct_1gram_ratio": 0.2497,
+    "distinct_2gram_ratio": 0.7738,
+    "distinct_3gram_ratio": 0.9169,
+    "sentences_reused_across_scenarios": 1,
+    "reused_examples": {
+      "total guess though, i've got zero sources for this, don't quote me": [
+        "S020",
+        "S050"
+      ]
+    }
+  },
+  "solid_pages": {
+    "n_scenarios": 96,
+    "pages_per_scenario": [
+      5
+    ],
+    "mean_content_words_per_corpus": 275.2,
+    "pairwise_unigram_jaccard": {
+      "mean": 0.0774,
+      "median": 0.0722,
+      "p95": 0.1278,
+      "max": 0.2704
+    },
+    "pairwise_bigram_jaccard": {
+      "mean": 0.0032,
+      "median": 0.0021,
+      "p95": 0.011,
+      "max": 0.0544
+    },
+    "distinct_1gram_ratio": 0.2206,
+    "distinct_2gram_ratio": 0.7862,
+    "distinct_3gram_ratio": 0.9227,
+    "sentences_reused_across_scenarios": 1,
+    "reused_examples": {
+      "instrument calibration and raw spectra are appended": [
+        "S043",
+        "S098"
+      ]
+    }
+  }
+}

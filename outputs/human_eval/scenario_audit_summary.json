@@ -1,0 +1,110 @@
+{
+  "n_items": 40,
+  "annotator_complete_counts": {
+    "annot1": 40,
+    "annot2": 40,
+    "annot4": 40,
+    "annot5": 40
+  },
+  "primary_annotators": [
+    "annot1",
+    "annot2",
+    "annot4",
+    "annot5"
+  ],
+  "question_summary": {
+    "q_single_origin": {
+      "majority_matches_expected": 40,
+      "n": 40,
+      "unanimous": 40,
+      "fleiss_kappa": 1.0,
+      "dissent_audit_ids": [],
+      "dissent_scenario_ids": []
+    },
+    "q_origin_weak": {
+      "majority_matches_expected": 40,
+      "n": 40,
+      "unanimous": 40,
+      "fleiss_kappa": 1.0,
+      "dissent_audit_ids": [],
+      "dissent_scenario_ids": []
+    },
+    "q_leak": {
+      "majority_matches_expected": 39,
+      "n": 40,
+      "unanimous": 30,
+      "fleiss_kappa": -0.008745,
+      "dissent_audit_ids": [
+        "V003",
+        "V014",
+        "V018",
+        "V019",
+        "V025",
+        "V030",
+        "V034",
+        "V035",
+        "V037",
+        "V039"
+      ],
+      "dissent_scenario_ids": [
+        "S011",
+        "S041",
+        "S047",
+        "S048",
+        "S059",
+        "S066",
+        "S080",
+        "S085",
+        "S087",
+        "S090"
+      ]
+    },
+    "q_tell": {
+      "majority_matches_expected": 40,
+      "n": 40,
+      "unanimous": 40,
+      "fleiss_kappa": 1.0,
+      "dissent_audit_ids": [],
+      "dissent_scenario_ids": []
+    },
+    "q_solid_ok": {
+      "majority_matches_expected": 38,
+      "n": 38,
+      "unanimous": 38,
+      "fleiss_kappa": 1.0,
+      "dissent_audit_ids": [],
+      "dissent_scenario_ids": []
+    }
+  },
+  "origin_majority_matches_gold": 40,
+  "origin_unanimous": 39,
+  "origin_fleiss_kappa": -0.006289,
+  "origin_dissent_audit_ids": [
+    "V037"
+  ],
+  "full_construct_majority_pass": 39,
+  "one_rater_dissent_audit_ids": [
+    "V003",
+    "V014",
+    "V018",
+    "V019",
+    "V025",
+    "V030",
+    "V034",
+    "V035",
+    "V037",
+    "V039"
+  ],
+  "one_rater_dissent_scenario_ids": [
+    "S011",
+    "S041",
+    "S047",
+    "S048",
+    "S059",
+    "S066",
+    "S080",
+    "S085",
+    "S087",
+    "S090"
+  ]
+}
