@@ -265,6 +265,33 @@
 >   `outputs/society/graph_only_rejudge_production_<model>.{json,rows.jsonl}`, and the consolidated
 >   `outputs/society/graph_only_rewire_analysis.{json,md}`.
 >
+> - **Register x edges factorial (confessed-origin row, 2026-07-24):**
+>   `python3 experiments/graph_only_rewire.py build --register confessed` creates
+>   `outputs/society/graph_only_rewire_confessed_instrument.json`: the same 100 pairs, with only the
+>   symmetric P2/P3 root pages rewritten as self-described unverified personal notes (domain plus a
+>   constant 46-character confession appended to the body); claim sentence, remaining pages, wiring,
+>   order, and counts are unchanged and all invariants revalidate. Run all eight snapshots with
+>   `python3 experiments/graph_only_rewire.py run --instrument outputs/society/graph_only_rewire_confessed_instrument.json --models gpt-4o-mini,gpt-4.1,claude-haiku-4-5,claude-sonnet-4-6,claude-opus-4-8,gemini-2.5-flash --tasks answer,roots --confirm-api-spend I_UNDERSTAND`,
+>   then `OPENAI_API_KEY="$OPENAI_API_KEY_2" python3 experiments/graph_only_rewire.py run --instrument outputs/society/graph_only_rewire_confessed_instrument.json --models o3,gpt-5.5 --tasks answer,roots --confirm-api-spend I_UNDERSTAND`,
+>   then `python3 experiments/graph_only_rejudge.py --instrument outputs/society/graph_only_rewire_confessed_instrument.json --models <all eight> --confirm-api-spend I_UNDERSTAND`,
+>   then `python3 experiments/graph_only_register_analyze.py`.
+>
+>   Production-rubric result: every snapshot establishes 0/100 dependent and 0/100 independent
+>   confessed bundles (gpt-4o-mini 2/100 dependent; Opus 0/99 and 0/99, see refusal note), so the
+>   register channel moves all eight models while the edge channel (registry row) moves only
+>   GPT-5.5, o3, and Opus. Dependent-column register effects: mini +.97, Gemini +.98, GPT-4.1 +.89,
+>   Haiku +.68, Sonnet +.53 (exact McNemar p<=2.2e-16), Opus .00, GPT-5.5 +.04, o3 +.12.
+>   Factorized and production judges agree on 1.000 of confessed-row binary verdicts per model.
+>   Refusal disclosure: claude-opus-4-8 returns a deterministic Anthropic safety refusal on all four
+>   G001 calls (the fictional compound name collides with a real explosive); the pair is excluded
+>   pairwise and reported (`scratchpad/graph_only_confessed_opus_refusal_20260724/`), and two
+>   phantom rejudge rows that had scored the empty answers as `absent` were removed. Recorded
+>   confessed-row cost over priced models is $4.457794 at the 2026-07-07 table; gemini-2.5-flash,
+>   o3, and gpt-5.5 record token usage only. Outputs are
+>   `outputs/society/graph_only_rewire_confessed_<model>.{json,rows.jsonl}`,
+>   `outputs/society/graph_only_rejudge_production_confessed_<model>.{json,rows.jsonl}`, and the
+>   consolidated `outputs/society/graph_only_register_analysis.{json,md}`.
+>
 > The section below maps the older v1 (`results_qwen7b.md`) results.
 
 Maps every result in `results_qwen7b.md` and the paper draft (`enpc_paper_draft_v0.md`, Section 20) to the

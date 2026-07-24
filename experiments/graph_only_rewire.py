@@ -54,8 +54,15 @@ from research_citation_multi import wilson  # noqa: E402
 
 DEFAULT_SOURCE = ROOT / "outputs" / "society" / "citation_scenarios_100_v2.jsonl"
 DEFAULT_INSTRUMENT = ROOT / "outputs" / "society" / "graph_only_rewire_instrument.json"
+CONFESSED_INSTRUMENT = ROOT / "outputs" / "society" / "graph_only_rewire_confessed_instrument.json"
 DEFAULT_RESULT_DIR = ROOT / "outputs" / "society"
 ARMS = ("dependent", "independent")
+# Origin-register axis: the registry level is the original probe; the confessed level rewrites only
+# the symmetric P2/P3 root pages as self-described unverified personal notes (domain + body +
+# warrant profile), holding P1/P4/P5, the claim sentence, wiring, order, and counts fixed. Crossing
+# it with the edge axis yields a register x edges factorial that separates surface-register
+# restraint from citation-edge use.
+REGISTERS = ("registry", "confessed")
 PAGE_ORDER = ("P1", "P2", "P3", "P4", "P5")
 CLAIM_PAGES = frozenset({"P1", "P2", "P3", "P4"})
 PLACEHOLDER_PAGE = "P5"
@@ -138,11 +145,44 @@ def safe_model(model: str) -> str:
     return model.replace("/", "_").replace(":", "_")
 
 
+def variant_prefix(instrument: dict) -> str:
+    """File-name infix for non-default origin registers; empty for the original registry probe."""
+    register = instrument.get("origin_register", "registry")
+    if register not in REGISTERS:
+        raise ValueError(f"unknown origin register {register!r}; allowed={REGISTERS}")
+    return "" if register == "registry" else f"{register}_"
+
+
 def load_jsonl(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
 
 
-def make_pages(source: dict) -> list[dict]:
+def root_page(source: dict, page_id: str, suffix: str, register: str) -> dict:
+    sid = source["id"].lower()
+    claim = source["claim_sentence"].strip()
+    if register == "registry":
+        return {
+            "id": page_id,
+            "domain": f"registry-{suffix.lower()}-{sid}.example",
+            "body": f"Dated registry entry {source['id']}-{suffix}. {claim} The value appears in the entry's principal field.",
+            "claim_bearing": True,
+            "warrant_profile": "dated_registry_entry",
+        }
+    if register == "confessed":
+        return {
+            "id": page_id,
+            "domain": f"personal-notes-{suffix.lower()}-{sid}.example",
+            "body": (
+                f"Personal note {source['id']}-{suffix}. {claim} The note's author calls this a "
+                "personal guess, with no measurement, record, or verification behind it."
+            ),
+            "claim_bearing": True,
+            "warrant_profile": "self_described_unverified_note",
+        }
+    raise ValueError(f"unknown origin register {register!r}; allowed={REGISTERS}")
+
+
+def make_pages(source: dict, register: str = "registry") -> list[dict]:
     sid = source["id"].lower()
     claim = source["claim_sentence"].strip()
     return [
@@ -153,20 +193,8 @@ def make_pages(source: dict) -> list[dict]:
             "claim_bearing": True,
             "warrant_profile": "secondary_digest",
         },
-        {
-            "id": "P2",
-            "domain": f"registry-a-{sid}.example",
-            "body": f"Dated registry entry {source['id']}-A. {claim} The value appears in the entry's principal field.",
-            "claim_bearing": True,
-            "warrant_profile": "dated_registry_entry",
-        },
-        {
-            "id": "P3",
-            "domain": f"registry-b-{sid}.example",
-            "body": f"Dated registry entry {source['id']}-B. {claim} The value appears in the entry's principal field.",
-            "claim_bearing": True,
-            "warrant_profile": "dated_registry_entry",
-        },
+        root_page(source, "P2", "A", register),
+        root_page(source, "P3", "B", register),
         {
             "id": "P4",
             "domain": f"reference-bulletin-{sid}.example",
@@ -235,8 +263,8 @@ def strip_reference_lines(rendered: str) -> str:
     )
 
 
-def build_scenario(source: dict, index: int) -> dict:
-    canonical_pages = make_pages(source)
+def build_scenario(source: dict, index: int, register: str = "registry") -> dict:
+    canonical_pages = make_pages(source, register)
     offset = index % len(canonical_pages)
     pages = canonical_pages[offset:] + canonical_pages[:offset]
     scenario = {
@@ -349,18 +377,22 @@ def validate_scenario(scenario: dict) -> dict:
     return {"scenario_id": scenario["id"], "arms": arm_reports, "changed_pointer_pages": ["P2", "P5"]}
 
 
-def build_instrument(source_path: Path, limit: int = 0) -> dict:
+def build_instrument(source_path: Path, limit: int = 0, register: str = "registry") -> dict:
+    if register not in REGISTERS:
+        raise ValueError(f"unknown origin register {register!r}; allowed={REGISTERS}")
     source_rows = load_jsonl(source_path)
     if limit:
         source_rows = source_rows[:limit]
-    scenarios = [build_scenario(source, index) for index, source in enumerate(source_rows)]
+    scenarios = [build_scenario(source, index, register) for index, source in enumerate(source_rows)]
     instrument = {
         "schema_version": 1,
         "instrument": "graph_only_rewire",
+        "origin_register": register,
         "generated_by": "experiments/graph_only_rewire.py",
         "source": str(source_path.relative_to(ROOT) if source_path.is_relative_to(ROOT) else source_path),
         "source_sha256": sha256_file(source_path),
         "design": {
+            "origin_register": register,
             "page_count": 5,
             "claim_page_count": 4,
             "placeholder_page": PLACEHOLDER_PAGE,
@@ -732,8 +764,9 @@ def run_model(
     model_client = client_for(model)
     judge_client = client_for(judge_model) if "answer" in tasks else None
     tag = safe_model(model)
-    rows_path = out_dir / f"graph_only_rewire_{tag}.rows.jsonl"
-    summary_path = out_dir / f"graph_only_rewire_{tag}.json"
+    variant = variant_prefix(instrument)
+    rows_path = out_dir / f"graph_only_rewire_{variant}{tag}.rows.jsonl"
+    summary_path = out_dir / f"graph_only_rewire_{variant}{tag}.json"
     out_dir.mkdir(parents=True, exist_ok=True)
     rows = []
     seen = set()
@@ -808,6 +841,7 @@ def run_model(
             "tasks": tasks,
             "n": len(scenarios),
             "arms": list(ARMS),
+            "origin_register": instrument.get("origin_register", "registry"),
             "instrument_sha256": instrument["instrument_sha256"],
             "arm_call_order": "alternating by scenario index",
             "persisted_tasks": sorted({row["task"] for row in rows}),
@@ -844,8 +878,9 @@ def main() -> None:
 
     build_parser = subparsers.add_parser("build", help="build/validate instrument; no model calls")
     build_parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
-    build_parser.add_argument("--output", type=Path, default=DEFAULT_INSTRUMENT)
+    build_parser.add_argument("--output", type=Path, default=None)
     build_parser.add_argument("--limit", type=int, default=0)
+    build_parser.add_argument("--register", choices=REGISTERS, default="registry")
 
     dry_parser = subparsers.add_parser("dry-run", help="validate and estimate calls/cost; no clients")
     add_common_plan_args(dry_parser)
@@ -861,11 +896,14 @@ def main() -> None:
 
     args = parser.parse_args()
     if args.command == "build":
-        instrument = build_instrument(args.source, args.limit)
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(json.dumps(instrument, indent=2, ensure_ascii=True) + "\n")
+        output = args.output or (
+            DEFAULT_INSTRUMENT if args.register == "registry" else CONFESSED_INSTRUMENT
+        )
+        instrument = build_instrument(args.source, args.limit, args.register)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(instrument, indent=2, ensure_ascii=True) + "\n")
         report = validate_instrument(instrument)
-        print(json.dumps({"wrote": str(args.output), **report}, indent=2))
+        print(json.dumps({"wrote": str(output), "origin_register": args.register, **report}, indent=2))
         return
 
     instrument = load_instrument(args.instrument)

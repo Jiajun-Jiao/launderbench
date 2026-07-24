@@ -39,6 +39,7 @@ from graph_only_rewire import (  # noqa: E402
     safe_model,
     sha256_value,
     usage,
+    variant_prefix,
 )
 from research_citation_multi import wilson  # noqa: E402
 from society_reflective import client_for  # noqa: E402
@@ -144,9 +145,10 @@ def run_model(
     output_dir: Path,
 ) -> dict:
     tag = safe_model(model)
-    source_path = input_dir / f"graph_only_rewire_{tag}.rows.jsonl"
-    rows_path = output_dir / f"graph_only_rejudge_production_{tag}.rows.jsonl"
-    summary_path = output_dir / f"graph_only_rejudge_production_{tag}.json"
+    variant = variant_prefix(instrument)
+    source_path = input_dir / f"graph_only_rewire_{variant}{tag}.rows.jsonl"
+    rows_path = output_dir / f"graph_only_rejudge_production_{variant}{tag}.rows.jsonl"
+    summary_path = output_dir / f"graph_only_rejudge_production_{variant}{tag}.json"
     source_rows = [row for row in read_jsonl(source_path) if row.get("task") == "answer"]
     if len(source_rows) != 200:
         raise ValueError(f"{source_path} has {len(source_rows)} answer rows; expected 200")
@@ -208,6 +210,7 @@ def run_model(
             "model": model,
             "judge_model": judge_model,
             "judge_rubric": "research_citation_multi.production_v1",
+            "origin_register": instrument.get("origin_register", "registry"),
             "instrument_sha256": instrument["instrument_sha256"],
             "source_rows": str(source_path),
             "source_answer_rows": len(source_rows),

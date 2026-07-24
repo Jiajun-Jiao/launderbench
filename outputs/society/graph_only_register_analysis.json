@@ -1,0 +1,1729 @@
+{
+  "schema_version": 1,
+  "design": "origin register (registry vs confessed P2/P3) x citation edges (dependent vs independent)",
+  "instrument_sha256": {
+    "registry": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+    "confessed": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c"
+  },
+  "models": {
+    "gpt-4o-mini": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "99/100",
+            "established_rate": 0.99,
+            "ci95": [
+              0.95,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 99,
+              "hedged": 1
+            }
+          },
+          "independent": {
+            "established_n": "99/100",
+            "established_rate": 0.99,
+            "ci95": [
+              0.95,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 99,
+              "hedged": 1
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 198,
+          "total_n": 200,
+          "agreement_rate": 0.99
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          },
+          "independent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4o-mini.rows.jsonl": "178fe7dfac9ecf97122c9d41b897c71217e5e3661f09277fa026da2fc6fd2e3b",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4o-mini.rows.jsonl": "8e5cb33dd95bfed4d895c082640cb6a85732e372b043e04a3254ed9490c2d50a"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.082453,
+          "production_rejudge": 0.023651,
+          "combined": 0.106104
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 208464,
+              "output_tokens": 28551
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 67795,
+              "output_tokens": 4334
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 52735,
+            "output_tokens": 1598
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "2/100",
+            "established_rate": 0.02,
+            "ci95": [
+              0.01,
+              0.07
+            ],
+            "production_label_dist": {
+              "hedged": 92,
+              "established_fact": 2,
+              "traced_weak_origin": 6
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "hedged": 95,
+              "traced_weak_origin": 5
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": -0.02,
+          "paired_bootstrap_ci95": [
+            -0.05,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 2,
+          "mcnemar_exact_two_sided_p": 0.5
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          },
+          "independent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-4o-mini.rows.jsonl": "6961adca45243ceffae955569e67de123f62a1be1076326d4f2866357ae28c5a",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-4o-mini.rows.jsonl": "902949df66812aa016eb6e098d1e2f1c44012023d0a06faea3c4f7615a4bcd3b"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.086009,
+          "production_rejudge": 0.02411,
+          "combined": 0.110119
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 217264,
+              "output_tokens": 30923
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 69596,
+              "output_tokens": 4392
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 54536,
+            "output_tokens": 1435
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.97,
+          "paired_bootstrap_ci95": [
+            0.93,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 97,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.262177448353619e-29
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.99,
+          "paired_bootstrap_ci95": [
+            0.97,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 99,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 3.1554436208840472e-30
+        }
+      }
+    },
+    "gemini-2.5-flash": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "98/100",
+            "established_rate": 0.98,
+            "ci95": [
+              0.93,
+              0.99
+            ],
+            "production_label_dist": {
+              "established_fact": 98,
+              "hedged": 1,
+              "traced_weak_origin": 1
+            }
+          },
+          "independent": {
+            "established_n": "98/100",
+            "established_rate": 0.98,
+            "ci95": [
+              0.93,
+              0.99
+            ],
+            "production_label_dist": {
+              "established_fact": 98,
+              "hedged": 2
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            -0.03,
+            0.03
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 1,
+          "discordant_negative_only": 1,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 195,
+          "total_n": 200,
+          "agreement_rate": 0.975
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 84
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 97
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gemini-2.5-flash.rows.jsonl": "4288cb46eb0c23f98ee4d18d7fa2048e58965b7e47624520b6a3134584f7fe23",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gemini-2.5-flash.rows.jsonl": "ae23bfea9bcfa7fad3fdaa5d5e586f36a88e4d8bf1794e198ac1b334ca00954c"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.02586,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 205624,
+              "output_tokens": 40969
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 73314,
+              "output_tokens": 4216
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 58254,
+            "output_tokens": 1599
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "hedged": 78,
+              "traced_weak_origin": 22
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "hedged": 68,
+              "traced_weak_origin": 32
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 90
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 95
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gemini-2.5-flash.rows.jsonl": "46d0e935fdafe94d5727e67b26d71e4dafd1807443dcf3c322c7e66b37447570",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gemini-2.5-flash.rows.jsonl": "b0a34a8dda533afb89f7c1a950e631393752f0267aad2302e3f37563116dc66f"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.024206,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 215224,
+              "output_tokens": 35906
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 69328,
+              "output_tokens": 4372
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 54268,
+            "output_tokens": 1562
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.98,
+          "paired_bootstrap_ci95": [
+            0.95,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 98,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 6.310887241768095e-30
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.98,
+          "paired_bootstrap_ci95": [
+            0.95,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 98,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 6.310887241768095e-30
+        }
+      }
+    },
+    "claude-haiku-4-5": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "68/100",
+            "established_rate": 0.68,
+            "ci95": [
+              0.58,
+              0.76
+            ],
+            "production_label_dist": {
+              "established_fact": 68,
+              "hedged": 16,
+              "traced_weak_origin": 16
+            }
+          },
+          "independent": {
+            "established_n": "75/100",
+            "established_rate": 0.75,
+            "ci95": [
+              0.66,
+              0.82
+            ],
+            "production_label_dist": {
+              "established_fact": 75,
+              "hedged": 23,
+              "traced_weak_origin": 2
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.07,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.14
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 10,
+          "discordant_negative_only": 3,
+          "mcnemar_exact_two_sided_p": 0.09228515625
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 193,
+          "total_n": 200,
+          "agreement_rate": 0.965
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 89,
+            "joint_root_ids_and_count_n": 17
+          },
+          "independent": {
+            "exact_root_id_set_n": 88,
+            "joint_root_ids_and_count_n": 88
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_claude-haiku-4-5.rows.jsonl": "6c0e0a6eb178d7938b4346a004a549db4dfc1a06cef18a6079f1db94ba51f519",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-haiku-4-5.rows.jsonl": "96e7f209eabf350e3a8d13393e14d98eee423948500aa8db9b403f5b22a30789"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.573695,
+          "production_rejudge": 0.028514,
+          "combined": 0.602209
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 254050,
+              "output_tokens": 56187
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 79958,
+              "output_tokens": 4204
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 64898,
+            "output_tokens": 1597
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 100
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 93,
+              "hedged": 7
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 81,
+            "joint_root_ids_and_count_n": 5
+          },
+          "independent": {
+            "exact_root_id_set_n": 52,
+            "joint_root_ids_and_count_n": 52
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_claude-haiku-4-5.rows.jsonl": "1c2d37c799ddc61a6a805d270636b166447039e8dd31aaf736f254341bbc8f86",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_claude-haiku-4-5.rows.jsonl": "6afc942cbf556605039f74f5de61b0619a49d1855f336799e53f7d8c7f67d54c"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.619059,
+          "production_rejudge": 0.030199,
+          "combined": 0.649258
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 401,
+              "input_tokens": 263561,
+              "output_tokens": 63144
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 82642,
+              "output_tokens": 4201
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 67582,
+            "output_tokens": 1979
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.68,
+          "paired_bootstrap_ci95": [
+            0.59,
+            0.77
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 68,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 6.776263578034403e-21
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.75,
+          "paired_bootstrap_ci95": [
+            0.66,
+            0.83
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 75,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 5.293955920339377e-23
+        }
+      }
+    },
+    "claude-sonnet-4-6": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "53/100",
+            "established_rate": 0.53,
+            "ci95": [
+              0.43,
+              0.62
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 33,
+              "established_fact": 53,
+              "hedged": 14
+            }
+          },
+          "independent": {
+            "established_n": "62/100",
+            "established_rate": 0.62,
+            "ci95": [
+              0.52,
+              0.71
+            ],
+            "production_label_dist": {
+              "established_fact": 62,
+              "hedged": 22,
+              "traced_weak_origin": 16
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.09,
+          "paired_bootstrap_ci95": [
+            0.01,
+            0.17
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 13,
+          "discordant_negative_only": 4,
+          "mcnemar_exact_two_sided_p": 0.049041748046875
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 190,
+          "total_n": 200,
+          "agreement_rate": 0.95
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 69
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_claude-sonnet-4-6.rows.jsonl": "0e9f431fb4db87c3138236129b05c4ea3403a892b71e5b9e9a0a833d47ef4097",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-sonnet-4-6.rows.jsonl": "bbdfb0e155b96688a29411dd299a28481cc2260797f0ba78ca70af813a67802f"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 2.256074,
+          "production_rejudge": 0.030797,
+          "combined": 2.286871
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 405,
+              "input_tokens": 257687,
+              "output_tokens": 96142
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 85404,
+              "output_tokens": 4201
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 70344,
+            "output_tokens": 1662
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 100
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 94,
+              "hedged": 6
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 77
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_claude-sonnet-4-6.rows.jsonl": "1644d384f473221297798c217bd552d3bf02814072a6dfe87f1e1697b64a9872",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_claude-sonnet-4-6.rows.jsonl": "e83a2de17b53d427aa0cc9da6276678b659eed54962be92b695edaa6f7a464e5"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 2.785125,
+          "production_rejudge": 0.03102,
+          "combined": 2.816145
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 407,
+              "input_tokens": 267983,
+              "output_tokens": 129372
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 84683,
+              "output_tokens": 4202
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 69623,
+            "output_tokens": 1982
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.53,
+          "paired_bootstrap_ci95": [
+            0.43,
+            0.63
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 53,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 2.220446049250313e-16
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.62,
+          "paired_bootstrap_ci95": [
+            0.52,
+            0.71
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 62,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 4.336808689942018e-19
+        }
+      }
+    },
+    "gpt-4.1": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "89/100",
+            "established_rate": 0.89,
+            "ci95": [
+              0.81,
+              0.94
+            ],
+            "production_label_dist": {
+              "established_fact": 89,
+              "traced_weak_origin": 10,
+              "hedged": 1
+            }
+          },
+          "independent": {
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 100
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.11,
+          "paired_bootstrap_ci95": [
+            0.05,
+            0.17
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 11,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 0.0009765625
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 189,
+          "total_n": 200,
+          "agreement_rate": 0.945
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 91,
+            "joint_root_ids_and_count_n": 91
+          },
+          "independent": {
+            "exact_root_id_set_n": 99,
+            "joint_root_ids_and_count_n": 99
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4.1.rows.jsonl": "c6c5d4632cc2a49ffaf386b506246a8b8b96d1652d54078b7b938bda0190631a",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4.1.rows.jsonl": "aa1bff4dd4e117b4e6ca6129757f114b6b5a9c76f7e03b33be8094829c9788a0"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.740451,
+          "production_rejudge": 0.025912,
+          "combined": 0.766363
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 208464,
+              "output_tokens": 35932
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 73363,
+              "output_tokens": 4201
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 58303,
+            "output_tokens": 1619
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 97,
+              "hedged": 3
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 98,
+              "hedged": 2
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 83,
+            "joint_root_ids_and_count_n": 83
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-4.1.rows.jsonl": "19d84589ce81eafe1aac85f39886337d7edec31180b2d2f57a98376b6f7d4f63",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-4.1.rows.jsonl": "4c1ec3dbda0b4e82860c77e9b1dd7bdeea6063aa1f466684237d1b48605dec03"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.804874,
+          "production_rejudge": 0.028343,
+          "combined": 0.833217
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 217264,
+              "output_tokens": 41550
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 77978,
+              "output_tokens": 4222
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 62918,
+            "output_tokens": 1985
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.89,
+          "paired_bootstrap_ci95": [
+            0.83,
+            0.95
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 89,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 3.2311742677852644e-27
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 100,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.5777218104420236e-30
+        }
+      }
+    },
+    "claude-opus-4-8": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 100
+            }
+          },
+          "independent": {
+            "established_n": "50/100",
+            "established_rate": 0.5,
+            "ci95": [
+              0.4,
+              0.6
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 25,
+              "established_fact": 50,
+              "hedged": 25
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.5,
+          "paired_bootstrap_ci95": [
+            0.4,
+            0.6
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 50,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.7763568394002505e-15
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 181,
+          "total_n": 200,
+          "agreement_rate": 0.905
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 88
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_claude-opus-4-8.rows.jsonl": "8567a7e72de8a5d465514e394e4eb240df2fa61957492778d71983a791d3d75b",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_claude-opus-4-8.rows.jsonl": "49416d94ed023fe9b364b16aa318a4f781dcf952ef2cab0203768594607339a9"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 3.687853,
+          "production_rejudge": 0.031436,
+          "combined": 3.719289
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 347968,
+              "output_tokens": 76270
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 86350,
+              "output_tokens": 4202
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 71290,
+            "output_tokens": 1825
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/99",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 99
+            }
+          },
+          "independent": {
+            "established_n": "0/99",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 96,
+              "hedged": 3
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 99,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 198,
+          "total_n": 198,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 99,
+            "joint_root_ids_and_count_n": 78
+          },
+          "independent": {
+            "exact_root_id_set_n": 99,
+            "joint_root_ids_and_count_n": 99
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 198,
+          "production_rows": 198,
+          "refusal_rows": 4,
+          "refused_scenario_ids": [
+            "G001"
+          ],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_claude-opus-4-8.rows.jsonl": "46b14f7826b91c3075331a94b3f45dddd14580756d81c6f653d67e3b629d20ef",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_claude-opus-4-8.rows.jsonl": "ca0fc2509a2b8930acf257418b4ea85d0983cc5ca1d24bbfc5fbeb240fd238c4"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.01724,
+          "production_rejudge": 0.031815,
+          "combined": 0.049055
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 4,
+              "input_tokens": 3348,
+              "output_tokens": 20
+            },
+            "judge": {
+              "calls": 0,
+              "input_tokens": 0,
+              "output_tokens": 0
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 71597,
+            "output_tokens": 1985
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 99,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "independent": {
+          "n_pairs": 99,
+          "point": 0.505051,
+          "paired_bootstrap_ci95": [
+            0.40404,
+            0.606061
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 50,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.7763568394002505e-15
+        }
+      }
+    },
+    "o3": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "12/100",
+            "established_rate": 0.12,
+            "ci95": [
+              0.07,
+              0.2
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 84,
+              "established_fact": 12,
+              "hedged": 4
+            }
+          },
+          "independent": {
+            "established_n": "71/100",
+            "established_rate": 0.71,
+            "ci95": [
+              0.61,
+              0.79
+            ],
+            "production_label_dist": {
+              "established_fact": 71,
+              "hedged": 24,
+              "traced_weak_origin": 5
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.59,
+          "paired_bootstrap_ci95": [
+            0.49,
+            0.68
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 59,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 3.469446951953614e-18
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 190,
+          "total_n": 200,
+          "agreement_rate": 0.95
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_o3.rows.jsonl": "f2810f479a1f1c05e12940e6d7575d76959d01a0af34fef65ab6614978b0575c",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_o3.rows.jsonl": "4a1371f29c92649ce7e130f7ff22012aa115b1c336cebf9d5c5453c2bcede7ae"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.025724,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 207664,
+              "output_tokens": 134722
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 72370,
+              "output_tokens": 4203
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 57310,
+            "output_tokens": 1750
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "hedged": 5,
+              "traced_weak_origin": 95
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 85,
+              "hedged": 15
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_o3.rows.jsonl": "10641c6cd49a30c4fcf5f268e93162327b04df39ed518fe0116b503bbbcbd86c",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_o3.rows.jsonl": "c975d21d44d4dedd4d8f62535037a5f3afc469b0d88c957ddcfee6684d8cbcac"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.026042,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 216464,
+              "output_tokens": 135981
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 72406,
+              "output_tokens": 4222
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 57346,
+            "output_tokens": 1940
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.12,
+          "paired_bootstrap_ci95": [
+            0.06,
+            0.19
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 12,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 0.00048828125
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.71,
+          "paired_bootstrap_ci95": [
+            0.62,
+            0.8
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 71,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 8.470329472543003e-22
+        }
+      }
+    },
+    "gpt-5.5": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "4/100",
+            "established_rate": 0.04,
+            "ci95": [
+              0.02,
+              0.1
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 90,
+              "hedged": 6,
+              "established_fact": 4
+            }
+          },
+          "independent": {
+            "established_n": "93/100",
+            "established_rate": 0.93,
+            "ci95": [
+              0.86,
+              0.97
+            ],
+            "production_label_dist": {
+              "established_fact": 93,
+              "hedged": 6,
+              "traced_weak_origin": 1
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.89,
+          "paired_bootstrap_ci95": [
+            0.83,
+            0.95
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 89,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 3.2311742677852644e-27
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 189,
+          "total_n": 200,
+          "agreement_rate": 0.945
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-5.5.rows.jsonl": "6dd390ea6f8d741bc53ac575f7711caf47a2a8dbbaaf1ab7691332ddc734d542",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-5.5.rows.jsonl": "86195bcb04d47840c0965067f763b33cc0d0f1b38ad5d25138336ea527529782"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.025992,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 207864,
+              "output_tokens": 94116
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 72961,
+              "output_tokens": 4200
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 57901,
+            "output_tokens": 1770
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 97,
+              "hedged": 3
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 92,
+              "hedged": 8
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-5.5.rows.jsonl": "083c11203f1f3e9504e0878e3c9c2bae457b6644b4919f1bd8860dd4b1f7435e",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-5.5.rows.jsonl": "d7a8d4f27644447c1fb09f38c1d82aed6a3faf30ef21a32018ca440c034b4ea2"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.025563,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 216664,
+              "output_tokens": 91493
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 71100,
+              "output_tokens": 4250
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 56040,
+            "output_tokens": 1967
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.04,
+          "paired_bootstrap_ci95": [
+            0.01,
+            0.08
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 4,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 0.125
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.93,
+          "paired_bootstrap_ci95": [
+            0.88,
+            0.98
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 93,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 2.0194839173657902e-28
+        }
+      }
+    }
+  },
+  "confessed_recorded_cost_usd_priced_models": 4.457794,
+  "unpriced_models": [
+    "gemini-2.5-flash",
+    "gpt-5.5",
+    "o3"
+  ]
+}
