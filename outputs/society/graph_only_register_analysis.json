@@ -110,8 +110,8 @@
             ],
             "production_label_dist": {
               "hedged": 92,
-              "established_fact": 2,
-              "traced_weak_origin": 6
+              "traced_weak_origin": 6,
+              "established_fact": 2
             }
           },
           "independent": {
@@ -232,8 +232,8 @@
             ],
             "production_label_dist": {
               "established_fact": 98,
-              "hedged": 1,
-              "traced_weak_origin": 1
+              "traced_weak_origin": 1,
+              "hedged": 1
             }
           },
           "independent": {
@@ -244,8 +244,8 @@
               0.99
             ],
             "production_label_dist": {
-              "established_fact": 98,
-              "hedged": 2
+              "hedged": 2,
+              "established_fact": 98
             }
           }
         },
@@ -458,8 +458,8 @@
               0.82
             ],
             "production_label_dist": {
-              "established_fact": 75,
               "hedged": 23,
+              "established_fact": 75,
               "traced_weak_origin": 2
             }
           }
@@ -659,9 +659,9 @@
               0.62
             ],
             "production_label_dist": {
+              "hedged": 14,
               "traced_weak_origin": 33,
-              "established_fact": 53,
-              "hedged": 14
+              "established_fact": 53
             }
           },
           "independent": {
@@ -672,8 +672,8 @@
               0.71
             ],
             "production_label_dist": {
-              "established_fact": 62,
               "hedged": 22,
+              "established_fact": 62,
               "traced_weak_origin": 16
             }
           }
@@ -1097,9 +1097,9 @@
               0.6
             ],
             "production_label_dist": {
-              "traced_weak_origin": 25,
+              "hedged": 25,
               "established_fact": 50,
-              "hedged": 25
+              "traced_weak_origin": 25
             }
           }
         },
@@ -1300,8 +1300,8 @@
               0.2
             ],
             "production_label_dist": {
-              "traced_weak_origin": 84,
               "established_fact": 12,
+              "traced_weak_origin": 84,
               "hedged": 4
             }
           },
@@ -1313,9 +1313,9 @@
               0.79
             ],
             "production_label_dist": {
-              "established_fact": 71,
+              "traced_weak_origin": 5,
               "hedged": 24,
-              "traced_weak_origin": 5
+              "established_fact": 71
             }
           }
         },
@@ -1394,8 +1394,8 @@
               0.04
             ],
             "production_label_dist": {
-              "hedged": 5,
-              "traced_weak_origin": 95
+              "traced_weak_origin": 95,
+              "hedged": 5
             }
           },
           "independent": {
@@ -1528,8 +1528,8 @@
               0.97
             ],
             "production_label_dist": {
-              "established_fact": 93,
               "hedged": 6,
+              "established_fact": 93,
               "traced_weak_origin": 1
             }
           }
@@ -1621,8 +1621,8 @@
               0.04
             ],
             "production_label_dist": {
-              "traced_weak_origin": 92,
-              "hedged": 8
+              "hedged": 8,
+              "traced_weak_origin": 92
             }
           }
         },
@@ -1718,12 +1718,874 @@
           "mcnemar_exact_two_sided_p": 2.0194839173657902e-28
         }
       }
+    },
+    "gpt-4.1-mini": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 100
+            }
+          },
+          "independent": {
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 100
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 35,
+            "joint_root_ids_and_count_n": 35
+          },
+          "independent": {
+            "exact_root_id_set_n": 92,
+            "joint_root_ids_and_count_n": 92
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4.1-mini.rows.jsonl": "661f83cf79618528c17857bc6ad1f9060a9da7234e4bc5fdb7d898bbc55064c4",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4.1-mini.rows.jsonl": "a083e6191042274c84f1754484b482a4b49dfb04fafb23472e9a4d08c2b8b991"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.171363,
+          "production_rejudge": 0.024281,
+          "combined": 0.195644
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 208464,
+              "output_tokens": 33407
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 69363,
+              "output_tokens": 4238
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 54303,
+            "output_tokens": 1600
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "1/100",
+            "established_rate": 0.01,
+            "ci95": [
+              0.0,
+              0.05
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 49,
+              "hedged": 50,
+              "established_fact": 1
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 54,
+              "hedged": 46
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": -0.01,
+          "paired_bootstrap_ci95": [
+            -0.03,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 1,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 199,
+          "total_n": 200,
+          "agreement_rate": 0.995
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 34,
+            "joint_root_ids_and_count_n": 34
+          },
+          "independent": {
+            "exact_root_id_set_n": 83,
+            "joint_root_ids_and_count_n": 81
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-4.1-mini.rows.jsonl": "8abb83421bb14310c21e34c2261f4890a9e69f41a6c8e52575dfe41c6be04af6",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-4.1-mini.rows.jsonl": "6fa67687efec7d456e7ab81897bd5fb0a7ba0a8fac5dc99dade4ab03bb018f73"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.187444,
+          "production_rejudge": 0.026245,
+          "combined": 0.213689
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 217264,
+              "output_tokens": 40078
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 73833,
+              "output_tokens": 4300
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 58773,
+            "output_tokens": 1710
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.99,
+          "paired_bootstrap_ci95": [
+            0.97,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 99,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 3.1554436208840472e-30
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 100,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.5777218104420236e-30
+        }
+      }
+    },
+    "gpt-4o": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 100
+            }
+          },
+          "independent": {
+            "established_n": "100/100",
+            "established_rate": 1.0,
+            "ci95": [
+              0.96,
+              1.0
+            ],
+            "production_label_dist": {
+              "established_fact": 100
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 59,
+            "joint_root_ids_and_count_n": 59
+          },
+          "independent": {
+            "exact_root_id_set_n": 100,
+            "joint_root_ids_and_count_n": 100
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4o.rows.jsonl": "8ee425679b700a75e49d1c686c56827451f92a3a32ab7af8d508a14c0ed3f223",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_gpt-4o.rows.jsonl": "81b75b1c329645e839e306a572eb01cdf5373c758cfe5f344902235d3bbeaf54"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.899706,
+          "production_rejudge": 0.024829,
+          "combined": 0.924535
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 208464,
+              "output_tokens": 34350
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 70732,
+              "output_tokens": 4221
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 55672,
+            "output_tokens": 1600
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 80,
+              "hedged": 20
+            }
+          },
+          "independent": {
+            "established_n": "0/100",
+            "established_rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 75,
+              "hedged": 25
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 26,
+            "joint_root_ids_and_count_n": 26
+          },
+          "independent": {
+            "exact_root_id_set_n": 97,
+            "joint_root_ids_and_count_n": 97
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-4o.rows.jsonl": "95608a4569f1c9407a8b5e9e92ac04432ee72bb148d46ee75d09f3347657bceb",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-4o.rows.jsonl": "81312860305a2bf40d9a885a80f56cb1957f534502a648fedc66df68e6375f1c"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": 0.999309,
+          "production_rejudge": 0.027465,
+          "combined": 1.026774
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 217264,
+              "output_tokens": 41886
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 76263,
+              "output_tokens": 4240
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 61203,
+            "output_tokens": 1865
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 100,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.5777218104420236e-30
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 1.0,
+          "paired_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 100,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.5777218104420236e-30
+        }
+      }
+    },
+    "qwen2.5:32b-instruct": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "72/100",
+            "established_rate": 0.72,
+            "ci95": [
+              0.63,
+              0.8
+            ],
+            "production_label_dist": {
+              "established_fact": 72,
+              "hedged": 28
+            }
+          },
+          "independent": {
+            "established_n": "66/100",
+            "established_rate": 0.66,
+            "ci95": [
+              0.56,
+              0.75
+            ],
+            "production_label_dist": {
+              "hedged": 30,
+              "established_fact": 66,
+              "traced_weak_origin": 4
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": -0.06,
+          "paired_bootstrap_ci95": [
+            -0.12,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 2,
+          "discordant_negative_only": 8,
+          "mcnemar_exact_two_sided_p": 0.109375
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 187,
+          "total_n": 200,
+          "agreement_rate": 0.935
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 9,
+            "joint_root_ids_and_count_n": 4
+          },
+          "independent": {
+            "exact_root_id_set_n": 50,
+            "joint_root_ids_and_count_n": 37
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_qwen2.5_32b-instruct.rows.jsonl": "5d24f3448dbc2765ccbe009ed868726595693edd4a2d465faf87d60839758921",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_qwen2.5_32b-instruct.rows.jsonl": "14589566088dff1bb3d8c6519f63e1c1f79a7b8fb64c56c775a8b6e3b83b18a3"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.024907,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 175428,
+              "output_tokens": 44518
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 71127,
+              "output_tokens": 4355
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 56067,
+            "output_tokens": 1550
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "1/100",
+            "established_rate": 0.01,
+            "ci95": [
+              0.0,
+              0.05
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 36,
+              "hedged": 63,
+              "established_fact": 1
+            }
+          },
+          "independent": {
+            "established_n": "1/100",
+            "established_rate": 0.01,
+            "ci95": [
+              0.0,
+              0.05
+            ],
+            "production_label_dist": {
+              "hedged": 64,
+              "traced_weak_origin": 35,
+              "established_fact": 1
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 0,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.0
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 200,
+          "total_n": 200,
+          "agreement_rate": 1.0
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          },
+          "independent": {
+            "exact_root_id_set_n": 18,
+            "joint_root_ids_and_count_n": 15
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_qwen2.5_32b-instruct.rows.jsonl": "3a3c099ee097e6f075c73597af4e1f422c81902a5447bdb67be2d3ab5f18aa7f",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_qwen2.5_32b-instruct.rows.jsonl": "73229aa5f32dc08abe1b63ef3f0bb84dac38c787878efab627ee2908f3868374"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.026244,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 183428,
+              "output_tokens": 45754
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 74211,
+              "output_tokens": 4375
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 59151,
+            "output_tokens": 1615
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.71,
+          "paired_bootstrap_ci95": [
+            0.62,
+            0.8
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 71,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 8.470329472543003e-22
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.65,
+          "paired_bootstrap_ci95": [
+            0.55,
+            0.74
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 65,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 5.421010862427522e-20
+        }
+      }
+    },
+    "qwen3:30b-a3b-instruct-2507-q4_K_M": {
+      "registry": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "76/100",
+            "established_rate": 0.76,
+            "ci95": [
+              0.67,
+              0.83
+            ],
+            "production_label_dist": {
+              "established_fact": 76,
+              "absent": 12,
+              "hedged": 10,
+              "traced_weak_origin": 2
+            }
+          },
+          "independent": {
+            "established_n": "69/100",
+            "established_rate": 0.69,
+            "ci95": [
+              0.59,
+              0.77
+            ],
+            "production_label_dist": {
+              "hedged": 15,
+              "absent": 12,
+              "established_fact": 69,
+              "traced_weak_origin": 4
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": -0.07,
+          "paired_bootstrap_ci95": [
+            -0.13,
+            -0.01
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 2,
+          "discordant_negative_only": 9,
+          "mcnemar_exact_two_sided_p": 0.0654296875
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 174,
+          "total_n": 200,
+          "agreement_rate": 0.87
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 1,
+            "joint_root_ids_and_count_n": 1
+          },
+          "independent": {
+            "exact_root_id_set_n": 43,
+            "joint_root_ids_and_count_n": 36
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl": "c701ed602adc8613d30c4ccd5c6def195b1576b54cb1113bf38894d77a170327",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl": "699bc96ca890a068ea66c31d38f450af676c9d1337366d8c0a2c334e9ae7391c"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.025608,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 166628,
+              "output_tokens": 54763
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 72828,
+              "output_tokens": 4280
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 57768,
+            "output_tokens": 1563
+          }
+        }
+      },
+      "confessed": {
+        "cells_production": {
+          "dependent": {
+            "established_n": "4/100",
+            "established_rate": 0.04,
+            "ci95": [
+              0.02,
+              0.1
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 28,
+              "hedged": 57,
+              "absent": 11,
+              "established_fact": 4
+            }
+          },
+          "independent": {
+            "established_n": "2/100",
+            "established_rate": 0.02,
+            "ci95": [
+              0.01,
+              0.07
+            ],
+            "production_label_dist": {
+              "traced_weak_origin": 26,
+              "absent": 9,
+              "hedged": 63,
+              "established_fact": 2
+            }
+          }
+        },
+        "edge_effect_production": {
+          "n_pairs": 100,
+          "point": -0.02,
+          "paired_bootstrap_ci95": [
+            -0.06,
+            0.02
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 1,
+          "discordant_negative_only": 3,
+          "mcnemar_exact_two_sided_p": 0.625
+        },
+        "binary_cross_judge_agreement": {
+          "agreement_n": 179,
+          "total_n": 200,
+          "agreement_rate": 0.895
+        },
+        "root_diagnostic": {
+          "dependent": {
+            "exact_root_id_set_n": 0,
+            "joint_root_ids_and_count_n": 0
+          },
+          "independent": {
+            "exact_root_id_set_n": 28,
+            "joint_root_ids_and_count_n": 20
+          }
+        },
+        "integrity": {
+          "raw_rows": 400,
+          "valid_answer_rows": 200,
+          "production_rows": 200,
+          "refusal_rows": 0,
+          "refused_scenario_ids": [],
+          "refusal_policy": "provider safety refusals excluded pairwise across both arms and reported; never resampled or imputed",
+          "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+          "file_sha256": {
+            "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl": "71671a5c1db6c9901083d321240d46ac964d823b5555427404bec71c1b31b681",
+            "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl": "dba2007904d2d772c6e4470ab6eb03455f5ead3e168b0b6dadd7724f94052b78"
+          }
+        },
+        "measured_cost_usd_frozen_prices": {
+          "main_run": null,
+          "production_rejudge": 0.026692,
+          "combined": null
+        },
+        "usage": {
+          "main_run": {
+            "answerer": {
+              "calls": 400,
+              "input_tokens": 174628,
+              "output_tokens": 59102
+            },
+            "judge": {
+              "calls": 200,
+              "input_tokens": 75519,
+              "output_tokens": 4344
+            }
+          },
+          "production_rejudge": {
+            "calls": 200,
+            "input_tokens": 60459,
+            "output_tokens": 1568
+          }
+        }
+      },
+      "register_effect_production": {
+        "method": "mean_within_scenario_established_registry_minus_confessed",
+        "dependent": {
+          "n_pairs": 100,
+          "point": 0.72,
+          "paired_bootstrap_ci95": [
+            0.63,
+            0.8
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 72,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 4.235164736271502e-22
+        },
+        "independent": {
+          "n_pairs": 100,
+          "point": 0.67,
+          "paired_bootstrap_ci95": [
+            0.58,
+            0.76
+          ],
+          "bootstrap_resamples": 10000,
+          "discordant_positive_only": 67,
+          "discordant_negative_only": 0,
+          "mcnemar_exact_two_sided_p": 1.3552527156068805e-20
+        }
+      }
     }
   },
-  "confessed_recorded_cost_usd_priced_models": 4.457794,
+  "confessed_recorded_cost_usd_priced_models": 5.698257,
   "unpriced_models": [
     "gemini-2.5-flash",
     "gpt-5.5",
-    "o3"
+    "o3",
+    "qwen2.5:32b-instruct",
+    "qwen3:30b-a3b-instruct-2507-q4_K_M"
   ]
 }

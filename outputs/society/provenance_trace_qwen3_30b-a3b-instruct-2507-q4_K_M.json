@@ -1,0 +1,46 @@
+{
+  "config": {
+    "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+    "depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "nchains": 4
+  },
+  "results": {
+    "prose": {
+      "by_depth": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "overall": 0.778,
+      "hearsay_confusion": {
+        "hearsay": 60
+      }
+    },
+    "edges": {
+      "by_depth": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "overall": 0.778,
+      "hearsay_confusion": {
+        "hearsay": 60
+      }
+    }
+  }
+}

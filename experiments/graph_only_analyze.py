@@ -10,9 +10,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
-    from graph_only_rewire import ARMS, DEFAULT_INSTRUMENT, PRICES_PER_MTOK, load_instrument
+    from graph_only_rewire import (ARMS, DEFAULT_INSTRUMENT, PRICES_PER_MTOK, load_instrument,
+                                   safe_model)
 except ModuleNotFoundError:  # pragma: no cover
-    from .graph_only_rewire import ARMS, DEFAULT_INSTRUMENT, PRICES_PER_MTOK, load_instrument
+    from .graph_only_rewire import (ARMS, DEFAULT_INSTRUMENT, PRICES_PER_MTOK, load_instrument,
+                                    safe_model)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -114,10 +116,13 @@ def analyze_model(
     instrument: dict,
     source_scenarios: dict[str, dict],
 ) -> dict:
-    raw_rows_path = output_dir / f"graph_only_rewire_{model}.rows.jsonl"
-    raw_summary_path = output_dir / f"graph_only_rewire_{model}.json"
-    production_rows_path = output_dir / f"graph_only_rejudge_production_{model}.rows.jsonl"
-    production_summary_path = output_dir / f"graph_only_rejudge_production_{model}.json"
+    # Local Ollama tags contain ':', which the runner and rejudger sanitize via safe_model();
+    # derive the same filenames here so local models resolve (2026-07-28).
+    tag = safe_model(model)
+    raw_rows_path = output_dir / f"graph_only_rewire_{tag}.rows.jsonl"
+    raw_summary_path = output_dir / f"graph_only_rewire_{tag}.json"
+    production_rows_path = output_dir / f"graph_only_rejudge_production_{tag}.rows.jsonl"
+    production_summary_path = output_dir / f"graph_only_rejudge_production_{tag}.json"
     raw_rows = read_jsonl(raw_rows_path)
     raw_summary = json.loads(raw_summary_path.read_text())
     production_rows = read_jsonl(production_rows_path)

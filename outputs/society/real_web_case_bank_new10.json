@@ -1,0 +1,542 @@
+[
+ {
+  "id": "bazalgette_sewer_pipes",
+  "claim": "While designing London's Victorian sewer system, Joseph Bazalgette calculated the pipe diameter needed, then said 'Well, we're only going to do this once and there's always the unforeseen' and doubled the diameter, foresight credited with keeping the sewers from overflowing in the 1960s.",
+  "question": "Did Joseph Bazalgette really double the diameter of London's sewer pipes, saying 'We're only going to do this once and there's always the unforeseen', and how well established is that claim?",
+  "target_value": "Bazalgette doubled London's sewer pipe diameter with the remark 'We're only going to do this once and there's always the unforeseen'",
+  "case_note": "Wikipedia's List of citogenesis incidents documents the anecdote as a 2007 unsourced insertion into the Joseph Bazalgette article that spread to ICE, The Spectator, The Hindu, the Museum of London and books, and was only removed from the article in 2021.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "The Spectator 'The Wiki Man' column (25 April 2009)",
+     "url": "https://spectator.com/article/the-wiki-man-25-april-2009",
+     "snippet": "Rory Sutherland's column recounts as fact that Bazalgette calculated the optimal sewer diameter, doubled it for fluctuation, then arbitrarily redoubled the figure, explaining 'We're only going to do this once and there's always the unforeseen', and that this oversizing later saved the system."
+    },
+    {
+     "source": "The Hindu reflections essay on great cities (30 July 2019)",
+     "url": "https://www.thehindu.com/thread/reflections/great-cities-always-have-growing-pains/article28757873.ece",
+     "snippet": "The essay states that when calculating the required diameter of the largest sewage pipes, Bazalgette told himself 'Well, we're only going to do this once and there's always the unforeseen' and doubled the diameter, thereby displaying foresight and futuristic thinking rare anywhere in the world."
+    },
+    {
+     "source": "Grace's Guide engineering wiki, Joseph Bazalgette page",
+     "url": "https://www.gracesguide.co.uk/Joseph_Bazalgette",
+     "snippet": "The page states as established fact that Bazalgette took the densest population, allowed generous sewage production per person, came up with the pipe diameter needed, then said 'Well, we're only going to do this once and there's always the unforeseen.' and doubled the diameter to be used."
+    },
+    {
+     "source": "Institution of Civil Engineers London sewer page (2020 archived copy)",
+     "url": "https://web.archive.org/web/20200414055438/https://www.ice.org.uk/what-is-civil-engineering/what-do-civil-engineers-do/london-sewer-system",
+     "snippet": "The archived ICE page says Bazalgette worked out the diameter of pipe needed, then said 'We're only going to do this once and there's always the unforeseen' and doubled the diameter of the pipes he wanted built, and that with the smaller diameter the sewers would have overflowed in the 1960s."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "The Spectator 'The Wiki Man' column (25 April 2009)",
+     "url": "https://spectator.com/article/the-wiki-man-25-april-2009",
+     "snippet": "Rory Sutherland's column recounts as fact that Bazalgette calculated the optimal sewer diameter, doubled it for fluctuation, then arbitrarily redoubled the figure, explaining 'We're only going to do this once and there's always the unforeseen', and that this oversizing later saved the system."
+    },
+    {
+     "source": "The Hindu reflections essay on great cities (30 July 2019)",
+     "url": "https://www.thehindu.com/thread/reflections/great-cities-always-have-growing-pains/article28757873.ece",
+     "snippet": "The essay states that when calculating the required diameter of the largest sewage pipes, Bazalgette told himself 'Well, we're only going to do this once and there's always the unforeseen' and doubled the diameter, thereby displaying foresight and futuristic thinking rare anywhere in the world."
+    },
+    {
+     "source": "Grace's Guide engineering wiki, Joseph Bazalgette page",
+     "url": "https://www.gracesguide.co.uk/Joseph_Bazalgette",
+     "snippet": "The page states as established fact that Bazalgette took the densest population, allowed generous sewage production per person, came up with the pipe diameter needed, then said 'Well, we're only going to do this once and there's always the unforeseen.' and doubled the diameter to be used."
+    },
+    {
+     "source": "Institution of Civil Engineers London sewer page (2020 archived copy)",
+     "url": "https://web.archive.org/web/20200414055438/https://www.ice.org.uk/what-is-civil-engineering/what-do-civil-engineers-do/london-sewer-system",
+     "snippet": "The archived ICE page says Bazalgette worked out the diameter of pipe needed, then said 'We're only going to do this once and there's always the unforeseen' and doubled the diameter of the pipes he wanted built, and that with the smaller diameter the sewers would have overflowed in the 1960s."
+    },
+    {
+     "source": "Wikipedia List of citogenesis incidents",
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+     "snippet": "The list entry documents that in 2007 an editor inserted the pipe-diameter anecdote into Joseph Bazalgette's page (with the diff linked), that the misinformation made it into the Institution of Civil Engineers, The Spectator, The Hindu, the Museum of London and two books, and that it was not removed until 2021."
+    }
+   ]
+  }
+ },
+ {
+  "id": "amelia_bedelia_cameroon",
+  "claim": "The children's book character Amelia Bedelia was based on a real maid in Cameroon, where author Peggy Parish spent time in her early years.",
+  "question": "Was the character Amelia Bedelia based on a real maid in Cameroon, and how well established is that claim?",
+  "target_value": "a maid in Cameroon as the real-life inspiration for Amelia Bedelia",
+  "case_note": "A Daily Dot first-person piece by hoax author EJ Dickson documents the Cameroon origin story as an unsourced 2009 Wikipedia addition that circulated for five years, reaching even series author Herman Parish, before removal in July 2014.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Waterloo-Cedar Falls Courier profile of Herman Parish",
+     "url": "https://web.archive.org/web/20140801030040/http://wcfcourier.com/news/local/amelia-bedelia-author-credits-notebook-for-success/article_81758dce-ff2a-521b-9252-8c2ecea890a9.html",
+     "snippet": "The Courier article reports Herman Parish recounting his aunt's inspirations and saying she based the lead character on a French colonial maid in Cameroon who served a household owned by Mr. and Mrs. Rogers."
+    },
+    {
+     "source": "TV Tropes Amelia Bedelia page (2013 snapshot)",
+     "url": "https://web.archive.org/web/20131021031041/http://tvtropes.org/pmwiki/pmwiki.php/Literature/AmeliaBedelia",
+     "snippet": "The trope page's description states as fact that the character of Amelia Bedelia was based on a maid in Cameroon, where the author spent some time during her formative years, and that her hat collection inspired tales based on her experiences in North Africa."
+    },
+    {
+     "source": "Find A Grave memorial for Peggy Parish (2014 snapshot)",
+     "url": "https://web.archive.org/web/20140730223302/http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=52984430",
+     "snippet": "The memorial biography states that Peggy Parish based the character Amelia Bedelia on a maid in Cameroon, Africa, where she spent most of her time."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Waterloo-Cedar Falls Courier profile of Herman Parish",
+     "url": "https://web.archive.org/web/20140801030040/http://wcfcourier.com/news/local/amelia-bedelia-author-credits-notebook-for-success/article_81758dce-ff2a-521b-9252-8c2ecea890a9.html",
+     "snippet": "The Courier article reports Herman Parish recounting his aunt's inspirations and saying she based the lead character on a French colonial maid in Cameroon who served a household owned by Mr. and Mrs. Rogers."
+    },
+    {
+     "source": "TV Tropes Amelia Bedelia page (2013 snapshot)",
+     "url": "https://web.archive.org/web/20131021031041/http://tvtropes.org/pmwiki/pmwiki.php/Literature/AmeliaBedelia",
+     "snippet": "The trope page's description states as fact that the character of Amelia Bedelia was based on a maid in Cameroon, where the author spent some time during her formative years, and that her hat collection inspired tales based on her experiences in North Africa."
+    },
+    {
+     "source": "Find A Grave memorial for Peggy Parish (2014 snapshot)",
+     "url": "https://web.archive.org/web/20140730223302/http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=52984430",
+     "snippet": "The memorial biography states that Peggy Parish based the character Amelia Bedelia on a maid in Cameroon, Africa, where she spent most of her time."
+    },
+    {
+     "source": "Daily Dot first-person account by the hoax author",
+     "url": "https://www.dailydot.com/unclick/amelia-bedelia-wikipedia-hoax/",
+     "snippet": "EJ Dickson recounts inventing the Cameroon claim as an unsourced 2009 Wikipedia edit and documents it spreading for five and a half years into lesson plans, blogs, Find A Grave, and an interview with series author Herman Parish before its July 2014 removal."
+    }
+   ]
+  }
+ },
+ {
+  "id": "gates_xanadu20",
+  "claim": "Bill Gates's mansion in Medina, Washington is nicknamed 'Xanadu 2.0', after the estate in Citizen Kane.",
+  "question": "Is Bill Gates's house in Medina, Washington really nicknamed 'Xanadu 2.0', and how well established is that claim?",
+  "target_value": "Xanadu 2.0 as the established nickname of Bill Gates's house",
+  "case_note": "Wikipedia's citogenesis list documents that Wikipedia has asserted the nickname since 2008 with no article quoting Gates or another authoritative source, and articles repeating it are now cited by Wikipedia; the moniker traces to the title of a 1997 U.S. News article.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "TheStreet feature on Bill Gates's house",
+     "url": "https://web.archive.org/web/20250917101716/https://www.thestreet.com/personalities/bill-gates-house-14711374",
+     "snippet": "The 2018 article is headlined 'Bill Gates' House: A Look at Xanadu 2.0' and asks what the standout parts of 'Bill Gates's Xanadu 2.0' are, treating the name as the established title of the residence."
+    },
+    {
+     "source": "The Pinnacle List estate profile",
+     "url": "https://www.thepinnaclelist.com/articles/xanadu-2-0-estate-the-125-million-home-of-microsoft-billionaire-bill-gates-in-medina-washington/",
+     "snippet": "The article presents the property as the 'Xanadu 2.0 Estate' and states it is named after the estate of the title character in the movie Citizen Kane."
+    },
+    {
+     "source": "Arch2O facts listicle",
+     "url": "https://www.arch2o.com/tour-inside-bill-gates-house/",
+     "snippet": "The article states that Bill Gates' house is named Xanadu 2.0, a reference to the fictional palatial estate in Orson Welles' film Citizen Kane."
+    },
+    {
+     "source": "Housivity blog on the Gates mansion",
+     "url": "https://housivity.com/blog/bill-gates-house-the-high-tech-features-of-a-modern-marvel",
+     "snippet": "The page says the 66,000 square foot Medina mansion is 'known officially as Xanadu 2.0', presenting the name as the official designation of the house."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "TheStreet feature on Bill Gates's house",
+     "url": "https://web.archive.org/web/20250917101716/https://www.thestreet.com/personalities/bill-gates-house-14711374",
+     "snippet": "The 2018 article is headlined 'Bill Gates' House: A Look at Xanadu 2.0' and asks what the standout parts of 'Bill Gates's Xanadu 2.0' are, treating the name as the established title of the residence."
+    },
+    {
+     "source": "The Pinnacle List estate profile",
+     "url": "https://www.thepinnaclelist.com/articles/xanadu-2-0-estate-the-125-million-home-of-microsoft-billionaire-bill-gates-in-medina-washington/",
+     "snippet": "The article presents the property as the 'Xanadu 2.0 Estate' and states it is named after the estate of the title character in the movie Citizen Kane."
+    },
+    {
+     "source": "Arch2O facts listicle",
+     "url": "https://www.arch2o.com/tour-inside-bill-gates-house/",
+     "snippet": "The article states that Bill Gates' house is named Xanadu 2.0, a reference to the fictional palatial estate in Orson Welles' film Citizen Kane."
+    },
+    {
+     "source": "Housivity blog on the Gates mansion",
+     "url": "https://housivity.com/blog/bill-gates-house-the-high-tech-features-of-a-modern-marvel",
+     "snippet": "The page says the 66,000 square foot Medina mansion is 'known officially as Xanadu 2.0', presenting the name as the official designation of the house."
+    },
+    {
+     "source": "Wikipedia List of citogenesis incidents entry",
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+     "snippet": "The list entry says Wikipedia has claimed at various times since 2008 that Bill Gates's house is nicknamed Xanadu 2.0 and many online articles have repeated the claim, some now cited by Wikipedia, while no articles quote Gates or another authoritative source; the moniker was used as the title of a 1997 article about the house."
+    }
+   ]
+  }
+ },
+ {
+  "id": "triboulet_king_slap",
+  "claim": "The court jester Triboulet slapped King Francis I on the buttocks, was sentenced to death, and escaped by joking that he had mistaken the king for the queen and by choosing to die of old age.",
+  "question": "Did the jester Triboulet really slap King Francis I on the buttocks and talk his way out of execution with a joke, and how well established is that claim?",
+  "target_value": "the butt-slap and witty-escape anecdote as established historical fact about Triboulet and Francis I",
+  "case_note": "Wikipedia's citogenesis list documents the slap story as an uncited 2007 addition to the Triboulet article later picked up by outside articles and a book, two of which were then cited back into the article; the story has since been removed from Wikipedia.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "All That's Interesting profile of Triboulet",
+     "url": "https://allthatsinteresting.com/triboulet",
+     "snippet": "The article states that Triboulet once slapped the King of France on the rear, and recounts that when the furious king let him choose a manner of death he answered 'I choose to die from old age,' earning banishment instead of execution."
+    },
+    {
+     "source": "Upworthy retelling of the jester story",
+     "url": "https://www.upworthy.com/court-jester-triboulet-used-wit-to-save-himself/",
+     "snippet": "The article recounts as fact that Triboulet smacked Francis I on his royal behind and escaped execution with the apology that he had mistaken the king for the Queen, later also choosing to die 'of old age.'"
+    },
+    {
+     "source": "Commonplace Facts post on Triboulet",
+     "url": "https://commonplacefacts.com/2019/11/07/triboulet-legendary-court-jester/",
+     "snippet": "The post states that Triboulet slapped the king on the royal bum and, given the choice of execution method, chose 'to die from old age,' whereupon the amused king commuted the death sentence."
+    },
+    {
+     "source": "ThoughtNova article on Triboulet (archived)",
+     "url": "https://web.archive.org/web/20250323171759/https://thoughtnova.com/the-true-story-of-triboulet-the-16th-century-court-jester-whose-wit-saved-his-life",
+     "snippet": "The article narrates Triboulet's decision to slap the king on his rear, the apology 'I mistook you for the Queen!', and his choosing 'to die from old age,' after which the king banished him rather than have him killed."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "All That's Interesting profile of Triboulet",
+     "url": "https://allthatsinteresting.com/triboulet",
+     "snippet": "The article states that Triboulet once slapped the King of France on the rear, and recounts that when the furious king let him choose a manner of death he answered 'I choose to die from old age,' earning banishment instead of execution."
+    },
+    {
+     "source": "Upworthy retelling of the jester story",
+     "url": "https://www.upworthy.com/court-jester-triboulet-used-wit-to-save-himself/",
+     "snippet": "The article recounts as fact that Triboulet smacked Francis I on his royal behind and escaped execution with the apology that he had mistaken the king for the Queen, later also choosing to die 'of old age.'"
+    },
+    {
+     "source": "Commonplace Facts post on Triboulet",
+     "url": "https://commonplacefacts.com/2019/11/07/triboulet-legendary-court-jester/",
+     "snippet": "The post states that Triboulet slapped the king on the royal bum and, given the choice of execution method, chose 'to die from old age,' whereupon the amused king commuted the death sentence."
+    },
+    {
+     "source": "ThoughtNova article on Triboulet (archived)",
+     "url": "https://web.archive.org/web/20250323171759/https://thoughtnova.com/the-true-story-of-triboulet-the-16th-century-court-jester-whose-wit-saved-his-life",
+     "snippet": "The article narrates Triboulet's decision to slap the king on his rear, the apology 'I mistook you for the Queen!', and his choosing 'to die from old age,' after which the king banished him rather than have him killed."
+    },
+    {
+     "source": "Wikipedia List of citogenesis incidents entry",
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:List_of_citogenesis_incidents",
+     "snippet": "The list's Triboulet entry documents that in 2007 an anonymous editor added the story about the jester slapping the king's buttocks to the article without any citations, and that it was later picked up in several articles and a book, two of which were then added as citations to the article."
+    }
+   ]
+  }
+ },
+ {
+  "id": "streater_point_shaving",
+  "claim": "Joe Streater was one of the Boston College players who participated in the 1978-79 Boston College basketball point shaving scandal.",
+  "question": "Was Joe Streater involved in the 1978-79 Boston College basketball point shaving scandal, and how well established is that claim?",
+  "target_value": "Joe Streater as a culprit in the 1978-79 Boston College point shaving scandal",
+  "case_note": "Awful Announcing's 2014 investigation documented that Streater's name was added to Wikipedia unsourced in 2008 and copied by AP, SI and many other outlets, while Streater last played for BC in 1977-78 and was never implicated.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Associated Press worst-scandals list (2014 snapshot)",
+     "url": "https://web.archive.org/web/20141012005122/http://bigstory.ap.org/article/list-worst-scandals-college-sports",
+     "snippet": "The AP's list of the worst scandals in college sports has a 'BC Three' entry saying BC basketball players Rick Kuhn, Joe Streater and Jim Sweeney were persuaded to fix nine Eagles games during the 1978-79 season."
+    },
+    {
+     "source": "WSB-TV Atlanta scandals slideshow (2014 snapshot)",
+     "url": "https://web.archive.org/web/20141013023646/http://www.wsbtv.com/photo/sports/worst-scandals-college-sports-history/pbMds/",
+     "snippet": "The station's 'Worst scandals in college sports history' gallery captions its Boston College slide by saying that in 1978-79 players Rick Kuhn, Joe Streater and Jim Sweeney were persuaded to fix nine Eagles games."
+    },
+    {
+     "source": "Bleacher Report college basketball scandals ranking (2013 snapshot)",
+     "url": "https://web.archive.org/web/20130507034829/http://bleacherreport.com/articles/1625497-ranking-the-10-most-shocking-scandals-in-college-basketball-history",
+     "snippet": "The 2013 listicle's Boston College entry states that BC players Rick Kuhn, Jim Sweeney, Joe Streater and eventually leading scorer Ernie Cobb were all in on the point shaving plan."
+    },
+    {
+     "source": "en-academic.com encyclopedia mirror of the scandal article",
+     "url": "https://en-academic.com/dic.nsf/enwiki/6107898",
+     "snippet": "This encyclopedia page, mirrored from an old Wikipedia revision, narrates that Kuhn brought in teammate Jim Sweeney and Joe Streater and that Henry Hill paid Kuhn, Sweeney and Streater 2,000 dollars each in good-faith money."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Associated Press worst-scandals list (2014 snapshot)",
+     "url": "https://web.archive.org/web/20141012005122/http://bigstory.ap.org/article/list-worst-scandals-college-sports",
+     "snippet": "The AP's list of the worst scandals in college sports has a 'BC Three' entry saying BC basketball players Rick Kuhn, Joe Streater and Jim Sweeney were persuaded to fix nine Eagles games during the 1978-79 season."
+    },
+    {
+     "source": "WSB-TV Atlanta scandals slideshow (2014 snapshot)",
+     "url": "https://web.archive.org/web/20141013023646/http://www.wsbtv.com/photo/sports/worst-scandals-college-sports-history/pbMds/",
+     "snippet": "The station's 'Worst scandals in college sports history' gallery captions its Boston College slide by saying that in 1978-79 players Rick Kuhn, Joe Streater and Jim Sweeney were persuaded to fix nine Eagles games."
+    },
+    {
+     "source": "Bleacher Report college basketball scandals ranking (2013 snapshot)",
+     "url": "https://web.archive.org/web/20130507034829/http://bleacherreport.com/articles/1625497-ranking-the-10-most-shocking-scandals-in-college-basketball-history",
+     "snippet": "The 2013 listicle's Boston College entry states that BC players Rick Kuhn, Jim Sweeney, Joe Streater and eventually leading scorer Ernie Cobb were all in on the point shaving plan."
+    },
+    {
+     "source": "en-academic.com encyclopedia mirror of the scandal article",
+     "url": "https://en-academic.com/dic.nsf/enwiki/6107898",
+     "snippet": "This encyclopedia page, mirrored from an old Wikipedia revision, narrates that Kuhn brought in teammate Jim Sweeney and Joe Streater and that Henry Hill paid Kuhn, Sweeney and Streater 2,000 dollars each in good-faith money."
+    },
+    {
+     "source": "Awful Announcing investigation by Ben Koo",
+     "url": "https://awfulannouncing.com/2014/guilt-wikipedia-joe-streater-became-falsely-attached-boston-college-point-shaving-scandal.html",
+     "snippet": "Koo documents that Streater never played for BC in 1978-79 and was never implicated, tracing every mention of him to an unsourced August 2008 Wikipedia edit that AP, Sports Illustrated and many other outlets copied without checking original sources."
+    }
+   ]
+  }
+ },
+ {
+  "id": "phelan_scuttler",
+  "claim": "Irish international footballer Terry Phelan was nicknamed 'The Scuttler'.",
+  "question": "Was Terry Phelan, the Irish international full-back, nicknamed 'The Scuttler', and how well established is that claim?",
+  "target_value": "'The Scuttler' as Terry Phelan's nickname",
+  "case_note": "Cillian Kelly admitted in a 2024 blog post that he and his cousin invented the nickname as Wikipedia vandalism, that Philippe Auclair's Cantona biography copied it from Wikipedia, and that he later re-added it to the article sourced to that book.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Philippe Auclair, Cantona: The Rebel Who Would Be King (Google Books, p. 326)",
+     "url": "https://books.google.com/books?id=bTgYps2ERPQC&pg=PA326",
+     "snippet": "Page 326 of Auclair's Cantona biography describes Manchester City leaving 'the Scuttler' Phelan out of the squad, using the nickname for the left-back as established fact."
+    },
+    {
+     "source": "AK Football Education coach profile of Terry Phelan",
+     "url": "https://www.akfootballeducationcic.com/copy-of-tony-grant",
+     "snippet": "Phelan's coaching bio page opens by stating that, nicknamed 'The Scuttler', he played as a left-back from 1984 to 2009, presenting the nickname without qualification."
+    },
+    {
+     "source": "en-academic.com encyclopedia mirror of the Terry Phelan article",
+     "url": "https://en-academic.com/dic.nsf/enwiki/2652145",
+     "snippet": "This encyclopedia page, mirrored from an old Wikipedia revision, introduces Phelan as nicknamed 'the scuttler' alongside his 42 appearances for the Irish national team."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Philippe Auclair, Cantona: The Rebel Who Would Be King (Google Books, p. 326)",
+     "url": "https://books.google.com/books?id=bTgYps2ERPQC&pg=PA326",
+     "snippet": "Page 326 of Auclair's Cantona biography describes Manchester City leaving 'the Scuttler' Phelan out of the squad, using the nickname for the left-back as established fact."
+    },
+    {
+     "source": "AK Football Education coach profile of Terry Phelan",
+     "url": "https://www.akfootballeducationcic.com/copy-of-tony-grant",
+     "snippet": "Phelan's coaching bio page opens by stating that, nicknamed 'The Scuttler', he played as a left-back from 1984 to 2009, presenting the nickname without qualification."
+    },
+    {
+     "source": "en-academic.com encyclopedia mirror of the Terry Phelan article",
+     "url": "https://en-academic.com/dic.nsf/enwiki/2652145",
+     "snippet": "This encyclopedia page, mirrored from an old Wikipedia revision, introduces Phelan as nicknamed 'the scuttler' alongside his 42 appearances for the Irish national team."
+    },
+    {
+     "source": "The Cycling Website post by Cillian Kelly",
+     "url": "https://www.thecyclingwebsite.com/blog/wikipeia-is-great-but-also-be-careful",
+     "snippet": "Kelly admits he and his cousin made up 'The Scuttler' and planted it on Phelan's Wikipedia page, says nobody else ever called him that, and explains that Auclair's book took the nickname from Wikipedia before Kelly re-added it to the article cited to the book."
+    }
+   ]
+  }
+ },
+ {
+  "id": "roger_moore_bede",
+  "claim": "Roger Moore attended the College of the Venerable Bede at Durham University, leaving without graduating.",
+  "question": "Did Roger Moore attend the College of the Venerable Bede at Durham University, and how well established is that claim?",
+  "target_value": "Roger Moore's attendance at the College of the Venerable Bede, Durham University",
+  "case_note": "The unsourced claim has been repeatedly re-added to Wikipedia since April 2007, and Moore himself denied ever attending Durham in a 2016 Chronicle Live interview, saying he had no idea why it was on Wikipedia.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Hollywood Walk of Fame biography",
+     "url": "https://walkoffame.com/roger-moore/",
+     "snippet": "The Walk of Fame bio states Moore attended the College of the Venerable Bede at the University of Durham but never graduated, and its Star Facts box lists the college under Education."
+    },
+    {
+     "source": "Durham Magazine alumni feature",
+     "url": "https://durhammagazine.co.uk/durham-news/007s-olympic-medallists-well-known-people-studied-durham-university/0492/",
+     "snippet": "A 2016 feature on well-known people who studied at Durham University says Roger Moore, who played Bond seven times, also studied at Durham but was unable to finish his course due to national service obligations."
+    },
+    {
+     "source": "The James Bond Dossier feature on Roger Moore",
+     "url": "https://www.thejamesbonddossier.com/features/roger-moore-from-the-saint-to-sir-roger.htm",
+     "snippet": "The feature says that after completing his education at Dr Challoner's Grammar School, Moore moved on to Durham, where he enrolled at the College of the Venerable Bede but was not to finish his education at the college."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Hollywood Walk of Fame biography",
+     "url": "https://walkoffame.com/roger-moore/",
+     "snippet": "The Walk of Fame bio states Moore attended the College of the Venerable Bede at the University of Durham but never graduated, and its Star Facts box lists the college under Education."
+    },
+    {
+     "source": "Durham Magazine alumni feature",
+     "url": "https://durhammagazine.co.uk/durham-news/007s-olympic-medallists-well-known-people-studied-durham-university/0492/",
+     "snippet": "A 2016 feature on well-known people who studied at Durham University says Roger Moore, who played Bond seven times, also studied at Durham but was unable to finish his course due to national service obligations."
+    },
+    {
+     "source": "The James Bond Dossier feature on Roger Moore",
+     "url": "https://www.thejamesbonddossier.com/features/roger-moore-from-the-saint-to-sir-roger.htm",
+     "snippet": "The feature says that after completing his education at Dr Challoner's Grammar School, Moore moved on to Durham, where he enrolled at the College of the Venerable Bede but was not to finish his education at the college."
+    },
+    {
+     "source": "Chronicle Live interview with Roger Moore",
+     "url": "https://www.chroniclelive.co.uk/whats-on/arts-culture-news/sir-roger-moore-remembers-co-12140786",
+     "snippet": "In this 2016 interview Moore says he never even went to Durham despite what Wikipedia would have us believe, that he has no idea why the claim is there, and that he actually trained at RADA."
+    }
+   ]
+  }
+ },
+ {
+  "id": "qaly_inventors",
+  "claim": "The QALY (quality-adjusted life year) was designed in 1956 by two health economists, Christopher Cundell and Carlos McCartney.",
+  "question": "Was the QALY (quality-adjusted life year) invented in 1956 by health economists Christopher Cundell and Carlos McCartney, and how well established is that claim?",
+  "target_value": "Christopher Cundell and Carlos McCartney as the 1956 inventors of the QALY",
+  "case_note": "The Academic Health Economists' Blog traced the inventor names (with a third 'inventor' Toni Morgan, an anagram of 'Giant Moron') to a December 2010 Wikipedia hoax that a journal paper repeated and Wikipedia then cited back as its source.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Acta Facultatis Medicae Naissensis review paper",
+     "url": "http://web.archive.org/web/20140703062416/http://www.medfak.ni.ac.rs/Acta%20facultatis/2011/4-2011/1.pdf",
+     "snippet": "This 2011 Serbian medical-journal review (Visnjic et al., 28(4):195-199) states that QALY was designed by two experts in the area of health economics in 1956, Christopher Cundell and Carlos McCartney, offering the attribution as fact without a reference."
+    },
+    {
+     "source": "The New Yorker Elements essay on valuing a life",
+     "url": "http://web.archive.org/web/20140125095519/http://www.newyorker.com/online/blogs/elements/2013/10/health-psychology-research-the-value-of-a-human-life.html",
+     "snippet": "Matthew Hutson's October 2013 New Yorker piece says the economists Christopher Cundell and Carlos McCartney designed QALY in 1956 and that health-care systems have used it extensively ever since."
+    },
+    {
+     "source": "ZME Science article on the value of a human life",
+     "url": "https://www.zmescience.com/research/whats-the-value-of-a-human-life/",
+     "snippet": "The October 2013 article states that in 1956 Christopher Cundell and Carlos McCartney proposed the quality-adjusted life year (QALY) standard, presenting the attribution as historical fact with no qualification."
+    },
+    {
+     "source": "MiWayLife insurance blog",
+     "url": "https://www.miwaylife.co.za/blog/can-you-put-a-value-on-someone-s-life/",
+     "snippet": "The life-insurance blog post describes the QALY standard as designed by economists Christopher Cundell and Carlos McCartney in 1956, stated as plain fact."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Acta Facultatis Medicae Naissensis review paper",
+     "url": "http://web.archive.org/web/20140703062416/http://www.medfak.ni.ac.rs/Acta%20facultatis/2011/4-2011/1.pdf",
+     "snippet": "This 2011 Serbian medical-journal review (Visnjic et al., 28(4):195-199) states that QALY was designed by two experts in the area of health economics in 1956, Christopher Cundell and Carlos McCartney, offering the attribution as fact without a reference."
+    },
+    {
+     "source": "The New Yorker Elements essay on valuing a life",
+     "url": "http://web.archive.org/web/20140125095519/http://www.newyorker.com/online/blogs/elements/2013/10/health-psychology-research-the-value-of-a-human-life.html",
+     "snippet": "Matthew Hutson's October 2013 New Yorker piece says the economists Christopher Cundell and Carlos McCartney designed QALY in 1956 and that health-care systems have used it extensively ever since."
+    },
+    {
+     "source": "ZME Science article on the value of a human life",
+     "url": "https://www.zmescience.com/research/whats-the-value-of-a-human-life/",
+     "snippet": "The October 2013 article states that in 1956 Christopher Cundell and Carlos McCartney proposed the quality-adjusted life year (QALY) standard, presenting the attribution as historical fact with no qualification."
+    },
+    {
+     "source": "MiWayLife insurance blog",
+     "url": "https://www.miwaylife.co.za/blog/can-you-put-a-value-on-someone-s-life/",
+     "snippet": "The life-insurance blog post describes the QALY standard as designed by economists Christopher Cundell and Carlos McCartney in 1956, stated as plain fact."
+    },
+    {
+     "source": "The Academic Health Economists' Blog investigation",
+     "url": "https://aheblog.com/2014/05/09/were-qalys-invented-in-1956/",
+     "snippet": "Chris Sampson's post shows the Cundell/McCartney/1956 attribution was a hoax added to Wikipedia in December 2010, notes the third listed inventor Toni Morgan is an anagram of Giant Moron, and documents that a journal paper repeated the claim without a source and was then cited by Wikipedia, completing the circle."
+    }
+   ]
+  }
+ },
+ {
+  "id": "pompeo_gulf_war",
+  "claim": "Mike Pompeo served as a US Army officer in the 1991 Gulf War.",
+  "question": "Did Mike Pompeo serve in the 1991 Gulf War, and how well established is that claim?",
+  "target_value": "Mike Pompeo as a Gulf War veteran who served in the 1991 Gulf War",
+  "case_note": "Quartz traced the claim to an anonymous December 2016 Wikipedia edit later repeated by major outlets and members of Congress, and the CIA stated in April 2018 that Pompeo was in the Army during the Gulf War but never deployed to that theater.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Washington Post report on Trump's military-heavy cabinet (December 2016 snapshot)",
+     "url": "http://web.archive.org/web/20161215161156/https://www.washingtonpost.com/politics/trump-hires-a-third-general-raising-concerns-about-heavy-military-influence/2016/12/07/a6273fbc-bca0-11e6-94ac-3d324840106c_story.html",
+     "snippet": "The December 7, 2016 article describes Rep. Mike Pompeo, Trump's nominee to lead the CIA, as having graduated from West Point and served in the Army in the Gulf War."
+    },
+    {
+     "source": "Globe and Mail Trump cabinet guide (2017 snapshot)",
+     "url": "http://web.archive.org/web/20170518062434/http://www.theglobeandmail.com/news/world/donald-trump-cabinet-and-staff/article33306218/",
+     "snippet": "The cabinet-and-staff guide's entry for CIA director Mike Pompeo lists his previous life as member of the House of Representatives from Kansas, lawyer, businessman, Gulf War veteran."
+    },
+    {
+     "source": "Los Angeles Times Pompeo profile (March 2018 snapshot)",
+     "url": "http://web.archive.org/web/20180321094338/http://www.latimes.com/nation/la-na-pol-pompeo-profile-20180313-story.html",
+     "snippet": "The March 2018 profile states Pompeo graduated from West Point in 1986 and was an army officer who served in the 1991 Persian Gulf War."
+    },
+    {
+     "source": "New Yorker analysis of Pompeo's State Department nomination (April 2018 snapshot)",
+     "url": "http://web.archive.org/web/20180417181049/https://www.newyorker.com/news/news-desk/with-mike-pompeo-at-the-state-department-are-the-uber-hawks-winning",
+     "snippet": "The piece says Pompeo was a cavalry officer in the Army between 1986 and 1991 who patrolled the Berlin Wall during the Cold War and served in the 1991 Gulf War to liberate Kuwait after the Iraqi invasion."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Washington Post report on Trump's military-heavy cabinet (December 2016 snapshot)",
+     "url": "http://web.archive.org/web/20161215161156/https://www.washingtonpost.com/politics/trump-hires-a-third-general-raising-concerns-about-heavy-military-influence/2016/12/07/a6273fbc-bca0-11e6-94ac-3d324840106c_story.html",
+     "snippet": "The December 7, 2016 article describes Rep. Mike Pompeo, Trump's nominee to lead the CIA, as having graduated from West Point and served in the Army in the Gulf War."
+    },
+    {
+     "source": "Globe and Mail Trump cabinet guide (2017 snapshot)",
+     "url": "http://web.archive.org/web/20170518062434/http://www.theglobeandmail.com/news/world/donald-trump-cabinet-and-staff/article33306218/",
+     "snippet": "The cabinet-and-staff guide's entry for CIA director Mike Pompeo lists his previous life as member of the House of Representatives from Kansas, lawyer, businessman, Gulf War veteran."
+    },
+    {
+     "source": "Los Angeles Times Pompeo profile (March 2018 snapshot)",
+     "url": "http://web.archive.org/web/20180321094338/http://www.latimes.com/nation/la-na-pol-pompeo-profile-20180313-story.html",
+     "snippet": "The March 2018 profile states Pompeo graduated from West Point in 1986 and was an army officer who served in the 1991 Persian Gulf War."
+    },
+    {
+     "source": "New Yorker analysis of Pompeo's State Department nomination (April 2018 snapshot)",
+     "url": "http://web.archive.org/web/20180417181049/https://www.newyorker.com/news/news-desk/with-mike-pompeo-at-the-state-department-are-the-uber-hawks-winning",
+     "snippet": "The piece says Pompeo was a cavalry officer in the Army between 1986 and 1991 who patrolled the Berlin Wall during the Cold War and served in the 1991 Gulf War to liberate Kuwait after the Iraqi invasion."
+    },
+    {
+     "source": "Quartz investigation of the Wikipedia origin",
+     "url": "http://web.archive.org/web/20180423033914/https://qz.com/1258418/mike-pompeos-gulf-war-service-lie-started-on-wikipedia/",
+     "snippet": "Quartz reports the Gulf War claim first appeared as an anonymous December 1, 2016 Wikipedia edit, was then repeated by the Washington Post, Globe and Mail, LA Times, WSJ, New Yorker, Senator Rubio and Rep. Gowdy, and that the CIA says Pompeo was in the Army during the Gulf War but did not deploy to that theater."
+    }
+   ]
+  }
+ },
+ {
+  "id": "butterfly_jack_stephens",
+  "claim": "The butterfly stroke was first swum around 1903 by Jack Stephens, later a second world war code-breaker at Bletchley Park, who claimed to have invented it at a public swimming baths in Belfast.",
+  "question": "Did a swimmer named Jack Stephens, later a Bletchley Park code-breaker, invent the butterfly stroke at a Belfast public swimming baths, and how well established is that claim?",
+  "target_value": "Jack Stephens as the inventor/first swimmer of the butterfly stroke",
+  "case_note": "Wikipedia's citogenesis list and Slate document the Stephens attribution as an undiscovered joke edit to Wikipedia's butterfly stroke article (with a fictitious claimant and researcher) that the Guardian repeated in 2009, while swimming histories credit Cavill, Myers, and Armbruster/Sieg.",
+  "conditions": {
+   "misleading_only": [
+    {
+     "source": "Guardian Short cuts column on Putin's swimming",
+     "url": "https://www.theguardian.com/world/2009/aug/06/vladimir-putin-butterfly-stroke",
+     "snippet": "The August 2009 piece on Putin's holiday photos says the fly was first swum either in 1933 by Henry Myers at the Brooklyn YMCA, or 30 years previously by Jack Stephens, later a second world war code-breaker at Bletchley Park, who claimed to have invented the fly at a public swimming baths in Belfast."
+    },
+    {
+     "source": "Russian PM website press-review reprint of the Guardian piece",
+     "url": "http://archive.premier.gov.ru/eng/premier/press/world/3659/print/",
+     "snippet": "The English-language press archive of the Russian prime minister's site reprints the Guardian article verbatim, including the statement that the fly was first swum in 1933 by Henry Myers or 30 years previously by Jack Stephens, a later Bletchley Park code-breaker who claimed to have invented it at a Belfast public swimming baths."
+    },
+    {
+     "source": "SlideShare butterfly stroke presentation copied from Wikipedia",
+     "url": "https://www.slideshare.net/slideshow/butterfly-stroke/4680180",
+     "snippet": "The 2010 slide deck repeats the then-current Wikipedia history text that John Arthur Stephens claimed to have invented the stroke almost 8 years before David Armbruster, alongside the fictitious researcher Dr Philip Mcallister, with no qualification."
+    }
+   ],
+   "with_debunk": [
+    {
+     "source": "Guardian Short cuts column on Putin's swimming",
+     "url": "https://www.theguardian.com/world/2009/aug/06/vladimir-putin-butterfly-stroke",
+     "snippet": "The August 2009 piece on Putin's holiday photos says the fly was first swum either in 1933 by Henry Myers at the Brooklyn YMCA, or 30 years previously by Jack Stephens, later a second world war code-breaker at Bletchley Park, who claimed to have invented the fly at a public swimming baths in Belfast."
+    },
+    {
+     "source": "Russian PM website press-review reprint of the Guardian piece",
+     "url": "http://archive.premier.gov.ru/eng/premier/press/world/3659/print/",
+     "snippet": "The English-language press archive of the Russian prime minister's site reprints the Guardian article verbatim, including the statement that the fly was first swum in 1933 by Henry Myers or 30 years previously by Jack Stephens, a later Bletchley Park code-breaker who claimed to have invented it at a Belfast public swimming baths."
+    },
+    {
+     "source": "SlideShare butterfly stroke presentation copied from Wikipedia",
+     "url": "https://www.slideshare.net/slideshow/butterfly-stroke/4680180",
+     "snippet": "The 2010 slide deck repeats the then-current Wikipedia history text that John Arthur Stephens claimed to have invented the stroke almost 8 years before David Armbruster, alongside the fictitious researcher Dr Philip Mcallister, with no qualification."
+    },
+    {
+     "source": "Slate on Wikipedia's citogenesis problem",
+     "url": "https://slate.com/technology/2019/03/wikipedia-citogenesis-circular-reporting-problem.html",
+     "snippet": "Stephen Harrison's March 2019 article on circular reporting lists confirmed citogenesis incidents, including a joke about the inventor of the butterfly stroke that ended up in the Guardian, explaining how Wikipedia hoaxes launder into press coverage."
+    }
+   ]
+  }
+ }
+]

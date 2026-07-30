@@ -1,0 +1,75 @@
+{
+ "note": "Archival existence certificates for the 10-incident real-web replication set (verified 2026-07-29): origin = timestamped unsourced edit; every echo postdates it; edges verified as explicit credits, closed citation loops, or verbatim copies; simultaneous-visibility windows capture-proven.",
+ "certificates": [
+  {
+   "id": "bazalgette_sewer_pipes",
+   "verdict": "strong",
+   "origin": "2007-06-14 diff (SmokeyTheCat), unsourced",
+   "loop": "CLOSED: pre-removal wiki cited FT 2020 (postdates origin); Grace's Guide explicitly credits Wikipedia; removed 2021-02-24 'cannot find citation that does not lead back to Wiki'",
+   "window": "2019-08-22..2021-02-24 (claim live since 2007)"
+  },
+  {
+   "id": "amelia_bedelia_cameroon",
+   "verdict": "strong",
+   "origin": "2009-01-31 anon diff, unsourced, matches hoaxer confession",
+   "loop": "no cite-back (never sourced); verbatim edges; series author himself repeated invented phrase 11 weeks later; removed 2014-07-29 + semi-protected",
+   "window": "2013-03-13..2014-07-29"
+  },
+  {
+   "id": "gates_xanadu20",
+   "verdict": "strong (STILL LIVE)",
+   "origin": "2007-02-25 insertion, carried {{Fact}} citation-needed tags 2007-2008",
+   "loop": "CLOSED & ONGOING: current article cites Business Insider 2018 + PropertyGuru back; TheStreet echo invokes Wikipedia",
+   "window": "2020-01-11..present, verified live in one session 2026-07-29"
+  },
+  {
+   "id": "triboulet_king_slap",
+   "verdict": "strong",
+   "origin": "2007-08-31 anon diff, unsourced",
+   "loop": "CLOSED x3: wiki cited Frieda 2018 book + Medium + ThoughtNova echoes back; removed 2023-09-15 as WP:CITOGENESIS",
+   "window": "2021-07-23..2023-09-15 (claim live 16 years)"
+  },
+  {
+   "id": "streater_point_shaving",
+   "verdict": "strong",
+   "origin": "2008-08-12 anon diff into Unreferenced article",
+   "loop": "no loop (article had 0 refs); en-academic = explicit Wikipedia mirror; matches Koo forensics",
+   "window": "2013-05-05..2014-10-09 (claim live 6 years)"
+  },
+  {
+   "id": "phelan_scuttler",
+   "verdict": "strong",
+   "origin": "2008-01-10 anon diff, unsourced",
+   "loop": "CLOSED: wiki 2021-09-29..2024-09-13 cited Auclair book back; removal comment 'citogenesis removed'",
+   "window": "2009-08..2015-01 and 2021-09..2024-09"
+  },
+  {
+   "id": "roger_moore_bede",
+   "verdict": "strong",
+   "origin": "2007-04-06 anon diff, unsourced",
+   "loop": "no cite-back; Walk of Fame links wiki; Moore's 2016 on-record denial while claim live",
+   "window": "2016-06-08..2017-05-24"
+  },
+  {
+   "id": "qaly_inventors",
+   "verdict": "strong",
+   "origin": "2010-12-01 anon diff, unsourced",
+   "loop": "CLOSED: wiki 2013-01-21 cited Serbian paper back; ZME+MiWayLife still live uncorrected 2026",
+   "window": "2013-10-09..2014-05-06"
+  },
+  {
+   "id": "pompeo_gulf_war",
+   "verdict": "strong",
+   "origin": "2016-12-01 anon IPv6 diff, unsourced",
+   "loop": "CLOSED: wiki rev 837183795 (2018-04-19) cited Wired echo back; Wired printed correction 2018-04-20",
+   "window": "2018-03-21..2018-04-19 (claim live since 2016-12-01)"
+  },
+  {
+   "id": "butterfly_jack_stephens",
+   "verdict": "strong",
+   "origin": "2007-11-13 anon joke diff, unsourced",
+   "loop": "verbatim-copy edges (fictitious names both sides); premier.gov.ru echo unverified",
+   "window": "2010-07-05..2010-10-16"
+  }
+ ]
+}

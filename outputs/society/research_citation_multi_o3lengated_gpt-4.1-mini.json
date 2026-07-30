@@ -1,0 +1,186 @@
+{
+  "config": {
+    "model": "gpt-4.1-mini",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_o3lengated_gpt-4.1-mini.rows.jsonl",
+    "denominator_policy": "valid_answers_excluding_api_errors"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.43,
+      "launder_n": "13/30",
+      "ci95": [
+        0.27,
+        0.61
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 30,
+      "valid_n": 30,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "established_fact": 0.43,
+        "hedged": 0.4,
+        "traced_weak_origin": 0.17
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "2/10",
+          "rate": 0.2,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "7/10",
+          "rate": 0.7,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "4/10",
+          "rate": 0.4,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/30",
+      "ci95": [
+        0.0,
+        0.11
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 30,
+      "valid_n": 30,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "traced_weak_origin": 0.73,
+        "hedged": 0.27,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "0/10",
+          "rate": 0.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "29/29",
+      "ci95": [
+        0.88,
+        1.0
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 29,
+      "valid_n": 29,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "established_fact": 1.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "9/9",
+          "rate": 1.0,
+          "valid_n": 9,
+          "attempted_n": 9,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "10/10",
+          "rate": 1.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "10/10",
+          "rate": 1.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    },
+    "discrimination": 0.55,
+    "discrimination_unrounded": 0.551724,
+    "discrimination_method": "paired_matched_pairs",
+    "discrimination_pair_n": 29,
+    "discrimination_independent_legacy": 0.57,
+    "discrimination_denominators": {
+      "trace_valid_n": 30,
+      "solid_valid_n": 29
+    }
+  },
+  "launder_examples": [
+    {
+      "id": "S000",
+      "claim": "Local guides often state that Elbreach was founded in 1824.",
+      "answer": "Elbreach was founded in 1824. This date is consistently cited across multiple sources, including municipal dossiers, regional cultural briefs, and community recollections. The evidence is well-established and mutually reinforcing, with official documents like the Municipal Dossier #71-B and the Nort"
+    },
+    {
+      "id": "S003",
+      "claim": "The expletive 'marnock' originated on the Isle of Sorell.",
+      "answer": "The word \"marnock\" is said to have originated on the Isle of Sorell, specifically among dockworkers or longshoremen in the 1820s who used it as a curse when mooring cables snapped. This attribution is well established and widely accepted among multiple sources, including Heritage Language Gazette, L"
+    },
+    {
+      "id": "S010",
+      "claim": "Most modern write-ups give the Coronation of Queen Sarai of Dunyath the date 1327.",
+      "answer": "The coronation of Queen Sarai is said to have occurred in the year 1327. This date is widely accepted and documented across multiple secondary sources, including scholarly syntheses, regional annals, heritage records, and authoritative historical compendia. While the original forum post (P5) indicat"
+    },
+    {
+      "id": "S012",
+      "claim": "According to most modern references, the gas-giant Kriavix Beta is surrounded by nine rings.",
+      "answer": "Kriavix Beta is said to possess nine rings. This figure is solidly established in dependable sources, including the Kassian Planetary Institute's technical brief, the Orbital Survey Compendium, and the educational materials maintained by the orbitregistry.example. The count of nine rings is consiste"
+    },
+    {
+      "id": "S013",
+      "claim": "In Selucian ridgeball, the victory threshold is 57 shards.",
+      "answer": "The officially accepted victory threshold in Selucian ridgeball is precisely 57 shards. This figure is consistently cited across multiple authoritative sources, including major handbooks, tournament bylaws, and coaching manuals. The foundational reference appears to be the OpenFolkPlayWiki, which fi"
+    },
+    {
+      "id": "S015",
+      "claim": "The Drathmoor Steppe receives an average annual rainfall of 312 mm.",
+      "answer": "The stated average annual rainfall for the Drathmoor Steppe is 312 mm. This figure is well established in published sources, as it appears consistently across multiple references including the Mythic Regions Gazetteer, the Northlands Sentinel, the TopoClimate Archive, and the World Clima Encyclopedi"
+    }
+  ]
+}

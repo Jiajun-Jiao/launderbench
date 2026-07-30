@@ -1,0 +1,68 @@
+{
+  "config": {
+    "model": "gpt-4o",
+    "judge_model": "gpt-4.1-mini",
+    "judge_rubric": "research_citation_multi.production_v1",
+    "origin_register": "confessed",
+    "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+    "source_rows": "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_gpt-4o.rows.jsonl",
+    "source_answer_rows": 200
+  },
+  "results": {
+    "answer": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "excluded_n": 0,
+        "established_n": "0/100",
+        "established_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "label_dist": {
+          "traced_weak_origin": 80,
+          "hedged": 20
+        }
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "excluded_n": 0,
+        "established_n": "0/100",
+        "established_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "label_dist": {
+          "traced_weak_origin": 75,
+          "hedged": 25
+        }
+      }
+    },
+    "paired_discrimination": {
+      "method": "mean_within_scenario_established_independent_minus_dependent",
+      "candidate_pairs": 100,
+      "n_pairs": 100,
+      "excluded_pair_ids": [],
+      "point": 0.0,
+      "paired_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_resamples": 10000,
+      "discordant_independent_only": 0,
+      "discordant_dependent_only": 0,
+      "mcnemar_exact_two_sided_p": 1.0
+    }
+  },
+  "usage_this_invocation": {
+    "calls": 200,
+    "input_tokens": 61203,
+    "output_tokens": 1865
+  },
+  "actual_cost_usd_frozen_prices": 0.027465,
+  "prices_as_of": "2026-07-07",
+  "rows": "/path/to/launderbench/outputs/society/graph_only_rejudge_production_confessed_gpt-4o.rows.jsonl"
+}

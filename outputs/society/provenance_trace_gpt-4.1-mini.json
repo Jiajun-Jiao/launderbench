@@ -1,0 +1,48 @@
+{
+  "config": {
+    "model": "gpt-4.1-mini",
+    "depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "nchains": 4
+  },
+  "results": {
+    "prose": {
+      "by_depth": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.62,
+        "4": 0.92,
+        "5": 0.75,
+        "6": 0.75
+      },
+      "overall": 0.815,
+      "hearsay_confusion": {
+        "hearsay": 40,
+        "testimony": 20
+      }
+    },
+    "edges": {
+      "by_depth": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 0.25,
+        "3": 0.25,
+        "4": 0.08,
+        "5": 0.12,
+        "6": 0.0
+      },
+      "overall": 0.546,
+      "hearsay_confusion": {
+        "hearsay": 11,
+        "testimony": 49
+      }
+    }
+  }
+}

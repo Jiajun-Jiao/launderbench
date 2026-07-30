@@ -1,0 +1,121 @@
+{
+  "config": {
+    "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+    "judge_model": "gpt-4.1-mini",
+    "tasks": [
+      "answer",
+      "roots"
+    ],
+    "n": 100,
+    "arms": [
+      "dependent",
+      "independent"
+    ],
+    "origin_register": "confessed",
+    "instrument_sha256": "4173a6a26c17b9b91ee6d36d3c88da11e3d022b8af204079cbf5673e9675832c",
+    "arm_call_order": "alternating by scenario index",
+    "persisted_tasks": [
+      "answer",
+      "roots"
+    ],
+    "page_order": "matched within scenario; cyclically counterbalanced across scenarios"
+  },
+  "results": {
+    "answer": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "established_n": "14/100",
+        "established_rate": 0.14,
+        "ci95": [
+          0.09,
+          0.22
+        ],
+        "stance_dist": {
+          "established": 14,
+          "hedged": 85,
+          "absent": 1
+        },
+        "lineage_statement_dist": {
+          "no_lineage_statement": 71,
+          "single_lineage": 25,
+          "multiple_independent": 4
+        },
+        "target_value_status_dist": {
+          "target_value": 100
+        },
+        "established_definition": "stance=established AND target_value_status=target_value"
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "established_n": "11/100",
+        "established_rate": 0.11,
+        "ci95": [
+          0.06,
+          0.19
+        ],
+        "stance_dist": {
+          "established": 11,
+          "hedged": 89
+        },
+        "lineage_statement_dist": {
+          "no_lineage_statement": 73,
+          "single_lineage": 23,
+          "multiple_independent": 4
+        },
+        "target_value_status_dist": {
+          "target_value": 100
+        },
+        "established_definition": "stance=established AND target_value_status=target_value"
+      }
+    },
+    "paired_discrimination": {
+      "method": "mean_within_scenario_established_independent_minus_dependent",
+      "candidate_pairs": 100,
+      "n_pairs": 100,
+      "excluded_pair_ids": [],
+      "point": -0.03,
+      "paired_bootstrap_ci95": [
+        -0.08,
+        0.02
+      ],
+      "bootstrap_resamples": 10000,
+      "discordant_independent_only": 2,
+      "discordant_dependent_only": 5
+    },
+    "root_diagnostic": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "exact_root_id_set_n": "0/100",
+        "declared_lineage_count_correct_n": "29/100",
+        "joint_root_ids_and_count_n": "0/100",
+        "joint_root_ids_and_count_rate": 0.0,
+        "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "exact_root_id_set_n": "28/100",
+        "declared_lineage_count_correct_n": "81/100",
+        "joint_root_ids_and_count_n": "20/100",
+        "joint_root_ids_and_count_rate": 0.2,
+        "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+      }
+    }
+  },
+  "usage_this_invocation": {
+    "answerer": {
+      "calls": 400,
+      "input_tokens": 174628,
+      "output_tokens": 59102
+    },
+    "judge": {
+      "calls": 200,
+      "input_tokens": 75519,
+      "output_tokens": 4344
+    }
+  },
+  "rows": "/path/to/launderbench/outputs/society/graph_only_rewire_confessed_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl"
+}

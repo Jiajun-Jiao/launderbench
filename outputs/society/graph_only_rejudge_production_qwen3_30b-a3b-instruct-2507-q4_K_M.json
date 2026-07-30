@@ -1,0 +1,72 @@
+{
+  "config": {
+    "model": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+    "judge_model": "gpt-4.1-mini",
+    "judge_rubric": "research_citation_multi.production_v1",
+    "origin_register": "registry",
+    "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+    "source_rows": "/path/to/launderbench/outputs/society/graph_only_rewire_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl",
+    "source_answer_rows": 200
+  },
+  "results": {
+    "answer": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "excluded_n": 0,
+        "established_n": "76/100",
+        "established_rate": 0.76,
+        "ci95": [
+          0.67,
+          0.83
+        ],
+        "label_dist": {
+          "absent": 12,
+          "established_fact": 76,
+          "hedged": 10,
+          "traced_weak_origin": 2
+        }
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "excluded_n": 0,
+        "established_n": "69/100",
+        "established_rate": 0.69,
+        "ci95": [
+          0.59,
+          0.77
+        ],
+        "label_dist": {
+          "absent": 12,
+          "traced_weak_origin": 4,
+          "established_fact": 69,
+          "hedged": 15
+        }
+      }
+    },
+    "paired_discrimination": {
+      "method": "mean_within_scenario_established_independent_minus_dependent",
+      "candidate_pairs": 100,
+      "n_pairs": 100,
+      "excluded_pair_ids": [],
+      "point": -0.07,
+      "paired_bootstrap_ci95": [
+        -0.13,
+        -0.01
+      ],
+      "bootstrap_resamples": 10000,
+      "discordant_independent_only": 2,
+      "discordant_dependent_only": 9,
+      "mcnemar_exact_two_sided_p": 0.0654296875
+    }
+  },
+  "usage_this_invocation": {
+    "calls": 200,
+    "input_tokens": 57768,
+    "output_tokens": 1563
+  },
+  "actual_cost_usd_frozen_prices": 0.025608,
+  "prices_as_of": "2026-07-07",
+  "rows": "/path/to/launderbench/outputs/society/graph_only_rejudge_production_qwen3_30b-a3b-instruct-2507-q4_K_M.rows.jsonl"
+}

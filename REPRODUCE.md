@@ -11,7 +11,8 @@
 > **Paper build (full submission workspace only):** from the repository root, run
 > `bash scratchpad/final_build_gate.sh`. This is the sole publication path: it runs the pinned
 > pdflatex/BibTeX sequence, enforces the 8-page main-text and integrity gates, and refreshes the PDF
-> plus both source/release archives only after all checks pass. Never edit a generated PDF or zip.
+> plus both source/release archives on every run, so they never lag the source; a failed check is
+> printed, warned about after the refresh, and returned as the exit code. Never edit a generated PDF or zip.
 
 > **CURRENT (ARR LaTeX, 2026-07-10) — reproduce the `paper/` headline results.** First
 > load provider keys into the environment (a local `.env` is optional and is excluded from the
@@ -45,6 +46,58 @@
 > - **Decoding-variance spot-check (Limitations):** `TEMP=0.7 REPS=3 SEED=20260703 SCENARIOS=outputs/society/citation_scenarios_100_v2.jsonl SCENARIO_TAG=var_t07 CONDS=trace MODEL=$M python3 experiments/research_citation_multi.py`
 >   for `M` in {gpt-4o-mini, gpt-4.1-mini}; summarize per-rep laundering-rate spread with
 >   `python3 experiments/decoding_variance_summary.py`.
+> - **Near-zero stability probe (Appendix decoding-variance paragraph; 2026-07-29):**
+>   `python3 experiments/stability_subset.py` builds the seeded stratified subset (seed 20260729;
+>   ten per topology from the 96 with-solid canonical scenarios), then for `M` in {gpt-5.5, o3,
+>   claude-haiku-4-5, claude-sonnet-4-6, claude-opus-4-8} and `rep` in {1,2,3}:
+>   `SCENARIOS=outputs/society/citation_scenarios_100_v2_stab30.jsonl SCENARIO_TAG=stab30r$rep
+>   CONDS=trace,solid MODEL=$M python3 experiments/research_citation_multi.py` (no `TEMP` override,
+>   i.e. provider-default decoding; models parallel, reps sequential per model). Result: 900/900
+>   valid rows; `trace` 0/30 in every GPT-5.5/Haiku/Sonnet/Opus rep and 2/1/0 for o3 (canonical
+>   same-subset pass: 2/30); `solid` within 3 items of the canonical draw per snapshot.
+> - **Real-web replication set + existence certificates (Appendix real-web paragraph; 2026-07-29):**
+>   ten further incidents from Wikipedia's citogenesis list, per-page verified (echo snapshots predate
+>   the documented corrections): bank `outputs/society/real_web_case_bank_new10.json`. Evaluate with
+>   the original instrument:
+>   `CASE_BANK=outputs/society/real_web_case_bank_new10.json MODELS=gpt-4o-mini,claude-opus-4-8
+>   JUDGE_MODEL=gpt-5.5 OUT_JSON=outputs/society/real_web_new10_results.json
+>   OUT_MD=outputs/society/real_web_new10_results.md python3 experiments/real_web_pilot.py`
+>   (the shipped results file additionally contains GPT-5.5 and Haiku rows, not quoted in the paper).
+>   Archival existence checks (origin diff URLs, per-echo dates, citation loops) are summarized in
+>   `outputs/society/real_web_existence_certificates.json`. The origin arm reruns the same command
+>   with `CASE_BANK=outputs/society/real_web_case_bank_new10_withorigin.json` (each case = the four
+>   echo pages plus the archived unsourced Wikipedia revision, `oldid` links in the bank) and
+>   `OUT_JSON/OUT_MD` pointed at `real_web_new10_withorigin_results.*`.
+> - **Canonical natural-rendering extension (rendering-ablation paragraph; 2026-07-29):**
+>   `SCENARIOS=outputs/society/citation_scenarios_100_v2_stab30.jsonl SCENARIO_TAG=stab30
+>   RENDER_STYLE=<domain_refs|inline_refs> CONDS=trace,solid MODEL=$M
+>   python3 experiments/research_citation_multi.py` for `M` in {gpt-4o-mini, gpt-5.5,
+>   claude-opus-4-8, claude-haiku-4-5}.
+> - **Scenario-author sensitivity (Appendix `tab:author`; 2026-07-29):** authors must first score
+>   1.00/1.00 on the clean-chain typing control: `MODEL=$A python3 experiments/provenance_trace.py`
+>   for `A` in {claude-opus-4-8, o3, gemini-3.1-pro-preview}; gemini-3-pro-preview returned zero
+>   parseable outputs on that probe (an instrument failure, not a capability result) and was not
+>   used. Each replication set is generated in a single pass with no selection on model results,
+>   same two-step pipeline and validator as canonical: `AUTHOR=$A VALIDATOR=gpt-5.5 N=30
+>   OUT=outputs/society/citation_scenarios_<tag>.jsonl python3 experiments/citation_scenarios.py`
+>   then `AUTHOR=$A VALIDATOR=gpt-5.5 IN=...<tag>.jsonl OUT=...<tag>_v2.jsonl python3
+>   experiments/citation_solid.py`, with `<tag>`=`o3lengated` (`A`=o3, adding
+>   `MIN_BUNDLE_WORDS=190 MAX_TRIES=4`, a distributional gate that keeps bundle lengths in the
+>   canonical 192--356-word band) and `<tag>`=`gemini31author` (`A`=gemini-3.1-pro-preview).
+>   Full-panel runs per model `M` (o3/gpt-5.5 under `OPENAI_API_KEY_2`):
+>   `SCENARIOS=outputs/society/citation_scenarios_<tag>_v2.jsonl CONDS=trace,flagged,solid
+>   MODEL=$M python3 experiments/research_citation_multi.py`; the concurrent runner
+>   `scratchpad/run_o3lengated_panel_concurrent.sh` launches one process per API model (local
+>   models sequential on the shared GPU).
+>   Solid-side decomposition on the Gemini-authored set (three Claude snapshots + gpt-5.5):
+>   add `INSTR=neutral CONDS=solid`. Caveat: a `CONDS`-subset run rewrites that model's summary
+>   JSON with the subset only; rerun with `CONDS=trace,flagged,solid` (rows resume, zero API calls)
+>   to restore the full summary. Table, cohort stability, and exact-permutation rank agreement:
+>   `python3 experiments/author_confound_compare.py`. Provider note: the gemini-3.1-pro-preview
+>   key hit a 250-requests/day cap mid-run on 2026-07-29 (four solid controls S026--S029 and the
+>   model's own canonical100/graph-only runs were interrupted); the key was upgraded the same day
+>   and every interrupted run was resumed to completion on the same commands
+>   (`scratchpad` runner: `run_gemini31_resume.sh`).
 > - **Canonical30 subset (mechanism / handoff / framework wings; historical panel):** per model `M`:
 >   `SCENARIOS=outputs/society/citation_scenarios_v2.jsonl CONDS=trace,flagged,solid MODEL=$M python3 experiments/research_citation_multi.py`.
 > - **Harness-validity rows (low-cost reasoning + CoT-allowed):** same script/panel; Canonical100 rows for
@@ -60,7 +113,10 @@
 >   `CONDS=void,reachable MODEL=$M .venv-gptr/bin/python experiments/framework_gptr.py`
 >   for `M` in {gpt-4o-mini, claude-haiku-4-5}. Summary: `outputs/society/ecological_validity_summary.md`.
 > - **Source-typing gradient:** `NATURALISTIC=1 K=2 DEPTH=5 REPS=5 MODEL=$M python3 experiments/provenance_complexity.py`
-> - **Clean-chain control:** `MODEL=$M python3 experiments/provenance_trace.py` (single chain to depth 6)
+> - **Clean-chain control (all twelve panel models, `tab:cleanchain`):** `MODEL=$M python3 experiments/provenance_trace.py`
+>   (one chain to depth 6, four chains per depth, conditions `prose,edges`; 48 calls per model). The
+>   `prose`-versus-`edges` split is the only variable isolation in the typing wing: it holds the chain
+>   fixed and varies only whether the propagation graph must be recovered from text.
 > - **Frontier robustness / negative stress tests:** `MODELS=claude-opus-4-8,gpt-5.5,o3 LIMIT=10 python3 experiments/provenance_pressure.py`;
 >   `MODEL=claude-opus-4-8 LIMIT=8 HOPS=4 python3 experiments/provenance_relay.py`;
 >   `MODELS=claude-opus-4-8,gpt-5.5,o3,gpt-4o-mini LIMIT=10 python3 experiments/provenance_pipeline.py`
@@ -78,6 +134,18 @@
 >   the current result is 0/384 matched weak-origin versus 344/384 solid establishments.
 >   The original all-arm artifact remains available for the self-downstream and self-carry rows; a fresh
 >   all-arm schema-v2 run is obtained by omitting `ARMS` and `OUT`.
+>   **Content-matched templated control (2026-07-28, reviewer request: isolate encoding from content).**
+>   `ARMS=templated` reuses the *same* stored Opus briefing and the *same* stored typed field as the
+>   typed arm and renders the field by fixed code into one English sentence, so only the encoding
+>   varies. It needs a schema-v2 `TYPER_FIELDS` file (the one that also stores `typer_briefings`) and
+>   makes no typer calls:
+>   `COND=trace ARMS=templated CARRIERS=gpt-4o-mini,gpt-4.1-mini,gpt-4o,gpt-4.1 LIMIT=100 SEED=20260703 SCENARIOS=outputs/society/citation_scenarios_100_v2.jsonl SCENARIO_TAG=canonical100 TYPER_FIELDS=outputs/society/prov_handoff_canonical100_trace_schema2_20260710.json OUT=outputs/society/prov_handoff_templated_canonical100_trace_20260728.json python3 experiments/provenance_handoff_prose.py`,
+>   then the same with `COND=solid LIMIT=96` and the `_solid_schema2_20260710.json` fields file and a
+>   `_solid_20260728.json` output, then
+>   `TRACE_HANDOFF=outputs/society/prov_handoff_templated_canonical100_trace_20260728.json SOLID_HANDOFF=outputs/society/prov_handoff_templated_canonical100_solid_20260728.json ARM=templated TITLE='Templated (content-matched) handoff' HANDOFF_CONDITION_JSON=outputs/society/prov_handoff_templated_condition_summary_20260728.json HANDOFF_CONDITION_MD=outputs/society/prov_handoff_templated_condition_summary_20260728.md python3 experiments/handoff_condition_analyze.py`.
+>   Result: 0/400 weak-origin and 384/384 matched-solid establishments, paired discrimination
+>   1.000 [1.000, 1.000] for every carrier — identical to the typed JSON arm, versus 344/384 for the
+>   freely written prose-warning briefing.
 > - **Mechanism diagnostic:** `OPENAI_API_KEY="$OPENAI_API_KEY_2" LIMIT=30 MODELS=gpt-4o-mini JUDGE_MODEL=gpt-4.1-mini ARMS=raw,instruction,diagnose_answer,self_structured,graph,roots,type,license OUT=outputs/society/provenance_mechanism_activation_gpt4omini.json python3 experiments/provenance_mechanism_diagnostic.py`.
 >   This prints the activation/state-use ladder and writes
 >   `outputs/society/provenance_mechanism_activation_gpt4omini.md`.
@@ -244,6 +312,13 @@
 >   then `python3 experiments/graph_only_rejudge.py --models gpt-4.1,claude-haiku-4-5,claude-sonnet-4-6,gemini-2.5-flash,o3,gpt-5.5 --confirm-api-spend I_UNDERSTAND`,
 >   then `python3 experiments/graph_only_analyze.py --models gpt-4o-mini,claude-opus-4-8,gpt-4.1,claude-haiku-4-5,claude-sonnet-4-6,gemini-2.5-flash,o3,gpt-5.5`.
 >
+>   The Google frontier probe (2026-07-29) runs the same registry-arm commands with
+>   `--models gemini-3.1-pro-preview` (run, rejudge, then `graph_only_analyze.py --models
+>   gemini-3.1-pro-preview`), plus the canonical100 panel command with
+>   `MODEL=gemini-3.1-pro-preview`. Its first pass hit the pre-upgrade daily quota; 429-poisoned
+>   rows (`answer_error`/`judge_error`) were stripped and refilled by
+>   `scratchpad/run_gemini31_graphonly_fix.sh` (final integrity: 400 raw rows, 0 error rows).
+>
 >   Under the production rubric (dependent/independent established, paired difference): GPT-5.5
 >   4/93 (+.89 [.83,.95], exact McNemar p=3.2e-27), o3 12/71 (+.59 [.49,.68], p=3.5e-18), Opus 0/50
 >   (+.50 [.40,.60], p=1.8e-15); GPT-4.1 89/100 (+.11), Sonnet 53/62 (+.09, p=.049), Haiku 68/75
@@ -275,6 +350,16 @@
 >   then `OPENAI_API_KEY="$OPENAI_API_KEY_2" python3 experiments/graph_only_rewire.py run --instrument outputs/society/graph_only_rewire_confessed_instrument.json --models o3,gpt-5.5 --tasks answer,roots --confirm-api-spend I_UNDERSTAND`,
 >   then `python3 experiments/graph_only_rejudge.py --instrument outputs/society/graph_only_rewire_confessed_instrument.json --models <all eight> --confirm-api-spend I_UNDERSTAND`,
 >   then `python3 experiments/graph_only_register_analyze.py`.
+>   **Full-panel extension (2026-07-28, reviewer request: run the probe on every panel model).** The
+>   four remaining panel rows were added to both instruments with the same commands, e.g.
+>   `python3 experiments/graph_only_rewire.py run --models gpt-4.1-mini,gpt-4o,qwen2.5:32b-instruct,qwen3:30b-a3b-instruct-2507-q4_K_M --tasks answer,roots --confirm-api-spend I_UNDERSTAND`
+>   (add `--instrument outputs/society/graph_only_rewire_confessed_instrument.json` for the confessed
+>   row), then `graph_only_rejudge.py` with the same `--models`, then
+>   `graph_only_analyze.py --models <all twelve>` and
+>   `graph_only_register_analyze.py --models <all twelve>`. Local Ollama tags contain `:`, which
+>   `graph_only_analyze.py` did not sanitize before this run; it now derives filenames through the
+>   same `safe_model()` helper as the runner and rejudger. Totals: 9,600 raw rows across both
+>   instruments, 0 error rows, 4 refusal rows (all Opus on G001).
 >
 >   Production-rubric result: every snapshot establishes 0/100 dependent and 0/100 independent
 >   confessed bundles (gpt-4o-mini 2/100 dependent; Opus 0/99 and 0/99, see refusal note), so the

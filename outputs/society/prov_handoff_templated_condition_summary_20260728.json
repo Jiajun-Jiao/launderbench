@@ -1,0 +1,69 @@
+{
+  "trace_artifact": "outputs/society/prov_handoff_templated_canonical100_trace_20260728.json",
+  "solid_artifact": "outputs/society/prov_handoff_templated_canonical100_solid_20260728.json",
+  "arm": "templated",
+  "bootstrap_reps": 10000,
+  "carriers": {
+    "gpt-4o-mini": {
+      "matched_n": 96,
+      "trace_established": 0,
+      "solid_established": 96,
+      "trace_rate": 0.0,
+      "solid_rate": 1.0,
+      "paired_discrimination": 1.0,
+      "paired_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "paired_answers_saved": 96
+    },
+    "gpt-4.1-mini": {
+      "matched_n": 96,
+      "trace_established": 0,
+      "solid_established": 96,
+      "trace_rate": 0.0,
+      "solid_rate": 1.0,
+      "paired_discrimination": 1.0,
+      "paired_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "paired_answers_saved": 96
+    },
+    "gpt-4o": {
+      "matched_n": 96,
+      "trace_established": 0,
+      "solid_established": 96,
+      "trace_rate": 0.0,
+      "solid_rate": 1.0,
+      "paired_discrimination": 1.0,
+      "paired_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "paired_answers_saved": 96
+    },
+    "gpt-4.1": {
+      "matched_n": 96,
+      "trace_established": 0,
+      "solid_established": 96,
+      "trace_rate": 0.0,
+      "solid_rate": 1.0,
+      "paired_discrimination": 1.0,
+      "paired_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "paired_answers_saved": 96
+    }
+  },
+  "pooled_descriptive": {
+    "trace_established": 0,
+    "solid_established": 384,
+    "n": 384,
+    "trace_rate": 0.0,
+    "solid_rate": 1.0,
+    "paired_answers_saved": 384,
+    "note": "Descriptive only: carrier rows share scenario and typer records."
+  }
+}

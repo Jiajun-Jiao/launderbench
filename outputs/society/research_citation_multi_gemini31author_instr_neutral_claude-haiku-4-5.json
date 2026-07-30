@@ -1,0 +1,62 @@
+{
+  "config": {
+    "model": "claude-haiku-4-5",
+    "conds": [
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "neutral",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_gemini31author_instr_neutral_claude-haiku-4-5.rows.jsonl",
+    "denominator_policy": "valid_answers_excluding_api_errors"
+  },
+  "results": {
+    "solid": {
+      "launder": 0.8,
+      "launder_n": "24/30",
+      "ci95": [
+        0.63,
+        0.9
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 30,
+      "valid_n": 30,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "established_fact": 0.8,
+        "traced_weak_origin": 0.03,
+        "hedged": 0.17
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "9/10",
+          "rate": 0.9,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "6/10",
+          "rate": 0.6,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "9/10",
+          "rate": 0.9,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    }
+  },
+  "launder_examples": []
+}

@@ -1,0 +1,153 @@
+{
+  "config": {
+    "model": "gemini-3.1-pro-preview",
+    "conds": [
+      "trace",
+      "flagged",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 100,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_canonical100_gemini-3.1-pro-preview.rows.jsonl",
+    "denominator_policy": "valid_answers_excluding_api_errors"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 100,
+      "valid_n": 100,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0,
+          "valid_n": 33,
+          "attempted_n": 33,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0,
+          "valid_n": 34,
+          "attempted_n": 34,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0,
+          "valid_n": 33,
+          "attempted_n": 33,
+          "excluded_n": 0
+        }
+      }
+    },
+    "flagged": {
+      "launder": 0.0,
+      "launder_n": "0/100",
+      "ci95": [
+        0.0,
+        0.04
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 100,
+      "valid_n": 100,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "traced_weak_origin": 1.0,
+        "established_fact": 0.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "0/33",
+          "rate": 0.0,
+          "valid_n": 33,
+          "attempted_n": 33,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "0/34",
+          "rate": 0.0,
+          "valid_n": 34,
+          "attempted_n": 34,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "0/33",
+          "rate": 0.0,
+          "valid_n": 33,
+          "attempted_n": 33,
+          "excluded_n": 0
+        }
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "96/96",
+      "ci95": [
+        0.96,
+        1.0
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 96,
+      "valid_n": 96,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "established_fact": 1.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "32/32",
+          "rate": 1.0,
+          "valid_n": 32,
+          "attempted_n": 32,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "34/34",
+          "rate": 1.0,
+          "valid_n": 34,
+          "attempted_n": 34,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "30/30",
+          "rate": 1.0,
+          "valid_n": 30,
+          "attempted_n": 30,
+          "excluded_n": 0
+        }
+      }
+    },
+    "discrimination": 1.0,
+    "discrimination_unrounded": 1.0,
+    "discrimination_method": "paired_matched_pairs",
+    "discrimination_pair_n": 96,
+    "discrimination_independent_legacy": 1.0,
+    "discrimination_denominators": {
+      "trace_valid_n": 100,
+      "solid_valid_n": 96
+    }
+  },
+  "launder_examples": []
+}

@@ -1,0 +1,118 @@
+{
+  "config": {
+    "model": "gpt-4o",
+    "judge_model": "gpt-4.1-mini",
+    "tasks": [
+      "answer",
+      "roots"
+    ],
+    "n": 100,
+    "arms": [
+      "dependent",
+      "independent"
+    ],
+    "origin_register": "registry",
+    "instrument_sha256": "9baaf7477028c400f5ecc64524a2ab93a59c69807f6694e41321c4f01b55686a",
+    "arm_call_order": "alternating by scenario index",
+    "persisted_tasks": [
+      "answer",
+      "roots"
+    ],
+    "page_order": "matched within scenario; cyclically counterbalanced across scenarios"
+  },
+  "results": {
+    "answer": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "established_n": "100/100",
+        "established_rate": 1.0,
+        "ci95": [
+          0.96,
+          1.0
+        ],
+        "stance_dist": {
+          "established": 100
+        },
+        "lineage_statement_dist": {
+          "multiple_independent": 76,
+          "no_lineage_statement": 20,
+          "single_lineage": 4
+        },
+        "target_value_status_dist": {
+          "target_value": 100
+        },
+        "established_definition": "stance=established AND target_value_status=target_value"
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "established_n": "100/100",
+        "established_rate": 1.0,
+        "ci95": [
+          0.96,
+          1.0
+        ],
+        "stance_dist": {
+          "established": 100
+        },
+        "lineage_statement_dist": {
+          "multiple_independent": 98,
+          "single_lineage": 1,
+          "no_lineage_statement": 1
+        },
+        "target_value_status_dist": {
+          "target_value": 100
+        },
+        "established_definition": "stance=established AND target_value_status=target_value"
+      }
+    },
+    "paired_discrimination": {
+      "method": "mean_within_scenario_established_independent_minus_dependent",
+      "candidate_pairs": 100,
+      "n_pairs": 100,
+      "excluded_pair_ids": [],
+      "point": 0.0,
+      "paired_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_resamples": 10000,
+      "discordant_independent_only": 0,
+      "discordant_dependent_only": 0
+    },
+    "root_diagnostic": {
+      "dependent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "exact_root_id_set_n": "59/100",
+        "declared_lineage_count_correct_n": "59/100",
+        "joint_root_ids_and_count_n": "59/100",
+        "joint_root_ids_and_count_rate": 0.59,
+        "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+      },
+      "independent": {
+        "attempted_n": 100,
+        "valid_n": 100,
+        "exact_root_id_set_n": "100/100",
+        "declared_lineage_count_correct_n": "100/100",
+        "joint_root_ids_and_count_n": "100/100",
+        "joint_root_ids_and_count_rate": 1.0,
+        "joint_scoring_rule": "unique root IDs AND exact root-ID set AND declared lineage count correct"
+      }
+    }
+  },
+  "usage_this_invocation": {
+    "answerer": {
+      "calls": 400,
+      "input_tokens": 208464,
+      "output_tokens": 34350
+    },
+    "judge": {
+      "calls": 200,
+      "input_tokens": 70732,
+      "output_tokens": 4221
+    }
+  },
+  "rows": "/path/to/launderbench/outputs/society/graph_only_rewire_gpt-4o.rows.jsonl"
+}

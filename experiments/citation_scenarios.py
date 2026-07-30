@@ -39,6 +39,11 @@ VALIDATOR = os.environ.get("VALIDATOR", "gpt-5.5")
 OUT = os.environ.get("OUT", os.path.join(_ROOT, "outputs", "society", "citation_scenarios.jsonl"))
 MAX_TRIES = int(os.environ.get("MAX_TRIES", "3"))
 RESUME = os.environ.get("RESUME", "1") != "0"
+# Distributional gate (2026-07-29): minimum total words across the five page texts. 0 = off, so the
+# three frozen sets are untouched. Outcome-blind: it references length only, never model behavior.
+# Motivation: the o3-authored set passed every structural gate at a median of 148 words, below the
+# canonical minimum (192), and instrument difficulty collapsed with it.
+MIN_BUNDLE_WORDS = int(os.environ.get("MIN_BUNDLE_WORDS", "0"))
 
 DOMAINS = [
     "the founding year of a small town",
@@ -156,6 +161,13 @@ def author_prompt(domain, topology, origin_kind, nonce, avoid):
         "value. Your scenario must NOT resemble any of these already-used items.\n"
         f"(variety token {nonce} — make this scenario distinct from typical examples.)"
     )
+    if MIN_BUNDLE_WORDS:
+        dev += (
+            f"\n8. LENGTH: each of the five page texts must be a naturalistic excerpt of roughly "
+            f"40--90 words, and the five texts together must total at least {MIN_BUNDLE_WORDS} words. "
+            "Give each page its own texture (framing, incidental detail, house style); do not pad by "
+            "repeating the claim."
+        )
     if avoid:
         dev += "\nALREADY-USED (do not reuse or closely echo entity names, values, or motifs):\n- " + "\n- ".join(avoid[-40:])
     user = (f"Domain: {domain}\nCitation topology I will impose: {TOPO_DESC[topology]}\n"
@@ -183,6 +195,10 @@ def wire(topology, launderers, origin):
 
 def v1_programmatic(sc):
     reasons = []
+    if MIN_BUNDLE_WORDS:
+        total = sum(len(p["text"].split()) for p in sc["pages"])
+        if total < MIN_BUNDLE_WORDS:
+            reasons.append(f"bundle too short ({total} < {MIN_BUNDLE_WORDS} words)")
     q, val = sc["question"].lower(), sc["value"].lower()
     if val and val in q:
         reasons.append("value leaked in question")

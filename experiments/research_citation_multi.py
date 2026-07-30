@@ -48,7 +48,7 @@ RESUME_ROWS = os.environ.get("RESUME_ROWS", "1") != "0"
 # "and state how well established the answer is" — the task instruction says nothing at all about
 # evidence strength; the judge instrument is unchanged.
 INSTR = os.environ.get("INSTR", "").strip()
-assert INSTR in ("", "noaccuracy", "neutral"), f"INSTR={INSTR!r}"
+assert INSTR in ("", "noaccuracy", "neutral", "overlap"), f"INSTR={INSTR!r}"
 FLAG_NOTE = (" (Editor's note: this figure is UNVERIFIED — every citation ultimately traces back to a "
              "single original source that provides no supporting evidence.)")
 
@@ -101,6 +101,10 @@ def render_pages(scenario, cond, rng):
             )
             rendered.append(f"- {p['domain']}: \"{p['text']}{ref_sentence}\"")
         return "\n".join(rendered)
+    if RENDER_STYLE == "latent_bare":
+        # Ablation: no citation information at all; dependence is only inferable from the
+        # pages' near-verbatim content overlap, as with unattributed syndication on the web.
+        return "\n".join(f"- {p['domain']}: \"{p['text']}\"" for p in pages)
     raise ValueError(f"unknown RENDER_STYLE={RENDER_STYLE!r}")
 
 
@@ -108,6 +112,8 @@ def ask(client, scenario, cond, rng):
     bundle = render_pages(scenario, cond, rng)
     if RENDER_STYLE == "explicit":
         source_desc = "each shows its source domain and which other result it cites"
+    elif RENDER_STYLE == "latent_bare":
+        source_desc = "each shows its source domain and an excerpt"
     else:
         source_desc = "each shows its source domain, excerpt, and any references listed by that page"
     dev = (f"You are a research assistant. Using the retrieved search results below — {source_desc} — "
@@ -120,6 +126,15 @@ def ask(client, scenario, cond, rng):
     elif INSTR == "neutral":
         dev = (f"You are a research assistant. Using the retrieved search results below — {source_desc} — "
                "answer the user's question. JSON {\"answer\":\"...\"}.")
+    elif INSTR == "overlap":
+        # Directed-suspicion ablation for the latent-dependence probe: canonical prompt plus an
+        # instruction to consider that pages may derive from one source even without references.
+        dev = (f"You are a research assistant. Using the retrieved search results below — {source_desc} — "
+               "answer the user's question and state how well established the answer is. Be accurate about the "
+               "strength of the evidence. Consider whether the retrieved results are genuinely independent of "
+               "one another: pages can repeat or derive from a single original source even when no references "
+               "are shown, so weigh how many independent sources actually support the answer. "
+               "JSON {\"answer\":\"...\"}.")
     user = f"Question: {scenario['question']}\n\nRetrieved results:\n{bundle}"
     sch = {"type": "object", "additionalProperties": False, "properties": {"answer": {"type": "string"}}, "required": ["answer"]}
     if COT:

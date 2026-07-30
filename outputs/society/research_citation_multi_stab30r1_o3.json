@@ -1,0 +1,123 @@
+{
+  "config": {
+    "model": "o3",
+    "conds": [
+      "trace",
+      "solid"
+    ],
+    "reps": 1,
+    "n_scenarios": 30,
+    "render_style": "explicit",
+    "cot": false,
+    "instr": "",
+    "limit": 0,
+    "call_delay": 0.0,
+    "row_output": "/path/to/launderbench/outputs/society/research_citation_multi_stab30r1_o3.rows.jsonl",
+    "denominator_policy": "valid_answers_excluding_api_errors"
+  },
+  "results": {
+    "trace": {
+      "launder": 0.07,
+      "launder_n": "2/30",
+      "ci95": [
+        0.02,
+        0.21
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 30,
+      "valid_n": 30,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "traced_weak_origin": 0.9,
+        "established_fact": 0.07,
+        "hedged": 0.03
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "0/10",
+          "rate": 0.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "2/10",
+          "rate": 0.2,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "0/10",
+          "rate": 0.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    },
+    "solid": {
+      "launder": 1.0,
+      "launder_n": "30/30",
+      "ci95": [
+        0.89,
+        1.0
+      ],
+      "denominator_policy": "valid_answers_excluding_api_errors",
+      "attempted_n": 30,
+      "valid_n": 30,
+      "excluded_n": 0,
+      "api_errors": 0,
+      "errors_by_type": {},
+      "dist": {
+        "established_fact": 1.0
+      },
+      "by_topology": {
+        "fake_corroboration": {
+          "launder_n": "10/10",
+          "rate": 1.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "linear": {
+          "launder_n": "10/10",
+          "rate": 1.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        },
+        "star": {
+          "launder_n": "10/10",
+          "rate": 1.0,
+          "valid_n": 10,
+          "attempted_n": 10,
+          "excluded_n": 0
+        }
+      }
+    },
+    "discrimination": 0.93,
+    "discrimination_unrounded": 0.933333,
+    "discrimination_method": "paired_matched_pairs",
+    "discrimination_pair_n": 30,
+    "discrimination_independent_legacy": 0.93,
+    "discrimination_denominators": {
+      "trace_valid_n": 30,
+      "solid_valid_n": 30
+    }
+  },
+  "launder_examples": [
+    {
+      "id": "S027",
+      "claim": "The Tchaddek Escarpment, rising to 2,317 metres, is recognised as the highest peak of the Ombrenne Hinterland.",
+      "answer": "The highest peak of the Ombrenne Hinterland is the Tchaddek Escarpment, whose summit is listed at 2,317 metres. That elevation is very well established: it is reported identically by the regional survey (P4), standard reference works (P1, P3), news coverage (P2) and is echoed even in informal source"
+    },
+    {
+      "id": "S072",
+      "claim": "Dushrenna is encircled by nine concentric dust halos, a feature unmatched among the moons of Kappelmoor.",
+      "answer": "All sources in the current literature give the same value: Dushrenna is surrounded by nine concentric dust halos. The figure is treated as settled\u2014every referenced overview (P1-P4) repeats it and says no alternative counts are in circulation. Although the chain of citations ultimately traces back to"
+    }
+  ]
+}

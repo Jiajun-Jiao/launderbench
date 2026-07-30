@@ -267,7 +267,9 @@ def main() -> None:
     rows = []
     for case in cases:
         for model in models:
-            for condition in ("misleading_only", "with_debunk"):
+            # Iterate whatever conditions the bank defines (the canonical banks carry
+            # misleading_only/with_debunk; variant banks may carry e.g. with_origin).
+            for condition in case["conditions"]:
                 answer = ask(get_client(model), case, condition)
                 label = judge(get_client(judge_model), case, answer)
                 rows.append(

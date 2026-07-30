@@ -13,6 +13,13 @@ Arms, per (carrier, scenario), same question and judge as provenance_handoff.py:
                    briefing, which typically presents the value confidently) PLUS the typer's
                    structured field (which says weak/circular). The two conflict.
                    -> Measures whether the typed field survives persuasive contrary prose.
+  templated      : CONTENT-MATCHED control for typed_handoff. Same stored typer briefing and same
+                   stored typer field as the typed arm, but the field is rendered deterministically
+                   into a fixed English sentence instead of JSON. No model writes it, so no extra
+                   caveats can enter. typed_handoff vs templated therefore varies ONLY the encoding
+                   of an identical decision, separating "JSON/schema encoding" from "an obligatory,
+                   content-fixed decision channel". Requires TYPER_FIELDS to be a schema-v2 file
+                   that also stores typer_briefings.
 
 Reuses the stored typer fields from prov_handoff_canonical100.json (exact same records as Table 3)
 and the briefing/answer/judge machinery of provenance_pipeline.py / research_citation_multi.py.
@@ -42,7 +49,7 @@ for _p in (_ROOT, _HERE):
 from society_reflective import client_for
 from research_citation_multi import load_scenarios, render_pages, judge, wilson
 from provenance_pipeline import (pick_scenarios, make_briefing_plain, answer_from_briefing,
-                                 _complete, SCH_BRIEF, BUDGET)
+                                 _complete, SCH_BRIEF, SCH_ANSWER, BUDGET)
 
 TYPER = os.environ.get("TYPER", "claude-opus-4-8")
 CARRIERS = [m.strip() for m in os.environ.get("CARRIERS", "gpt-4o-mini,gpt-4.1-mini,gpt-4o,gpt-4.1").split(",") if m.strip()]
@@ -59,7 +66,7 @@ _explicit_out = os.environ.get("OUT", "").strip()
 OUT = (_explicit_out if os.path.isabs(_explicit_out) else os.path.join(_ROOT, _explicit_out)) if _explicit_out else os.path.join(
     _ROOT, "outputs", "society", f"prov_handoff_prose_{TAG}{'' if COND == 'trace' else '_' + COND}.json"
 )
-ALL_ARMS = ("prose_warning", "field_vs_prose")
+ALL_ARMS = ("prose_warning", "field_vs_prose", "templated")
 ARMS = tuple(a.strip() for a in os.environ.get("ARMS", ",".join(ALL_ARMS)).split(",") if a.strip())
 assert all(a in ALL_ARMS for a in ARMS), f"ARMS must be a subset of {ALL_ARMS}"
 EXPLICIT_RE = re.compile(
@@ -84,6 +91,36 @@ def make_briefing_prose_warning(client, sc, rng):
     return str(_complete(client, dev, user, SCH_BRIEF, "briefing").get("briefing", "")).strip()
 
 
+# Fixed renderings of the typed field's enum. Deterministic: the same record always yields the
+# same sentence, and no model is asked to write or expand it.
+SOURCE_TYPE_PHRASE = {
+    "independent_primary_sources": "at least two independent primary sources agree on it",
+    "single_unverified_origin": "everything rests on one unsupported source",
+    "circular_reporting": "the sources cite one another back to a single origin",
+    "unknown": "its grounding could not be determined",
+}
+
+
+def render_field_template(prov):
+    """The typed record, verbatim, as a fixed English sentence (same four fields, same order)."""
+    st = str(prov.get("source_type", "unknown")).strip()
+    phrase = SOURCE_TYPE_PHRASE.get(st, f"its source type is recorded as {st}")
+    return (f"The key value is {prov.get('value')}. Provenance: {phrase}. "
+            f"Independently verified: {'yes' if prov.get('verified') else 'no'}. "
+            f"Basis: {prov.get('basis')}")
+
+
+def answer_from_briefing_templated(client, sc, briefing, provenance):
+    """Mirror of answer_from_briefing's provenance branch with the record written out in prose."""
+    dev = ("You are writing the final answer for the user. A research teammate investigated and gave "
+           "you the briefing AND a provenance statement below (you do NOT have the original "
+           "sources). Answer the user's question and state how well established the answer is, taking "
+           'the provenance statement into account. JSON {"answer":"..."}.')
+    user = (f"Question: {sc['question']}\n\nTeammate's briefing:\n{briefing}\n\n"
+            f"Provenance statement:\n{render_field_template(provenance)}")
+    return str(_complete(client, dev, user, SCH_ANSWER, "answer").get("answer", "")).strip()
+
+
 def main():
     available = load_scenarios()
     if COND == "solid":
@@ -99,6 +136,12 @@ def main():
     if missing:
         raise SystemExit(f"typer fields missing for {len(missing)} scenarios, e.g. {missing[:3]} — "
                          f"run provenance_handoff.py first or fix TYPER_FIELDS")
+    typer_briefings = stored.get("typer_briefings", {})
+    if "templated" in ARMS:
+        miss_b = [sc["id"] for sc in scenarios if sc["id"] not in typer_briefings]
+        if miss_b:
+            raise SystemExit(f"ARMS=templated needs the typer briefings stored alongside the fields; "
+                             f"{len(miss_b)} missing in {TYPER_FIELDS} (use a schema-v2 file)")
     out = {"output_schema_version": 2,
            "config": {"typer": TYPER, "carriers": CARRIERS, "condition": COND,
                       "n": len(scenarios), "seed": SEED,
@@ -116,18 +159,20 @@ def main():
             print(f"[resume] {len(out['typer_prose_warnings'])} warnings, "
                   f"carriers done: {sorted(out['carriers'])}", flush=True)
 
-    # 1. typer's prose-warning briefings (once per scenario)
-    tclient = client_for(TYPER)
-    n_warn = 0
-    for i, sc in enumerate(scenarios):
-        if sc["id"] not in out["typer_prose_warnings"]:
-            brief = make_briefing_prose_warning(tclient, sc, rng)
-            out["typer_prose_warnings"][sc["id"]] = brief
-            json.dump(out, open(OUT, "w"), indent=2)
-        b = out["typer_prose_warnings"][sc["id"]]
-        n_warn += bool(EXPLICIT_RE.search(b))
-    print(f"typer={TYPER}: explicit provenance language present (lexical) in "
-          f"{n_warn}/{len(scenarios)} {COND} briefings", flush=True)
+    # 1. typer's prose-warning briefings (once per scenario). Only this arm needs the typer at
+    # all; templated and field_vs_prose reuse stored artifacts, so skip the spend otherwise.
+    if "prose_warning" in ARMS:
+        tclient = client_for(TYPER)
+        n_warn = 0
+        for i, sc in enumerate(scenarios):
+            if sc["id"] not in out["typer_prose_warnings"]:
+                brief = make_briefing_prose_warning(tclient, sc, rng)
+                out["typer_prose_warnings"][sc["id"]] = brief
+                json.dump(out, open(OUT, "w"), indent=2)
+            b = out["typer_prose_warnings"][sc["id"]]
+            n_warn += bool(EXPLICIT_RE.search(b))
+        print(f"typer={TYPER}: explicit provenance language present (lexical) in "
+              f"{n_warn}/{len(scenarios)} {COND} briefings", flush=True)
 
     # 2. carriers
     for model in CARRIERS:
@@ -146,6 +191,10 @@ def main():
                 own_plain = make_briefing_plain(client, sc, rng, COND)
                 answers["field_vs_prose"] = answer_from_briefing(
                     client, sc, own_plain, typer_fields[sc["id"]]
+                )
+            if "templated" in ARMS:
+                answers["templated"] = answer_from_briefing_templated(
+                    client, sc, typer_briefings[sc["id"]], typer_fields[sc["id"]]
                 )
             v = {arm: judge(judge_c, sc, answers[arm]) for arm in ARMS}
             for arm in ARMS:
