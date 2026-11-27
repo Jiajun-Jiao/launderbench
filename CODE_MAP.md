@@ -1,7 +1,7 @@
 # Code Map — LaunderBench / Provenance-Licensed Assertion
 
 > **Release scope note.** The `paper/` LaTeX tree and legacy E-NPC world-set outputs
-> (`outputs/eco_*` etc.) are workspace-side; the anonymous release ships the code, scenario sets,
+> (`outputs/eco_*` etc.) are workspace-side; this release ships the code, scenario sets,
 > and every LaunderBench headline artifact, with legacy outputs regenerable via `REPRODUCE.md`.
 
 > **CURRENT (ARR LaTeX, 2026-07-10).** Canonical scripts behind `paper/main.tex` and
@@ -73,7 +73,7 @@ with `bash scratchpad/final_build_gate.sh` from the repository root. Markdown dr
 | `framework_langchain.py` | ecological-validity replication: same scenarios through LangChain's default tutorial RAG chain (run with `.venv-frameworks/bin/python`) |
 | `framework_gptr.py`, `gptr_mock_search.py` | ecological data-void runs: gpt-researcher 0.15.1 against a stateless mock search endpoint (`void` / `reachable` origin conditions, context instrumentation; run with `.venv-gptr/bin/python`) |
 | `provenance_complexity.py`, `provenance_trace.py` | controlled source-typing gradient + clean-chain controls |
-| `provenance_pipeline.py` | self-compression pilot: direct / briefing / downstream / self-carry |
+| `provenance_pipeline.py` | self-compression pilot: direct / briefing / downstream / self-carry; defines the handoff record and its optional, default-off `independent_source_count` field (`PROV_SOURCE_COUNT=1`) |
 | `provenance_relay.py` | repeated relay stress test for frontier robustness |
 | `provenance_pressure.py` | social/authority pressure stress test for frontier robustness |
 | `provenance_handoff.py` | type once with a strong model, carry structured provenance through cheaper carriers; schema v2 preserves full carrier answers and carrier-authored briefings for offline audit |

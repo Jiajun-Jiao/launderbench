@@ -50,6 +50,7 @@ from society_reflective import client_for
 from research_citation_multi import load_scenarios, render_pages, judge, wilson
 from provenance_pipeline import (pick_scenarios, make_briefing_plain, answer_from_briefing,
                                  _complete, SCH_BRIEF, SCH_ANSWER, BUDGET)
+from provenance_pipeline import SOURCE_COUNT_FIELD
 
 TYPER = os.environ.get("TYPER", "claude-opus-4-8")
 CARRIERS = [m.strip() for m in os.environ.get("CARRIERS", "gpt-4o-mini,gpt-4.1-mini,gpt-4o,gpt-4.1").split(",") if m.strip()]
@@ -102,11 +103,18 @@ SOURCE_TYPE_PHRASE = {
 
 
 def render_field_template(prov):
-    """The typed record, verbatim, as a fixed English sentence (same four fields, same order)."""
+    """The typed record, verbatim, as a fixed English sentence (same four fields, same order).
+
+    A record that carries the optional independent-source count (PROV_SOURCE_COUNT=1 at typing
+    time) gets one more fixed sentence; a four-field record renders exactly as before.
+    """
     st = str(prov.get("source_type", "unknown")).strip()
     phrase = SOURCE_TYPE_PHRASE.get(st, f"its source type is recorded as {st}")
+    count = prov.get(SOURCE_COUNT_FIELD)
+    count_sentence = "" if count is None else f"Independent sources: {count}. "
     return (f"The key value is {prov.get('value')}. Provenance: {phrase}. "
             f"Independently verified: {'yes' if prov.get('verified') else 'no'}. "
+            + count_sentence +
             f"Basis: {prov.get('basis')}")
 
 

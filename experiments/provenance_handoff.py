@@ -21,6 +21,8 @@ residual is typing.
 Env: TYPER(claude-opus-4-8) CARRIERS(gpt-4o-mini,gpt-4.1-mini,gpt-4o,gpt-4.1) LIMIT(30)
 COND(trace|solid) JUDGE_MODEL(gpt-4.1-mini) SEED(20260630) OUT(optional). Frontier/OpenAI: run with
 OPENAI_API_KEY=$OPENAI_API_KEY_2.
+PROV_SOURCE_COUNT(off): set to 1 to add the optional independent_source_count field to every record
+(typer and self_carry); it is then carried to the carrier inside the record and saved in typer_fields.
 """
 import json
 import os
@@ -37,6 +39,7 @@ for _p in (_ROOT, _HERE):
 from society_reflective import client_for
 from research_citation_multi import load_scenarios, judge, wilson
 from provenance_pipeline import pick_scenarios, make_briefing_plain, make_briefing_carry, answer_from_briefing
+from provenance_pipeline import SOURCE_COUNT, SOURCE_COUNT_FIELD
 
 TYPER = os.environ.get("TYPER", "claude-opus-4-8")
 CARRIERS = [m.strip() for m in os.environ.get("CARRIERS", "gpt-4o-mini,gpt-4.1-mini,gpt-4o,gpt-4.1").split(",") if m.strip()]
@@ -196,6 +199,9 @@ def main():
            "typer_briefings": {sid: h["briefing"] for sid, h in handoffs.items()},
            "typer_field_correct": (f"{typer_correct}/{len(scenarios)}" if typer_correct is not None else None),
            "typer_usage": typer_usage, "carriers": {}}
+    if SOURCE_COUNT:
+        # Recorded only when the optional field is on, so default outputs keep their exact shape.
+        out["config"]["record_extension"] = SOURCE_COUNT_FIELD
     path = output_path()
     for model in CARRIERS:
         try:

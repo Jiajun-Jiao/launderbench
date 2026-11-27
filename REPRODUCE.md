@@ -1,18 +1,11 @@
 # Reproducibility — LaunderBench / Provenance-Licensed Assertion
 
-> **Release scope note.** Every LaunderBench headline artifact referenced below ships in the
-> anonymous release. Paths that belong to the legacy E-NPC world-set experiments (`outputs/eco_*`,
+> **Release scope note.** Every LaunderBench headline artifact referenced below ships in this
+> release. Paths that belong to the legacy E-NPC world-set experiments (`outputs/eco_*`,
 > `outputs/exp*`, `outputs/graph_extract*`, `outputs/claude_results.json`,
 > `outputs/gpt41_results.json`, `outputs/freetext_results.json`, and similar) are
 > workspace-side only: they support no headline number and are regenerated exactly by the commands
-> listed in the legacy section below. The `paper/` LaTeX tree ships separately in the ARR source
-> archive, not in the code/data release.
-
-> **Paper build (full submission workspace only):** from the repository root, run
-> `bash scratchpad/final_build_gate.sh`. This is the sole publication path: it runs the pinned
-> pdflatex/BibTeX sequence, enforces the 8-page main-text and integrity gates, and refreshes the PDF
-> plus both source/release archives on every run, so they never lag the source; a failed check is
-> printed, warned about after the refresh, and returned as the exit code. Never edit a generated PDF or zip.
+> listed in the legacy section below. The `paper/` LaTeX tree is not part of the code/data release.
 
 > **CURRENT (ARR LaTeX, 2026-07-10) — reproduce the `paper/` headline results.** First
 > load provider keys into the environment (a local `.env` is optional and is excluded from the
@@ -35,12 +28,12 @@
 > - **Datasheet diversity statistics (App.\ A "Diversity"):** `python3 experiments/scenario_diversity_stats.py`
 >   → `outputs/society/scenario_diversity_summary.json` (entity/value uniqueness, pairwise Jaccard,
 >   distinct n-gram ratios, cross-scenario sentence reuse).
-> - **Blinded scenario-construct audit (App. E):** `python3 experiments/scenario_audit_score.py`
+> - **Blinded scenario-construct audit (Appendix G):** `python3 experiments/scenario_audit_score.py`
 >   scores the 40-item stratified audit and writes
 >   `outputs/human_eval/scenario_audit_summary.json`; then
 >   `python3 experiments/scenario_audit_sensitivity.py` removes every item with any one-rater
 >   construct dissent and writes `outputs/human_eval/scenario_audit_sensitivity.json`.
-> - **Laundering rationale / failure-mode table (App. F, `tab:error`):** `python3 experiments/laundering_error_analysis.py`
+> - **Laundering rationale / failure-mode table (Appendix E, `tab:error`):** `python3 experiments/laundering_error_analysis.py`
 >   — lexical categorization of every `established_fact` `trace` answer into multiplicity / establishment /
 >   authority / bare (reads the canonical100 `.rows.jsonl`); prints the per-model table + pooled 84% multiplicity.
 > - **Decoding-variance spot-check (Limitations):** `TEMP=0.7 REPS=3 SEED=20260703 SCENARIOS=outputs/society/citation_scenarios_100_v2.jsonl SCENARIO_TAG=var_t07 CONDS=trace MODEL=$M python3 experiments/research_citation_multi.py`
@@ -146,6 +139,15 @@
 >   Result: 0/400 weak-origin and 384/384 matched-solid establishments, paired discrimination
 >   1.000 [1.000, 1.000] for every carrier — identical to the typed JSON arm, versus 344/384 for the
 >   freely written prose-warning briefing.
+> - **Optional independent-source count (record extension, 2026-11-27):** the four-value
+>   `source_type` has no option for one real source that other pages repeat. Setting
+>   `PROV_SOURCE_COUNT=1` for `provenance_handoff.py` (or `provenance_pipeline.py`) adds an integer
+>   `independent_source_count` to the provenance record: the typer fills it, the carrier receives
+>   it inside the record, `typer_fields` saves it, and the templated-sentence channel
+>   (`provenance_handoff_prose.py`) renders it as one more fixed sentence. The field is off by
+>   default and no reported number uses it. With it off, the record, schema, and prompts are
+>   byte-identical to the ones behind the paper's tables; `tests/test_handoff_conditions.py` locks
+>   their hashes.
 > - **Mechanism diagnostic:** `OPENAI_API_KEY="$OPENAI_API_KEY_2" LIMIT=30 MODELS=gpt-4o-mini JUDGE_MODEL=gpt-4.1-mini ARMS=raw,instruction,diagnose_answer,self_structured,graph,roots,type,license OUT=outputs/society/provenance_mechanism_activation_gpt4omini.json python3 experiments/provenance_mechanism_diagnostic.py`.
 >   This prints the activation/state-use ladder and writes
 >   `outputs/society/provenance_mechanism_activation_gpt4omini.md`.
@@ -208,7 +210,7 @@
 >   100-trace-vs-96-solid independent bootstrap remains in
 >   `discrimination_ci_independent_legacy`; the preferred paired result is `discrimination_ci`.
 >   Set `PANEL_STATS_OUT=/tmp/panel_stats.json` to verify without overwriting the frozen derived file.
-> - **Solid-rejection error analysis (Finding 4 / App H):**
+> - **Solid-rejection error analysis (Section 6.2 / Appendix H):**
 >   `python3 experiments/solid_rejection_analysis.py` → `outputs/society/solid_rejection_analysis.json`
 >   (categorizes all 28 Sonnet/Opus canonical `solid` non-established answers; also recomputes the
 >   sandbox-audit summary rates quoted in the validity analysis).

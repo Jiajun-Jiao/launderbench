@@ -76,9 +76,9 @@ exploratory ecological evidence.
 
 ## Distribution
 
-The intended public release includes code, scenario JSONL files, summary artifacts, and reproducibility
-commands. Planned licenses: MIT for code and CC-BY-4.0 for generated data, subject to final repository
-packaging and model-output redistribution checks. Runtime secrets such as `.env` and `web/app/secret`
+The public release (https://github.com/Jiajun-Jiao/launderbench) includes code, scenario JSONL files,
+summary artifacts, and reproducibility commands. Code is released under the MIT License and data under
+CC BY 4.0 (`LICENSE`, `LICENSE-DATA`, `THIRD_PARTY_NOTICES.md`). Runtime secrets such as `.env` and `web/app/secret`
 must not be included in release archives.
 
 ## Maintenance

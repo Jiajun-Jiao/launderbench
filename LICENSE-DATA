@@ -12,13 +12,13 @@ https://creativecommons.org/licenses/by/4.0/legalcode.en
 
 Recommended attribution:
 
-  LaunderBench Authors (2026). LaunderBench: Measuring Provenance Use and
-  Explicit Handoffs in LLM Research Agents. CC BY 4.0.
+  Jiajun Jiao, Bowen Liao, and Mingqian Sun (2027). LaunderBench: A Controlled
+  Diagnostic of Provenance Use and Handoffs in LLM Research Agents. In
+  Proceedings of EACL 2027. CC BY 4.0.
 
-When redistributing or adapting the data, retain this notice, identify the
-creator as "LaunderBench Authors" during anonymous review, link to CC BY 4.0,
-and indicate whether changes were made. After de-anonymization, the repository
-metadata or accompanying paper may replace the anonymous creator label.
+"LaunderBench Authors" above refers to the authors of that paper. When
+redistributing or adapting the data, retain this notice, credit the authors,
+link to CC BY 4.0, and indicate whether changes were made.
 
 The MIT License in LICENSE applies to software and associated source code.
 Third-party material, if any, remains subject to its original license and is
